@@ -58,3 +58,6 @@ $git push origin <branch-name>
 
 ## Revert a commit
 `$git revert <sha-of-a-commit>`
+
+## Compare two branches
+git diff <branch-name1>...<branch-name2>
