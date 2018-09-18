@@ -60,4 +60,4 @@ $git push origin <branch-name>
 `$git revert <sha-of-a-commit>`
 
 ## Compare two branches
-git diff <branch-name1>...<branch-name2>
+`$git diff <branch-name1>...<branch-name2>`
