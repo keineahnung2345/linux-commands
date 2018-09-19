@@ -1,8 +1,10 @@
 # Git commands
 Make sure you are in the directory of the cloned repository!
 
-## Create a branch
+## Get current branch name
+`$git branch`
 
+## Create a branch
 
 `$git checkout master` Make sure you are in master branch every time you create a branch!!
 
