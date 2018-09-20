@@ -14,3 +14,9 @@ Some useful linux commands
 
 ### find directory but exclue "." and force delete
 ```find . -mindepth 1 -type d -exec rm -r "{}" \;```
+
+### find file with <word> in its name in the directory <directory>
+```find <directory> -name <*word*>```
+
+### find but exclue certain path
+```find / -name <filename> -not -path "<the-path-to-be-excluded>"```
