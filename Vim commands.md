@@ -110,3 +110,13 @@ Method 2:
 :set expandtab
 and then >(to indent) or <(to unindent)
 ```
+
+## Quit
+```
+<:q!>
+```
+
+## Save and quit
+```
+<:wq>
+```
