@@ -25,7 +25,7 @@ $git push origin :<branch-name>
 ## Fork and then create a pull request
 Follow the instructions here: https://help.github.com/articles/creating-a-pull-request-from-a-fork/
 
-## Add folders or files, commit, and then push
+## Add folders or files, commit, and then push(Git doesn't allow you to commit empty folders, the workaround is to add .gitkeep file into them)
 ```sh
 $git add <folder-or-file-name>
 $git commit
