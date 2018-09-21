@@ -42,3 +42,12 @@ grep <pattern> -rnw . | while IFS= read -r line ; do
 >     echo "$line" | cut -d'/' -f2
 > done
 ```
+
+### grep and show multiple surrounding lines
+```
+#show <b> lines before and <a> lines after the matched lines
+<other-command> | grep <pattern> -B <b> -A <a> 
+#show <c> lines before and after the matched lines
+<other-command> | grep <pattern> -C <c> 
+ex: docker run --help | grep runtime -C 5
+```
