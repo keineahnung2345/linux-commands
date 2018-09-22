@@ -1,6 +1,60 @@
 # linux-commands
 Some useful linux commands
 
+## check system information(either of one)
+```
+hostnamectl
+uname -a
+cat /etc/*-release
+lsb_release -a (only for ubuntu)
+```
+
+## check if your machine is physical or virtual(either of one)
+```
+hostnamectl status
+systemd-detect-virt
+```
+
+## shutdown the machine
+```
+shutdown now
+```
+
+## reboot the machine
+```
+shutdown -r now
+```
+
+## show all environment variables
+```
+printenv
+```
+
+## append current directory to the environment variable $PATH
+```
+export PATH=$PATH:`pwd`
+```
+
+## remove the environment variable <ENV_VAR_NAME>
+```
+unset <ENV_VAR_NAME>
+```
+
+## check memory usage
+```
+top
+```
+
+## use pid(can be checked by top) to find out the location of the process
+```
+readlink -f /proc/<pid>/exe
+```
+
+## check port usage(either of one)
+```
+lsof -i -n -P
+netstat -tulpn
+```
 
 ## find
 ### find specific type of files in all subdirectories and then delete
