@@ -56,6 +56,21 @@ lsof -i -n -P
 netstat -tulpn
 ```
 
+## check the status of a file
+```
+stat <filename>
+```
+
+## show the privilege, size and last modification time of a file
+```
+ls -lah <filename>
+```
+
+## change privilege of a file
+```
+chmod [u,o,g,a][+,-,=][r,w,x] <filename>
+```
+
 ## find
 ### find specific type of files in all subdirectories and then delete
 ```find . -name "*.<file-type>" -type f -delete```
@@ -104,4 +119,14 @@ grep <pattern> -rnw . | while IFS= read -r line ; do
 #show <c> lines before and after the matched lines
 <other-command> | grep <pattern> -C <c> 
 ex: docker run --help | grep runtime -C 5
+```
+
+## cut by space and get the last element
+```
+<other-command> | rev | cut -d' ' -f1 | rev
+```
+
+## download a file as </directory/file_name> from a url
+```
+wget -O </directory/file_name> <your-url>
 ```
