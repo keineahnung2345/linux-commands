@@ -130,3 +130,24 @@ ex: docker run --help | grep runtime -C 5
 ```
 wget -O </directory/file_name> <your-url>
 ```
+
+## iterate over the result of some command
+```
+<some-command> | (while read x; do <other-command-using-$x>; done)
+ex: ls *.json | (while read x; do echo $x; done)
+```
+
+## let the command 'history' show the time when the commands are executed
+```
+export HISTTIMEFORMAT='%F %T '
+history
+```
+
+## output non-ascii characters in shell
+```
+# method 1:
+echo -en "$(<some-command-printing-non-ascii-characters>)"
+# method 2:
+apt-get install uni2ascii
+<some-command-printing-non-ascii-characters> | ascii2uni -a U -q
+```
