@@ -151,3 +151,9 @@ echo -en "$(<some-command-printing-non-ascii-characters>)"
 apt-get install uni2ascii
 <some-command-printing-non-ascii-characters> | ascii2uni -a U -q
 ```
+
+## write or append the output to a file
+```
+<some-command> > <filename> #overwrite the file
+<some-command> >> <filename> #append to the file
+```
