@@ -17,6 +17,9 @@ you may want to add --no-cache flag in order to make the `apt update && apt upgr
 
 `docker build . --no-cache -t <image-name>`
 
+## Load a docker image from xxx.tar.gz
+`docker load -i xxx.tar.gz`
+
 ## Run a docker image
 ```
 docker run --name <image-name> -td -p <host-port>:<container-port> \
@@ -44,3 +47,9 @@ docker run --name <image-name> -td -p <host-port>:<container-port> \
 
 ## Stop and remove a container
 `docker rm -f <container-name>`
+
+## Copy a file to and from a container
+```
+docker cp <file-name> <container-name>:/<file-name>
+docker cp <container-name>:/<file-name> <file-name>
+```
