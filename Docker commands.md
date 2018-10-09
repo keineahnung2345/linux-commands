@@ -39,5 +39,8 @@ docker run --name <image-name> -td -p <host-port>:<container-port> \
 ## Stop a container
 `docker stop <container-name>`
 
+## Remove a container
+`docker rm <container-name>`
+
 ## Stop and remove a container
 `docker rm -f <container-name>`
