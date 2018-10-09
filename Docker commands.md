@@ -4,6 +4,10 @@ Some useful docker commands
 ## Check docker images
 `docker images`
 
+TO show full image id
+
+`docker images --no-trunc`
+
 ## Build a docker image
 in a directory containing a Dockerfile:
 
@@ -20,7 +24,7 @@ docker run --name <image-name> -td -p <host-port>:<container-port> \
 -e <environment-variable-name>=<environment-variable-value> --restart always <container-name>
 ```
 
-## Change docker image name
+## Rename a docker image
 `docker tag <old-image-name> <new-image-name>`
 
 ## Remove a docker image
