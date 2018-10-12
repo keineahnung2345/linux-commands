@@ -22,13 +22,6 @@ you may want to add --no-cache flag in order to make the `apt update && apt upgr
 ### Load a docker image from xxx.tar.gz
 `docker load -i xxx.tar.gz`
 
-### Run a docker image
-```
-docker run --name <image-name> -td -p <host-port>:<container-port> \
--v <host-directory>:<container-directory> \
--e <environment-variable-name>=<environment-variable-value> --restart always <container-name>
-```
-
 ### Rename a docker image
 `docker tag <old-image-name> <new-image-name>`
 
@@ -48,8 +41,21 @@ or
 ### Check mounted directories of a container
 `docker inspect -f '{{ .Mounts }}' <container-name>`
 
+### Run a docker image(create and then start a container)
+```
+docker run --name <image-name> -td -p <host-port>:<container-port> \
+-v <host-directory>:<container-directory> \
+-e <environment-variable-name>=<environment-variable-value> --restart always <container-name>
+```
+
+### Start a existing but stopped container
+`docker start -i <container-name>`
+
 ### Enter a container
 `docker exec -it <container-name> bash`
+
+### Exit a container without stopping it
+`<ctrl+p>` and then `<ctrl+q>`
 
 ### Stop a container
 `docker stop <container-name>`
