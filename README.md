@@ -46,6 +46,33 @@ lsof -i -n -P
 netstat -tulpn
 ```
 
+## check size of directories and files
+### check total size of a directory, containing all its items
+```
+du -sh <dirname>
+```
+
+### check all files' size in current dir
+```
+du -h * | less
+```
+
+### check the size of items in \<dirname\> and sort them by their size in descending order
+```
+du -h --max-depth=1 <dirname> | sort -hr
+```
+or 
+```
+du -h -d 1 <dirname> | sort -hr
+```
+
+sort: -h for recognizing K,M,G, -r for descending order
+
+## check file system information
+```
+df -h
+```
+
 ## manage privilege of a file
 ### check the status of a file
 ```
