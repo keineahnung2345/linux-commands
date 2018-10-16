@@ -189,6 +189,11 @@ ex: docker run --help | grep runtime -C 5
 wget -O </directory/file_name> <your-url>
 ```
 
+## download a file to \<dirname\> from a url
+```
+wget -P <dirname> <your-url>
+```
+
 ## iterate over the result of some command
 ```
 <some-command> | (while read x; do <other-command-using-$x>; done)
@@ -215,3 +220,6 @@ apt-get install uni2ascii
 <some-command> > <filename> #overwrite the file
 <some-command> >> <filename> #append to the file
 ```
+
+## monitor GPU usage
+watch -n0 nvidia-smi
