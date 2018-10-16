@@ -40,16 +40,6 @@ export PATH=$PATH:`pwd`
 unset <ENV_VAR_NAME>
 ```
 
-## check memory usage
-```
-top
-```
-
-## use pid(can be checked by top) to find out the location of the process
-```
-readlink -f /proc/<pid>/exe
-```
-
 ## check port usage(either of one)
 ```
 lsof -i -n -P
@@ -69,6 +59,41 @@ ls -lah <filename>
 ## change privilege of a file
 ```
 chmod [u,o,g,a][+,-,=][r,w,x] <filename>
+```
+
+## manage processes
+### monitor CPU, memory usage
+```
+top
+```
+or
+```
+ps aux
+```
+
+### check CPU, memory usage, sorted by CPU usage
+```
+ps --sort=-pcpu
+```
+
+### check how long a process has been running
+```
+ps -o etime= -p "<pid>"
+```
+
+### check the process name given a pid
+```
+ps -p <pid> -o comm=
+```
+
+### use pid(can be checked by top) to find out the location of the process
+```
+readlink -f /proc/<pid>/exe
+```
+
+### kill a process
+```
+kill -9 <pid>
 ```
 
 ## find
