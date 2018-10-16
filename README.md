@@ -46,17 +46,23 @@ lsof -i -n -P
 netstat -tulpn
 ```
 
-## check the status of a file
+## manage privilege of a file
+### check the status of a file
 ```
 stat <filename>
 ```
 
-## show the privilege, size and last modification time of a file
+### show the privilege of a file
+```
+stat -c '%A' <filename>
+```
+
+### show the privilege, size and last modification time of a file
 ```
 ls -lah <filename>
 ```
 
-## change privilege of a file
+### change privilege of a file
 ```
 chmod [u,o,g,a][+,-,=][r,w,x] <filename>
 ```
