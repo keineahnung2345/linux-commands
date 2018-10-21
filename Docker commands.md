@@ -15,7 +15,7 @@ in a directory containing a Dockerfile:
 
 `docker build . -t <image-name>` 
 
-you may want to add --no-cache flag in order to make the `apt update && apt upgrade` in Dockerfile takes effect:
+you may want to add --no-cache flag in order to make `apt update && apt upgrade` in Dockerfile take effect:
 
 `docker build . --no-cache -t <image-name>`
 
