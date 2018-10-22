@@ -15,6 +15,11 @@ hostnamectl status
 systemd-detect-virt
 ```
 
+## check your cpu specification
+```
+lscpu
+```
+
 ## shutdown the machine
 ```
 shutdown now
@@ -23,6 +28,11 @@ shutdown now
 ## reboot the machine
 ```
 shutdown -r now
+```
+
+## check system log around the date \<yyyymmdd\>(It records the boot and shutdown histories)
+```
+cat /var/log/messages-<yyyymmdd> | less
 ```
 
 ## show all environment variables
