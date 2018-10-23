@@ -13,11 +13,14 @@ TO show full image id
 ### Build a docker image
 in a directory containing a Dockerfile:
 
-`docker build . -t <image-name>` 
+`docker build . -t <image-name>`
 
 you may want to add --no-cache flag in order to make `apt update && apt upgrade` in Dockerfile take effect:
 
 `docker build . --no-cache -t <image-name>`
+
+if you have multiple dockerfiles in a directory, you need to specify your dockerfile name:
+`docker build . -t <image-name> -f <docker-file-name>`
 
 ### Load a docker image from xxx.tar.gz
 `docker load -i xxx.tar.gz`
