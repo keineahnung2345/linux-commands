@@ -35,6 +35,26 @@ shutdown now
 shutdown -r now
 ```
 
+## backup your system
+reference: https://help.ubuntu.com/community/BackupYourSystem/TAR
+```
+cd /
+tar -cvpzf backup.tar.gz \
+--exclude=/backup.tar.gz \
+--exclude=/proc \
+--exclude=/tmp \
+--exclude=/mnt \
+--exclude=/dev \
+--exclude=/sys \
+--exclude=/run \
+--exclude=/media \
+--exclude=/var/log \
+--exclude=/var/cache/apt/archives \
+--exclude=/usr/src/linux-headers* \
+--exclude=/home/*/.gvfs \
+--exclude=/home/*/.cache \
+--exclude=/home/*/.local/share/Trash /
+```
 ## check system log around the date \<yyyymmdd\>(It records the boot and shutdown histories)
 ```
 cat /var/log/messages-<yyyymmdd> | less
