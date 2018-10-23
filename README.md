@@ -20,6 +20,11 @@ systemd-detect-virt
 lscpu
 ```
 
+## check your gpu specification
+```
+nvidia-smi -q
+```
+
 ## shutdown the machine
 ```
 shutdown now
