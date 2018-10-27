@@ -41,6 +41,9 @@ if you have multiple dockerfiles in a directory, you need to specify your docker
 or 
 `docker ps --format "{{.Names}}: {{.Ports}}"`
 
+### Check docker containers' numeric IDs
+`docker ps -q`
+
 ### Check mounted directories of a container
 `docker inspect -f '{{ .Mounts }}' <container-name>`
 
