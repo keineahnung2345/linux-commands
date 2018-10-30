@@ -72,6 +72,9 @@ docker run --name <image-name> -td -p <host-port>:<container-port> \
 ### Stop and remove a container
 `docker rm -f <container-name>`
 
+### Rename a container
+`docker rename <old-container-name> <new-container-name>`
+
 ## Other commands
 
 ### Copy a file to and from a container
