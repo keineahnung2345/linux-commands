@@ -6,7 +6,15 @@ Some useful linux commands
 hostnamectl
 uname -a
 cat /etc/*-release
-lsb_release -a (only for ubuntu)
+```
+
+## check ubuntu system information
+```
+lsb_release -a
+```
+This can be installed by:
+```
+apt-get install -y lsb-release
 ```
 
 ## check if your machine is physical or virtual(either of one)
