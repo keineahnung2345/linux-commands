@@ -103,6 +103,16 @@ lsof -i -n -P
 netstat -tulpn
 ```
 
+## connect to remote host
+```sh
+ssh <username>@<ip-address>
+```
+
+## remove host name from known_hosts file(used when you have previously failed to login the host)
+```sh
+ssh-keygen -R <ip-address>
+```
+
 ## check size of directories and files
 ### check total size of a directory, containing all its items
 ```sh
@@ -142,8 +152,14 @@ stat -c '%A' <filename>
 ```
 
 ### show the privilege, size and last modification time of a file
+-l for long listing format, -a for showing hidden files, -h for showing size in human readable format
 ```sh
 ls -lah <filename>
+```
+
+### ll, the short name for ls -l
+```sh
+ll <filename>
 ```
 
 ### change privilege of a file
