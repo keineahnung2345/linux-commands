@@ -42,6 +42,11 @@ systemd-detect-virt
 lscpu
 ```
 
+## check your gpu driver version
+```sh
+nvidia-smi
+```
+
 ## check your gpu specification
 ```sh
 nvidia-smi -q
@@ -225,12 +230,17 @@ find . -mindepth 1 -type d -exec rm -r "{}" \;
 
 ### find file with \<word> in its name in the directory \<directory>
 ```sh
-find <directory> -name <*word*>
+find <directory> -name "<*word*>"
+```
+
+### find file with \<word> in its name but exclude that with \<not-word>
+```sh
+find <directory> -name "<*word*>" -not -name "<*not-word*>"
 ```
 
 ### find but exclue certain path
 ```sh
-find / -name <filename> -not -path "<the-path-to-be-excluded>"
+find / -name "<filename>" -not -path "<the-path-to-be-excluded>"
 ```
 
 
