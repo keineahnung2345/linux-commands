@@ -58,6 +58,15 @@ $git merge master
 $git push origin <branch-name>
 ```
 
+## Import a repository(This is a hack to fork a repo but detach their dependency)
+```
+Click on the '+' sign on the upper right corner of Github webpage(next to your avatar)
+Click on "Import repository"
+In "Your old repository’s clone URL", paste the url of repo you want to import
+Give it a new name and click "Begin import"
+After the process is done, Github will send you a email confirming with that
+```
+
 ## Revert a commit
 `$git revert <sha-of-a-commit>`
 
