@@ -334,6 +334,11 @@ apt-get install uni2ascii
 <some-command> | wc -l
 ```
 
+## unzip a file to a desinated directory
+```sh
+unzip <xxx.zip> -d </target/directory/to/unzip>
+```
+
 ## monitor GPU usage
 ```sh
 watch -n0 nvidia-smi
