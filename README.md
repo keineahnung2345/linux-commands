@@ -324,6 +324,11 @@ apt-get install uni2ascii
 <some-command> >> <filename> #append to the file
 ```
 
+## redirect the error message of a command to a file
+```sh
+<some-command> > <filename.txt> 2>&1
+```
+
 ## monitor GPU usage
 ```sh
 watch -n0 nvidia-smi
