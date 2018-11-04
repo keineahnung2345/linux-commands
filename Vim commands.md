@@ -111,6 +111,11 @@ Method 2:
 and then >(to indent) or <(to unindent)
 ```
 
+Method 3: to indent
+```
+:'<,'>s!^!    !
+```
+
 ## Quit
 ```
 <:q!>
