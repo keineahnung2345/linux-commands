@@ -353,3 +353,9 @@ diff <fileA> <fileB>
 ```sh
 watch -n0 nvidia-smi
 ```
+
+## run your command in background, write its output to a text file, and watch that text file simultaneously
+```sh
+nohup <some-command> &><filename.txt> &
+tail -f <filename.txt>
+```
