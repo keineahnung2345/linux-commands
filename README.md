@@ -329,6 +329,11 @@ apt-get install uni2ascii
 <some-command> > <filename.txt> 2>&1
 ```
 
+## count number of lines of other command's output
+```sh
+<some-command> | wc -l
+```
+
 ## monitor GPU usage
 ```sh
 watch -n0 nvidia-smi
