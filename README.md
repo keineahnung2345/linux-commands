@@ -343,6 +343,12 @@ apt-get install uni2ascii
 unzip <xxx.zip> -d </target/directory/to/unzip>
 ```
 
+## show difference between two files
+```
+sh
+diff <fileA> <fileB>
+```
+
 ## monitor GPU usage
 ```sh
 watch -n0 nvidia-smi
