@@ -108,6 +108,10 @@ lsof -i -n -P
 netstat -tulpn
 ```
 
+## check the process using the port \<port-number>
+```sh
+sudo lsof -i:<port-number>
+```
 ## connect to remote host
 ```sh
 ssh <username>@<ip-address>
