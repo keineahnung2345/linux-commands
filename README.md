@@ -82,6 +82,12 @@ tar -cvpzf backup.tar.gz \
 --exclude=/home/*/.cache \
 --exclude=/home/*/.local/share/Trash /
 ```
+
+## check current date and time
+```sh
+date
+```
+
 ## check system log around the date \<yyyymmdd\>(It records the boot and shutdown histories)
 ```sh
 cat /var/log/messages-<yyyymmdd> | less
