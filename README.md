@@ -297,6 +297,11 @@ grep <pattern> -rnw . | while IFS= read -r line ; do
 ex: docker run --help | grep runtime -C 5
 ```
 
+## delete the \<N>-th line from outside the file
+```sh
+sed '<N> d' <filename>
+```
+
 ## cut by space and get the last element
 ```sh
 <other-command> | rev | cut -d' ' -f1 | rev
