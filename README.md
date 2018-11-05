@@ -128,6 +128,11 @@ ssh <username>@<ip-address>
 ssh-keygen -R <ip-address>
 ```
 
+## copy multiple directories from remote host to current directory
+```sh
+scp <username>@<ip-address>:/some/remote/directory/\{a,b,c\} ./
+```
+
 ## check size of directories and files
 ### check total size of a directory, containing all its items
 ```sh
