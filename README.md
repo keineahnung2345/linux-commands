@@ -350,9 +350,13 @@ unzip <xxx.zip> -d </target/directory/to/unzip>
 ```
 
 ## show difference between two files
+```sh
+diff <file1> <file2>
 ```
-sh
-diff <fileA> <fileB>
+
+## show difference between two directories
+```sh
+diff -r -q <dir1> <dir2>
 ```
 
 ## monitor GPU usage
