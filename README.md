@@ -6,6 +6,11 @@ Some useful linux commands
 man <other-command>
 ```
 
+## find out where \<other-command> exists
+```sh
+which <other-command>
+```
+
 ## check system information(either of one)
 ```sh
 hostnamectl
