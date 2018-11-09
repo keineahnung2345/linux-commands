@@ -258,6 +258,10 @@ find <directory> -name "<*word*>" -not -name "<*not-word*>"
 find / -name "<filename>" -not -path "<the-path-to-be-excluded>"
 ```
 
+### find: suppress ```No such file or directory``` error
+```sh
+find / -name "<filename>" 2>/dev/null
+```
 
 ## grep
 ### search for a specific word from specific type of files in a directory
