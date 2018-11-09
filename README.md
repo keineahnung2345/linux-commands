@@ -383,6 +383,15 @@ apt-get install uni2ascii
 unzip <xxx.zip> -d </target/directory/to/unzip>
 ```
 
+## extract .gz file
+```sh
+gunzip <xxx.gz>
+```
+or
+```sh
+gzip -d <xxx.gz>
+```
+
 ## show difference between two files
 ```sh
 diff <file1> <file2>
