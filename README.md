@@ -278,6 +278,11 @@ find / -iname "<filename>"
 find / -name "<filename>" 2>/dev/null
 ```
 
+### find a file and only return its parent directory
+```sh
+find / -name "<filename>" | xargs -I{} dirname {}
+```
+
 ## grep
 ### search for a specific word from specific type of files in a directory
 ```sh
