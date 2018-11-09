@@ -1,6 +1,11 @@
 # linux-commands
 Some useful linux commands
 
+## check manual of a command
+```sh
+man <other-command>
+```
+
 ## check system information(either of one)
 ```sh
 hostnamectl
