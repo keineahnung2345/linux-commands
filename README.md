@@ -337,8 +337,14 @@ sed '<N> d' <filename>
 ```
 
 ## download a file as </directory/file_name> from a url
+Method 1: wget
 ```sh
 wget -O </directory/file_name> <your-url>
+```
+
+Method 2: curl
+```sh
+curl -o </directory/file_name> <your-url>
 ```
 
 ## download a file to \<dirname\> from a url
