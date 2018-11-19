@@ -389,6 +389,11 @@ apt-get install uni2ascii
 <some-command> | wc -l
 ```
 
+## zip \<foldername> to \<foldername>.zip
+```sh
+zip -r <foldername>.zip <foldername>
+```
+
 ## unzip a file to a desinated directory
 ```sh
 unzip <xxx.zip> -d </target/directory/to/unzip>
