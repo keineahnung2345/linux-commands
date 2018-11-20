@@ -143,6 +143,16 @@ ssh-keygen -R <ip-address>
 scp <username>@<ip-address>:/some/remote/directory/\{a,b,c\} ./
 ```
 
+## install a package
+```sh
+apt-get install -y <package-name>
+```
+
+## uninstall a package
+```sh
+apt-get purge -y <package-name>
+```
+
 ## check size of directories and files
 ### check total size of a directory, containing all its items
 ```sh
