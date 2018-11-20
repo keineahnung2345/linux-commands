@@ -22,6 +22,15 @@ you may want to add --no-cache flag in order to make `apt update && apt upgrade`
 if you have multiple dockerfiles in a directory, you need to specify your dockerfile name:
 `docker build . -t <image-name> -f <docker-file-name>`
 
+### Build a docker image from an existing container
+`docker commit <container-name> <image-name:tag>`
+
+### Pull a image from dockerhub
+`docker pull <image-name:tag>`
+
+### Push your image to dockerhub
+`docker push <image-name:tag>`
+
 ### Load a docker image from xxx.tar.gz
 `docker load -i xxx.tar.gz`
 
