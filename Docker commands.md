@@ -34,6 +34,9 @@ if you have multiple dockerfiles in a directory, you need to specify your docker
 ### Load a docker image from xxx.tar.gz
 `docker load -i xxx.tar.gz`
 
+### Save a docker image to xxx.tar.gz
+`docker save -o xxx.tar.gz <image-name>`
+
 ### Rename a docker image
 `docker tag <old-image-name> <new-image-name>`
 
