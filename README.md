@@ -253,6 +253,15 @@ find . -name "*.<file-type>" -type f -delete
 find . -type d -empty -delete
 ```
 
+### find directory(not need to be empty) and then delete
+```sh
+find . -name "<directory-name>" -type d -exec rm -rv {} \;
+```
+or
+```sh
+find . -name "<directory-name>" -type d -exec rm -rv {} +
+```
+
 ### find directory but exclue "."(the current directory)
 ```sh
 find . -mindepth 1 -type d
