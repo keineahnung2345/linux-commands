@@ -345,6 +345,11 @@ ex: docker run --help | grep runtime -C 5
 cp <filename>{,.bak}
 ```
 
+## find and replace string in a \<filename>
+```sh
+sed -i '' 's/<regular expression>/<replacement>/g' <filename>
+```
+
 ## delete the \<N>-th line from outside the file
 ```sh
 sed '<N> d' <filename>
