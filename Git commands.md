@@ -38,7 +38,7 @@ $git remote add upstream <the-url-of-upstream-repo>
 $git fetch upstream
 $git checkout master
 $git reset --hard upstream/master
-$git push origin master --force
+$git push origin master --force #--force solves non-fast-forward error
 ```
 
 ## Sync your forked repository
