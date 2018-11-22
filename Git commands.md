@@ -68,7 +68,16 @@ After the process is done, Github will send you a email confirming with that
 ```
 
 ## Revert a commit
+(This will create a new commit)
 `$git revert <sha-of-a-commit>`
+
+## Revert multiple commits to a specific point
+(This won't create new commit, it just remove the specific commits)
+```sh
+$git checkout <branch-name>
+$git reset --hard <sha-of-a-commit>
+$git push origin <branch-name> --force
+```
 
 ## Compare two branches
 `$git diff <branch-name1>...<branch-name2>`
