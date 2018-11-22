@@ -58,6 +58,13 @@ $git merge master
 $git push origin <branch-name>
 ```
 
+## Rebase a branch to origin
+```sh
+$git fetch
+$git rebase <branch-name>
+$git push origin <branch-name>
+```
+
 ## Import a repository(This is a hack to fork a repo but detach their dependency)
 ```
 Click on the '+' sign on the upper right corner of Github webpage(next to your avatar)
