@@ -61,7 +61,8 @@ $git push origin <branch-name>
 ## Rebase a branch to origin
 ```sh
 $git fetch
-$git rebase <branch-name>
+$git rebase master
+$git pull origin <branch-name> # to solve non-fast-forward error
 $git push origin <branch-name>
 ```
 
