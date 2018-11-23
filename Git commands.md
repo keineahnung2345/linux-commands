@@ -1,7 +1,7 @@
 # Git commands
 Make sure you are in the directory of the cloned repository!
 
-## Get current branch name
+## List all branch and get current branch name
 `$git branch`
 
 ## Create a branch
