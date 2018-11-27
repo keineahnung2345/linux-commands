@@ -180,6 +180,12 @@ sort: -h for recognizing K,M,G, -r for descending order
 df -h
 ```
 
+## create a directory \<dir-name>(it will create any missing intermediate pathname components)
+it will do nothing if \<dir-name> already exists, so we can always use this command without checking if a directory already exists!
+```sh
+mkdir -p <dir-name>
+```
+
 ## manage privilege of a file
 ### check the status of a file
 ```sh
