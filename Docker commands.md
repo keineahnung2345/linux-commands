@@ -84,6 +84,9 @@ docker run --name <image-name> -td -p <host-port>:<container-port> \
 ### Stop and remove a container
 `docker rm -f <container-name>`
 
+### Remove all exited containers
+`docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm`
+
 ### Rename a container
 `docker rename <old-container-name> <new-container-name>`
 
