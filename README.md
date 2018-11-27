@@ -360,6 +360,11 @@ sed '<N> d' <filename>
 <other-command> | rev | cut -d' ' -f1 | rev
 ```
 
+## reverse the output of \<other-command>
+```sh
+<other-command> | tac
+```
+
 ## download a file as </directory/file_name> from a url
 Method 1: wget
 ```sh
