@@ -32,13 +32,13 @@ $git commit
 $git push origin <branch-name>
 ```
 
-## Reset your forked repository
+## Reset your \<branch-name> in forked repository
 ```sh
 $git remote add upstream <the-url-of-upstream-repo>
 $git fetch upstream
-$git checkout master
+$git checkout <branch-name>
 $git reset --hard upstream/master
-$git push origin master --force #--force solves non-fast-forward error
+$git push origin <branch-name> --force #--force solves non-fast-forward error
 ```
 
 ## Sync your forked repository
