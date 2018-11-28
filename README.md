@@ -368,6 +368,11 @@ sed -i '' 's/<regular expression>/<replacement>/g' <filename>
 sed '<N> d' <filename>
 ```
 
+## translate or delete characters - squeeze multiple \<char> into one
+```sh
+tr -s '<char>'
+```
+
 ## cut by \<delimiter> and get the specific \<fields>
 ```sh
 cut -d '<delimiter>' -f <fields>
