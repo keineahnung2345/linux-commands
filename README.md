@@ -465,6 +465,11 @@ diff -r -q <dir1> <dir2>
 watch -n0 nvidia-smi
 ```
 
+## list the last \<num_lines> lines in \<filename.txt>
+```sh
+tail -n <num_lines> <filename.txt>
+```
+
 ## run your command in background, write its output to a text file, and watch that text file simultaneously
 ```sh
 nohup <some-command> &><filename.txt> &
