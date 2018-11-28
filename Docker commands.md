@@ -101,6 +101,7 @@ docker swarm join \
 >     --token SWMTKN-x-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxx \
 >     \<manager-ip>:2377
 ```
+This command is showed when you execute `docker swarm init` on your swarm manager, so don't worry about the token.
 
 ### (From manager host)List all nodes in swarm
 `docker node ls`
