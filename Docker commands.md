@@ -90,6 +90,39 @@ docker run --name <image-name> -td -p <host-port>:<container-port> \
 ### Rename a container
 `docker rename <old-container-name> <new-container-name>`
 
+## Docker swarm
+
+### Make the host a manager
+`docker swarm init` 
+
+### Let other hosts join the swarm as a worker
+```sh
+docker swarm join \
+>     --token SWMTKN-x-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxx \
+>     \<manager-ip>:2377
+```
+
+### (From manager host)List all nodes in swarm
+`docker node ls`
+
+### Remove a worker node
+For worker node:
+```sh
+docker swarm leave #from swarm worker
+docker node rm <NODE> #from swarm manager
+```
+or 
+```sh
+docker node rm -f <NODE> #from swarm manager
+```
+
+### Remove the last manager node
+`docker swarm leave --force` success
+
+`docker node demote <NODE>` gives "Error response from daemon: rpc error: code = 9 desc = attempting to demote the last manager of the swarm"
+
+`docker node rm -f <NODE>` gives "Error response from daemon: rpc error: code = 9 desc = node ozsxfaadni1glz9yrl2w4o9kl is a cluster manager and is a member of the raft cluster. It must be demoted to worker before removal"
+
 ## Other commands
 
 ### Copy a file to and from a container
