@@ -118,6 +118,12 @@ export PATH=$PATH:`pwd`
 unset <ENV_VAR_NAME>
 ```
 
+## get ipaddress from ifconfig
+```sh
+ifconfig | grep -A 1 '<network-card-name>' | tail -1 | tr -s ' ' | cut -d' ' -f 3 | cut -d':' -f 2
+```
+\<network-card-name> could be enp1s0f1, eno1 or eth0 depending on your machine.
+
 ## check port usage(either of one)
 ```sh
 lsof -i -n -P
@@ -128,6 +134,7 @@ netstat -tulpn
 ```sh
 sudo lsof -i:<port-number>
 ```
+
 ## connect to remote host
 ```sh
 ssh <username>@<ip-address>
