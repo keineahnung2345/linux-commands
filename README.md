@@ -368,6 +368,12 @@ sed -i '' 's/<regular expression>/<replacement>/g' <filename>
 sed '<N> d' <filename>
 ```
 
+## cut by \<delimiter> and get the specific \<fields>
+```sh
+cut -d '<delimiter>' -f <fields>
+```
+\<fileds> could be 1 or "1,2,3".
+
 ## cut by space and get the last element
 ```sh
 <other-command> | rev | cut -d' ' -f1 | rev
