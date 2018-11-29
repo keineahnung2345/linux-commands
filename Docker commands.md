@@ -134,3 +134,30 @@ docker cp <container-name>:/<file-name> <file-name>
 
 ### Retrieve the logs of a container
 `docker logs <container-name>`
+
+## Installation
+
+### Install docker-compose
+From https://docs.docker.com/compose/install/#install-compose:
+```sh
+# Run this command to download the latest version of Docker Compose:
+# check https://github.com/docker/compose/releases to replace 1.23.1 with newest version
+sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+# Apply executable permissions to the binary
+sudo chmod +x /usr/local/bin/docker-compose
+
+# Test the installation
+docker-compose --version
+```
+
+### Install docker-machine
+```sh
+# Download the Docker Machine binary and extract it to your PATH
+base=https://github.com/docker/machine/releases/download/v0.16.0 &&
+  curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine &&
+  sudo install /tmp/docker-machine /usr/local/bin/docker-machine
+
+# Check the installation by displaying the Machine version
+docker-machine version
+```
