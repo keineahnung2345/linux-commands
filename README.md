@@ -220,6 +220,16 @@ ll <filename>
 chmod [u,o,g,a][+,-,=][r,w,x] <filename>
 ```
 
+### open all privilege of \<dirname> and all its contents
+```sh
+chmod -R 777 <dirname>
+```
+
+### change the owner and group of \<dirname> to username and username
+```sh
+chown -R username:username <dirname>
+```
+
 ## manage processes
 ### monitor CPU, memory usage
 ```sh
