@@ -161,3 +161,23 @@ base=https://github.com/docker/machine/releases/download/v0.16.0 &&
 # Check the installation by displaying the Machine version
 docker-machine version
 ```
+
+### Install VirtualBox
+From [How To Install VirtualBox 5.2 on CentOS 7 / RHEL 7](https://www.itzgeek.com/how-tos/linux/centos-how-tos/install-virtualbox-4-3-on-centos-7-rhel-7.html).
+
+```sh
+# Install header and development tools
+yum install -y kernel-devel kernel-headers gcc make perl
+
+# Download the VirtualBox repository file for CentOS 7 / RHEL 7 and move it into /etc/yum.repos.d/ directory.
+wget http://download.virtualbox.org/virtualbox/rpm/el/virtualbox.repo -O /etc/yum.repos.d/virtualbox.repo
+
+# Install VirtualBox v5.2
+yum install -y VirtualBox-5.2
+
+# Check the status of VirtualBox Linux kernel module service
+systemctl status vboxdrv
+
+# Access VirtualBox
+virtualbox
+```
