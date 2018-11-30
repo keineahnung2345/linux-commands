@@ -43,6 +43,9 @@ if you have multiple dockerfiles in a directory, you need to specify your docker
 ### Remove a docker image
 `docker rmi <image-name>`
 
+### Remove all docker images
+`docker rmi $(docker images -q)`
+
 ## Manager docker containers
 
 ### Check docker containers
@@ -55,6 +58,9 @@ or
 
 ### Check docker containers' numeric IDs
 `docker ps -q`
+
+### Remove all docker containers
+`docker rm $(docker ps -aq)`
 
 ### Check mounted directories of a container
 `docker inspect -f '{{ .Mounts }}' <container-name>`
