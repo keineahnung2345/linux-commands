@@ -169,7 +169,12 @@ From [How To Install VirtualBox 5.2 on CentOS 7 / RHEL 7](https://www.itzgeek.co
 # Install header and development tools
 yum install -y kernel-devel kernel-headers gcc make perl
 
-# Download the VirtualBox repository file for CentOS 7 / RHEL 7 and move it into /etc/yum.repos.d/ directory.
+# Download and import the Oracle public key
+yum -y install wget
+wget https://www.virtualbox.org/download/oracle_vbox.asc
+rpm --import oracle_vbox.asc
+
+# Download the VirtualBox repository file for CentOS 7 / RHEL 7 and move it into /etc/yum.repos.d/ directory
 wget http://download.virtualbox.org/virtualbox/rpm/el/virtualbox.repo -O /etc/yum.repos.d/virtualbox.repo
 
 # Install VirtualBox v5.2
