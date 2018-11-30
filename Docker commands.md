@@ -163,6 +163,11 @@ docker-machine version
 ```
 
 ### Install VirtualBox
+For Ubuntu:
+```sh
+apt-get install virtualbox
+```
+
 From [How To Install VirtualBox 5.2 on CentOS 7 / RHEL 7](https://www.itzgeek.com/how-tos/linux/centos-how-tos/install-virtualbox-4-3-on-centos-7-rhel-7.html).
 
 ```sh
