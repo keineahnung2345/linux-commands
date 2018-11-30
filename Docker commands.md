@@ -181,3 +181,8 @@ systemctl status vboxdrv
 # Access VirtualBox
 virtualbox
 ```
+
+To uninstall:
+```sh
+yum remove VirtualBox-<virtualbox-version>.x86_64 # For example, \<virtualbox-version> could be 5.0
+```
