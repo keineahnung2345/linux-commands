@@ -103,6 +103,11 @@ date
 cat /var/log/messages-<yyyymmdd> | less
 ```
 
+## make the output of a command be a command and then execute it
+```sh
+eval $(<command-whose-output-is-the-commands-you-want-to-execute>)
+```
+
 ## show all environment variables
 ```sh
 printenv
