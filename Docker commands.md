@@ -177,6 +177,19 @@ If you have a .env file, you may want to use the following command instead:
 ### Remove the service \<service-name>
 `docker stack rm <service-name>`
 
+
+## Docker service
+
+### List docker services
+`docker service ls`
+
+### Check the machines running \<service-name>
+`docker service ps <service-name>`
+
+### Check the detail of \<service-name> 
+`docker service inspect <service-name>`
+
+
 ## Other commands
 
 ### Copy a file to and from a container
