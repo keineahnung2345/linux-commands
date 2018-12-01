@@ -96,6 +96,32 @@ docker run --name <image-name> -td -p <host-port>:<container-port> \
 ### Rename a container
 `docker rename <old-container-name> <new-container-name>`
 
+## Docker machine
+
+### Create a docker machine
+`docker-machine create --driver virtualbox <your-vm-name>`
+
+### List all docker machines
+`docker-machine ls`
+
+### Start a docker machine
+`docker-machine start <your-vm-name>`
+
+### Stop a docker machine
+`docker-machine stop <your-vm-name>`
+
+### Remove a docker machine
+`docker-machine rm <your-vm-name>`
+
+### Execute \<command> in \<your-vm-name>
+`docker-machine ssh <your-vm-name> "<command>"`
+
+### Copy \<filename> from local to \<your-vm-name>
+`docker-machine scp <filename> <your-vm-name>:~`
+
+### Configure \<your-vm-name>'s shell to host
+`eval $(docker-machine env <your-vm-name>)`
+
 ## Docker swarm
 
 ### Make the host a manager
