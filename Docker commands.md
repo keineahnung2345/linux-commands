@@ -156,6 +156,27 @@ docker node rm -f <NODE> #from swarm manager
 
 `docker node rm -f <NODE>` gives "Error response from daemon: rpc error: code = 9 desc = node ozsxfaadni1glz9yrl2w4o9kl is a cluster manager and is a member of the raft cluster. It must be demoted to worker before removal"
 
+## Docker stack
+
+### To deploy a service
+`docker stack deploy -c <docker-compose.yml> <service-name>`
+
+If you have a .env file, you may want to use the following command instead:
+
+`docker stack deploy -c <(docker-compose config) <service-name>`
+
+### Check the services on the swarm
+`docker stack ls`
+
+### Check the detail of the service \<service-name>
+`docker stack services <service-name>`
+
+### Check the machines running \<service-name>
+`docker stack ps <service-name>`
+
+### Remove the service \<service-name>
+`docker stack rm <service-name>`
+
 ## Other commands
 
 ### Copy a file to and from a container
