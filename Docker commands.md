@@ -127,6 +127,9 @@ docker run --name <image-name> -td -p <host-port>:<container-port> \
 ### Build containers for a service
 `docker-compose up`
 
+### Build containers for a service, specifying the yml file \<docker-compose.yml>
+`docker-compose -f <docker-compose.yml> up`
+
 ### List images used by the created containers
 `docker-compose images`
 
