@@ -132,7 +132,9 @@ ifconfig | grep -A 1 '<network-card-name>' | tail -1 | tr -s ' ' | cut -d' ' -f 
 ## check port usage(either of one)
 ```sh
 lsof -i -n -P
-netstat -tulpn
+netstat -tulpn #--tcp|-t, --udp|-u, -l, --listening
+#-p, --program: Show the PID and name of the program to which each socket belongs.
+#-n, --numeric: Show numerical addresses instead of trying to determine symbolic host, port or user names.
 ```
 
 ## check the process using the port \<port-number>
