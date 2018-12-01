@@ -133,9 +133,14 @@ docker node rm -f <NODE> #from swarm manager
 ## Other commands
 
 ### Copy a file to and from a container
-```
+```sh
 docker cp <file-name> <container-name>:/<file-name>
 docker cp <container-name>:/<file-name> <file-name>
+```
+
+### Remove docker networks
+```sh
+docker network rm $(docker network ls -q)
 ```
 
 ### Retrieve the logs of a container
