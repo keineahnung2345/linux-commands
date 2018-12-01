@@ -122,6 +122,23 @@ docker run --name <image-name> -td -p <host-port>:<container-port> \
 ### Configure \<your-vm-name>'s shell to host
 `eval $(docker-machine env <your-vm-name>)`
 
+## docker-compose
+
+### Build containers for a service
+`docker-compose up`
+
+### List images used by the created containers
+`docker-compose images`
+
+### Stops containers and removes containers, networks, volumes, and images created by `up`.
+`docker-compose down`
+
+### List containers
+`docker-compose ps`
+
+### Removes stopped service containers
+`docker-compose rm`
+
 ## Docker swarm
 
 ### Make the host a manager
