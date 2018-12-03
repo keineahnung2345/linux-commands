@@ -1,6 +1,11 @@
 # Docker commands
 Some useful docker commands
 
+## Check docker version
+`docker -v` or `docker --version` show docker version in one line
+
+`docker version` show details informations
+
 ## Manage docker images
 
 ### Check docker images
@@ -289,3 +294,13 @@ To uninstall:
 ```sh
 yum remove VirtualBox-<virtualbox-version>.x86_64 # For example, \<virtualbox-version> could be 5.0
 ```
+
+# Nvidia docker commands
+
+## Check nvidia docker version
+```sh
+nvidia-docker version
+```
+The first line will be NVIDIA Docker: <x.x.x>, following are the results from `docker version`
+
+Note: Not `nvidia-docker -v` nor `nvidia-docker --version`, they will show the same result as `docker -v` and `docker --version`
