@@ -11,6 +11,12 @@ man <other-command>
 which <other-command>
 ```
 
+or
+
+```sh
+whereis <other-command> #used to locate binary, souce for a command
+```
+
 ## check system information(either of one)
 ```sh
 hostnamectl
