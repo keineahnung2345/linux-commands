@@ -209,6 +209,8 @@ If you have a .env file, you may want to use the following command instead:
 ### Check the detail of \<service-name> 
 `docker service inspect <service-name>`
 
+### Scale the docker service \<service-name> to \<N> replicas
+`docker service scale <service-name>=<N>`
 
 ## Other commands
 
