@@ -173,6 +173,11 @@ apt-get install -y <package-name>
 apt-get purge -y <package-name>
 ```
 
+## list all version of a package(centos)
+```sh
+yum list --showduplicates <package-name>
+```
+
 ## check size of directories and files
 ### check total size of a directory, containing all its items
 ```sh
