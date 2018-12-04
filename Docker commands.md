@@ -6,6 +6,17 @@ Some useful docker commands
 
 `docker version` show details informations
 
+## List and sort the versions available in your repo
+```sh
+yum list docker --showduplicates | sort -r
+```
+
+or
+
+```sh
+yum list docker-ce --showduplicates | sort -r
+```
+
 ## Manage docker images
 
 ### Check docker images
