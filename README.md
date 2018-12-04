@@ -504,6 +504,12 @@ watch -n0 nvidia-smi
 tail -n <num_lines> <filename.txt>
 ```
 
+## Display the output of \<other-command> in pages and scroll to bottom automatically
++G performs the action of scrolling to bottom automatically
+```sh
+<other-command> | less +G
+```
+
 ## run your command in background, write its output to a text file, and watch that text file simultaneously
 ```sh
 nohup <some-command> &><filename.txt> &
