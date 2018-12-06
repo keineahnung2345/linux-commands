@@ -1,6 +1,20 @@
 # Git commands
 Make sure you are in the directory of the cloned repository!
 
+## Clone a repository
+https://stackoverflow.com/questions/67699/how-to-clone-all-remote-branches-in-git
+
+`$git clone https://github.com/user-name/repo-name.git`
+
+If you want to clone all branches, it already does it for you.
+You can check it with:
+
+`git branch -a`
+
+And to start work on one branch, just:
+
+`git checkout <branch-name>`
+
 ## List all branch and get current branch name
 `$git branch`
 
