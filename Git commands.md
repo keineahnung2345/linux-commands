@@ -72,6 +72,14 @@ $git merge master
 $git push origin <branch-name>
 ```
 
+## Merge a local branch \<branch-feature> into another local branch \<branch-base>
+```sh
+$git checkout <branch-base>
+$git merge <branch-feature>
+$git push origin <branch-base>
+```
+If met with the problem `merge: <branch-feature> - not something we can merge`, try `$git checkout <branch-feature>` and then repeat the commands above.
+
 ## Rebase a branch to origin
 ```sh
 $git fetch
