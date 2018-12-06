@@ -4,7 +4,7 @@ Make sure you are in the directory of the cloned repository!
 ## Clone a repository
 https://stackoverflow.com/questions/67699/how-to-clone-all-remote-branches-in-git
 
-`$git clone https://github.com/user-name/repo-name.git`
+`$git clone https://github.com/<user-name>/<repo-name>.git`
 
 If you want to clone all branches, it already does it for you.
 You can check it with:
@@ -34,6 +34,11 @@ And to start work on one branch, just:
 $git checkout master
 $git branch -d <branch-name>
 $git push origin :<branch-name>
+```
+
+## Just clone a branch of a repo
+```sh
+$git clone -b <branch-name> https://github.com/<user-name>/<repo-name>.git
 ```
 
 ## Fork and then create a pull request
