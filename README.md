@@ -433,6 +433,11 @@ curl -o </directory/file_name> <your-url>
 wget -P <dirname> <your-url>
 ```
 
+## download a file only when the file does not exist
+```sh
+wget -nc <your-url>
+```
+
 ## iterate over the result of some command
 ```sh
 <some-command> | (while read x; do <other-command-using-$x>; done)
