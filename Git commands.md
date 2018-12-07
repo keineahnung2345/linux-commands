@@ -36,6 +36,11 @@ $git branch -d <branch-name>
 $git push origin :<branch-name>
 ```
 
+## List commits of a branch since its creation from `master`
+```sh
+git log master...<branch-name>
+```
+
 ## Just clone a branch of a repo
 ```sh
 $git clone -b <branch-name> https://github.com/<user-name>/<repo-name>.git
