@@ -9,11 +9,11 @@ https://stackoverflow.com/questions/67699/how-to-clone-all-remote-branches-in-gi
 If you want to clone all branches, it already does it for you.
 You can check it with:
 
-`git branch -a`
+`$git branch -a`
 
 And to start work on one branch, just:
 
-`git checkout <branch-name>`
+`$git checkout <branch-name>`
 
 ## List all branch and get current branch name
 `$git branch`
@@ -89,6 +89,11 @@ $git merge <branch-feature>
 $git push origin <branch-base>
 ```
 If met with the problem `merge: <branch-feature> - not something we can merge`, try `$git checkout <branch-feature>` and then repeat the commands above.
+
+## Pull a specific branch from remote to local
+```sh
+$git pull origin <branch-name>
+```
 
 ## Rebase a branch to origin
 ```sh
