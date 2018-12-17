@@ -525,3 +525,17 @@ tail -n <num_lines> <filename.txt>
 nohup <some-command> &><filename.txt> &
 tail -f <filename.txt>
 ```
+
+## create a symbolic link(soft link) of \<target> named \<linkname>
+```bash
+ln -s <target> <linkname>
+```
+Difference of hard and soft link can be found in: [Linux ln command](https://www.computerhope.com/unix/uln.htm).
+
+## get the full path of a symbolic link's target
+```bash
+readlink -e <linkname>
+```
+readlink -f returns something even for non-existing \<linkname>
+
+readlink -e will return null for non-existing \<linkname>
