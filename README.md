@@ -532,6 +532,18 @@ ln -s <target> <linkname>
 ```
 Difference of hard and soft link can be found in: [Linux ln command](https://www.computerhope.com/unix/uln.htm).
 
+
+## remove a symbolic link
+```bash
+unlink <linkname>
+```
+
+or
+
+```bash
+rm -rf <linkname>
+```
+
 ## get the full path of a symbolic link's target
 ```bash
 readlink -e <linkname>
