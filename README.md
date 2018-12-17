@@ -534,6 +534,7 @@ Difference of hard and soft link can be found in: [Linux ln command](https://www
 
 
 ## remove a symbolic link
+Reference to: [How to Remove a Symbolic Link (Symlink)](http://osxdaily.com/2016/05/25/how-delete-symbolic-link-symlink/)
 ```bash
 unlink <linkname>
 ```
