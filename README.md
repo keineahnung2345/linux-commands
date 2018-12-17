@@ -173,6 +173,11 @@ apt-get install -y <package-name>
 apt-get purge -y <package-name>
 ```
 
+## list installed packages by apt
+```bash
+apt list --installed
+```
+
 ## list all version of a package(centos)
 ```sh
 yum list --showduplicates <package-name>
