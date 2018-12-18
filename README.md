@@ -550,6 +550,20 @@ or
 rm -rf <linkname>
 ```
 
+## mount a \<dir1> to \<dir2>
+```bash
+mkdir <dir2>
+mount --bind <dir1> <dir2>
+```
+--bind makes it possible to remount part of the file hierarchy somewhere else, and it solves the error: 
+
+> mount:  <dir1> is not a block devicere
+
+## unmount \<dir2>
+```bash
+umount <dir2>
+```
+
 ## get the full path of a symbolic link's target
 ```bash
 readlink -e <linkname>
