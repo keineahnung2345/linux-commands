@@ -33,6 +33,16 @@ This can be installed by:
 apt-get install -y lsb-release
 ```
 
+## check CentOS/RHEL OS update level
+one of them:
+```bash
+cat /etc/redhat-release
+cat /etc/centos-release
+cat /etc/system-release
+cat /etc/os-release
+rpm -qf /etc/redhat-release
+```
+
 ## check cuda version
 ```sh
 nvcc --version
