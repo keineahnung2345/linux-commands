@@ -59,8 +59,9 @@ cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 
 ## check if your machine is physical or virtual(either of one)
 ```sh
-hostnamectl status
+hostnamectl status (for CentOS7)
 systemd-detect-virt
+facter | grep virtual (suitable for CentOS6)
 ```
 
 ## check your cpu specification
