@@ -365,6 +365,13 @@ find / -name "<filename>" 2>/dev/null
 find / -name "<filename>" | xargs -I{} dirname {}
 ```
 
+### find executable file
+```sh
+find / -executable -type f
+```
+A directory is executable if one can cd into it. 
+So one might only want to find executable "file".
+
 ## grep
 ### search for a specific word from specific type of files in a directory
 ```sh
