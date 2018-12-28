@@ -255,7 +255,7 @@ ls -ld *
 ll <filename>
 ```
 
-### ls, show one item in seperate line
+### ls, show one item in separate line
 ```sh
 ls -1 <dirname>
 ```
