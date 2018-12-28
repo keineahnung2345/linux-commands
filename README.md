@@ -255,6 +255,11 @@ ls -ld *
 ll <filename>
 ```
 
+### ls, show one item in seperate line
+```sh
+ls -1 <dirname>
+```
+
 ### change privilege of a file
 ```sh
 chmod [u,o,g,a][+,-,=][r,w,x] <filename>
