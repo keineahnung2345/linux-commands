@@ -244,6 +244,12 @@ stat -c '%A' <filename>
 ls -lah <filename>
 ```
 
+### show modification time of files in current directory
+-l for long listing format, -d for only showing directories' names rather than their contents
+```sh
+ls -ld *
+```
+
 ### ll, the short name for ls -l
 ```sh
 ll <filename>
