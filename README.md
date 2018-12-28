@@ -601,3 +601,14 @@ readlink -e <linkname>
 readlink -f returns something even for non-existing \<linkname>
 
 readlink -e will return null for non-existing \<linkname>
+
+## check the contents of jar file
+```bash
+jar tf <xxx.jar>
+```
+
+or
+
+```bash
+jar tvf <xxx.jar>
+```
