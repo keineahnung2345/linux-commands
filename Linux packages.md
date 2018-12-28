@@ -12,3 +12,8 @@ apt-get install -y net-tools
 ```sh
 yum install facter
 ```
+
+### locate
+```sh
+yum install -y mlocate
+```
