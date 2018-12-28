@@ -612,3 +612,8 @@ or
 ```bash
 jar tvf <xxx.jar>
 ```
+
+## check the contents of a zip file
+```bash
+less <xxx.zip>
+```
