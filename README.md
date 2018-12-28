@@ -410,6 +410,12 @@ grep <pattern> -rnw . | while IFS= read -r line ; do
 ex: docker run --help | grep runtime -C 5
 ```
 
+### grep a word within files with specific file extension
+```sh
+grep -rnw --include=\*.<file-extension> ".*<word>.*"
+```
+ex: grep -rnw --include=\*.sh ".*SPARK.*" .
+
 ## create a .bak file for \<filename>
 ```sh
 cp <filename>{,.bak}
