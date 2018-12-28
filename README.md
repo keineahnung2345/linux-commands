@@ -622,3 +622,12 @@ jar tvf <xxx.jar>
 ```bash
 less <xxx.zip>
 ```
+
+## perform set operation on \<file1> and \<file2>
+find difference of \<file1> and \<file2>
+```
+comm -23 <(sort <file1>) <(sort <file2>)
+```
+More details: [Linux comm command brief tutorial](http://www.unixcl.com/2009/08/linux-comm-command-brief-tutorial.html)
+
+[bash, Linux: Set difference between two text files](https://stackoverflow.com/questions/2509533/bash-linux-set-difference-between-two-text-files)
