@@ -164,6 +164,11 @@ sudo lsof -i:<port-number>
 ssh <username>@<ip-address>
 ```
 
+## send command to remote host and get result locally
+```sh
+ssh -t username@host '<your-command>'
+```
+
 ## remove host name from known_hosts file(used when you have previously failed to login the host)
 ```sh
 ssh-keygen -R <ip-address>
