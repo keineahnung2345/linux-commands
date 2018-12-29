@@ -15,6 +15,20 @@ And to start work on one branch, just:
 
 `$git checkout <branch-name>`
 
+## Just clone a folder from a repository
+[How do I clone a subdirectory only of a Git repository?](https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository)
+
+```bash
+$mkdir <repo>
+$cd <repo>
+$git init
+$git remote add -f origin <url>
+$git config core.sparseCheckout true
+$echo "some/dir/" >> .git/info/sparse-checkout
+$git pull origin master
+```
+
+
 ## List all branch and get current branch name
 `$git branch`
 
