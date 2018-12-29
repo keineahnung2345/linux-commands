@@ -199,6 +199,12 @@ apt list --installed
 yum list --showduplicates <package-name>
 ```
 
+## search packages(centos)
+```sh
+yum search <xxx>
+```
+ex: yum search java | grep 'java-1.8.0-openjdk-'
+
 ## check size of directories and files
 ### check total size of a directory, containing all its items
 ```sh
