@@ -15,7 +15,7 @@ apt-get install -y iproute iproute-doc
 ## CentOS
 ### facter
 ```sh
-yum install facter
+yum install -y facter
 ```
 
 ### locate
