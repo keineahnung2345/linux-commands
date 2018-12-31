@@ -140,11 +140,27 @@ export PATH=$PATH:`pwd`
 unset <ENV_VAR_NAME>
 ```
 
-## get ipaddress from ifconfig
+## get ipaddress
 ```sh
 ifconfig | grep -A 1 '<network-card-name>' | tail -1 | tr -s ' ' | cut -d' ' -f 3 | cut -d':' -f 2
 ```
 \<network-card-name> could be enp1s0f1, eno1 or eth0 depending on your machine.
+
+```sh
+ip route get 1 | awk '{print $NF;exit}'
+```
+
+or 
+
+```sh
+hostname -i
+```
+
+or 
+
+```sh
+hostname -I | cut -d' ' -f1
+```
 
 ## check port usage(either of one)
 ```sh
