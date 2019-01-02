@@ -142,7 +142,7 @@ unset <ENV_VAR_NAME>
 
 ## get ipaddress
 ```sh
-ifconfig | grep -A 1 '<network-card-name>' | tail -1 | tr -s ' ' | cut -d' ' -f 3 | cut -d':' -f 2
+ifconfig | grep -A 1 '<network-interface-name>' | tail -1 | tr -s ' ' | cut -d' ' -f 3 | cut -d':' -f 2
 ```
 \<network-card-name> could be enp1s0f1, eno1 or eth0 depending on your machine.
 
@@ -160,6 +160,11 @@ or
 
 ```sh
 hostname -I | cut -d' ' -f1
+```
+
+## restart a specific network interface 
+```sh
+ifdown <network-interface-name> && ifup <network-interface-name>
 ```
 
 ## check port usage(either of one)
