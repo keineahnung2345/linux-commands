@@ -140,6 +140,11 @@ export PATH=$PATH:`pwd`
 unset <ENV_VAR_NAME>
 ```
 
+## get host name
+```sh
+hostname
+```
+
 ## get ipaddress
 ```sh
 ifconfig | grep -A 1 '<network-interface-name>' | tail -1 | tr -s ' ' | cut -d' ' -f 3 | cut -d':' -f 2
