@@ -581,6 +581,11 @@ or
 gzip -d <xxx.gz>
 ```
 
+## extract .7z file
+```sh
+7za -y x <xxx.7z>
+```
+
 ## show difference between two files
 ```sh
 diff <file1> <file2>
