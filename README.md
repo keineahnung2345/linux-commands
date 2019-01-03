@@ -24,7 +24,7 @@ uname -a
 cat /etc/*-release
 ```
 
-## check ubuntu system information
+## check ubuntu system information(version)
 ```sh
 lsb_release -a
 ```
@@ -33,7 +33,7 @@ This can be installed by:
 apt-get install -y lsb-release
 ```
 
-## check CentOS/RHEL OS update level
+## check CentOS/RHEL OS update level(version)
 one of them:
 ```bash
 cat /etc/redhat-release
