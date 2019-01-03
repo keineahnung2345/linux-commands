@@ -205,6 +205,16 @@ ssh-keygen -R <ip-address>
 scp <username>@<ip-address>:/some/remote/directory/\{a,b,c\} ./
 ```
 
+## show package description
+```sh
+apt-cache search <package-name>
+```
+
+## show package version details
+```sh
+apt-cache show <package-name>
+```
+
 ## install a package
 ```sh
 apt-get install -y <package-name>
