@@ -12,6 +12,11 @@ apt-get install -y net-tools
 apt-get install -y iproute iproute-doc
 ```
 
+### 7za
+```sh
+apt-get install -y p7zip-full
+```
+
 ## CentOS
 ### facter
 ```sh
