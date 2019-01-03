@@ -167,9 +167,14 @@ or
 hostname -I | cut -d' ' -f1
 ```
 
-## restart a specific network interface 
+## restart a specific network interface
+using ifdown:
 ```sh
 ifdown <network-interface-name> && ifup <network-interface-name>
+```
+using ifconfig (cannot reconnect for me):
+```sh
+ifconfig <network-interface-name> down && ifconfig <network-interface-name> up
 ```
 
 ## check port usage(either of one)
