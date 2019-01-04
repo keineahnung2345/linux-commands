@@ -277,6 +277,12 @@ sort: -h for recognizing K,M,G, -r for descending order
 df -h
 ```
 
+## use du with find
+```sh
+find <dirname> -name <filename> -print0 | du --files0-from=- -hc
+```
+This will show all matching files with its size in human-readable format.
+
 ## create a directory \<dir-name>(it will create any missing intermediate pathname components)
 it will do nothing if \<dir-name> already exists, so we can always use this command without checking if a directory already exists!
 ```sh
