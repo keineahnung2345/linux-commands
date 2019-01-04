@@ -187,7 +187,11 @@ netstat -tulpn #--tcp|-t, --udp|-u, -l, --listening
 
 ## check the process using the port \<port-number>
 ```sh
-sudo lsof -i:<port-number>
+lsof -i:<port-number>
+```
+
+```sh
+lsof -n -i4TCP:<port-number>
 ```
 
 ## connect to remote host
