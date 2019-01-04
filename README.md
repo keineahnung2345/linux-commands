@@ -214,6 +214,11 @@ ssh-keygen -R <ip-address>
 scp <username>@<ip-address>:/some/remote/directory/\{a,b,c\} ./
 ```
 
+## scp and rename the file
+```sh
+scp <username>@<ip-address>:/some/remote/directory/<original-name>.zip <new-name>.zip 
+```
+
 ## show package description
 ```sh
 apt-cache search <package-name>
