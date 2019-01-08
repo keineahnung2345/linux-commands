@@ -22,6 +22,11 @@ apt-get install -y p7zip-full
 apt-get install -y lsb-release
 ```
 
+### bunzip2
+```sh
+apt-get install -y bzip2
+```
+
 ## CentOS
 ### facter
 ```sh
