@@ -42,3 +42,8 @@ yum install -y mlocate
 ```sh
 yum install -y iproute iproute-doc
 ```
+
+### bunzip2
+```sh
+yum install -y bzip2  
+```
