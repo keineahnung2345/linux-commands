@@ -6,6 +6,10 @@ https://stackoverflow.com/questions/67699/how-to-clone-all-remote-branches-in-gi
 
 `$git clone https://github.com/<user-name>/<repo-name>.git`
 
+To clone into a specific directory:
+
+`$git clone https://github.com/<user-name>/<repo-name>.git <directory>`
+
 If you want to clone all branches, it already does it for you.
 You can check it with:
 
