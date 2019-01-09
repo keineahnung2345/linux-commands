@@ -407,6 +407,11 @@ find . -mindepth 1 -type d
 find . -mindepth 1 -type d -exec rm -r "{}" \;
 ```
 
+### find directory with name length greater than \<length> and delete
+```sh
+find . -maxdepth 1 -print| awk -F/ ' length($NF)> <length> ' | xargs rm -rf
+```
+
 ### find file with \<word> in its name in the directory \<directory>
 ```sh
 find <directory> -name "<*word*>"
