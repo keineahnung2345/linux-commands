@@ -1,6 +1,13 @@
 # Git commands
 Make sure you are in the directory of the cloned repository!
 
+Also make sure the cloned repository is yours!
+If not, there will be an error message:
+
+> $ git push origin \
+remote: Permission to \<other-user-name>/\<repo-name>.git denied to \<your-name>. \
+fatal: unable to access 'https://github.com/<other-user-name\>/\<repo-name>/': The requested URL returned error: 403
+
 ## Clone a repository
 https://stackoverflow.com/questions/67699/how-to-clone-all-remote-branches-in-git
 
