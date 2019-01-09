@@ -28,6 +28,13 @@ $echo "some/dir/" >> .git/info/sparse-checkout
 $git pull origin master
 ```
 
+## Synchronize local repo with remote one
+[git: sync local repo with remote one](https://stackoverflow.com/questions/6373277/git-sync-local-repo-with-remote-one)
+
+```bash
+git fetch --prune #-p, --prune: After fetching, remove any remote-tracking branches which no longer exist on the remote.
+git checkout <branch-name> #if there are new branches
+```
 
 ## List all branch and get current branch name
 `$git branch`
