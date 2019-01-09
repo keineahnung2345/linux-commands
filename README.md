@@ -1,6 +1,11 @@
 # linux-commands
 Some useful linux commands
 
+## list all commands recognized by linux shell
+```sh
+compgen -c 
+```
+
 ## check manual of a command
 ```sh
 man <other-command>
