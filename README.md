@@ -287,6 +287,11 @@ sort: -h for recognizing K,M,G, -r for descending order
 df -h
 ```
 
+## find out the device where a directory is on
+```sh
+df <dirname>
+```
+
 ## use du with find
 ```sh
 find <dirname> -name <filename> -print0 | du --files0-from=- -hc
