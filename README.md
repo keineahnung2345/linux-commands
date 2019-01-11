@@ -388,6 +388,11 @@ kill -9 <pid>
 ```
 
 ## find
+### find file and show their size
+```sh
+find . -name "<filename>" -type f | xargs du -sh
+```
+
 ### find specific type of files in all subdirectories and then delete
 ```sh
 find . -name "*.<file-type>" -type f -delete
