@@ -2,6 +2,11 @@
 This README includes commands to install linux packages
 
 ## Ubuntu
+### Search a package
+```sh
+apt search <package-name>
+```
+
 ### ifconfig
 ```sh
 apt-get install -y net-tools
