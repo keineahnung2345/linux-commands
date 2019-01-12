@@ -17,6 +17,11 @@ or
 yum list docker-ce --showduplicates | sort -r
 ```
 
+## search docker image
+```sh
+docker search <image-name>
+```
+
 ## Manage docker images
 
 ### Check docker images
