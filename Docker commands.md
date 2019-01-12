@@ -22,6 +22,25 @@ yum list docker-ce --showduplicates | sort -r
 docker search <image-name>
 ```
 
+## get tags of a docker image
+From [How to list all tags of a docker image](http://www.googlinux.com/list-all-tags-of-docker-image/index.html):
+
+List first 10 tags:
+```sh
+curl 'https://registry.hub.docker.com/v2/repositories/library/debian/tags/'|jq '."results"[]["name"]'
+```
+
+List all tags:
+```sh
+i=0
+
+while [ $? == 0 ]
+do 
+   i=$((i+1))
+   curl https://registry.hub.docker.com/v2/repositories/library/debian/tags/?page=$i 2>/dev/null|jq '."results"[]["name"]'
+done
+```
+
 ## Manage docker images
 
 ### Check docker images
