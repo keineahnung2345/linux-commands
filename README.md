@@ -464,6 +464,12 @@ find / -executable -type f
 A directory is executable if one can cd into it. 
 So one might only want to find executable "file".
 
+## print the content of a file
+### show line number
+```sh
+cat -n <filename>
+```
+
 ## grep
 ### search for a specific word from specific type of files in a directory
 ```sh
