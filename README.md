@@ -57,6 +57,12 @@ or
 nvcc -V
 ```
 
+When `nvcc` cannot be found:
+
+```sh
+cat /usr/local/cuda/version.txt
+```
+
 ## check cudnn version
 ```sh
 cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
