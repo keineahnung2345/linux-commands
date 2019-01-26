@@ -88,6 +88,13 @@ $git commit
 $git push origin <branch-name>
 ```
 
+## Delete files and then commit
+```sh
+$git add -u :/
+$git commit
+$git push origin <branch-name>
+```
+
 ## Reset your \<branch-name> in forked repository
 ```sh
 $git remote add upstream <the-url-of-upstream-repo>
