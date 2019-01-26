@@ -158,3 +158,6 @@ $git push origin <branch-name> --force
 
 ## Compare two branches
 `$git diff <branch-name1>...<branch-name2>`
+
+## Check git branch graph
+`$git log --oneline --graph`
