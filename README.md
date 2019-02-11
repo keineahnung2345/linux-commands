@@ -288,6 +288,17 @@ du -h -d 1 <dirname> | sort -hr
 
 sort: -h for recognizing K,M,G, -r for descending order
 
+## check file structure
+```sh
+tree
+```
+
+or
+
+```
+tree </path/to/directory>
+```
+
 ## check file system information
 ```sh
 df -h
