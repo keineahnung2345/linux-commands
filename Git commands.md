@@ -89,6 +89,7 @@ $git push origin <branch-name>
 ```
 
 ## Delete files and then commit
+Ref : [Removing multiple files from a Git repo that have already been deleted from disk](https://stackoverflow.com/questions/492558/removing-multiple-files-from-a-git-repo-that-have-already-been-deleted-from-disk)
 ```sh
 $git add -u :/
 $git commit
