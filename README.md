@@ -354,6 +354,11 @@ ll <filename>
 ls -1 <dirname>
 ```
 
+## ls, recursively
+```sh
+ls -R <dirname>
+```
+
 ### change privilege of a file
 ```sh
 chmod [u,o,g,a][+,-,=][r,w,x] <filename>
