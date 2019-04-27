@@ -1,6 +1,12 @@
 # linux-commands
 Some useful linux commands
 
+## restart bash
+[Restart bash from terminal without restarting the terminal application (mac)?](https://unix.stackexchange.com/questions/217905/restart-bash-from-terminal-without-restarting-the-terminal-application-mac)
+```sh
+exec bash
+```
+
 ## list all commands recognized by linux shell
 ```sh
 compgen -c 
