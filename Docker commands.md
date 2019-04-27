@@ -186,6 +186,9 @@ docker run --name <image-name> -td -p <host-port>:<container-port> \
 ### Removes stopped service containers
 `docker-compose rm`
 
+### Scale docker containers
+`docker-compose scale <service-name>=<num>`
+
 ## Docker swarm
 
 ### Make the host a manager
