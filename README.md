@@ -757,3 +757,12 @@ comm -23 <(sort <file1>) <(sort <file2>)
 More details: [Linux comm command brief tutorial](http://www.unixcl.com/2009/08/linux-comm-command-brief-tutorial.html)
 
 [bash, Linux: Set difference between two text files](https://stackoverflow.com/questions/2509533/bash-linux-set-difference-between-two-text-files)
+
+## ab: test the capability of serving of a website
+
+```bash
+ab -n <total-requests-count> -c <concurrent-requests-count> <url>
+```
+
+send \<total-requests-count> requests to \<url> in which <concurrent-requests-count> of them are concurrent.
+  
