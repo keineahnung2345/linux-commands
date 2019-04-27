@@ -43,6 +43,11 @@ do
 done
 ```
 
+## get docker ip
+```sh
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id
+```
+
 ## Manage docker images
 
 ### Check docker images
