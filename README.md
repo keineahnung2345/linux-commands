@@ -527,6 +527,11 @@ cat > <filename> << EOF
 EOF
 ```
 
+## use echo to write file
+```sh
+echo "<text>" > <filename>
+```
+
 ## grep
 ### search for a specific word from specific type of files in a directory
 ```sh
