@@ -37,6 +37,11 @@ apt install -y nvidia-cuda-toolkit
 apt-get install -y bzip2
 ```
 
+### ab
+```sh
+apt-get install -y apache2-utils
+```
+
 ## CentOS
 ### facter
 ```sh
@@ -55,5 +60,10 @@ yum install -y iproute iproute-doc
 
 ### bunzip2
 ```sh
-yum install -y bzip2  
+yum install -y bzip2
+```
+
+### ab
+```sh
+yum install -y httpd-tools
 ```
