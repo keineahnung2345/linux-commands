@@ -246,6 +246,26 @@ apt-cache search <package-name>
 apt-cache show <package-name>
 ```
 
+## apt-get update
+```sh
+apt-get update
+```
+
+[Issue with fetching http://deb.debian.org/debian/dists/jessie-updates/InRelease with docker](https://superuser.com/questions/1423486/issue-with-fetching-http-deb-debian-org-debian-dists-jessie-updates-inrelease)
+
+In Dockerfile, when using docker `monsantoco/min-jessie:latest`, if met with :
+```
+W: Failed to fetch http://http.debian.net/debian/dists/jessie-updates/InRelease  Unable to find expected entry 'main/binary-amd64/Packages' in Release file (Wrong sources.list entry or malformed file)
+
+E: Some index files failed to download. They have been ignored, or old ones used instead.
+```
+
+This can be solved by adding: 
+```
+printf "deb http://archive.debian.org/debian/ jessie main\ndeb-src http://archive.debian.org/debian/ jessie main\ndeb http://security.debian.org jessie/updates main\ndeb-src http://security.debian.org jessie/updates main" > /etc/apt/sources.list
+```
+in front of `apt-get update`.
+
 ## install a package
 ```sh
 apt-get install -y <package-name>
