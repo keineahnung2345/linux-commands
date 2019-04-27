@@ -518,6 +518,15 @@ So one might only want to find executable "file".
 cat -n <filename>
 ```
 
+## use cat to write file
+```sh
+cat > <filename> << EOF
+<line1>
+<line2>
+<line3>
+EOF
+```
+
 ## grep
 ### search for a specific word from specific type of files in a directory
 ```sh
