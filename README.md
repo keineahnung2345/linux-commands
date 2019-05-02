@@ -704,6 +704,11 @@ diff <file1> <file2>
 diff -r -q <dir1> <dir2>
 ```
 
+## show difference between two directories, exclude some files
+```sh
+diff -x "<pattern>" -r -q <dir1> <dir2>
+```
+
 ## monitor GPU usage
 ```sh
 watch -n0 nvidia-smi
