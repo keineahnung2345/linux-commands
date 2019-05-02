@@ -88,6 +88,11 @@ $git commit
 $git push origin <branch-name>
 ```
 
+## Add empty folders
+[How can I add an empty directory to a Git repository?](https://stackoverflow.com/questions/115983/how-can-i-add-an-empty-directory-to-a-git-repository)
+
+Just add `.gitignore` in that empty folder, so GitHub will keep it.
+
 ## Delete files and then commit
 Ref : [Removing multiple files from a Git repo that have already been deleted from disk](https://stackoverflow.com/questions/492558/removing-multiple-files-from-a-git-repo-that-have-already-been-deleted-from-disk)
 ```sh
