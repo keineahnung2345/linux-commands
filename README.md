@@ -655,10 +655,16 @@ history
 ```
 
 ## output non-ascii characters in shell
+method 1:
 ```sh
-# method 1:
 echo -en "$(<some-command-printing-non-ascii-characters>)"
-# method 2:
+```
+
+method 2:
+
+[How to convert \uXXXX unicode to UTF-8 using console tools in *nix](https://stackoverflow.com/questions/8795702/how-to-convert-uxxxx-unicode-to-utf-8-using-console-tools-in-nix)
+
+```sh
 apt-get install uni2ascii
 <some-command-printing-non-ascii-characters> | ascii2uni -a U -q
 ```
