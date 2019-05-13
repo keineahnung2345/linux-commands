@@ -1,6 +1,12 @@
 # linux-commands
 Some useful linux commands
 
+## switch to root environment(Ubuntu)
+[Why does su fail with “authentication error”? [duplicate]](https://askubuntu.com/questions/446570/why-does-su-fail-with-authentication-error)
+```sh
+sudo -i
+```
+
 ## restart bash
 [Restart bash from terminal without restarting the terminal application (mac)?](https://unix.stackexchange.com/questions/217905/restart-bash-from-terminal-without-restarting-the-terminal-application-mac)
 ```sh
