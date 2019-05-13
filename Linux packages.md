@@ -44,7 +44,7 @@ apt-get install -y apache2-utils
 
 ### ascii2uni
 ```sh
-apt-get install -y ascii2uni
+apt-get install -y uni2ascii
 ```
 
 ## CentOS
