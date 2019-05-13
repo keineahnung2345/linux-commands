@@ -621,6 +621,12 @@ cut -d '<delimiter>' -f <fields>
 <other-command> | tac
 ```
 
+## use curl to test REST API
+[使用curl指令測試REST服務](http://blog.kent-chiu.com/2013/08/14/testing-rest-with-curl-command.html)
+```sh
+curl -X POST "<ip-address>:<port>/<subpage>" -d "<param1>=<value1>"
+```
+
 ## download a file as </directory/file_name> from a url
 Method 1: wget
 ```sh
