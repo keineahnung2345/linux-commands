@@ -42,6 +42,11 @@ apt-get install -y bzip2
 apt-get install -y apache2-utils
 ```
 
+### ascii2uni
+```sh
+apt-get install -y ascii2uni
+```
+
 ## CentOS
 ### facter
 ```sh
