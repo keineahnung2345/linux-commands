@@ -3,8 +3,11 @@ Some useful linux commands
 
 ## switch to root environment(Ubuntu)
 [Why does su fail with “authentication error”? [duplicate]](https://askubuntu.com/questions/446570/why-does-su-fail-with-authentication-error)
+
+[What are the differences between “su”, “sudo -s”, “sudo -i”, “sudo su”?](https://askubuntu.com/questions/70534/what-are-the-differences-between-su-sudo-s-sudo-i-sudo-su)
 ```sh
-sudo -i
+sudo -s # ~/.bashrc is respected
+sudo -i # ~/.bashrc is ignored
 ```
 
 ## restart bash
