@@ -701,6 +701,16 @@ zip -r <foldername>.zip <foldername>
 unzip <xxx.zip> -d </target/directory/to/unzip>
 ```
 
+## compress to a tar.gz file
+```sh
+tar -czvf <xxx.tar.gz> <xxx>
+```
+
+## extract .tar.gz file
+```sh
+tar -xzvf <xxx.tar.gz>
+```
+
 ## extract .gz file
 ```sh
 gunzip <xxx.gz>
