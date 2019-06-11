@@ -758,7 +758,7 @@ tail -n <num_lines> <filename.txt>
 
 ## run your command in background, write its output to a text file, and watch that text file simultaneously
 ```sh
-nohup <some-command> &><filename.txt> &
+nohup <some-command>  </dev/null &><filename.txt> &
 tail -f <filename.txt>
 ```
 
