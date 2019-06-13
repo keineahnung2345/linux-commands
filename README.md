@@ -418,6 +418,11 @@ or
 ```sh
 ps aux
 ```
+to show full command in `ps aux`:
+[Viewing full output of PS command](https://stackoverflow.com/questions/2159860/viewing-full-output-of-ps-command)
+```sh
+ps aux | less -+S
+```
 
 ### check CPU, memory usage, sorted by CPU usage
 ```sh
