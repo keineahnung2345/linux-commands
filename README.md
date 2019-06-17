@@ -526,6 +526,12 @@ find / -executable -type f
 A directory is executable if one can cd into it. 
 So one might only want to find executable "file".
 
+### find files by their modification time
+[Find files based on modified date(specifying the exact hour) [duplicate]](https://unix.stackexchange.com/questions/185897/find-files-based-on-modified-datespecifying-the-exact-hour)
+```sh
+find . -newermt "<year1>-<month1>-<day1> 00:00:00" ! -newermt "<year2>-<month2>-<day2> 00:00:00"
+```
+
 ## print the content of a file
 ### show line number
 ```sh
