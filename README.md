@@ -717,6 +717,12 @@ unzip <xxx.zip> -d </target/directory/to/unzip>
 tar -czvf <xxx.tar.gz> <xxx>
 ```
 
+## show progress bar while compressing to a tar.gz file
+[Is there a way to see any tar progress per file?](https://superuser.com/questions/168749/is-there-a-way-to-see-any-tar-progress-per-file)
+```sh
+tar cf - <xxx> -P | pv -s $(du -sb <xxx> | awk '{print $1}') | gzip > <xxx>.tar.gz
+```
+
 ## extract .tar.gz file
 ```sh
 tar -xzvf <xxx.tar.gz>
