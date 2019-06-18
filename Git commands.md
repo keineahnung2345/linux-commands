@@ -174,3 +174,8 @@ $git push origin <branch-name> --force
 
 ## Check git branch graph
 `$git log --oneline --graph`
+
+## Compare commits
+[Comparing commits](https://help.github.com/en/articles/comparing-commits-across-time#comparing-commits)
+
+First find out the SHA codes of the two commits, and then open `https://github.com/<repo_owner>/<repo_name>/compare/<commit_sha1>..<commit_sha2>` in the browser.
