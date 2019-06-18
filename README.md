@@ -723,6 +723,11 @@ tar -czvf <xxx.tar.gz> <xxx>
 tar cf - <xxx> -P | pv -s $(du -sb <xxx> | awk '{print $1}') | gzip > <xxx>.tar.gz
 ```
 
+## show progress bar while unzip a tar.gz file
+```sh
+pv <xxx.tar.gz> | tar xzf - -C </target/directory/to/unzip>
+```
+
 ## extract .tar.gz file
 ```sh
 tar -xzvf <xxx.tar.gz>
