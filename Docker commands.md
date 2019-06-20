@@ -1,6 +1,11 @@
 # Docker commands
 Some useful docker commands
 
+## Restart docker
+```sh
+service docker restart
+```
+
 ## Check docker version
 `docker -v` or `docker --version` show docker version in one line
 
