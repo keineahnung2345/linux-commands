@@ -1,6 +1,16 @@
 # Docker commands
 Some useful docker commands
 
+## Start docker 
+```sh
+systemctl start docker
+```
+
+## Stop docker
+```sh
+systemctl stop docker
+```
+
 ## Restart docker
 ```sh
 service docker restart
