@@ -53,6 +53,12 @@ This can be installed by:
 apt-get install -y lsb-release
 ```
 
+## check ubuntu architecture
+```sh
+dpkg --print-architecture
+# amd64
+```
+
 ## check CentOS/RHEL OS update level(version)
 one of them:
 ```bash
