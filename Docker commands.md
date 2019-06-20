@@ -53,6 +53,22 @@ done
 docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id
 ```
 
+## run docker on an external device
+[How to tell Docker to store and run containers on an external drive](https://serverfault.com/questions/916120/how-to-tell-docker-to-store-and-run-containers-on-an-external-drive)
+```sh
+chown -R root:root /mnt/external-drive/docker-base
+chmod 701 /mnt/external-drive/docker-base
+```
+
+Edit the file `/etc/docker/daemon.json`:
+```
+{
+    "graph": "/mnt/external-drive/docker-base"
+}
+```
+
+And then `service docker restart`.
+
 ## Manage docker images
 
 ### Check docker images
