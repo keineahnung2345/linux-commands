@@ -869,3 +869,9 @@ send \<total-requests-count> requests to \<url> in which <concurrent-requests-co
 ```bash
 sudo service lightdm stop
 ```
+
+## copy : Argument list too long
+
+```bash
+for i in *.jpg; do cp "$i" /target/directory; done
+```
