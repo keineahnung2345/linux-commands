@@ -863,4 +863,9 @@ ab -n <total-requests-count> -c <concurrent-requests-count> <url>
 ```
 
 send \<total-requests-count> requests to \<url> in which <concurrent-requests-count> of them are concurrent.
-  
+
+## to exit X server
+
+```bash
+sudo service lightdm stop
+```
