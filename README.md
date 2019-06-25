@@ -871,7 +871,16 @@ sudo service lightdm stop
 ```
 
 ## copy : Argument list too long
+[Argument list too long when copying files](https://askubuntu.com/questions/217764/argument-list-too-long-when-copying-files)
 
 ```bash
 for i in *.jpg; do cp "$i" /target/directory; done
+```
+
+## ls:  Argument list too long
+[What is the fastest way in terminal to get a count of files when there is so many of them? [duplicate]](https://askubuntu.com/questions/1084737/what-is-the-fastest-way-in-terminal-to-get-a-count-of-files-when-there-is-so-man)
+
+Use the following to replace `ls /dir/name/*.jpg | wc -l`
+```bash
+ls -l /dir/name | fgrep .jpg | wc -l
 ```
