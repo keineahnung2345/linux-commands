@@ -166,6 +166,7 @@ printenv
 ```sh
 export PATH=$PATH:`pwd`
 ```
+To make it work forever, add this line into the bottom of `~/.bashrc` and then `source ~/.bashrc`.
 
 ## remove the environment variable <ENV_VAR_NAME>
 ```sh
