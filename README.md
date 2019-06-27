@@ -445,9 +445,13 @@ chmod [u,o,g,a][+,-,=][r,w,x] <filename>
 chmod -R 777 <dirname>
 ```
 
-### change the owner and group of \<dirname> to username and username
+### change the owner and group of \<dirname> and its children to username and groupname
 ```sh
-chown -R username:username <dirname>
+chown -R username:groupname <dirname/*>
+```
+Only change owner:
+```sh
+chown -R username <dirname/*>
 ```
 
 ## manage processes
