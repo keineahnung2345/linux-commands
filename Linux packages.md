@@ -47,6 +47,17 @@ apt-get install -y apache2-utils
 apt-get install -y uni2ascii
 ```
 
+### cmake
+```sh
+apt-get install -y cmake
+```
+
+### gcc, make
+```sh
+apt-get install -y build-essential
+```
+Use `gcc -v` and `make -v` to check their versions.
+
 ## CentOS
 ### facter
 ```sh
