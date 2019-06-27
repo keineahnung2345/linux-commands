@@ -32,6 +32,11 @@ apt-get install -y lsb-release
 apt install -y nvidia-cuda-toolkit
 ```
 
+### zip, unzip
+```sh
+apt-get install -y zip unzip
+```
+
 ### bunzip2
 ```sh
 apt-get install -y bzip2
