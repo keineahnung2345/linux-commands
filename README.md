@@ -368,10 +368,35 @@ mkdir -p <dir-name>
 ```sh
 stat <filename>
 ```
+Sample output:
+```
+  File: 'faster-rcnn.pytorch/'
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 802h/2050d	Inode: 120856675   Links: 10
+Access: (0755/drwxr-xr-x)  Uid: ( 1001/   user1)   Gid: (    0/    root)
+Access: 2019-06-27 16:50:29.845551752 +0800
+Modify: 2019-06-27 16:51:01.705798284 +0800
+Change: 2019-06-27 16:51:01.705798284 +0800
+ Birth: -
+```
 
 ### show the privilege of a file
+[How to find owner and group of a directory?](https://askubuntu.com/questions/175054/how-to-find-owner-and-group-of-a-directory)
 ```sh
 stat -c '%A' <filename>
+```
+Sample output:
+```
+drwxr-xr-x
+```
+
+### show the user and group of a file
+```sh
+stat -c "%U %G" <filename>
+```
+Sample output:
+```
+user1 root
 ```
 
 ### show the privilege, size and last modification time of a file
@@ -379,6 +404,15 @@ stat -c '%A' <filename>
 ```sh
 ls -lah <filename>
 ```
+Sample output:
+```
+total 212K
+drwxr-xr-x 10 user1 root  4.0K Jun 27 16:51 .
+drwxr-xr-x  9 user1 user1 4.0K Jun 27 16:40 ..
+drwxr-xr-x  2 user1 root  4.0K Jun 26 10:37 cfgs
+-rwxr-xr-x  1 user1 user1 1.1K Jun 26 11:11 class_names.pkl
+```
+The 3rd and 4th columns are the user and group of files respectly.
 
 ### show modification time of files in current directory
 -l for long listing format, -d for only showing directories' names rather than their contents
