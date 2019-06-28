@@ -609,6 +609,12 @@ or
 grep -rnw <directory>/*.<file-type> -e '.*<word>.*'
 ```
 
+### escape dot in grep
+[Using grep to search for a string that has a dot in it](https://stackoverflow.com/questions/10346816/using-grep-to-search-for-a-string-that-has-a-dot-in-it)
+```sh
+grep '<xxx\.xxx>' -rnw <directory>
+```
+
 ### search file, but just include some types of file
 ```sh
 grep <pattern> --include=\*.{type1, type2} -rnw <directory>
