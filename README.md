@@ -529,6 +529,11 @@ find . -mindepth 1 -type d
 find . -mindepth 1 -type d -exec rm -r "{}" \;
 ```
 
+### find in current directory, not recursive
+```sh
+find . -maxdepth 1 -name "<*word*>"
+```
+
 ### find directory with name length greater than \<length> and delete
 ```sh
 find . -maxdepth 1 -print| awk -F/ ' length($NF)> <length> ' | xargs rm -rf
