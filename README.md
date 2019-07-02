@@ -162,6 +162,12 @@ eval $(<command-whose-output-is-the-commands-you-want-to-execute>)
 printenv
 ```
 
+## export an environment variable
+```sh
+export <env_var>="<value>"
+```
+Note that there should not be any spaces before or after '=', or it throws `bad variable name` or ```bash: export: `=': not a valid identifier```.
+
 ## append current directory to the environment variable $PATH
 ```sh
 export PATH=$PATH:`pwd`
