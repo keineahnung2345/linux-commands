@@ -168,6 +168,11 @@ export <env_var>="<value>"
 ```
 Note that there should not be any spaces before or after '=', or it throws `bad variable name` or ```bash: export: `=': not a valid identifier```.
 
+## concat string to an environment variable
+```sh
+echo $<env_var>"str_to_concat"
+```
+
 ## append current directory to the environment variable $PATH
 ```sh
 export PATH=$PATH:`pwd`
