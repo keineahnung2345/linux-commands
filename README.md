@@ -800,6 +800,11 @@ pv <xxx.tar.gz> | tar xzf - -C </target/directory/to/unzip>
 tar -xzvf <xxx.tar.gz>
 ```
 
+## extract .tar.gz file to a directory
+```sh
+tar -xzf <xxx.tar.gz> -C <xxx>
+```
+
 ## extract .gz file
 ```sh
 gunzip <xxx.gz>
