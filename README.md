@@ -789,6 +789,10 @@ tar -czvf <xxx.tar.gz> <xxx>
 ```sh
 tar cf - <xxx> -P | pv -s $(du -sb <xxx> | awk '{print $1}') | gzip > <xxx>.tar.gz
 ```
+Mac OS:
+```sh
+tar cf - <xxx> -P | pv -s $(($(du -sk <xxx> | awk '{print $1}') * 1024)) | gzip > <xxx>.tar.gz
+```
 
 ## show progress bar while unzip a tar.gz file
 ```sh
