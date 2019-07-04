@@ -676,6 +676,12 @@ echo "hello world, it's a good day" | awk '{print$3}'
 # it's
 ```
 
+## find unique elements from other command's output
+```sh
+<other-command>| sort | uniq
+```
+Note that `sort` is required.
+
 ## create a .bak file for \<filename>
 ```sh
 cp <filename>{,.bak}
