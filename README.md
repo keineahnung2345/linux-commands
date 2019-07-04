@@ -669,6 +669,13 @@ grep -rnw --include=\*.<file-extension> ".*<word>.*"
 ```
 ex: grep -rnw --include=\*.sh ".*SPARK.*" .
 
+## awk
+### cut a string and get the Nth part
+```sh
+echo "hello world, it's a good day" | awk '{print$3}'
+# it's
+```
+
 ## create a .bak file for \<filename>
 ```sh
 cp <filename>{,.bak}
