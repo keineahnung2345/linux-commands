@@ -625,6 +625,12 @@ or
 grep -rnw <directory>/*.<file-type> -e '.*<word>.*'
 ```
 
+### search for a word, but exclude another
+[Grep regex NOT containing string](https://stackoverflow.com/questions/10411616/grep-regex-not-containing-string)
+```sh
+grep ".*<word>.*"  -rnw . | grep -v ".*<word_to_exclude>.*"
+```
+
 ### escape dot in grep
 [Using grep to search for a string that has a dot in it](https://stackoverflow.com/questions/10346816/using-grep-to-search-for-a-string-that-has-a-dot-in-it)
 ```sh
