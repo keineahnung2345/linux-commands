@@ -85,6 +85,17 @@ move the cursor to the word you want to find
 <J>
 ```
 
+## Delete character, word, or lines with <d?>
+[vim deleting backward tricks](https://stackoverflow.com/questions/1373841/vim-deleting-backward-tricks)
+```
+<dh>: delete the previous character
+<dl>: delete current character
+<db>: delete all previous characters in this word
+<dw>: delete all later characters in this word, also the following space
+<d0>: delete all previous characters
+<d$>: delete from current character to the end of line
+```
+
 ## Undo and Redo
 ```
 <u> or <:undo>: undo
