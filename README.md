@@ -973,3 +973,17 @@ Use the following to replace `ls /dir/name/*.jpg | wc -l`
 ```bash
 ls -l /dir/name | fgrep .jpg | wc -l
 ```
+
+## alias: list alias set previously
+```bash
+alias
+```
+
+## alias: create a alias of a command
+```bash
+alias <dst_excutable>=<src_executable>
+```
+e.g.
+```bash
+alias python=python3
+```
