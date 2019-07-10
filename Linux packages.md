@@ -66,6 +66,11 @@ Use `gcc -v` and `make -v` to check their versions.
 ### OpenCV
 Follow the instruction here: [OpenCV Tutorials/Introduction to OpenCV/Installation in Linux](https://docs.opencv.org/3.4.6/d7/d9f/tutorial_linux_install.html)
 
+### pip
+```sh
+apt install python3-pip
+```
+
 ## CentOS
 ### facter
 ```sh
