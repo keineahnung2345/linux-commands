@@ -92,6 +92,9 @@ move the cursor to the word you want to find
 <dl>: delete current character
 <db>: delete all previous characters in this word
 <dw>: delete all later characters in this word, also the following space
+<cw>: change(i.e. delete and go to insert mode) all later characters in this word
+<diw>: delete current word
+<ciw>: change current word
 <d0>: delete all previous characters
 <d$>: delete from current character to the end of line
 ```
