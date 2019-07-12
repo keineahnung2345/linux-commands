@@ -111,6 +111,13 @@ nvidia-smi
 nvidia-smi -q
 ```
 
+## a enhanced nvidia-smi, showing processes's info
+First install [peci1/nvidia-htop](https://github.com/peci1/nvidia-htop), and then:
+```sh
+nvidia-htop.py -c -l 50
+```
+This will show the processes' `PID`, `USER`, `GPU`, `MEM`, `%CPU`, `%MEM`, `TIME`, `COMMAND`.
+
 ## shutdown the machine
 ```sh
 shutdown now
