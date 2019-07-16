@@ -359,6 +359,13 @@ or
 tree </path/to/directory>
 ```
 
+## check memory size
+```sh
+free    # in KB
+free -m # in MB
+free -g # in GB
+```
+
 ## check file system information
 ```sh
 df -h
