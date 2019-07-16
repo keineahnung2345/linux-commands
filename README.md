@@ -154,6 +154,17 @@ tar -cvpzf backup.tar.gz \
 date
 ```
 
+## change timezone
+```sh
+cd /usr/share/zoneinfo
+tzselect # and then follow the instructions
+```
+
+To make this change pernament, add the following line in the last of `~/.profile`:
+```
+TZ='Asia/Taipei'; export TZ
+```
+
 ## check system log around the date \<yyyymmdd\>(It records the boot and shutdown histories)
 ```sh
 cat /var/log/messages-<yyyymmdd> | less
