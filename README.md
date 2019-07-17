@@ -645,6 +645,11 @@ printf '<line1>\n<line2>' > <filename>
 If using `echo`, `\n` itself rather than a newline will be written to the file.
 
 ## grep
+### search for a word, show line number
+```sh
+grep -n ".*<word>.*" <filename>
+```
+
 ### search for a specific word from specific type of files in a directory
 ```sh
 grep '.*<word>.*' -rnw <directory>/*.<file-type>
