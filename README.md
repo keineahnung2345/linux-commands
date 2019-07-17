@@ -723,38 +723,40 @@ Note that `sort` is required.
 cp <filename>{,.bak}
 ```
 
-## get the Nth line
+## sed
+To escape multiple leading spaces, add `\` before the first space.
+### get the Nth line
 ```sh
 sed -n <line_number>p <filename>
 ```
 
-## remove the Nth line
+### remove the Nth line
 [Delete specific line number(s) from a text file using sed?](https://stackoverflow.com/questions/2112469/delete-specific-line-numbers-from-a-text-file-using-sed)
 ```sh
 sed -i -e '<start_line_number,end_line_number>d;<another_line_number>d' <filename>
 ```
 
-## find and replace string
+### find and replace string
 ```sh
 sed -i '' 's/<regular expression>/<replacement>/g' <filename>
 ```
 
-## insert a line after Nth line(it will be N+1-th line)
+### insert a line after Nth line(it will be N+1-th line)
 ```sh
 sed -n -i 'p;<line_number>a <line_to_insert>' <filename>
 ```
 
-## insert a line before first match
+### insert a line before first match
 ```sh
 sed -i '/<line_to_match>/i <line_to_insert>' <filename>
 ```
 
-## insert a line after first match
+### insert a line after first match
 ```sh
 sed -i '/<line_to_match>/a <line_to_insert>' <filename>
 ```
 
-## delete the \<N>-th line from outside the file
+### delete the \<N>-th line from outside the file
 ```sh
 sed '<N> d' <filename>
 ```
