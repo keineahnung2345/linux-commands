@@ -717,6 +717,11 @@ Note that `sort` is required.
 cp <filename>{,.bak}
 ```
 
+## get the Nth line of a \<filename>
+```sh
+sed -n <line_number>p <filename>
+```
+
 ## find and replace string in a \<filename>
 ```sh
 sed -i '' 's/<regular expression>/<replacement>/g' <filename>
