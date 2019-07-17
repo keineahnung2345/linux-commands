@@ -638,6 +638,11 @@ EOF
 echo "<text>" > <filename>
 ```
 
+## use printf to write multiple lines to a file
+```sh
+printf '<line1>\n<line2>' > <filename>
+```
+
 ## grep
 ### search for a specific word from specific type of files in a directory
 ```sh
