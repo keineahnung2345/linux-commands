@@ -733,6 +733,11 @@ sed -n <line_number>p <filename>
 sed -i '' 's/<regular expression>/<replacement>/g' <filename>
 ```
 
+## insert a line after Nth line(it will be N+1-th line)
+```sh
+sed -n -i 'p;<line_number>a <line_to_insert>' <filename>
+```
+
 ## insert a line before first match
 ```sh
 sed -i '/<line_to_match>/i <line_to_insert>' <filename>
