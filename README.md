@@ -712,6 +712,11 @@ echo "hello world, it's a good day" | awk '{print$3}'
 # it's
 ```
 
+### get the Nth line
+```sh
+awk 'NR==<line_number>' <filename>
+```
+
 ## find unique elements from other command's output
 ```sh
 <other-command>| sort | uniq
@@ -728,6 +733,10 @@ To escape multiple leading spaces, add `\` before the first space.
 ### get the Nth line
 ```sh
 sed -n <line_number>p <filename>
+```
+or
+```sh
+sed '<line_number>!d' <filename>
 ```
 
 ### remove the Nth line
