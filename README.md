@@ -723,12 +723,18 @@ Note that `sort` is required.
 cp <filename>{,.bak}
 ```
 
-## get the Nth line of a \<filename>
+## get the Nth line
 ```sh
 sed -n <line_number>p <filename>
 ```
 
-## find and replace string in a \<filename>
+## remove the Nth line
+[Delete specific line number(s) from a text file using sed?](https://stackoverflow.com/questions/2112469/delete-specific-line-numbers-from-a-text-file-using-sed)
+```sh
+sed -i -e '<start_line_number,end_line_number>d;<another_line_number>d' <filename>
+```
+
+## find and replace string
 ```sh
 sed -i '' 's/<regular expression>/<replacement>/g' <filename>
 ```
