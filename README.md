@@ -770,6 +770,11 @@ sed -i '/<line_to_match>/a <line_to_insert>' <filename>
 sed '<N> d' <filename>
 ```
 
+### remove part of a line 
+```sh
+sed -i 's/<word_to_delete>//' <filename>
+```
+
 ## translate or delete characters - squeeze multiple \<char> into one
 ```sh
 tr -s '<char>'
