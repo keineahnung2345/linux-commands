@@ -75,6 +75,20 @@ move the cursor to the word you want to find
 <:%d>: delete all the file
 ```
 
+## Copy selected range to clipboard(so one can paste it outside vim)
+First install `vim-gtk`:
+```sh
+sudo apt-get install vim-gtk
+```
+Make sure `clipboard` and `xterm_clipboard` are `+` now.
+```sh
+vim --version | grep clipboard
+```
+And then:
+```sh
+"+y
+```
+
 ## Delete the characters until the end of this line:
 ```
 <D>
