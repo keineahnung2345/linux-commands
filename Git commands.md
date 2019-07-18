@@ -81,6 +81,15 @@ $git clone -b <branch-name> https://github.com/<user-name>/<repo-name>.git
 ## Fork and then create a pull request
 Follow the instructions here: https://help.github.com/articles/creating-a-pull-request-from-a-fork/
 
+## Apply unmerged pull request to own fork
+[How to apply unmerged upstream pull requests from other forks into my fork?](https://stackoverflow.com/questions/6022302/how-to-apply-unmerged-upstream-pull-requests-from-other-forks-into-my-fork)
+1. If you don't want it to be merged to your master branch, first create a new branch
+2. Go to the webpage of the branch from other fork(which is the branch you want to apply)
+3. Select `New Pull Request`
+4. Choose the correct repo name and branch name
+5. Click `Create Pull Request`
+6. Merge the pull request
+
 ## Add folders or files, commit, and then push(Git doesn't allow you to commit empty folders, the workaround is to add .gitkeep file into them)
 ```sh
 $git add <folder-or-file-name>
