@@ -69,6 +69,8 @@ Follow the instruction here: [OpenCV Tutorials/Introduction to OpenCV/Installati
 apt-get install -y libopencv-dev # this will install older version
 ```
 
+The installation path is: `/usr/share/OpenCV/`.
+
 ### pip
 ```sh
 apt install python3-pip
