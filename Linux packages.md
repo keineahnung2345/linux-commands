@@ -7,6 +7,11 @@ This README includes commands to install linux packages
 apt search <package-name>
 ```
 
+### find the installation directory of a package
+```sh
+dpkg -L <package-name>
+```
+
 ### ifconfig, netstat
 ```sh
 apt-get install -y net-tools
