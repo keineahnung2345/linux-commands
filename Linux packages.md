@@ -79,6 +79,19 @@ apt install python3-pip
 apt-get install -y libgoogle-glog-dev
 ```
 
+### TensorRT
+[Installing TensorRT: Using The NVIDIA Machine Learning Network Repo For Debian Installation](https://docs.nvidia.com/deeplearning/sdk/tensorrt-install-guide/index.html#maclearn-net-repo-install)
+```sh
+# Install the NVIDIA Machine Learning network repository installation package
+wget https://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1604/x86_64/nvidia-machine-learning-repo-ubuntu1604_1.0.0-1_amd64.deb
+dpkg -i nvidia-machine-learning-repo-*.deb
+apt-get update -y
+# Install the TensorRT package that fits your particular needs
+apt-get install libnvinfer5=5.1.5-1+cuda9.0     libnvinfer-dev=5.1.5-1+cuda9.0
+# So TensorRT won't upgrade to a new version
+apt-mark hold libnvinfer5 libnvinfer-dev
+```
+
 ## CentOS
 ### facter
 ```sh
