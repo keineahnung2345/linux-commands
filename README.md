@@ -317,8 +317,13 @@ apt-get install -y <package-name>
 ```
 
 ## uninstall a package
+[What is the correct way to completely remove an application?](https://askubuntu.com/questions/187888/what-is-the-correct-way-to-completely-remove-an-application)
 ```sh
 apt-get purge -y <package-name>
+```
+or
+```
+apt-get --purge autoremove <package-name>
 ```
 
 ## list installed packages by apt
