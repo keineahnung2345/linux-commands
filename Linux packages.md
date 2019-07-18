@@ -65,10 +65,18 @@ Use `gcc -v` and `make -v` to check their versions.
 
 ### OpenCV
 Follow the instruction here: [OpenCV Tutorials/Introduction to OpenCV/Installation in Linux](https://docs.opencv.org/3.4.6/d7/d9f/tutorial_linux_install.html)
+```sh
+apt-get install -y libopencv-dev # this will install older version
+```
 
 ### pip
 ```sh
 apt install python3-pip
+```
+
+### glog
+```sh
+apt-get install -y libgoogle-glog-dev
 ```
 
 ## CentOS
