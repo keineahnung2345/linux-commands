@@ -105,6 +105,11 @@ apt-mark hold libnvinfer5 libnvinfer-dev
 apt-get install libcurl4-openssl-dev
 ```
 
+### libconfig.h++
+```sh
+apt-get install libconfig++8-dev
+```
+
 ## CentOS
 ### facter
 ```sh
