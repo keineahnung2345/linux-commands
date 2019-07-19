@@ -689,6 +689,11 @@ grep <pattern> --include=\*.{type1, type2} -rnw <directory>
 grep <pattern> --exclude=<file-to-be-excluded> -rnw <directory>
 ```
 
+### search file, but exclude some directories
+```sh
+grep <pattern> --exclude-dir=<directory-to-be-excluded> -rnw <directory>
+```
+
 ### find file in current directory and fetch the lowest level's directory name
 ```sh
 grep <pattern> -rnw . | while IFS= read -r line ; do
