@@ -47,6 +47,12 @@ git fetch --prune #-p, --prune: After fetching, remove any remote-tracking branc
 git checkout <branch-name> #if there are new branches
 ```
 
+If the commands above do not work, try: 
+
+```sh
+git pull
+```
+
 ## List all branch and get current branch name
 `$git branch`
 
