@@ -99,6 +99,12 @@ apt-get install libnvinfer5=5.1.5-1+cuda9.0     libnvinfer-dev=5.1.5-1+cuda9.0
 apt-mark hold libnvinfer5 libnvinfer-dev
 ```
 
+### curl.h
+[Installing curl.h library [duplicate]](https://askubuntu.com/questions/78183/installing-curl-h-library)
+```sh
+apt-get install libcurl4-openssl-dev
+```
+
 ## CentOS
 ### facter
 ```sh
