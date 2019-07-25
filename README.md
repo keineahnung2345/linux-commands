@@ -542,6 +542,11 @@ kill -9 <pid>
 find . -name "<filename>" -type f | xargs du -sh
 ```
 
+### find files without an extension
+```sh
+find . -type f ! -name "*.*"
+```
+
 ### find specific type of files in all subdirectories and then delete
 ```sh
 find . -name "*.<file-type>" -type f -delete
