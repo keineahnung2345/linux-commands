@@ -644,6 +644,11 @@ cat > <filename> << EOF
 EOF
 ```
 
+## concat files and generate a new one
+```sh
+cat a.txt b.txt > new.txt
+```
+
 ## use echo to write file
 ```sh
 echo "<text>" > <filename>
