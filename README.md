@@ -266,6 +266,19 @@ ssh <username>@<ip-address>
 ssh -t username@host '<your-command>'
 ```
 
+## keep ssh connection alive
+[Keep SSH session alive [closed]](https://stackoverflow.com/questions/25084288/keep-ssh-session-alive)
+
+Create `~/.ssh/config`, fill it with:
+```
+Host *
+    ServerAliveInterval 240
+```
+And then:
+```sh
+chmod 600 ~/.ssh/config
+```
+
 ## remove host name from known_hosts file(used when you have previously failed to login the host)
 ```sh
 ssh-keygen -R <ip-address>
