@@ -118,6 +118,16 @@ nvidia-htop.py -c -l 50
 ```
 This will show the processes' `PID`, `USER`, `GPU`, `MEM`, `%CPU`, `%MEM`, `TIME`, `COMMAND`.
 
+## solve `NVIDIA NVML Driver/library version mismatch`
+[NVIDIA NVML Driver/library version mismatch](https://stackoverflow.com/questions/43022843/nvidia-nvml-driver-library-version-mismatch)
+```sh
+lsmod | grep nvidia
+rmmod <mod-name1> #follow the order from the last command
+rmmod <mod-name2>
+# rmmod ...
+nvidia-smi # should work now
+```
+
 ## shutdown the machine
 ```sh
 shutdown now
