@@ -261,6 +261,11 @@ lsof -n -i4TCP:<port-number>
 ssh <username>@<ip-address>
 ```
 
+## connect to remote host's \<port-number>
+```sh
+ssh <username>@<ip-address> -p<port-number>
+```
+
 ## send command to remote host and get result locally
 ```sh
 ssh -t username@host '<your-command>'
