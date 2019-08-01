@@ -274,6 +274,8 @@ ssh -t username@host '<your-command>'
 ## keep ssh connection alive
 [Keep SSH session alive [closed]](https://stackoverflow.com/questions/25084288/keep-ssh-session-alive)
 
+Possible solution to `packet_write_wait: Connection to xx.xx.xx.xx port 22: Broken pipe`.
+
 Create `~/.ssh/config`, fill it with:
 ```
 Host *
