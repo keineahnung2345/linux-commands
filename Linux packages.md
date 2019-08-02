@@ -81,6 +81,11 @@ apt-get install -y libopencv-dev # this will install older version: 2.4.9.1
 
 The installation path is: `/usr/share/OpenCV/`.
 
+### python
+```sh
+apt-get install python3
+```
+
 ### pip
 ```sh
 apt install python3-pip
