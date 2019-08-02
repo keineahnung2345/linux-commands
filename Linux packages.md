@@ -101,6 +101,7 @@ apt-get install -y libgoogle-glog-dev
 ```sh
 # Install the NVIDIA Machine Learning network repository installation package
 wget https://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1604/x86_64/nvidia-machine-learning-repo-ubuntu1604_1.0.0-1_amd64.deb
+#wget https://developer.download.nvidia.cn/compute/machine-learning/repos/ubuntu1604/x86_64/7fa2af80.pub -O 7fa2af80.pub
 dpkg -i nvidia-machine-learning-repo-*.deb
 apt-get update -y
 # Install the TensorRT package that fits your particular needs
