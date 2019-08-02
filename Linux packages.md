@@ -98,11 +98,25 @@ apt-get install -y libgoogle-glog-dev
 
 ### TensorRT
 [Installing TensorRT: Using The NVIDIA Machine Learning Network Repo For Debian Installation](https://docs.nvidia.com/deeplearning/sdk/tensorrt-install-guide/index.html#maclearn-net-repo-install)
+
+Setup repo:
 ```sh
 # Install the NVIDIA Machine Learning network repository installation package
 wget https://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1604/x86_64/nvidia-machine-learning-repo-ubuntu1604_1.0.0-1_amd64.deb
-#wget https://developer.download.nvidia.cn/compute/machine-learning/repos/ubuntu1604/x86_64/7fa2af80.pub -O 7fa2af80.pub
 dpkg -i nvidia-machine-learning-repo-*.deb
+```
+If it outputs the following error message:
+```
+gpg: no valid OpenPGP data found.
+Failed to add GPGKEY at http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1604/x86_64/7fa2af80.pub to apt keys.
+```
+Then try:
+```sh
+wget https://developer.download.nvidia.cn/compute/machine-learning/repos/ubuntu1604/x86_64/7fa2af80.pub -O 7fa2af80.pub
+chmod 755 7fa2af80.pub
+```
+Continue to install TensorRT:
+```sh
 apt-get update -y
 # Install the TensorRT package that fits your particular needs
 apt-get install libnvinfer5=5.1.5-1+cuda9.0     libnvinfer-dev=5.1.5-1+cuda9.0
