@@ -12,6 +12,11 @@ apt search <package-name>
 dpkg -L <package-name>
 ```
 
+### list a package's all available version
+```sh
+apt-cache madison <package-name>
+```
+
 ### ifconfig, netstat
 ```sh
 apt-get install -y net-tools
