@@ -971,6 +971,11 @@ gzip -d <xxx.gz>
 7za -y x <xxx.7z>
 ```
 
+## go to the previous directory
+```sh
+cd -
+```
+
 ## show difference between two files
 ```sh
 diff <file1> <file2>
