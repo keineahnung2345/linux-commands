@@ -13,6 +13,14 @@ stty rows 40 cols 120
 <:unset number>: hide line numbers
 ```
 
+## Show opened's file's name
+[How to find out which file is currently opened in vim?](https://unix.stackexchange.com/questions/104901/how-to-find-out-which-file-is-currently-opened-in-vim)
+```
+<ctrl+g>: show opened' file's name and its total line number
+<1> and then <ctrl+g>: additionally show full path
+<2> and then <ctrl+g>: additionally show buffer number
+```
+
 ## Move cursor 
 ```
 <h>: move left
