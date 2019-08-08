@@ -311,6 +311,9 @@ docker network rm $(docker network ls -q)
 ### Retrieve the logs of a container
 `docker logs <container-name>`
 
+### Make a container hang around(not exit immediately)
+`docker run -td --entrypoint=/bin/bash <image-name>`
+
 ## Installation
 
 ### Install docker-compose
