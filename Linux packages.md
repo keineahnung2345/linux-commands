@@ -152,6 +152,13 @@ apt-get install libcurl4-openssl-dev
 apt-get install libconfig++8-dev
 ```
 
+### mysql/mysql.h
+[mysql.h file can't be found](https://stackoverflow.com/questions/14604228/mysql-h-file-cant-be-found/20634454)
+```sh
+apt-get install -y libmysqlclient-dev
+```
+mysql.h will be located at /usr/include/mysql/.
+
 ## CentOS
 ### facter
 ```sh
