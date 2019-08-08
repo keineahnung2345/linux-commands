@@ -72,11 +72,11 @@ apt-get install -y uni2ascii
 apt-get install -y cmake
 ```
 
-### gcc, make
+### gcc, g++, make
 ```sh
 apt-get install -y build-essential
 ```
-Use `gcc -v` and `make -v` to check their versions.
+Use `gcc -v`, `g++ --version` and `make -v` to check their versions.
 
 ### OpenCV
 Follow the instruction here: [OpenCV Tutorials/Introduction to OpenCV/Installation in Linux](https://docs.opencv.org/3.4.6/d7/d9f/tutorial_linux_install.html)
