@@ -27,6 +27,7 @@ stty rows 40 cols 120
 <ctrl+d>: half page down
 <ctrl+b>: page up
 <ctrl+u>: half page up
+<%>: move to matching braces
 ```
 
 ## Search a word
