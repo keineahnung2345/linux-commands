@@ -17,6 +17,11 @@ dpkg -L <package-name>
 apt-cache madison <package-name>
 ```
 
+### ps, kill
+```sh
+apt-get install -y procps
+```
+
 ### ifconfig, netstat
 ```sh
 apt-get install -y net-tools
