@@ -69,6 +69,12 @@ cat /etc/os-release
 rpm -qf /etc/redhat-release
 ```
 
+## list all users
+[How to List Users in Linux](https://linuxize.com/post/how-to-list-users-in-linux/)
+```sh
+less /etc/passwd
+```
+
 ## check cuda version
 ```sh
 nvcc --version
