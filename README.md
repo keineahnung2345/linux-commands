@@ -1127,3 +1127,9 @@ e.g.
 ```bash
 alias python=python3
 ```
+
+## rename a batch of files
+Rename file with extension `.cloud` to `_cloud.cpp`.
+```bash
+rename 's/.cloud$/_cloud.cpp/' *.cloud
+```
