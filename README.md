@@ -1003,6 +1003,29 @@ diff -r -q <dir1> <dir2>
 diff -x "<pattern>" -r -q <dir1> <dir2>
 ```
 
+## compare the two files
+```sh
+cmp <file1> <file2>
+```
+Sample output:
+```
+<file1> <file2> differ: byte 132161537, line 437952
+```
+
+## compare the two files, show the different byte position and their values
+```sh
+cmp -l <file1> <file2>
+```
+Sample output:
+```sh
+132161537 274   0
+132161538   4   0
+132161539 225   0
+132161540 212   0
+132161541 261   0
+...
+```
+
 ## monitor GPU usage
 ```sh
 watch -n0 nvidia-smi
