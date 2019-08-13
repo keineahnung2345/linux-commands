@@ -79,12 +79,41 @@ apt-get install -y build-essential
 Use `gcc -v`, `g++ --version` and `make -v` to check their versions.
 
 ### OpenCV
-Follow the instruction here: [OpenCV Tutorials/Introduction to OpenCV/Installation in Linux](https://docs.opencv.org/3.4.6/d7/d9f/tutorial_linux_install.html)
+
+#### apt
 ```sh
 apt-get install -y libopencv-dev # this will install older version: 2.4.9.1
 ```
-
 The installation path is: `/usr/share/OpenCV/`.
+
+#### build from source
+Follow the instruction here: [OpenCV Tutorials/Introduction to OpenCV/Installation in Linux](https://docs.opencv.org/3.4.6/d7/d9f/tutorial_linux_install.html)
+
+First download opencv-x.x.x.zip and opencv_contrib-x.x.x.zip, and then unzip.
+
+Create directory:
+```sh
+cd ~/opencv
+mkdir build
+cd build
+```
+
+Configure:
+```sh
+cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local OPENCV_EXTRA_MODULES_PATH=/xxx/opencv_contrib-3.4.1/modules ..
+```
+Add `OPENCV_EXTRA_MODULES_PATH` to build with modules from opencv_contrib.
+
+
+Build:
+```sh
+make -j7
+```
+
+Install libraries:
+```sh
+sudo make install
+```
 
 ### python
 ```sh
