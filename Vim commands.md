@@ -38,6 +38,19 @@ stty rows 40 cols 120
 <%>: move to matching braces
 ```
 
+## Switch search mode between case-sensitive or case-insensitive
+```
+<:set ic> or <:set ignorecase>: case-insensitive mode search
+<:set noic>: case-sensitive search
+```
+
+## Switch to smartcase search mode
+[How to do case insensitive search in Vim](https://stackoverflow.com/questions/2287440/how-to-do-case-insensitive-search-in-vim)
+```
+<:set ic> and then <:set smartcase>
+```
+If you search for something containing uppercase characters, it will do a case-sensitive search; if you search for something purely lowercase, it will do a case-insensitive search.
+
 ## Search a word
 Method 1:
 ```
