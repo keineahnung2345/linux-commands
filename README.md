@@ -317,6 +317,12 @@ scp <username>@<ip-address>:/some/remote/directory/\{a,b,c\} ./
 scp <username>@<ip-address>:/some/remote/directory/<original-name>.zip <new-name>.zip 
 ```
 
+## rsync: transfer file between local and remote
+```sh
+rsync -P /local/file <username>@<ip-address>:/some/remote/directory
+```
+The `-P` option shows the progress.
+
 ## show package description
 ```sh
 apt-cache search <package-name>
