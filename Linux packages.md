@@ -104,6 +104,7 @@ apt-get install -y libgoogle-glog-dev
 ### TensorRT
 [Installing TensorRT: Using The NVIDIA Machine Learning Network Repo For Debian Installation](https://docs.nvidia.com/deeplearning/sdk/tensorrt-install-guide/index.html#maclearn-net-repo-install)
 
+#### Debian Installation
 Setup repo:
 ```sh
 # Install the NVIDIA Machine Learning network repository installation package
@@ -139,6 +140,25 @@ or
 
 ```sh
 dpkg -l | grep TensorRT
+```
+
+#### Tar File Installation
+First download TensorRT tar.gz file.
+```sh
+tar xzvf TensorRT-5.1.x.x.<os>.<arch>-gnu.cuda-x.x.cudnn7.x.tar.gz
+```
+Add the following line into `~/.bashrc`:
+```sh
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<eg:TensorRT-5.1.x.x/lib>
+```
+And then:
+```sh
+source ~/.bashrc
+```
+Test, follow the instruction [here](https://docs.nvidia.com/deeplearning/sdk/tensorrt-sample-support-guide/index.html#mnist_sample):
+```sh
+cd <TensorRT root directory>/samples/sampleMNIST && make
+cd <TensorRT root directory>/bin && ./sample_mnist
 ```
 
 ### curl.h
