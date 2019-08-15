@@ -373,6 +373,8 @@ apt-get --purge autoremove <package-name>
 apt-get install --download-only <package-name>
 ```
 
+The `.deb` file will be put in `/var/cache/apt/archives`.
+
 ## list installed packages by apt
 ```bash
 apt list --installed
