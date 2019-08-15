@@ -671,6 +671,18 @@ So one might only want to find executable "file".
 find . -newermt "<year1>-<month1>-<day1> 00:00:00" ! -newermt "<year2>-<month2>-<day2> 00:00:00"
 ```
 
+### list all subdirectories' file count
+[How to report number of files in all subdirectories?](https://unix.stackexchange.com/questions/23130/how-to-report-number-of-files-in-all-subdirectories)
+```sh
+for f in *; do [ -d ./"$f" ] && find ./"$f" -maxdepth 1 -exec echo \;|wc -l|tr '\n' ' ' && echo $f; done|awk '{print $2"\t"$1}'
+```
+Sample output:
+```
+$RECYCLE.BIN	72
+8.9	17
+System	3
+```
+
 ## print the content of a file
 ### show line number
 ```sh
