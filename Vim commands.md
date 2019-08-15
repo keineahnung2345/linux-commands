@@ -135,6 +135,14 @@ And then:
 <d$>: delete from current character to the end of line
 ```
 
+## Find and Replace
+[Vim - Search and replace](https://vim.fandom.com/wiki/Search_and_replace)
+
+Find all 'foo's in the file and replace them with 'bar's.
+```
+:%s/foo/bar/g
+```
+
 ## Undo and Redo
 ```
 <u> or <:undo>: undo
