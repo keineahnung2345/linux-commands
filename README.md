@@ -673,6 +673,24 @@ find . -newermt "<year1>-<month1>-<day1> 00:00:00" ! -newermt "<year2>-<month2>-
 
 ### list all subdirectories' file count
 [How to report number of files in all subdirectories?](https://unix.stackexchange.com/questions/23130/how-to-report-number-of-files-in-all-subdirectories)
+
+This will show full subdirectory name:
+```sh
+for f in *; do [ -d ./"$f" ] && find ./"$f" -maxdepth 1 -exec echo \; | wc -l && echo $f; done
+```
+Sample output:
+```
+      72
+$RECYCLE.BIN
+      17
+8.9
+       3
+System Volume Information
+```
+
+or 
+
+This won't show full subdirectory name, but now subdirectory name and its file count are in the same line:
 ```sh
 for f in *; do [ -d ./"$f" ] && find ./"$f" -maxdepth 1 -exec echo \;|wc -l|tr '\n' ' ' && echo $f; done|awk '{print $2"\t"$1}'
 ```
@@ -682,6 +700,7 @@ $RECYCLE.BIN	72
 8.9	17
 System	3
 ```
+
 
 ## print the content of a file
 ### show line number
