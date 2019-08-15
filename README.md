@@ -1032,9 +1032,15 @@ diff <file1> <file2>
 ```
 
 ## show difference between two directories
+
+[Given two directory trees, how can I find out which files differ?](https://stackoverflow.com/questions/4997693/given-two-directory-trees-how-can-i-find-out-which-files-differ)
+
 ```sh
-diff -r -q <dir1> <dir2>
+diff -rq <dir1> <dir2>
 ```
+
+`-r` for recursive, `-q` for short mode.
+
 
 ## show difference between two directories, exclude some files
 ```sh
