@@ -208,6 +208,11 @@ apt-get install -y libmysqlclient-dev
 ```
 mysql.h will be located at /usr/include/mysql/.
 
+### boost
+```sh
+apt-get install libboost-all-dev
+```
+
 ## CentOS
 ### facter
 ```sh
