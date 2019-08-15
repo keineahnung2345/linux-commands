@@ -111,6 +111,11 @@ And then:
 "+y
 ```
 
+## Insert a newline and go to that line
+```
+<o>
+```
+
 ## Delete the characters until the end of this line:
 ```
 <D>
