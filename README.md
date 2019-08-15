@@ -368,6 +368,11 @@ or
 apt-get --purge autoremove <package-name>
 ```
 
+## download .deb and not install
+```sh
+apt-get install --download-only <package-name>
+```
+
 ## list installed packages by apt
 ```bash
 apt list --installed
