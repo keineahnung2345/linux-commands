@@ -159,6 +159,16 @@ And then:
 <d$>: delete from current character to the end of line
 ```
 
+## Delete characters after a specific character in all lines
+[Delete All Characters After “.” In Each Line](https://stackoverflow.com/questions/24111723/delete-all-characters-after-in-each-line)
+```
+:%norm f<?>lD #<?> is that specific character
+```
+or 
+```
+:%s/\<?>.*/<?>/
+```
+
 ## Find and Replace
 [Vim - Search and replace](https://vim.fandom.com/wiki/Search_and_replace)
 
