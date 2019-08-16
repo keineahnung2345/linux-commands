@@ -7,6 +7,11 @@ stty rows 40 cols 120
 
 # Vim commands in Visual Mode
 
+## Get help message(manual) of a vim command
+```
+:h <vim-command>
+```
+
 ## Show and hide line numbers
 ```
 <:set number>: show line numbers
