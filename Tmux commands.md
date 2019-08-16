@@ -40,6 +40,8 @@ Press <kbd>Ctrl</kbd> + <kbd>b</kbd> and then do one of the followings.
 Note that in Mac, <kbd>Page Up</kbd> and <kbd>Page Down</kbd> are <kbd>fn</kbd> + <kbd>↑</kbd> and 
 <kbd>fn</kbd> + <kbd>↓</kbd> respectively.
 
+To leave scroll mode, press <kbd>q</kbd>.
+
 ## Useful link
 
 [tmux Cheat Sheet](https://gist.github.com/michaellihs/b6d46fa460fa5e429ea7ee5ff8794b96)
