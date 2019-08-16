@@ -35,7 +35,10 @@ Press <kbd>Ctrl</kbd> + <kbd>b</kbd> and then do one of the followings.
 `:kill-session`
 
 ## Scroll the screen(page up, page down)
-`[` and then <kbd>Page Up</kbd> + <kbd>Page Down</kbd> 
+`[` and then <kbd>Page Up</kbd> or <kbd>Page Down</kbd> 
+
+Note that in Mac, <kbd>Page Up</kbd> and <kbd>Page Down</kbd> are <kbd>fn</kbd> + <kbd>↑</kbd> and 
+<kbd>fn</kbd> + <kbd>↓</kbd> respectively.
 
 ## Useful link
 
