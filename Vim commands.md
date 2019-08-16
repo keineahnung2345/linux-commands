@@ -43,6 +43,20 @@ stty rows 40 cols 120
 <%>: move to matching braces
 ```
 
+## Find and go to that char in current line
+```
+<f?>: find the character <?> and move the cursor onto it
+<F?>: same as <f?>, but find backward
+<t?>: same as <f?>, but stop at the character before <?>
+<T?>: same as <t?>, but find backward
+```
+They can be preceded with a number `<n>`, so the command will be repeated n times.
+```
+<;>: repeat the previous command
+<,>: repeat the previous command in reverse direction
+```
+
+
 ## Switch search mode between case-sensitive or case-insensitive
 ```
 <:set ic> or <:set ignorecase>: case-insensitive mode search
