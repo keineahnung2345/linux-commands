@@ -1179,6 +1179,12 @@ sudo service lightdm stop
 for i in *.jpg; do cp "$i" /target/directory; done
 ```
 
+## copy only files with specific type and maintain the directory structure
+[Copying only JPG from a directory structure to another location Linux](https://superuser.com/questions/91307/copying-only-jpg-from-a-directory-structure-to-another-location-linux)
+```bash
+rsync -av --include='*.<filetype>' --include='*/' --exclude='*' /src/dir /dst/dir
+```
+
 ## ls:  Argument list too long
 [What is the fastest way in terminal to get a count of files when there is so many of them? [duplicate]](https://askubuntu.com/questions/1084737/what-is-the-fastest-way-in-terminal-to-get-a-count-of-files-when-there-is-so-man)
 
