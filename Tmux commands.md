@@ -5,6 +5,11 @@
 tmux new -s <session-name>
 ```
 
+## Rename a session
+```sh
+tmux rename-session -t <old-session-name> <new-session-name>
+```
+
 ## List all sessions
 ```sh
 tmux ls
