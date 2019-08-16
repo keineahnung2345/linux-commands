@@ -1185,6 +1185,11 @@ for i in *.jpg; do cp "$i" /target/directory; done
 rsync -av --include='*.<filetype>' --include='*/' --exclude='*' /src/dir /dst/dir
 ```
 
+## move only files with specific type from a directory structure to another directory
+```bash
+find /src/dir -type f -name "*.<filetype>" -exec mv {} /dst/dir \;
+```
+
 ## ls:  Argument list too long
 [What is the fastest way in terminal to get a count of files when there is so many of them? [duplicate]](https://askubuntu.com/questions/1084737/what-is-the-fastest-way-in-terminal-to-get-a-count-of-files-when-there-is-so-man)
 
