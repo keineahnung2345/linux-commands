@@ -543,7 +543,7 @@ Only change owner:
 ```sh
 chown -R username <dirname/*>
 ```
-This solves the error of `scp: /dirname/filename: Permission denied`.
+This solves the error of `scp: /dirname/filename: Permission denied`, `chmod` may also help.
 
 ## manage processes
 ### monitor CPU, memory usage
