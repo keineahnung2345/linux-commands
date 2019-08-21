@@ -1255,3 +1255,8 @@ The following find the suitable `<column_width>` automatically.
 ```bash
 paste <filename1> <filename2> ... <filenameN> | expand -t $(( $(wc -L < <filename1>) + 2 ))
 ```
+
+## shuffle a file
+```bash
+shuf <filename>
+```
