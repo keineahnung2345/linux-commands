@@ -1280,6 +1280,14 @@ sudo service apport start
 ```
 
 ## use gdb to debug core file
+[How do I analyze a program's core dump file with GDB when it has command-line parameters?](https://stackoverflow.com/questions/8305866/how-do-i-analyze-a-programs-core-dump-file-with-gdb-when-it-has-command-line-pa)
+
 ```bash
-gdb --core=<core_file>
+gdb <executable> <core_file>
+```
+
+or
+
+```bash
+gdb <executable> -c <core_file>
 ```
