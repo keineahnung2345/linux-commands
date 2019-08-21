@@ -896,6 +896,8 @@ sed '<N> d' <filename>
 ```
 
 ### delete \<N> random lines from a file and output to another file
+[How can I delete multiple random lines from a text file using sed?](https://unix.stackexchange.com/questions/244381/how-can-i-delete-multiple-random-lines-from-a-text-file-using-sed)
+
 ```sh
 shuf -i1-$(wc -l < <input_file>) -n<N> | sed 's/$/d/' | sed -f- <input_file> > <output_file>
 ```
