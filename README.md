@@ -1278,3 +1278,8 @@ ulimit -c unlimited
 echo "core.%e.%p" > /proc/sys/kernel/core_pattern 
 sudo service apport start
 ```
+
+## use gdb to debug core file
+```bash
+gdb --core=<core_file>
+```
