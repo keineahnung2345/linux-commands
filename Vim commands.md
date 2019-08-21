@@ -179,6 +179,8 @@ Find all 'foo's in the file and replace them with 'bar's.
 :%s/foo/bar/g
 ```
 
+To escape / and \\, add \ before them, they becomes: \\/ and \\\\.
+
 ## Undo and Redo
 ```
 <u> or <:undo>: undo
