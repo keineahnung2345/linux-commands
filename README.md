@@ -839,7 +839,12 @@ awk -F" " '{print $1}' <filename>
 Note that `sort` is required.
 
 [sort command in unix with numeric sort](https://unix.stackexchange.com/questions/169200/sort-command-in-unix-with-numeric-sort)
+
 If one want to do numeric sort(sort as numbers), then use `sort -V`.
+
+[Sort and count number of occurrence of lines](https://unix.stackexchange.com/questions/170043/sort-and-count-number-of-occurrence-of-lines)
+
+To also get their counts, use `uniq -c`. 
 
 ## create a .bak file for \<filename>
 ```sh
