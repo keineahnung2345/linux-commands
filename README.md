@@ -1243,6 +1243,8 @@ rename 's/.cloud$/_cloud.cpp/' *.cloud
 ```
 
 ## combine files by column, and set the column width
+[A better paste command](https://unix.stackexchange.com/questions/98945/a-better-paste-command)
+
 ```bash
 paste <filename1> <filename2> ... <filenameN> | expand -t <column_width>
 ```
@@ -1253,4 +1255,3 @@ The following find the suitable `<column_width>` automatically.
 ```bash
 paste <filename1> <filename2> ... <filenameN> | expand -t $(( $(wc -L < <filename1>) + 2 ))
 ```
-
