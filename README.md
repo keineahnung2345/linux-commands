@@ -818,6 +818,11 @@ echo "hello world, it's a good day" | awk '{print$3}'
 awk 'NR==<line_number>' <filename>
 ```
 
+### split lines in a file by " " and print their Nth token
+```sh
+awk -F" " '{print $1}' <filename>
+```
+
 ## find unique elements from other command's output
 ```sh
 <other-command>| sort | uniq
