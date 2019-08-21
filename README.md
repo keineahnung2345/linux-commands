@@ -862,7 +862,7 @@ sed -i -e '<start_line_number,end_line_number>d;<another_line_number>d' <filenam
 
 ### find and replace string
 ```sh
-sed -i '' 's/<regular expression>/<replacement>/g' <filename>
+sed -i 's/<regular expression>/<replacement>/g' <filename>
 ```
 
 ### insert a line after Nth line(it will be N+1-th line)
