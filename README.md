@@ -605,6 +605,10 @@ or
 ```sh
 find . -name "*.<file-type>" | xargs -i rm {}
 ```
+or
+```sh
+find . -name "*.<file-type>" -exec rm {} \;
+```
 
 ### find empty directory and then delete
 ```sh
