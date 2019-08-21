@@ -1267,3 +1267,14 @@ paste <filename1> <filename2> ... <filenameN> | expand -t $(( $(wc -L < <filenam
 ```bash
 shuf <filename>
 ```
+
+## to make core dumped into current directory
+[Where do I find the core dump in ubuntu 16.04LTS?](https://askubuntu.com/questions/966407/where-do-i-find-the-core-dump-in-ubuntu-16-04lts)
+
+[Core dumped, but core file is not in the current directory?](https://stackoverflow.com/questions/2065912/core-dumped-but-core-file-is-not-in-the-current-directory)
+
+```bash
+ulimit -c unlimited
+echo "core.%e.%p" > /proc/sys/kernel/core_pattern 
+sudo service apport start
+```
