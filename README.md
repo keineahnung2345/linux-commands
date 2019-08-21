@@ -895,6 +895,11 @@ sed -i '/<line_to_match>/a <line_to_insert>' <filename>
 sed '<N> d' <filename>
 ```
 
+### delete \<N> random lines from a file and output to another file
+```sh
+shuf -i1-$(wc -l < <input_file>) -n<N> | sed 's/$/d/' | sed -f- <input_file> > <output_file>
+```
+
 ### remove part of a line 
 ```sh
 sed -i 's/<word_to_delete>//' <filename>
