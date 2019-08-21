@@ -590,6 +590,7 @@ kill -9 <pid>
 ```sh
 find . -name "<filename>" -type f | xargs du -sh
 ```
+Note that the double quotes around <filename> are important!
 
 ### find files without an extension
 ```sh
