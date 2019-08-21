@@ -601,6 +601,10 @@ find . -type f ! -name "*.*"
 ```sh
 find . -name "*.<file-type>" -type f -delete
 ```
+or
+```sh
+find . -name "*.<file-type>" | xargs -i rm {}
+```
 
 ### find empty directory and then delete
 ```sh
