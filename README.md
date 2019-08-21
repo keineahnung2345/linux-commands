@@ -520,6 +520,15 @@ ll <filename>
 ls -1 <dirname>
 ```
 
+### ls, show directories starting with \<S>(only print their names and don't show their children)
+```sh
+ls -d <S>*/
+```
+or
+```sh
+echo <S>*/
+```
+
 ## ls, recursively
 ```sh
 ls -R <dirname>
