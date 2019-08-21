@@ -838,6 +838,9 @@ awk -F" " '{print $1}' <filename>
 ```
 Note that `sort` is required.
 
+[sort command in unix with numeric sort](https://unix.stackexchange.com/questions/169200/sort-command-in-unix-with-numeric-sort)
+If one want to do numeric sort(sort as numbers), then use `sort -V`.
+
 ## create a .bak file for \<filename>
 ```sh
 cp <filename>{,.bak}
