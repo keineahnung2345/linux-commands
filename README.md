@@ -1241,3 +1241,8 @@ Rename file with extension `.cloud` to `_cloud.cpp`.
 ```bash
 rename 's/.cloud$/_cloud.cpp/' *.cloud
 ```
+
+## combine files by column, and set the column width
+```bash
+paste <filename1> <filename2> ... <filenameN> | expand -t <column_width>
+```
