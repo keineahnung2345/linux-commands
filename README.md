@@ -828,6 +828,8 @@ awk 'NR==<line_number>' <filename>
 ```
 
 ### split lines in a file by " " and print their Nth token
+[How to get the first column of every line from a CSV file?](https://stackoverflow.com/questions/11668621/how-to-get-the-first-column-of-every-line-from-a-csv-file)
+
 ```sh
 awk -F" " '{print $1}' <filename>
 ```
