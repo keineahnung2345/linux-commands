@@ -155,6 +155,8 @@ And then:
 <cw>: change(i.e. delete and go to insert mode) all later characters in this word
 <diw>: delete current word
 <ciw>: change current word
+<daw>: delete the current word(word here is the characters between these specific characters: .,-+()[]/\)
+<daW>: delete the current token(token here is the characters between spaces, they may contain .,-+()[]/\)
 <d0>: delete all previous characters
 <d$>: delete from current character to the end of line
 ```
