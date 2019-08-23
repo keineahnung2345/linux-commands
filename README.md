@@ -601,6 +601,11 @@ find . -name "<filename>" -type f | xargs du -sh
 ```
 Note that the double quotes around <filename> are important!
 
+### find file and only print their filenames(not including their directory path)
+```sh
+find . -type f -printf "%f\n"
+```
+
 ### find files without an extension
 ```sh
 find . -type f ! -name "*.*"
