@@ -1190,10 +1190,18 @@ less <xxx.zip>
 ```
 
 ## perform set operation on \<file1> and \<file2>
-find difference of \<file1> and \<file2>
+find the difference set of \<file1> - \<file2>
 ```
 comm -23 <(sort <file1>) <(sort <file2>)
 ```
+
+find the intersection of \<file1> - \<file2>
+```sh
+comm -12 <(sort <file1>) <(sort <file2>)
+```
+
+Note that '<' and '(' should not be separated, otherwise there will be a ```bash: syntax error near unexpected token `('```!
+
 More details: [Linux comm command brief tutorial](http://www.unixcl.com/2009/08/linux-comm-command-brief-tutorial.html)
 
 [bash, Linux: Set difference between two text files](https://stackoverflow.com/questions/2509533/bash-linux-set-difference-between-two-text-files)
