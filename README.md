@@ -648,6 +648,13 @@ find . -mindepth 1 -type d
 find . -mindepth 1 -type d -exec rm -r "{}" \;
 ```
 
+### find and move
+[How to integrate mv command after find command?](https://unix.stackexchange.com/questions/154818/how-to-integrate-mv-command-after-find-command)
+
+```sh
+find . -name "<filename>" -exec mv -t "<dst_path>" {} +
+```
+
 ### find in current directory, not recursive
 ```sh
 find . -maxdepth 1 -name "<*word*>"
