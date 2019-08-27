@@ -655,6 +655,13 @@ find . -mindepth 1 -type d -exec rm -r "{}" \;
 find . -name "<filename>" -exec mv -t "<dst_path>" {} +
 ```
 
+### find and copy
+[Find and copy files](https://stackoverflow.com/questions/5241625/find-and-copy-files)
+
+```sh
+find . -name "<filename>" -exec cp {} "<dst_path>"  \;
+```
+
 ### find in current directory, not recursive
 ```sh
 find . -maxdepth 1 -name "<*word*>"
