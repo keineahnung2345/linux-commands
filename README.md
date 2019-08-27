@@ -941,6 +941,10 @@ To create a new file:
 sed -e "s/^/<prefix>/" <filename> > <newfilename>
 sed -e "s/$/<suffix>/" <filename> > <newfilename>
 ```
+Example: add current directory as prefix to a file
+```sh
+sed -i -e "s?^?`pwd`/?" <filename>
+```
 
 ## translate or delete characters - squeeze multiple \<char> into one
 ```sh
