@@ -928,6 +928,20 @@ shuf -i1-$(wc -l < <input_file>) -n<N> | sed 's/$/d/' | sed -f- <input_file> > <
 sed -i 's/<word_to_delete>//' <filename>
 ```
 
+### add prefix or suffix to all lines of a file
+[Add a prefix string to beginning of each line](https://stackoverflow.com/questions/2099471/add-a-prefix-string-to-beginning-of-each-line)
+
+This will edit the file in-place:
+```sh
+sed -i -e "s/^/<prefix>/" <filename>
+sed -i -e "s/$/<suffix>/" <filename>
+```
+To create a new file:
+```sh
+sed -e "s/^/<prefix>/" <filename> > <newfilename>
+sed -e "s/$/<suffix>/" <filename> > <newfilename>
+```
+
 ## translate or delete characters - squeeze multiple \<char> into one
 ```sh
 tr -s '<char>'
