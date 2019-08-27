@@ -942,6 +942,7 @@ sed -e "s/^/<prefix>/" <filename> > <newfilename>
 sed -e "s/$/<suffix>/" <filename> > <newfilename>
 ```
 Example: add current directory as prefix to a file
+[How do I replace a token with the result of `pwd` in sed?](https://stackoverflow.com/questions/1186190/how-do-i-replace-a-token-with-the-result-of-pwd-in-sed)
 ```sh
 sed -i -e "s?^?`pwd`/?" <filename>
 ```
