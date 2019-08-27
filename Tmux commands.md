@@ -42,6 +42,8 @@ Note that in Mac, <kbd>Page Up</kbd> and <kbd>Page Down</kbd> are <kbd>fn</kbd> 
 
 To leave scroll mode, press <kbd>q</kbd>.
 
+To search through history, press <kbd>Ctrl</kbd> + <kbd>s</kbd>. And then use <kbd>n</kbd> to go next, use <kbd>N</kbd> to go previous.
+
 ## Useful link
 
 [tmux Cheat Sheet](https://gist.github.com/michaellihs/b6d46fa460fa5e429ea7ee5ff8794b96)
