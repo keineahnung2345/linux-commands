@@ -855,6 +855,14 @@ awk 'NR==<line_number>' <filename>
 awk -F" " '{print $1}' <filename>
 ```
 
+## split a file into two according to a ratio
+[Split: how to split into different percentages?](https://unix.stackexchange.com/questions/10219/split-how-to-split-into-different-percentages)
+
+The following split a file to 90% and 10%.
+```sh
+split -l $[ $(wc -l <filename>|cut -d" " -f1) * 90 / 100 ] <filename>
+```
+
 ## find unique elements from other command's output
 ```sh
 <other-command>| sort | uniq
