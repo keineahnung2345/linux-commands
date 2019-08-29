@@ -1342,6 +1342,8 @@ echo "core.%e.%p" > /proc/sys/kernel/core_pattern
 sudo service apport start
 ```
 
+Note: if you are inside a docker container, do the above on the HOST!
+
 ## use gdb to debug core file
 [How do I analyze a program's core dump file with GDB when it has command-line parameters?](https://stackoverflow.com/questions/8305866/how-do-i-analyze-a-programs-core-dump-file-with-gdb-when-it-has-command-line-pa)
 
