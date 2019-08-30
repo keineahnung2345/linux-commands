@@ -489,6 +489,15 @@ Sample output:
 user1 root
 ```
 
+### show the size of a file
+```sh
+stat -c "%s %n" <filename>
+```
+Sample output:
+```
+1091 README.md
+```
+
 ### show the privilege, size and last modification time of a file
 -l for long listing format, -a for showing hidden files, -h for showing size in human readable format
 ```sh
