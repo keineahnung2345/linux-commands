@@ -78,6 +78,11 @@ apt-get install -y build-essential
 ```
 Use `gcc -v`, `g++ --version` and `make -v` to check their versions.
 
+### dlocate
+```sh
+apt-get install -y dlocate
+```
+
 ### OpenCV
 
 #### apt
