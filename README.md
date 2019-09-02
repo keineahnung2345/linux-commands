@@ -1342,6 +1342,14 @@ paste <filename1> <filename2> ... <filenameN> | expand -t $(( $(wc -L < <filenam
 shuf <filename>
 ```
 
+## random sample from a file
+[How to randomly sample a subset of a file](https://unix.stackexchange.com/questions/108581/how-to-randomly-sample-a-subset-of-a-file)
+
+Sample `<count>` lines from `<filename>`.
+```bash
+shuf -n <count> <filename>
+```
+
 ## to make core dumped into current directory
 [Where do I find the core dump in ubuntu 16.04LTS?](https://askubuntu.com/questions/966407/where-do-i-find-the-core-dump-in-ubuntu-16-04lts)
 
