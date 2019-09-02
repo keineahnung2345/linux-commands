@@ -724,6 +724,12 @@ So one might only want to find executable "file".
 find . -newermt "<year1>-<month1>-<day1> 00:00:00" ! -newermt "<year2>-<month2>-<day2> 00:00:00"
 ```
 
+### find last modified file recursively
+[How to recursively find the latest modified file in a directory?](https://stackoverflow.com/questions/4561895/how-to-recursively-find-the-latest-modified-file-in-a-directory)
+```sh
+find . -type f -printf '%T@ %p\n' | sort -n | tail -1 | cut -f2- -d" "
+```
+
 ### list all subdirectories' file count
 [How to report number of files in all subdirectories?](https://unix.stackexchange.com/questions/23130/how-to-report-number-of-files-in-all-subdirectories)
 
