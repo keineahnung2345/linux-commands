@@ -987,6 +987,11 @@ cut -d '<delimiter>' -f <fields>
 <other-command> | rev | cut -d' ' -f1 | rev
 ```
 
+## cut by space and remove the last element
+```sh
+<other-command> | rev | cut -d ' ' -f2- | rev
+```
+
 ## reverse the output of \<other-command>
 ```sh
 <other-command> | tac
