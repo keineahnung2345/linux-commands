@@ -1191,6 +1191,8 @@ tail -f <filename.txt>
 ```bash
 ln -s <target> <linkname>
 ```
+The `<target>` should be full path, otherwise there will be an error: `Too many levels of symbolic links`.
+
 Difference of hard and soft link can be found in: [Linux ln command](https://www.computerhope.com/unix/uln.htm).
 
 
