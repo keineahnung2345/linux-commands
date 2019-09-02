@@ -1365,3 +1365,8 @@ or
 ```bash
 gdb <executable> -c <core_file>
 ```
+
+## open a file in read-only mode
+```sh
+view <filename>
+```
