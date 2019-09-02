@@ -988,6 +988,7 @@ cut -d '<delimiter>' -f <fields>
 ```
 
 ## cut by space and remove the last element
+[How to exclude last N columns in Bash on Linux?](https://www.systutorials.com/241478/how-to-exclude-last-n-columns-in-bash-on-linux/)
 ```sh
 <other-command> | rev | cut -d ' ' -f2- | rev
 ```
