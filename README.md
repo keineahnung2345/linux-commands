@@ -538,9 +538,27 @@ or
 echo <S>*/
 ```
 
-## ls, recursively
+### ls, recursively
 ```sh
 ls -R <dirname>
+```
+
+### ls, list absolute path
+[How can I generate a list of files with their absolute path in Linux?](https://stackoverflow.com/questions/246215/how-can-i-generate-a-list-of-files-with-their-absolute-path-in-linux)
+
+For directories (the / after ** is needed in bash to limit it to directories):
+```sh
+ls -d -1 "$PWD/"**/
+```
+
+For files and directories directly under the current directory, whose names contain a .:
+```sh
+ls -d -1 "$PWD/"*.*
+```
+
+For everything:
+```sh
+ls -d -1 "$PWD/"**/*
 ```
 
 ### change privilege of a file
