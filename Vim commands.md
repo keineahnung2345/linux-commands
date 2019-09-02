@@ -171,6 +171,12 @@ or
 :%s/\<?>.*/<?>/
 ```
 
+## Delete all lines containing specific word
+[Efficient way to delete line containing certain text in vim with prompt](https://stackoverflow.com/questions/46781951/efficient-way-to-delete-line-containing-certain-text-in-vim-with-prompt)
+```
+:%s/.*<text>.*\n//g
+```
+
 ## Find and Replace
 [Vim - Search and replace](https://vim.fandom.com/wiki/Search_and_replace)
 
