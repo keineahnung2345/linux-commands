@@ -71,6 +71,7 @@ apt-get install -y uni2ascii
 ```sh
 apt-get install -y cmake
 ```
+To install newer version of `cmake`, follows [How do I install the latest version of cmake from the command line?](https://askubuntu.com/a/865294/913680)
 
 ### gcc, g++, make
 ```sh
