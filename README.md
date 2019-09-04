@@ -1432,3 +1432,17 @@ gdb <executable> -c <core_file>
 ```sh
 view <filename>
 ```
+
+## check if a directory exists
+[Check if a directory exists in a shell script](https://stackoverflow.com/questions/59838/check-if-a-directory-exists-in-a-shell-script)
+```sh
+if [ -d "$DIRECTORY" ]; then
+  # Control will enter here if $DIRECTORY exists.
+fi
+```
+
+```sh
+if [ ! -d "$DIRECTORY" ]; then
+  # Control will enter here if $DIRECTORY doesn't exist.
+fi
+```
