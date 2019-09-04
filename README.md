@@ -1446,3 +1446,14 @@ if [ ! -d "$DIRECTORY" ]; then
   # Control will enter here if $DIRECTORY doesn't exist.
 fi
 ```
+
+## for loop in bash
+[Bash For Loop Examples](https://www.cyberciti.biz/faq/bash-for-loop/)
+```bash
+for OUTPUT in $(<other-command>)
+do
+   command1 on $OUTPUT
+   command2 on $OUTPUT
+   commandN
+done
+```
