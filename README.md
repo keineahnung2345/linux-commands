@@ -1397,6 +1397,11 @@ Sample `<count>` lines from `<filename>`.
 shuf -n <count> <filename>
 ```
 
+## random sample from a file(in-place)
+```bash
+shuf -n <count> <filename> -o <filename>
+```
+
 ## to make core dumped into current directory
 [Where do I find the core dump in ubuntu 16.04LTS?](https://askubuntu.com/questions/966407/where-do-i-find-the-core-dump-in-ubuntu-16-04lts)
 
