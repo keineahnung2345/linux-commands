@@ -1200,6 +1200,12 @@ Sample output:
 ...
 ```
 
+## compare the two so or executable files
+[compare executable or object file](https://stackoverflow.com/questions/28808063/compare-executable-or-object-file)
+```sh
+diff <(objdump -d <file1>) <(objdump -d <file2>)
+```
+
 ## monitor GPU usage
 ```sh
 watch -n0 nvidia-smi
