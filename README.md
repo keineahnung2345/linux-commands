@@ -134,6 +134,12 @@ rmmod <mod-name2>
 nvidia-smi # should work now
 ```
 
+## kill all processing using GPU
+[How do I kill all the computer processes shown in nvidia-smi?](https://www.quora.com/How-do-I-kill-all-the-computer-processes-shown-in-nvidia-smi)
+```sh
+kill -9 $(nvidia-smi | sed -n 's/|\s*[0-9]*\s*\([0-9]*\)\s*.*/\1/p' | sort | uniq | sed '/^$/d')
+```
+
 ## shutdown the machine
 ```sh
 shutdown now
