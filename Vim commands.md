@@ -185,6 +185,14 @@ Find all 'foo's in the file and replace them with 'bar's.
 :%s/foo/bar/g
 ```
 
+[Interactive search/replace regex in Vim?](https://stackoverflow.com/questions/505848/interactive-search-replace-regex-in-vim)
+
+To find and replace one by one with confirmation, use:
+```
+:%s/foo/bar/gc
+```
+And then use `y` to confirm, `n` to skip, `Esc` to quit.
+
 To escape / and \\, add \ before them, they becomes: \\/ and \\\\.
 
 ## Undo and Redo
