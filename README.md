@@ -882,6 +882,11 @@ grep -rnw --include=\*.<file-extension> ".*<word>.*"
 ```
 ex: grep -rnw --include=\*.sh ".*SPARK.*" .
 
+### grep, case-insensitive
+```sh
+grep -i <pattern> -rnw . 
+```
+
 ## awk
 ### cut a string and get the Nth part
 ```sh
