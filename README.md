@@ -1329,6 +1329,12 @@ send \<total-requests-count> requests to \<url> in which <concurrent-requests-co
 sudo service lightdm stop
 ```
 
+## ls and then copy
+[pass output as an argument for cp in bash [duplicate]](https://stackoverflow.com/questions/6833582/pass-output-as-an-argument-for-cp-in-bash)
+```sh
+cp `ls /source/directory` /target/directory
+```
+
 ## copy : Argument list too long
 [Argument list too long when copying files](https://askubuntu.com/questions/217764/argument-list-too-long-when-copying-files)
 
