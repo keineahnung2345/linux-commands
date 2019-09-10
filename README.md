@@ -525,6 +525,17 @@ The 3rd and 4th columns are the user and group of files respectly.
 ls -ld *
 ```
 
+### ls, sorted by modification time
+sorted by modification time, descending
+```sh
+ls -lt
+```
+
+sorted by modification time, ascending:
+```sh
+ls -ltr
+```
+
 ### ll, the short name for ls -l
 ```sh
 ll <filename>
