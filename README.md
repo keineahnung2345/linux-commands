@@ -526,6 +526,8 @@ ls -ld *
 ```
 
 ### ls, sorted by modification time
+[How can I sort the output of 'ls' by last modified date?](https://superuser.com/questions/147027/how-can-i-sort-the-output-of-ls-by-last-modified-date)
+
 sorted by modification time, descending
 ```sh
 ls -lt
