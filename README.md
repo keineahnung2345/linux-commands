@@ -729,8 +729,9 @@ find <directory> -name "<*word*>" -not -name "<*not-word*>"
 ```
 
 ### find but exclue certain path
+[How to exclude a directory in find . command](https://stackoverflow.com/questions/4210042/how-to-exclude-a-directory-in-find-command)
 ```sh
-find / -name "<filename>" -not -path "<the-path-to-be-excluded>"
+find / -name "<filename>" -not -path "./<the-path-to-be-excluded>*"
 ```
 
 ### find: case-insensitive match
