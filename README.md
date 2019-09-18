@@ -767,6 +767,17 @@ find . -newermt "<year1>-<month1>-<day1> 00:00:00" ! -newermt "<year2>-<month2>-
 find . -type f -printf '%T@ %p\n' | sort -n | tail -1 | cut -f2- -d" "
 ```
 
+### find, using regular expression
+To find files like 1567481018771_res.jpg or 1567481433382_res.jpg.
+```sh
+find . -regex ".*[0-9]+_res\.jpg"
+```
+
+To find files like 1567481019363.jpg and 1567481189545.jpg.
+```sh
+find . -regex ".*[0-9]+\.jpg"
+```
+
 ### list all subdirectories' file count
 [How to report number of files in all subdirectories?](https://unix.stackexchange.com/questions/23130/how-to-report-number-of-files-in-all-subdirectories)
 
