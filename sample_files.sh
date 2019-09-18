@@ -10,7 +10,7 @@ sed -i 's/.jpg//g' fnames.txt
 shuf -n 100 fnames.txt -o fnames.txt
 for fname in $(cat fnames.txt)
 do
-    cp -r $(find . -name "*$fname*") sample
+    cp -r $(find . -name "*$fname*" -not -path "./sample*") sample
 done
 rm fnames.txt
 tar -czf sample.tar.gz sample
