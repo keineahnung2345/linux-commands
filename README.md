@@ -1136,6 +1136,11 @@ unzip <xxx.zip> -d </target/directory/to/unzip>
 tar -czvf <xxx.tar.gz> <xxx>
 ```
 
+## compress to a tar.gz file, excluding some subfolders
+```sh
+tar -czf <parent.tar.gz> <parent> --exclude <parent>/<child1> --exclude <parent>/<child2>
+```
+
 ## show progress bar while compressing to a tar.gz file
 [Is there a way to see any tar progress per file?](https://superuser.com/questions/168749/is-there-a-way-to-see-any-tar-progress-per-file)
 ```sh
