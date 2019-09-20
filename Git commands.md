@@ -125,6 +125,11 @@ $git reset --hard upstream/master
 $git push origin <branch-name> --force #--force solves non-fast-forward error
 ```
 
+## Undo `git remote add upstream`
+```sh
+$git remote rm upstream
+```
+
 ## Sync your forked repository
 ```sh
 $git remote add upstream <the-url-of-upstream-repo>
