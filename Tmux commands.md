@@ -31,6 +31,13 @@ Press <kbd>Ctrl</kbd> + <kbd>b</kbd> and then do one of the followings.
 ## Detach(Leave) a session
 <kbd>d</kbd>
 
+## Choose which client you want to detach from the session
+[Is there any way to redraw tmux window when switching smaller monitor to bigger one?](https://stackoverflow.com/questions/7814612/is-there-any-way-to-redraw-tmux-window-when-switching-smaller-monitor-to-bigger)
+
+<kbd>Shift</kbd> + <kbd>d</kbd>
+
+This could be helpful when your tmux gives you a small window.
+
 ## Leave and detach a session
 `:kill-session`
 
