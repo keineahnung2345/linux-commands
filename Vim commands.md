@@ -226,6 +226,16 @@ Method 3: to indent
 :'<,'>s!^!    !
 ```
 
+## Comment multiple lines
+[What's a quick way to comment/uncomment lines in Vim?](https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim)
+
+<kbd>Ctrl</kbd> + <kbd>v</kbd> to go into visual mode, select multiple lines, and then:
+```
+:'<,'>s/^/#/
+```
+
+Note that `'<,'>` appears automatically after `:` is entered.
+
 ## Quit
 ```
 <:q!>
