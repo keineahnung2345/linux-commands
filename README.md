@@ -776,12 +776,12 @@ find . -type f -printf '%T@ %p\n' | sort -n | tail -1 | cut -f2- -d" "
 ### find, using regular expression
 To find files like 1567481018771_res.jpg or 1567481433382_res.jpg.
 ```sh
-find . -regex ".*[0-9]+_res\.jpg"
+find . -regex "./[0-9]+_res\.jpg"
 ```
 
 To find files like 1567481019363.jpg and 1567481189545.jpg.
 ```sh
-find . -regex ".*[0-9]+\.jpg"
+find . -regex "./[0-9]+\.jpg"
 ```
 
 ### find in multiple directories with same prefix
