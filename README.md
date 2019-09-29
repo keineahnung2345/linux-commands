@@ -107,6 +107,11 @@ facter | grep virtual (suitable for CentOS6)
 lscpu
 ```
 
+## check external devices' information
+```sh
+lsusb
+```
+
 ## check your gpu driver version
 ```sh
 nvidia-smi
