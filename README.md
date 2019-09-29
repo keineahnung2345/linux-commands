@@ -784,6 +784,11 @@ To find files like 1567481019363.jpg and 1567481189545.jpg.
 find . -regex ".*[0-9]+\.jpg"
 ```
 
+### find in multiple directories with same prefix
+```sh
+find <prefix>* -name "*.jpg"
+```
+
 ### list all subdirectories' file count
 [How to report number of files in all subdirectories?](https://unix.stackexchange.com/questions/23130/how-to-report-number-of-files-in-all-subdirectories)
 
