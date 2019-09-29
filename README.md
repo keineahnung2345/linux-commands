@@ -1034,6 +1034,30 @@ shuf -i1-$(wc -l < <input_file>) -n<N> | sed 's/$/d/' | sed -f- <input_file> > <
 sed -i 's/<word_to_delete>//' <filename>
 ```
 
+### remove lines starting with a specific word
+[How to delete a line with a given word using SED function](https://unix.stackexchange.com/questions/253055/how-to-delete-a-line-with-a-given-word-using-sed-function)
+```sh
+sed -i '/^<word>\b/d' <filename>
+```
+
+Input file:
+```
+a
+a b
+b a
+ab
+ad
+b
+```
+
+Result file:
+```
+b a
+ab
+ad
+b
+```
+
 ### add prefix or suffix to all lines of a file
 [Add a prefix string to beginning of each line](https://stackoverflow.com/questions/2099471/add-a-prefix-string-to-beginning-of-each-line)
 
