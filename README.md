@@ -1197,6 +1197,12 @@ gzip -d <xxx.gz>
 7za -y x <xxx.7z>
 ```
 
+## extract .bz2 file
+[How to decompress a .bz2 file](https://superuser.com/questions/480950/how-to-decompress-a-bz2-file)
+```sh
+bzip2 -dk <xxx.bz2>
+```
+
 ## go to the previous directory
 ```sh
 cd -
