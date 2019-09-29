@@ -936,6 +936,11 @@ awk 'NR==<line_number>' <filename>
 awk -F" " '{print $1}' <filename>
 ```
 
+### get length of lines in a file
+```sh
+awk '{ print length }' <filename>
+```
+
 ## split a file into two according to a ratio
 [Split: how to split into different percentages?](https://unix.stackexchange.com/questions/10219/split-how-to-split-into-different-percentages)
 
