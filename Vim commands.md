@@ -116,6 +116,12 @@ move the cursor to the word you want to find
 <:%d>: delete all the file
 ```
 
+## Delete all lines after this line
+[How to delete line(s) below current line in vim?](https://stackoverflow.com/questions/3624345/how-to-delete-lines-below-current-line-in-vim)
+```
+:+,$d
+```
+
 ## Copy selected range to clipboard(so one can paste it outside vim)
 First install `vim-gtk`:
 ```sh
