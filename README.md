@@ -934,11 +934,18 @@ echo "hello world, it's a good day" | awk '{print$3}'
 awk 'NR==<line_number>' <filename>
 ```
 
-### split lines in a file by " " and print their Nth token
+### split lines in a file by a delimeter and print their Nth token
 [How to get the first column of every line from a CSV file?](https://stackoverflow.com/questions/11668621/how-to-get-the-first-column-of-every-line-from-a-csv-file)
 
 ```sh
 awk -F" " '{print $1}' <filename>
+```
+
+[Get last field using awk substr](https://stackoverflow.com/questions/17921544/get-last-field-using-awk-substr)
+
+split lines by "/" and get the last token
+```sh
+awk -F "/" '{print $NF}' <filename>
 ```
 
 ### get length of lines in a file
