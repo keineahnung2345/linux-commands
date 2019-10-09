@@ -386,6 +386,11 @@ apt-get install --download-only <package-name>
 
 The `.deb` file will be put in `/var/cache/apt/archives`.
 
+## list packages installed
+```bash
+ldconfig -p | grep <package-name>
+```
+
 ## list installed packages by apt
 ```bash
 apt list --installed
