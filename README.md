@@ -713,7 +713,7 @@ find . -name "<filename>" -exec mv -t "<dst_path>" {} +
 find . -name "<filename>" -exec cp {} "<dst_path>"  \;
 ```
 
-### find in current directory, not recursive
+### find in current directory, not recursive, max depth = 1
 ```sh
 find . -maxdepth 1 -name "<*word*>"
 ```
