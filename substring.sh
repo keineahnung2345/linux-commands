@@ -1,3 +1,4 @@
+# https://stackoverflow.com/questions/428109/extract-substring-in-bash
 s="hello world"
 echo "string1: "
 echo ${s} #hello world
