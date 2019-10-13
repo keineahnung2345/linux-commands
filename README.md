@@ -711,6 +711,12 @@ find . -mindepth 1 -type d -exec rm -r "{}" \;
 find . -name "<filename>" -exec mv -t "<dst_path>" {} +
 ```
 
+In Mac, where `-t` is an illegal option to `mv`:
+
+```sh
+find . -name "<filename>" -exec mv {} "<dst_path>" \;
+```
+
 ### find and copy
 [Find and copy files](https://stackoverflow.com/questions/5241625/find-and-copy-files)
 
