@@ -213,6 +213,8 @@ export <env_var>="<value>"
 ```
 Note that there should not be any spaces before or after '=', or it throws `bad variable name` or ```bash: export: `=': not a valid identifier```.
 
+Ref: [How do I add environment variables?](https://askubuntu.com/questions/58814/how-do-i-add-environment-variables)
+
 ## concat string to an environment variable
 ```sh
 echo $<env_var>"str_to_concat"
