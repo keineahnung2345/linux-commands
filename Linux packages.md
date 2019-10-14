@@ -84,6 +84,44 @@ Use `gcc -v`, `g++ --version` and `make -v` to check their versions.
 apt-get install -y dlocate
 ```
 
+### python
+```sh
+apt-get install python3
+```
+
+### pip
+```sh
+apt install python3-pip
+```
+
+### glog
+```sh
+apt-get install -y libgoogle-glog-dev
+```
+
+### curl.h
+[Installing curl.h library [duplicate]](https://askubuntu.com/questions/78183/installing-curl-h-library)
+```sh
+apt-get install libcurl4-openssl-dev
+```
+
+### libconfig.h++
+```sh
+apt-get install libconfig++8-dev
+```
+
+### mysql/mysql.h
+[mysql.h file can't be found](https://stackoverflow.com/questions/14604228/mysql-h-file-cant-be-found/20634454)
+```sh
+apt-get install -y libmysqlclient-dev
+```
+mysql.h will be located at /usr/include/mysql/.
+
+### boost
+```sh
+apt-get install libboost-all-dev
+```
+
 ### OpenCV
 
 #### apt
@@ -121,19 +159,17 @@ Install libraries:
 sudo make install
 ```
 
-### python
+To uninstall, go to the build directory, and then:
 ```sh
-apt-get install python3
+sudo make uninstall
 ```
 
-### pip
-```sh
-apt install python3-pip
+One still needs to delete the following directories:
 ```
-
-### glog
-```sh
-apt-get install -y libgoogle-glog-dev
+rm `ls /usr/local/lib/*opencv*so*` #remove dead softlinks
+rm -r /usr/local/lib/opencv4
+rm -r /usr/local/include/opencv4
+rm -r /usr/local/share/opencv4
 ```
 
 ### TensorRT
@@ -194,29 +230,6 @@ Test, follow the instruction [here](https://docs.nvidia.com/deeplearning/sdk/ten
 ```sh
 cd <TensorRT root directory>/samples/sampleMNIST && make
 cd <TensorRT root directory>/bin && ./sample_mnist
-```
-
-### curl.h
-[Installing curl.h library [duplicate]](https://askubuntu.com/questions/78183/installing-curl-h-library)
-```sh
-apt-get install libcurl4-openssl-dev
-```
-
-### libconfig.h++
-```sh
-apt-get install libconfig++8-dev
-```
-
-### mysql/mysql.h
-[mysql.h file can't be found](https://stackoverflow.com/questions/14604228/mysql-h-file-cant-be-found/20634454)
-```sh
-apt-get install -y libmysqlclient-dev
-```
-mysql.h will be located at /usr/include/mysql/.
-
-### boost
-```sh
-apt-get install libboost-all-dev
 ```
 
 ## CentOS
