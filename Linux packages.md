@@ -246,9 +246,10 @@ cd <TensorRT root directory>/bin && ./sample_mnist
 
 ### Android NDK
 Download the zip file from https://developer.android.com/ndk/downloads.
+
 Unzip it to an appropiate location.
-Update environment variables:
-in /etc/profile, add:
+
+Update environment variables, in `/etc/profile`, add:
 ```bash
 export ANDROID_NDK_HOME=/home/jian/Documents/installation/android-ndk-r20
 export PATH=$ANDROID_NDK_HOME:$PATH
