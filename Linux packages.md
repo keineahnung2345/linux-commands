@@ -244,6 +244,19 @@ cd <TensorRT root directory>/samples/sampleMNIST && make
 cd <TensorRT root directory>/bin && ./sample_mnist
 ```
 
+### Android SDK
+[How to install Android SDK on Ubuntu?](https://stackoverflow.com/a/53508177/10651567)
+
+Download `sdk-tools-linux-4333796.zip` from [android studio - Command line tools only](https://developer.android.com/studio)
+
+Unzip it to an appropiate location, the resulting directory is `tools`.
+
+```
+mkdir android-sdk
+mv tools android-sdk
+```
+
+
 ### Android NDK
 Download the zip file from https://developer.android.com/ndk/downloads.
 
