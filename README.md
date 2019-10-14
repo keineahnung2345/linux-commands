@@ -1430,6 +1430,11 @@ sudo service lightdm stop
 cp `ls /source/directory` /target/directory
 ```
 
+## ls and then delete
+```sh
+rm `ls /dirname/filename`
+```
+
 ## copy : Argument list too long
 [Argument list too long when copying files](https://askubuntu.com/questions/217764/argument-list-too-long-when-copying-files)
 
