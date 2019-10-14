@@ -89,6 +89,18 @@ apt-get install -y dlocate
 apt-get install python3
 ```
 
+### java
+[How to Install JAVA 8 on Ubuntu 18.04/16.04, Linux Mint 19/18](https://tecadmin.net/install-oracle-java-8-ubuntu-via-ppa/)
+```sh
+apt install -y openjdk-8-jdk openjdk-8-jre
+```
+
+Set environment variable, in `~/.bashrc`:
+```
+export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-amd64"
+export PATH=$PATH:$JAVA_HOME/bin
+```
+
 ### pip
 ```sh
 apt install python3-pip
