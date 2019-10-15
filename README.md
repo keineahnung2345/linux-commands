@@ -1481,6 +1481,14 @@ Rename file with extension `.cloud` to `_cloud.cpp`.
 rename 's/.cloud$/_cloud.cpp/' *.cloud
 ```
 
+Or using for loop:
+
+```
+for f in $(ls *.xml); do
+    mv "$f" "cam2_$f"
+done
+```
+
 ## combine files by column, and set the column width
 [A better paste command](https://unix.stackexchange.com/questions/98945/a-better-paste-command)
 
