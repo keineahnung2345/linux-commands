@@ -940,6 +940,12 @@ grep -i <pattern> -rnw .
 grep <pattern> -rl .
 ```
 
+### grep, list file not containing specific string
+[How do I find files that do not contain a given string pattern?](https://stackoverflow.com/questions/1748129/how-do-i-find-files-that-do-not-contain-a-given-string-pattern)
+```sh
+grep <pattern> -rL .
+```
+
 ## awk
 ### cut a string and get the Nth part
 ```sh
