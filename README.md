@@ -935,6 +935,11 @@ ex: grep -rnw --include=\*.sh ".*SPARK.*" .
 grep -i <pattern> -rnw . 
 ```
 
+### grep, only list file names
+```sh
+grep <pattern> -rl .
+```
+
 ## awk
 ### cut a string and get the Nth part
 ```sh
