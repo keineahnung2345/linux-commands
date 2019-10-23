@@ -176,6 +176,17 @@ tar -cvpzf backup.tar.gz \
 --exclude=/home/*/.local/share/Trash /
 ```
 
+## measure running time of a command
+```sh
+time <other-command>
+```
+Output:
+```
+real	1m4.743s
+user	0m54.368s
+sys	0m16.128s
+```
+
 ## check current date and time
 ```sh
 date
