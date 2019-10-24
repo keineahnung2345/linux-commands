@@ -670,6 +670,12 @@ find . -name "<filename>" -type f | xargs du -sh
 ```
 Note that the double quotes around <filename> are important!
 
+### find directory and don't show their children
+[How to find only directories without subdirectories? [duplicate]](https://unix.stackexchange.com/questions/497185/how-to-find-only-directories-without-subdirectories)
+```sh
+find . -type d -links 2 ! -empty
+```
+
 ### find file and only print their filenames(not including their directory path)
 ```sh
 find . -type f -printf "%f\n"
