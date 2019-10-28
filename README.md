@@ -279,6 +279,38 @@ using ifconfig (cannot reconnect for me):
 ifconfig <network-interface-name> down && ifconfig <network-interface-name> up
 ```
 
+## configure static(fixed) ip address
+Ref to [Configure static IP address on Ubuntu 16.04 LTS Server](https://michael.mckinnon.id.au/2016/05/05/configuring-ubuntu-16-04-static-ip-address/):
+Edit the file `/etc/network/interfaces`:
+```sh
+auto lo
+iface lo inet loopback
+
+auto <interface_name>
+iface <interface_name> inet static
+address <the_static_ip_address_to_be_set>
+netmask 255.255.255.0
+gateway <gateway>
+dns-nameservers <gateway> 8.8.8.8 8.8.4.4
+```
+
+`<interface_name>` can be found by `ifconfig`, and `<gateway>` can be found by `route`.
+
+Example:
+```sh
+auto lo
+iface lo inet loopback
+
+auto enp0s31f6
+iface enp0s31f6 inet static
+address 10.56.6.90
+netmask 255.255.255.0
+gateway 10.56.6.254
+dns-nameservers 10.56.6.254 8.8.8.8 8.8.4.4
+```
+
+And then reboot.
+
 ## check port usage(either of one)
 ```sh
 lsof -i -n -P
