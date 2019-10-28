@@ -281,6 +281,7 @@ ifconfig <network-interface-name> down && ifconfig <network-interface-name> up
 
 ## configure static(fixed) ip address
 Ref to [Configure static IP address on Ubuntu 16.04 LTS Server](https://michael.mckinnon.id.au/2016/05/05/configuring-ubuntu-16-04-static-ip-address/):
+
 Edit the file `/etc/network/interfaces`:
 ```sh
 auto lo
