@@ -60,6 +60,11 @@ apt-get install -y sudo
 apt-get install -y vim
 ```
 
+### less
+```sh
+apt-get install -y less
+```
+
 ### ps, kill
 ```sh
 apt-get install -y procps
