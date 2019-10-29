@@ -19,6 +19,11 @@ dpkg -L <package-name>
 apt-cache madison <package-name>
 ```
 
+### sudo
+```sh
+apt-get install -y sudo
+```
+
 ### ps, kill
 ```sh
 apt-get install -y procps
