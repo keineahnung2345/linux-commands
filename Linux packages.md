@@ -302,6 +302,51 @@ cd <TensorRT root directory>/samples/sampleMNIST && make
 cd <TensorRT root directory>/bin && ./sample_mnist
 ```
 
+### OpenVINO
+Follow the instruction here: [Install Intel® Distribution of OpenVINO™ toolkit for Linux*](https://docs.openvinotoolkit.org/latest/_docs_install_guides_installing_openvino_linux.html)
+
+Download `l_openvino_toolkit_p_2019.3.376.tgz` from https://software.intel.com/en-us/openvino-toolkit/choose-download/free-download-linux.
+
+#### Unzip and install:
+```sh
+tar -xzf l_openvino_toolkit_p_2019.3.376.tgz
+cd l_openvino_toolkit_p_2019.3.376
+apt-get update -y
+# these are the packages needed during installation
+apt-get install -y pciutils cpio python3 sudo cmake
+./install.sh
+```
+
+#### Install External Software Dependencies:
+```sh
+cd /opt/intel/openvino/install_dependencies
+sudo -E ./install_openvino_dependencies.sh
+```
+
+#### Set the Environment Variables:
+add the following into `~/.bashrc`:
+```sh
+source /opt/intel/openvino/bin/setupvars.sh
+```
+and then `source ~/.bashrc`.
+
+#### Configure the Model Optimizer(TensorFlow)
+```sh
+# first install python tensorflow
+python3 -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple tensorflow
+cd /opt/intel/openvino/deployment_tools/model_optimizer/install_prerequisites
+sudo ./install_prerequisites_tf.sh
+```
+
+#### Run the Verification Scripts to Verify Installation
+```sh
+cd /opt/intel/openvino/deployment_tools/demo
+# Image Classification verification script
+./demo_squeezenet_download_convert_run.sh
+# Inference Pipeline verification script
+./demo_security_barrier_camera.sh
+```
+
 ### Android SDK
 [How to install Android SDK on Ubuntu?](https://stackoverflow.com/a/53508177/10651567)
 
