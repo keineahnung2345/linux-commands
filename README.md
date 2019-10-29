@@ -1244,9 +1244,15 @@ apt-get install uni2ascii
 ```
 
 ## redirect the error message of a command to a file
+[Shell重定向 ＆>file、2>&1、1>&2 、/dev/null的区别](https://blog.csdn.net/u011630575/article/details/52151995)
 ```sh
 <some-command> > <filename.txt> 2>&1
 ```
+0, 1, 2 here means standard input, standard output and standard error respectively.
+
+`> <filename.txt>` means redirect standard output to the file.
+
+`2>&1` means redirect standard error to standard output.
 
 ## count number of lines of other command's output
 ```sh
