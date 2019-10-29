@@ -1,6 +1,8 @@
 # Linux packages
 This README includes commands to install linux packages
 
+Useful links: [How to Install](https://www.howtoinstall.co/en/)
+
 ## Ubuntu
 ### Search a package
 ```sh
@@ -114,6 +116,11 @@ apt-get install -y libgoogle-glog-dev
 ### lspci
 ```sh
 apt-get install pciutils
+```
+
+### cpio
+```sh
+apt-get install cpio
 ```
 
 ### curl.h
