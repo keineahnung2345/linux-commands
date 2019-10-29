@@ -4,6 +4,11 @@ This README includes commands to install linux packages
 Useful links: [How to Install](https://www.howtoinstall.co/en/)
 
 ## Ubuntu
+### add-apt-repository
+```sh
+apt-get install -y software-properties-common python-software-properties
+```
+
 ### Search a package
 ```sh
 apt search <package-name>
