@@ -111,6 +111,11 @@ apt install python3-pip
 apt-get install -y libgoogle-glog-dev
 ```
 
+### lspci
+```sh
+apt-get install pciutils
+```
+
 ### curl.h
 [Installing curl.h library [duplicate]](https://askubuntu.com/questions/78183/installing-curl-h-library)
 ```sh
