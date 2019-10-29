@@ -55,6 +55,11 @@ apt-cache madison <package-name>
 apt-get install -y sudo
 ```
 
+### vim
+```sh
+apt-get install -y vim
+```
+
 ### ps, kill
 ```sh
 apt-get install -y procps
