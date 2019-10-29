@@ -9,6 +9,32 @@ Useful links: [How to Install](https://www.howtoinstall.co/en/)
 apt-get install -y software-properties-common python-software-properties
 ```
 
+### apt-fast
+[apt-fast](https://github.com/ilikenwf/apt-fast)
+```sh
+add-apt-repository ppa:apt-fast/stable
+apt-get update
+apt-get -y install apt-fast
+```
+
+There will be 3 questions, answer as follow:
+```
+Configuring apt-fast
+--------------------
+
+  1. apt-get  2. apt  3. aptitude
+Package manager to install and remove software: 1                               
+
+Stored in ${_MAXNUM} variable.
+
+Maximum number of connections: 8
+
+This does not affect package manager dialog but download installable packages before package
+manager confirmation.
+
+Suppress apt-fast confirmation dialog? [yes/no] yes
+```
+
 ### Search a package
 ```sh
 apt search <package-name>
