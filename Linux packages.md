@@ -347,6 +347,20 @@ cd /opt/intel/openvino/deployment_tools/demo
 ./demo_security_barrier_camera.sh
 ```
 
+#### Convert YOLOv1 and YOLOv2 Models to the IR
+Ref to the link: [Converting YOLO* Models to the Intermediate Representation (IR)](https://docs.openvinotoolkit.org/latest/_docs_MO_DG_prepare_model_convert_model_tf_specific_Convert_YOLO_From_Tensorflow.html)
+
+Based on `/opt/intel/openvino/deployment_tools/model_optimizer/extensions/front/tf/yolo_v2_voc.json`, write your own `yolo_v2_xxx.json`(revise `anchors` and `classes` based on your darknet cfg file)
+
+and then:
+
+```
+cd /opt/intel/openvino/deployment_tools/model_optimizer
+python3 ./mo_tf.py --input_model <tf_yolov2>.pb --batch 1  --tensorflow_use_custom_operations_config /opt/intel/openvino/deployment_tools/model_optimizer/extensions/front/tf/<custom_yolov2>.json
+```
+
+Then one can find `<tf_yolov2_pb_filename>.bin`, `<tf_yolov2_pb_filename>.mapping`, `<tf_yolov2_pb_filename>.xml` in `/opt/intel/openvino/deployment_tools/model_optimizer`.
+
 ### Android SDK
 [How to install Android SDK on Ubuntu?](https://stackoverflow.com/a/53508177/10651567)
 
