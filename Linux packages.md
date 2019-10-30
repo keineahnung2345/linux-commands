@@ -362,7 +362,7 @@ cd /opt/intel/openvino/deployment_tools/demo
 ```
 
 #### Convert YOLOv1 and YOLOv2 Models to the IR
-Ref to the link: [Converting YOLO* Models to the Intermediate Representation (IR)](https://docs.openvinotoolkit.org/latest/_docs_MO_DG_prepare_model_convert_model_tf_specific_Convert_YOLO_From_Tensorflow.html)
+Ref to the link: [Convert YOLOv1 and YOLOv2 Models to the IR](https://docs.openvinotoolkit.org/latest/_docs_MO_DG_prepare_model_convert_model_tf_specific_Convert_YOLO_From_Tensorflow.html#convert_yolov1_and_yolov2_models_to_the_ir)
 
 Based on `/opt/intel/openvino/deployment_tools/model_optimizer/extensions/front/tf/yolo_v2_voc.json`, write your own `yolo_v2_xxx.json`(revise `anchors` and `classes` based on your darknet cfg file)
 
@@ -374,6 +374,9 @@ python3 ./mo_tf.py --input_model <tf_yolov2>.pb --batch 1  --tensorflow_use_cust
 ```
 
 Then one can find `<tf_yolov2_pb_filename>.bin`, `<tf_yolov2_pb_filename>.mapping`, `<tf_yolov2_pb_filename>.xml` in `/opt/intel/openvino/deployment_tools/model_optimizer`.
+
+#### Convert YOLOv3 Model to IR
+Just follow the instruction here: [Convert YOLOv3 Model to IR](https://docs.openvinotoolkit.org/latest/_docs_MO_DG_prepare_model_convert_model_tf_specific_Convert_YOLO_From_Tensorflow.html#yolov3-to-ir), the process is quite smooth.
 
 ### Android SDK
 [How to install Android SDK on Ubuntu?](https://stackoverflow.com/a/53508177/10651567)
