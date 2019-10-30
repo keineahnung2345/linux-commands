@@ -4,6 +4,20 @@ This README includes commands to install linux packages
 Useful links: [How to Install](https://www.howtoinstall.co/en/)
 
 ## Ubuntu
+### Recover the system after executing autoremove
+If you execute `sudo apt-get autoremove --purge` accidently, the computer may crash.(No desktop to show)
+
+Ref to [Ubuntu 14.04 差点重装，崩溃！](https://blog.csdn.net/lhl_blog/article/details/39455523), one can execute the following to bring the desktop back!
+```sh
+apt-get install ubuntu-desktop
+apt-get install unity
+apt-get install unity-common
+apt-get install unity-lens*
+apt-get install unity-services
+apt-get install unity-asset-pool
+reboot
+```
+
 ### add-apt-repository
 ```sh
 apt-get install -y software-properties-common python-software-properties
