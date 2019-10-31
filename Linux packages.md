@@ -257,6 +257,17 @@ mysql.h will be located at /usr/include/mysql/.
 apt-get install libboost-all-dev
 ```
 
+### cuda
+
+#### Uninstall
+[How to uninstall CUDA Toolkit and cuDNN under Linux?](https://devtalk.nvidia.com/default/topic/994466/how-to-uninstall-cuda-toolkit-and-cudnn-under-linux-/)
+
+[How to uninstall Cuda7.5 from ubuntu?](https://stackoverflow.com/questions/39351244/how-to-uninstall-cuda7-5-from-ubuntu)
+```sh
+sudo apt-get --purge -y remove 'cuda*'
+sudo reboot
+```
+
 ### OpenCV
 
 #### apt
