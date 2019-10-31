@@ -374,7 +374,7 @@ source ~/.bashrc
 ```
 Test, follow the instruction [here](https://docs.nvidia.com/deeplearning/sdk/tensorrt-sample-support-guide/index.html#mnist_sample):
 ```sh
-cd <TensorRT root directory>/samples/sampleMNIST && make
+cd <TensorRT root directory>/samples && make
 cd <TensorRT root directory>/bin && ./sample_mnist
 ```
 
