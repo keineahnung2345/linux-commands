@@ -23,6 +23,57 @@ reboot
 apt-get install -y software-properties-common python-software-properties
 ```
 
+### remove package causing error when apt-get update
+Ref to [remove packages with error on apt-get update [duplicate]](https://askubuntu.com/questions/810771/remove-packages-with-error-on-apt-get-update)
+
+The error message when executing `apt-get update`:
+```
+Get:1 file:/var/cuda-repo-10-0-local-10.0.130-410.48  InRelease
+Ign:1 file:/var/cuda-repo-10-0-local-10.0.130-410.48  InRelease
+Get:2 file:/var/cuda-repo-10-1-local-10.1.243-418.87.00  InRelease
+Ign:2 file:/var/cuda-repo-10-1-local-10.1.243-418.87.00  InRelease
+Get:3 file:/var/nv-tensorrt-repo-cuda10.1-trt6.0.1.5-ga-20190913  InRelease
+Ign:3 file:/var/nv-tensorrt-repo-cuda10.1-trt6.0.1.5-ga-20190913  InRelease
+Get:4 file:/var/cuda-repo-10-0-local-10.0.130-410.48  Release
+Err:4 file:/var/cuda-repo-10-0-local-10.0.130-410.48  Release
+  File not found - /var/cuda-repo-10-0-local-10.0.130-410.48/Release (2: No such file or directory)
+Get:5 file:/var/cuda-repo-10-1-local-10.1.243-418.87.00  Release [574 B]
+Get:6 file:/var/nv-tensorrt-repo-cuda10.1-trt6.0.1.5-ga-20190913  Release [574 B]
+Get:5 file:/var/cuda-repo-10-1-local-10.1.243-418.87.00  Release [574 B]
+Get:6 file:/var/nv-tensorrt-repo-cuda10.1-trt6.0.1.5-ga-20190913  Release [574 B]
+Ign:9 http://dl.google.com/linux/chrome/deb stable InRelease                                    
+Hit:10 http://archive.ubuntukylin.com:10006/ubuntukylin xenial InRelease                        
+Hit:11 http://dl.google.com/linux/chrome/deb stable Release                                     
+Hit:13 http://packages.microsoft.com/repos/vscode stable InRelease                              
+Hit:15 http://security.ubuntu.com/ubuntu xenial-security InRelease                              
+Hit:16 http://cn.archive.ubuntu.com/ubuntu xenial InRelease                                     
+Hit:17 http://cn.archive.ubuntu.com/ubuntu xenial-updates InRelease                             
+Hit:18 http://cn.archive.ubuntu.com/ubuntu xenial-backports InRelease                           
+Hit:19 http://ppa.launchpad.net/apt-fast/stable/ubuntu xenial InRelease                         
+Hit:20 http://ppa.launchpad.net/graphics-drivers/ppa/ubuntu xenial InRelease   
+Hit:21 http://ppa.launchpad.net/webupd8team/java/ubuntu xenial InRelease       
+Hit:22 http://ppa.launchpad.net/yannubuntu/boot-repair/ubuntu xenial InRelease 
+Ign:12 https://developer.download.nvidia.cn/compute/cuda/repos/ubuntu1604/x86_64  InRelease
+Hit:23 https://developer.download.nvidia.cn/compute/cuda/repos/ubuntu1604/x86_64  Release
+Reading package lists... Done
+E: The repository 'file:/var/cuda-repo-10-0-local-10.0.130-410.48  Release' does not have a Release file.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+```
+We need to find where does the info of `cuda-repo-10-0` be stored:
+```sh
+cd /etc/apt
+grep -ir cuda-repo-10-0
+```
+It outputs:
+```
+sources.list.d/cuda-10-0-local-10.0.130-410.48.list:deb file:///var/cuda-repo-10-0-local-10.0.130-410.48 /
+sources.list.d/cuda-10-0-local-10.0.130-410.48.list.save:deb file:///var/cuda-repo-10-0-local-10.0.130-410.48 /
+```
+Edit the two files `sources.list.d/cuda-10-0-local-10.0.130-410.48.list` and `sources.list.d/cuda-10-0-local-10.0.130-410.48.list.save`, and comment their contents.
+
+After that, `apt-get update` can be executed successfully.
+
 ### apt-fast
 [apt-fast](https://github.com/ilikenwf/apt-fast)
 ```sh
