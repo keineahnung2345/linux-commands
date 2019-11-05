@@ -192,6 +192,18 @@ sys	0m16.128s
 date
 ```
 
+## get time in seconds since epoch
+[Get current time in seconds since the Epoch on Linux, Bash](https://stackoverflow.com/questions/1092631/get-current-time-in-seconds-since-the-epoch-on-linux-bash)
+```sh
+date +%s
+```
+
+This is same as the following in Python:
+```py
+import time
+time.time()
+```
+
 ## change timezone
 ```sh
 cd /usr/share/zoneinfo
