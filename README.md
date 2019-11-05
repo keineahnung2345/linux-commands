@@ -1014,6 +1014,12 @@ grep <pattern> -rL .
 grep <pattern> -r . | head -10
 ```
 
+### grep the beginning of line
+[Grep beginning of line](https://askubuntu.com/questions/639157/grep-beginning-of-line)
+```sh
+grep <^pattern> -r .
+```
+
 ## awk
 ### cut a string and get the Nth part
 ```sh
