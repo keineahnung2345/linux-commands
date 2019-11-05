@@ -1008,6 +1008,12 @@ grep <pattern> -rl .
 grep <pattern> -rL .
 ```
 
+### grep, limit number of files read 
+[grep - limit number of files read](https://stackoverflow.com/questions/41402247/grep-limit-number-of-files-read)
+```sh
+grep <pattern> -r . | head -10
+```
+
 ## awk
 ### cut a string and get the Nth part
 ```sh
