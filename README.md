@@ -1643,3 +1643,18 @@ do
    commandN
 done
 ```
+
+### continue
+[Bash: Continue In a For / While Loop](https://www.cyberciti.biz/faq/unix-linux-bsd-appleosx-continue-in-bash-loop/)
+```bash
+for i in 1 2 3 4 5 6
+do
+    ### just skip printing $i; if it is 3 or 6  ###
+    if [ $i -eq 3 -o $i -eq 6 ]
+    then
+        continue  ### resumes iteration of an enclosing for loop ###
+    fi
+    # print $i
+    echo "$i"
+done
+```
