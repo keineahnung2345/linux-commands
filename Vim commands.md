@@ -183,6 +183,12 @@ or
 :%s/.*<text>.*\n//g
 ```
 
+## Remove all trailing spaces
+[How to automatically strip trailing spaces on save in Vi and Vim?](https://unix.stackexchange.com/questions/75430/how-to-automatically-strip-trailing-spaces-on-save-in-vi-and-vim)
+```
+:%s/\s\+$//e
+```
+
 ## Find and Replace
 [Vim - Search and replace](https://vim.fandom.com/wiki/Search_and_replace)
 
