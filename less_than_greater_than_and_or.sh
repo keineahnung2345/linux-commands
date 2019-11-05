@@ -9,3 +9,11 @@ do
     fi
     echo $i
 done
+
+# Note that 
+# if [ "$i" -gt 3 ] 
+# should not be 
+# if [ "$i" -gt 3]
+# (there should be a space between 3 and ])
+# , otherwise there will be an error:
+# [: missing `]'
