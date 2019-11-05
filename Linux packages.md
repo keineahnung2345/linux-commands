@@ -263,9 +263,17 @@ apt-get install libboost-all-dev
 [How to uninstall CUDA Toolkit and cuDNN under Linux?](https://devtalk.nvidia.com/default/topic/994466/how-to-uninstall-cuda-toolkit-and-cudnn-under-linux-/)
 
 [How to uninstall Cuda7.5 from ubuntu?](https://stackoverflow.com/questions/39351244/how-to-uninstall-cuda7-5-from-ubuntu)
+
+Add the following:
 ```sh
 sudo apt-get --purge -y remove 'cuda*'
 sudo reboot
+```
+
+### gtk+ 3.0
+[How do I Install GTK+ 3.0?](https://askubuntu.com/questions/101306/how-do-i-install-gtk-3-0)
+```sh
+apt-get install libgtk-3-dev
 ```
 
 ### OpenCV
