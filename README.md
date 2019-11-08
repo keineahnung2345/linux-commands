@@ -145,6 +145,11 @@ nvidia-smi # should work now
 kill -9 $(nvidia-smi | sed -n 's/|\s*[0-9]*\s*\([0-9]*\)\s*.*/\1/p' | sort | uniq | sed '/^$/d')
 ```
 
+## find process id and then kill it
+```sh
+kill -9 `pgrep <your_exec_file_name>`
+```
+
 ## shutdown the machine
 ```sh
 shutdown now
