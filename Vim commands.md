@@ -13,9 +13,10 @@ stty rows 40 cols 120
 ```
 
 ## Show and hide line numbers
+[How To Show or Hide Line Numbers In vi / vim Text Editor](https://www.cyberciti.biz/faq/vi-show-line-numbers/)
 ```
-<:set number>: show line numbers
-<:unset number>: hide line numbers
+<:set number> or <:set nu>: show line numbers
+<:set nonumber> or <:set nu!>: hide line numbers
 ```
 
 ## Show opened's file's name
