@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # list_of_dirs.txt is a file containing directories whose files are to be sampled
 # the sturcture is: directory - JPEGImages - xxx.jpg
 # this script should be executed from a clean directory
