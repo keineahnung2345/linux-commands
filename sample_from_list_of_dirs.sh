@@ -2,7 +2,10 @@
 # list_of_dirs.txt is a file containing directories whose files are to be sampled
 # the sturcture is: directory - JPEGImages - xxx.jpg
 # this script should be executed from a clean directory
-for fulldir in $(cat list_of_dirs.txt)
+list_of_dirs_file_name="list_of_dirs.txt"
+declare -i sample_count=20
+
+for fulldir in $(cat $list_of_dirs_file_name)
 do
     echo $fulldir
     # strip last "/"
@@ -17,7 +20,7 @@ do
     cd $dir
     export images=`ls $fulldir/JPEGImages > tmp.txt`
     # sample 50 files for each directory
-    export simages=`cat tmp.txt | shuf -n 50`
+    export simages=`cat tmp.txt | shuf -n $sample_count`
     echo $simages
     for simage in $simages
     do
