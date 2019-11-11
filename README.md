@@ -714,6 +714,13 @@ kill -9 <pid>
 ```
 
 ## find
+### find, return full directory
+[How can I generate a list of files with their absolute path in Linux?](https://stackoverflow.com/questions/246215/how-can-i-generate-a-list-of-files-with-their-absolute-path-in-linux)
+```sh
+find "$PWD" -name "<filename>"
+find "$(pwd)" -name "<filename>"
+```
+
 ### find file and show their size
 ```sh
 find . -name "<filename>" -type f | xargs du -sh
