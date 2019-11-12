@@ -381,6 +381,12 @@ chmod 600 ~/.ssh/config
 ssh-keygen -R <ip-address>
 ```
 
+## ssh with password
+[How to pass password to scp?](https://stackoverflow.com/questions/50096/how-to-pass-password-to-scp)
+```sh
+sshpass -p <password> scp -r user@example.com:/some/remote/path /some/local/path
+```
+
 ## copy multiple directories from remote host to current directory
 ```sh
 scp <username>@<ip-address>:/some/remote/directory/\{a,b,c\} ./
