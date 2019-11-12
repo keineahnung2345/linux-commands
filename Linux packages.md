@@ -120,6 +120,12 @@ apt-cache madison <package-name>
 apt-get install -y sudo
 ```
 
+### sshpass
+[How to pass password to scp?](https://stackoverflow.com/questions/50096/how-to-pass-password-to-scp)
+```sh
+apt install sshpass
+```
+
 ### vim
 ```sh
 apt-get install -y vim
