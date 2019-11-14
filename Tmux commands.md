@@ -51,10 +51,19 @@ To leave scroll mode, press <kbd>q</kbd>.
 
 To search through history, press <kbd>Ctrl</kbd> + <kbd>s</kbd>. And then use <kbd>n</kbd> to go next, use <kbd>N</kbd> to go previous.
 
+## Panes
+split panes horizontally: `"`
+
+split panes vertically: `%`
+
+kill pane: `x`
+
 ## Useful link
 
 [tmux Cheat Sheet](https://gist.github.com/michaellihs/b6d46fa460fa5e429ea7ee5ff8794b96)
 
 [tmux cheatsheet](https://gist.github.com/henrik/1967800)
+
+[tmux shortcuts & cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
 
 [Tmux 快捷键 & 速查表](https://gist.github.com/ryerh/14b7c24dfd623ef8edc7)
