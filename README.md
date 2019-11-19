@@ -1719,3 +1719,9 @@ ffprobe -v error -select_streams v:0 -show_entries stream=codec_name -of default
 ```sh
 ffprobe -v error -show_format -show_streams <input_video>
 ```
+
+## video convertion: mp4 to h264
+[Converting .mp4 to .264 using FFmpeg](https://superuser.com/questions/1140237/converting-mp4-to-264-using-ffmpeg?answertab=votes#tab-top)
+```sh
+ffmpeg -i <input_mp4_video> -an -vcodec libx264 -crf 23 <output_h264_video>
+```
