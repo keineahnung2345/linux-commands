@@ -129,6 +129,17 @@ nvidia-htop.py -c -l 50
 ```
 This will show the processes' `PID`, `USER`, `GPU`, `MEM`, `%CPU`, `%MEM`, `TIME`, `COMMAND`.
 
+## check gpu memory size in detail
+[How to find out shared memory and global memory size of GPU?](https://stackoverflow.com/questions/38041148/how-to-find-out-shared-memory-and-global-memory-size-of-gpu)
+```sh
+# cd <cuda_installatino_dir>/samples/1_Utilities/deviceQuery
+cd /usr/local/cuda/samples/1_Utilities/deviceQuery
+# compile the cpp file
+make
+# run deviceQuery
+./deviceQuery
+```
+
 ## solve `NVIDIA NVML Driver/library version mismatch`
 [NVIDIA NVML Driver/library version mismatch](https://stackoverflow.com/questions/43022843/nvidia-nvml-driver-library-version-mismatch)
 ```sh
