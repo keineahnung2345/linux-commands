@@ -287,6 +287,11 @@ sudo reboot
 apt-get install libgtk-3-dev
 ```
 
+### ffmpeg
+```sh
+apt-get install -y ffmpeg
+```
+
 ### OpenCV
 
 #### apt
