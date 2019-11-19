@@ -1700,3 +1700,22 @@ do
     echo "$i"
 done
 ```
+
+## get video codec
+[how to recognize video codec of a file with ffmpeg](https://stackoverflow.com/questions/2869281/how-to-recognize-video-codec-of-a-file-with-ffmpeg)
+```sh
+mediainfo --Inform="Video;%Codec%" <input_video>
+# AVC
+```
+
+```sh
+ffprobe -v error -select_streams v:0 -show_entries stream=codec_name -of default=noprint_wrappers=1:nokey=1 <input_video>
+# h264
+```
+
+
+## get video information
+[How to retrieve video file information from command line under Linux?](https://superuser.com/questions/595177/how-to-retrieve-video-file-information-from-command-line-under-linux)
+```sh
+ffprobe -v error -show_format -show_streams <input_video>
+```
