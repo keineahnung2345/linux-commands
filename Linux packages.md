@@ -251,6 +251,11 @@ apt-get install libcurl4-openssl-dev
 apt-get install libconfig++8-dev
 ```
 
+### pkg-config
+```sh
+apt-get install -y pkg-config
+```
+
 ### mysql/mysql.h
 [mysql.h file can't be found](https://stackoverflow.com/questions/14604228/mysql-h-file-cant-be-found/20634454)
 ```sh
