@@ -292,6 +292,11 @@ apt-get install libgtk-3-dev
 apt-get install -y ffmpeg
 ```
 
+### mediainfo
+```sh
+apt-get install -y mediainfo
+```
+
 ### OpenCV
 
 #### apt
