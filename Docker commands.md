@@ -1,6 +1,17 @@
 # Docker commands
 Some useful docker commands
 
+## Manage Docker as a non-root user
+[Post-installation steps for Linux](https://docs.docker.com/install/linux/linux-postinstall/)
+```sh
+# create the group named docker
+sudo groupadd docker
+# add user to the group
+sudo usermod -aG docker $USER
+# activate the change to groups
+newgrp docker 
+```
+
 ## Start docker 
 ```sh
 systemctl start docker
