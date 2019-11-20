@@ -8,6 +8,14 @@ If not, there will be an error message:
 remote: Permission to \<other-user-name>/\<repo-name>.git denied to \<your-name>. \
 fatal: unable to access 'https://github.com/<other-user-name\>/\<repo-name>/': The requested URL returned error: 403
 
+## Make a directory git repository
+[A new repo from an existing project](https://kbroman.org/github_tutorial/pages/init.html)
+```sh
+$git init
+$git add *
+$git commit
+```
+
 ## Clone a repository
 https://stackoverflow.com/questions/67699/how-to-clone-all-remote-branches-in-git
 
