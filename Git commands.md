@@ -221,3 +221,11 @@ $git push origin <branch-name> --force
 [Comparing commits](https://help.github.com/en/articles/comparing-commits-across-time#comparing-commits)
 
 First find out the SHA codes of the two commits, and then open `https://github.com/<repo_owner>/<repo_name>/compare/<commit_sha1>..<commit_sha2>` in the browser.
+
+## Add equation into Github README.md
+[How to show math equations in general github's markdown(not github's blog)](https://stackoverflow.com/questions/11256433/how-to-show-math-equations-in-general-githubs-markdownnot-githubs-blog)
+
+Write your equation in [iTex2Img](http://www.sciweavers.org/free-online-latex-equation-editor), find its url, and then add the following into your README.md:
+```
+![equation](http://www.sciweavers.org/tex2img.php?<somewhere_link_to_your_image>)
+```
