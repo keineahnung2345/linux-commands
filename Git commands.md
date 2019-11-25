@@ -229,3 +229,9 @@ Write your equation in [iTex2Img](http://www.sciweavers.org/free-online-latex-eq
 ```
 ![equation](http://www.sciweavers.org/tex2img.php?<somewhere_link_to_your_image>)
 ```
+
+## Add image into Github README.md
+Add the following into your README.md:
+```
+![image](<image_url>)
+```
