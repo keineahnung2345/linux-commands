@@ -72,6 +72,10 @@ git pull
 
 `$git push origin <branch-name>` Push the branch from local to remote
 
+## Rename a branch
+[How do I rename a local Git branch?](https://stackoverflow.com/questions/6591213/how-do-i-rename-a-local-git-branch)
+`$git branch -m <old-branch-name> <new-branch-name>`
+
 ## Switch to another branch
 `$git checkout <branch-name>`
 
