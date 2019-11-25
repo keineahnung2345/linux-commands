@@ -74,6 +74,7 @@ git pull
 
 ## Rename a branch
 [How do I rename a local Git branch?](https://stackoverflow.com/questions/6591213/how-do-i-rename-a-local-git-branch)
+
 `$git branch -m <old-branch-name> <new-branch-name>`
 
 ## Switch to another branch
@@ -84,6 +85,15 @@ git pull
 $git checkout master
 $git branch -d <branch-name>
 $git push origin :<branch-name>
+```
+
+## Recover a deleted branch
+[Can I recover a branch after its deletion in Git?](https://stackoverflow.com/questions/3640764/can-i-recover-a-branch-after-its-deletion-in-git)
+
+```sh
+# use this command to find the SHA1 for the commit at the tip of your deleted branch
+git reflog
+git checkout -b <deleted-branch-name> <sha>
 ```
 
 ## List commits of a branch since its creation from `master`
