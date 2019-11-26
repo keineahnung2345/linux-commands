@@ -130,6 +130,15 @@ $git push origin <branch-name>
 
 Just add `.gitignore` in that empty folder, so GitHub will keep it.
 
+## Make .gitignore take effect
+[.gitignore is ignored by Git](https://stackoverflow.com/questions/11451535/gitignore-is-ignored-by-git)
+
+```sh
+$git rm -r --cached .
+$git add .
+$git commit -m "fixed untracked files"
+```
+
 ## Delete files and then commit
 Ref : [Removing multiple files from a Git repo that have already been deleted from disk](https://stackoverflow.com/questions/492558/removing-multiple-files-from-a-git-repo-that-have-already-been-deleted-from-disk)
 ```sh
