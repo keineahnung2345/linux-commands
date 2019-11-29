@@ -575,6 +575,10 @@ free    # in KB
 free -m # in MB
 free -g # in GB
 ```
+or
+```sh
+cat /proc/meminfo
+```
 
 ## check file system information
 ```sh
