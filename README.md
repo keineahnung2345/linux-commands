@@ -473,6 +473,19 @@ apt-cache search <package-name>
 apt-cache show <package-name>
 ```
 
+## set(or unset) apt proxy
+[Configure proxy for APT?](https://askubuntu.com/questions/257290/configure-proxy-for-apt)
+
+In `/etc/apt/apt.conf`, add something like:
+```
+Acquire::http::proxy "http://child-prc/intel.com:913/";
+Acquire::https::proxy "https://child-prc/intel.com:913/";
+```
+
+To unset, just clear `/etc/apt/apt.conf`.
+
+After changing the file, it will take effect immediately.
+
 ## apt-get update
 ```sh
 apt-get update
