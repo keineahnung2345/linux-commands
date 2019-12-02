@@ -504,6 +504,12 @@ unset http_proxy
 unset https_proxy
 ```
 
+In `/etc/environment`, comment the following lines:
+```
+http_proxy="http://child-prc.intel.com:913/"
+https_proxy="https://child-prc.intel.com:913/"
+```
+
 ## apt-get update
 ```sh
 apt-get update
