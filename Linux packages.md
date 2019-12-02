@@ -297,6 +297,16 @@ apt-get install -y ffmpeg
 apt-get install -y mediainfo
 ```
 
+### ssh server
+[Ubuntu Linux install OpenSSH server](https://www.cyberciti.biz/faq/ubuntu-linux-install-openssh-server/)
+```sh
+apt-get install -y openssh-server
+```
+Verify that ssh service running:
+```sh
+systemctl status ssh
+```
+
 ### OpenCV
 
 #### apt
