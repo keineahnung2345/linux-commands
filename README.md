@@ -537,9 +537,15 @@ yum search <xxx>
 ex: yum search java | grep 'java-1.8.0-openjdk-'
 
 ## check size of directories and files
-### check total size of a directory, containing all its items
+### check total size of a directory, containing all its items(the unit is KB, MB or GB depending on its size)
 ```sh
 du -sh <dirname>
+```
+
+### check total size of a directory in bytes
+[How can I see a folder's exact size in bytes?](https://askubuntu.com/questions/104848/how-can-i-see-a-folders-exact-size-in-bytes/104850)
+```sh
+du -s -B1 <dirname>
 ```
 
 ### check all files' size in current dir
