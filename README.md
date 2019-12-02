@@ -491,6 +491,19 @@ To unset, just clear `/etc/apt/apt.conf`.
 
 After changing the file, it will take effect immediately.
 
+## set(or unset) system proxy
+Set system proxy:
+```sh
+export http_proxy=http://child-prc.intel.com:913/
+export https_proxy=https://child-prc.intel.com:913/
+```
+
+Unset system proxy:
+```sh
+unset http_proxy
+unset https_proxy
+```
+
 ## apt-get update
 ```sh
 apt-get update
