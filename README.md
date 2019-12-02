@@ -295,6 +295,11 @@ eval $(<command-whose-output-is-the-commands-you-want-to-execute>)
 printenv
 ```
 
+## find an environment varialbe by name
+```sh
+env | grep -i "<env_var_name>"
+```
+
 ## export an environment variable
 ```sh
 export <env_var>="<value>"
