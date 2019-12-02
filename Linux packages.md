@@ -230,6 +230,11 @@ apt install python3-pip
 apt-get install -y libgoogle-glog-dev
 ```
 
+### gflags
+```sh
+apt-get install -y libgflags-dev
+```
+
 ### lspci
 ```sh
 apt-get install pciutils
