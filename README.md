@@ -352,6 +352,8 @@ hostname -I | cut -d' ' -f1
 ```
 
 ## restart a specific network interface
+[How to Restart Network Interface in Linux](https://www.cyberciti.biz/faq/linux-restart-network-interface/)
+
 using ifdown:
 ```sh
 ifdown <network-interface-name> && ifup <network-interface-name>
@@ -359,6 +361,15 @@ ifdown <network-interface-name> && ifup <network-interface-name>
 using ifconfig (cannot reconnect for me):
 ```sh
 ifconfig <network-interface-name> down && ifconfig <network-interface-name> up
+```
+
+For Ubuntu, also:
+```sh
+sudo /etc/init.d/networking restart
+```
+or 
+```sh
+sudo systemctl restart networking
 ```
 
 ## configure static(fixed) ip address
