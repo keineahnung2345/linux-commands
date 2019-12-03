@@ -246,6 +246,7 @@ Add the following into your README.md:
 ```
 
 ## check git config
+[Easiest way to reset git config file](https://stackoverflow.com/questions/35853986/easiest-way-to-reset-git-config-file)
 ```sh
 # config only for this repo
 # stored in <repo>/.git/config
