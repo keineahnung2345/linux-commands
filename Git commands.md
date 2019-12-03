@@ -244,3 +244,13 @@ Add the following into your README.md:
 ```
 ![image](<image_url>)
 ```
+
+## check git config
+```sh
+# config only for this repo
+# stored in <repo>/.git/config
+git config --local --list
+# global config
+# stored in ~/.gitconfig
+git config --global --list
+```
