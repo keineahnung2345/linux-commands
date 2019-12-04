@@ -96,6 +96,13 @@ git reflog
 git checkout -b <deleted-branch-name> <sha>
 ```
 
+## Copy files between branches
+[How do I copy a version of a single file from one git branch to another?](https://stackoverflow.com/questions/307579/how-do-i-copy-a-version-of-a-single-file-from-one-git-branch-to-another)
+
+```sh
+git checkout <other-branch-name> <relative_path_to_file_or_dir>
+```
+
 ## List commits of a branch since its creation from `master`
 ```sh
 git log master...<branch-name>
