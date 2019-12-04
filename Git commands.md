@@ -125,6 +125,13 @@ $git commit
 $git push origin <branch-name>
 ```
 
+## Revert `git add`
+[How can you undo the last git add?](https://stackoverflow.com/questions/12132272/how-can-you-undo-the-last-git-add)
+```sh
+$git reset -- <folder-or-file-name>
+$git reset #revert all added folders or files
+```
+
 ## Add empty folders
 [How can I add an empty directory to a Git repository?](https://stackoverflow.com/questions/115983/how-can-i-add-an-empty-directory-to-a-git-repository)
 
