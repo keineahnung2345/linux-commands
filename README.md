@@ -1848,3 +1848,10 @@ ffprobe -v error -show_format -show_streams <input_video>
 ```sh
 ffmpeg -i <input_mp4_video> -an -vcodec libx264 -crf 23 <output_h264_video>
 ```
+
+## nano editor
+First edit your file:
+```sh
+nano xxx.txt
+```
+Then press <kbd>Ctrl</kbd> + <kbd>O</kbd> to save, press <kbd>Enter</kbd> to confirm, and finally press <kbd>Ctrl</kbd> + <kbd>X</kbd> to exit.
