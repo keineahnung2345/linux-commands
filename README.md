@@ -1883,3 +1883,9 @@ Then press <kbd>Ctrl</kbd> + <kbd>O</kbd> to save, press <kbd>Enter</kbd> to con
 ```sh
 nautilus <folder_name>
 ```
+
+## open file from terminal
+[How to open text, video, or picture files via terminal](https://askubuntu.com/questions/383997/how-to-open-text-video-or-picture-files-via-terminal/384003)
+```sh
+xdg-open <filename>
+```
