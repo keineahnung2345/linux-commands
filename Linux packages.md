@@ -308,6 +308,12 @@ apt-get install -y ffmpeg
 apt-get install -y mediainfo
 ```
 
+### vlc player
+[How to Install Latest VLC in Ubuntu Linux](https://itsfoss.com/install-latest-vlc/)
+```sh
+snap install vlc
+```
+
 ### ssh server
 [Ubuntu Linux install OpenSSH server](https://www.cyberciti.biz/faq/ubuntu-linux-install-openssh-server/)
 ```sh
