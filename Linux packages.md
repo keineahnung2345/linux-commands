@@ -166,6 +166,12 @@ apt-get install -y lsb-release
 apt install -y nvidia-cuda-toolkit
 ```
 
+### glxinfo
+[glxinfo: command not found .... nvidia debian](https://www.linuxquestions.org/questions/debian-26/glxinfo-command-not-found-nvidia-debian-469088/)
+```sh
+apt-get install -y mesa-utils
+```
+
 ### zip, unzip
 ```sh
 apt-get install -y zip unzip
