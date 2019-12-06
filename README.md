@@ -1877,3 +1877,9 @@ First edit your file:
 nano xxx.txt
 ```
 Then press <kbd>Ctrl</kbd> + <kbd>O</kbd> to save, press <kbd>Enter</kbd> to confirm, and finally press <kbd>Ctrl</kbd> + <kbd>X</kbd> to exit.
+
+## open folder from terminal
+[How to open a folder in linux via terminal? [closed]](https://askubuntu.com/questions/464324/how-to-open-a-folder-in-linux-via-terminal)
+```sh
+nautilus <folder_name>
+```
