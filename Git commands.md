@@ -269,3 +269,26 @@ git config --local --list
 # stored in ~/.gitconfig
 git config --global --list
 ```
+
+## unset git proxy
+[Git: How to remove proxy](https://stackoverflow.com/questions/32268986/git-how-to-remove-proxy/32269086)
+```sh
+git config --global --unset https.proxy
+git config --global --unset http.proxy
+git config --unset http.proxy
+git config --unset https.proxy
+```
+
+If it doesn't work, use:
+```sh
+git config --global --edit
+```
+and clean the field `proxy`, like:
+```
+[http]
+[https]
+[http "https://github.com"]
+        proxy =
+[https "https://github.com"]
+        proxy =
+```
