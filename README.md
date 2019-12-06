@@ -1889,3 +1889,27 @@ nautilus <folder_name>
 ```sh
 xdg-open <filename>
 ```
+
+## find default video player's name
+[Ubuntu (GNOME) default video player name](https://askubuntu.com/questions/1098203/ubuntu-gnome-default-video-player-name)
+
+Find in launcher configuration file:
+```sh
+grep -r Videos /usr/share/applications
+```
+Sample output:
+```
+/usr/share/applications/org.gnome.Totem.desktop:Name=Videos
+/usr/share/applications/totem.desktop:Name=Videos
+```
+Find out which package supplies this file:
+```sh
+dpkg -S /usr/share/applications/org.gnome.Totem.desktop
+dpkg -S /usr/share/applications/totem.desktop
+```
+Sample output:
+```
+totem: /usr/share/applications/org.gnome.Totem.desktop
+totem: /usr/share/applications/totem.desktop
+```
+So the default video player is `totem`.
