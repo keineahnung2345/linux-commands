@@ -786,7 +786,7 @@ echo <S>*/
 ls -R <dirname>
 ```
 
-### ls, list absolute path
+### ls, list absolute path(full path)
 [How can I generate a list of files with their absolute path in Linux?](https://stackoverflow.com/questions/246215/how-can-i-generate-a-list-of-files-with-their-absolute-path-in-linux)
 
 For directories (the / after ** is needed in bash to limit it to directories):
