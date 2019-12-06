@@ -210,6 +210,19 @@ kill -9 $(nvidia-smi | sed -n 's/|\s*[0-9]*\s*\([0-9]*\)\s*.*/\1/p' | sort | uni
 nvprof ./<cuda_executable>
 ```
 
+## check Intel GPU Info
+```sh
+glxinfo | grep -i device
+```
+Sample output:
+```
+    Device: Mesa DRI Intel(R) Iris Plus Graphics 650 (Kaby Lake GT3e)  (0x5927)
+```
+Note that it should be used on a computer with GUI, otherwise it gives the following error:
+```
+Error: unable to open display
+```
+
 ## find process id and then kill it
 ```sh
 kill -9 `pgrep <your_exec_file_name>`
