@@ -223,6 +223,15 @@ Note that it should be used on a computer with GUI, otherwise it gives the follo
 Error: unable to open display
 ```
 
+## check OpenCL version
+```sh
+clinfo --version
+```
+Sample output:
+```
+clinfo version 2.1.16.01.12
+```
+
 ## find process id and then kill it
 ```sh
 kill -9 `pgrep <your_exec_file_name>`
