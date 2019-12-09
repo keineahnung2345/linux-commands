@@ -1214,6 +1214,14 @@ awk -F "/" '{print $NF}' <filename>
 awk '{ print length }' <filename>
 ```
 
+### filter lines by their length
+[How to remove lines shorter than XY?](https://unix.stackexchange.com/questions/123243/how-to-remove-lines-shorter-than-xy)
+```sh
+<other-command> | awk 'length($0) > <number>'
+<other-command> | awk 'length($0) == <number>'
+<other-command> | awk 'length($0) < <number>'
+```
+
 ## split a file into two according to a ratio
 [Split: how to split into different percentages?](https://unix.stackexchange.com/questions/10219/split-how-to-split-into-different-percentages)
 
