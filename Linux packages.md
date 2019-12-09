@@ -504,6 +504,21 @@ python3 mo_tf.py --input_model $TF_MODEL_PATH --tensorflow_use_custom_operations
 
 P.S. In darknet, it will convert image from BGR to RGB before training. [BGR or RGB order for image reading in darknet?](https://github.com/pjreddie/darknet/issues/427)
 
+#### Accuracy Checker
+[Deep Learning accuracy validation framework](https://docs.openvinotoolkit.org/latest/_tools_accuracy_checker_README.html)
+```sh
+python3 setup.py install
+```
+If there is some problem related to `Pillow`, try reinstalling it:
+```sh
+pip install --no-cache-dir -I -i https://pypi.tuna.tsinghua.edu.cn/simple pillow
+```
+Sample usage:
+[Accuracy Checker Sample](https://docs.openvinotoolkit.org/latest/_tools_accuracy_checker_sample_README.html)
+```sh
+accuracy_check -c sample/sample_config.yml -m data/test_models -s sample
+```
+
 ### Android SDK
 [How to install Android SDK on Ubuntu?](https://stackoverflow.com/a/53508177/10651567)
 
