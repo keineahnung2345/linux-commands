@@ -106,6 +106,10 @@ facter | grep virtual (suitable for CentOS6)
 ```sh
 lscpu
 ```
+or:
+```sh
+cat /proc/cpuinfo
+```
 
 ## check external devices' information
 ```sh
