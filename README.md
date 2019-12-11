@@ -1770,16 +1770,25 @@ alias python=python3
 ```
 
 ## rename a batch of files
+[how can I rename multiple files by inserting a character?](https://unix.stackexchange.com/questions/33261/how-can-i-rename-multiple-files-by-inserting-a-character)
+
 Rename file with extension `.cloud` to `_cloud.cpp`.
 ```bash
 rename 's/.cloud$/_cloud.cpp/' *.cloud
 ```
 
-Or using for loop:
+Or using for loop and mv:
 
-```
+```sh
 for f in $(ls *.xml); do
     mv "$f" "cam2_$f"
+done
+```
+This replace `./FP32/b4/benchmark_CPU__.txt` to `./FP32/b4/benchmark_CPU_t1_s1.txt`:
+```sh
+for fname in $(grep FPS -rl . --include=*__.txt)
+do
+    mv "$fname" "${fname/__/_t1_s1}"
 done
 ```
 
