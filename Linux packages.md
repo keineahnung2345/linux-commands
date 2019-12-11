@@ -324,6 +324,11 @@ Verify that ssh service running:
 systemctl status ssh
 ```
 
+### intel_gpu_top, intel_gpu_time, intel_gpu_frequency, intel_gpu_abrt
+```sh
+apt-get install intel-gpu-tools
+```
+
 ### OpenCV
 
 #### apt
