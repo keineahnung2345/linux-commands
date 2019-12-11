@@ -227,6 +227,12 @@ Note that it should be used on a computer with GUI, otherwise it gives the follo
 Error: unable to open display
 ```
 
+## check Intel GPU usage
+Ref: [Check your intel gpu usage via commandline](https://medium.com/@niklaszantner/check-your-intel-gpu-usage-via-commandline-11196a7ee827)
+```sh
+intel_gpu_top
+```
+
 ## check OpenCL version
 ```sh
 clinfo --version
