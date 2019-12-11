@@ -122,6 +122,7 @@ nvidia-smi
 ```
 
 ## monitor GPU usage
+### nvidia-smi
 ```sh
 nvidia-smi --loop=1
 nvidia-smi -l=1
@@ -135,6 +136,13 @@ or
 ```sh
 watch -n0 nvidia-smi
 ```
+
+### gpustat
+[How to measure GPU usage?](https://askubuntu.com/questions/387594/how-to-measure-gpu-usage)
+```sh
+gpustat -cp
+```
+Note: -c for show command, -p for show pid
 
 ## check your gpu specification
 ```sh
