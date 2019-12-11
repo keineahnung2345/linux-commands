@@ -139,10 +139,14 @@ watch -n0 nvidia-smi
 
 ### gpustat
 [How to measure GPU usage?](https://askubuntu.com/questions/387594/how-to-measure-gpu-usage)
+
+[wookayin/gpustat](https://github.com/wookayin/gpustat)
 ```sh
 gpustat -cp
 ```
 Note: -c for show command, -p for show pid
+
+Install it by `pip`.
 
 ## check your gpu specification
 ```sh
