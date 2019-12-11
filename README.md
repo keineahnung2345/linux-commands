@@ -121,6 +121,21 @@ lsusb
 nvidia-smi
 ```
 
+## monitor GPU usage
+```sh
+nvidia-smi --loop=1
+nvidia-smi -l=1
+```
+or
+```
+nvidia-smi --loop-ms=500
+nvidia-smi -lms=500
+```
+or
+```sh
+watch -n0 nvidia-smi
+```
+
 ## check your gpu specification
 ```sh
 nvidia-smi -q
@@ -1582,11 +1597,6 @@ Sample output:
 [compare executable or object file](https://stackoverflow.com/questions/28808063/compare-executable-or-object-file)
 ```sh
 diff <(objdump -d <file1>) <(objdump -d <file2>)
-```
-
-## monitor GPU usage
-```sh
-watch -n0 nvidia-smi
 ```
 
 ## list the last \<num_lines> lines in \<filename.txt>
