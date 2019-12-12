@@ -102,13 +102,23 @@ systemd-detect-virt
 facter | grep virtual (suitable for CentOS6)
 ```
 
-## check your cpu specification
+## check cpu specification
 ```sh
 lscpu
 ```
 or:
 ```sh
 cat /proc/cpuinfo
+```
+
+## check cpu microarchitecture
+[how to find out intel architecture family from command line](https://unix.stackexchange.com/questions/230634/how-to-find-out-intel-architecture-family-from-command-line)
+```sh
+gcc -march=native -Q --help=target|grep march
+```
+Sample output:
+```
+  -march=                     		broadwell
 ```
 
 ## check external devices' information
