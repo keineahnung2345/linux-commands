@@ -875,6 +875,8 @@ This solves the error of `scp: /dirname/filename: Permission denied`, `chmod` ma
 ### monitor CPU, memory usage
 ```sh
 top
+# specify number of iterations as 1
+top -n1
 ```
 or
 ```sh
