@@ -1648,6 +1648,10 @@ The `<target>` should be full path, otherwise there will be an error: `Too many 
 
 Difference of hard and soft link can be found in: [Linux ln command](https://www.computerhope.com/unix/uln.htm).
 
+## check the target of a symbolic link
+```bash
+readlink <linkname>
+```
 
 ## remove a symbolic link
 Reference to: [How to Remove a Symbolic Link (Symlink)](http://osxdaily.com/2016/05/25/how-delete-symbolic-link-symlink/)
