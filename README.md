@@ -697,6 +697,12 @@ or
 tree </path/to/directory>
 ```
 
+To list directory only:
+
+```
+tree -d
+```
+
 ## check memory size
 ```sh
 free    # in KB
