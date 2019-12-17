@@ -1538,6 +1538,11 @@ tar cf - <xxx> -P | pv -s $(($(du -sk <xxx> | awk '{print $1}') * 1024)) | gzip 
 pv <xxx.tar.gz> | tar xzf - -C </target/directory/to/unzip>
 ```
 
+## extract .tar file
+```sh
+tar -xvf <xxx.tar>
+```
+
 ## extract .tar.gz file
 ```sh
 tar -xzvf <xxx.tar.gz>
