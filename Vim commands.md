@@ -71,6 +71,17 @@ They can be preceded with a number `<n>`, so the command will be repeated n time
 ```
 If you search for something containing uppercase characters, it will do a case-sensitive search; if you search for something purely lowercase, it will do a case-insensitive search.
 
+## Change the display of long line
+[How to stop line breaking in vim](https://stackoverflow.com/questions/2280030/how-to-stop-line-breaking-in-vim/2280059)
+Display long line as multiple lines:
+```
+<:set wrap>
+```
+Display long line as one line:
+```
+<:set nowrap>
+```
+
 ## Search a word
 Method 1:
 ```
