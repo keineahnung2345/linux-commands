@@ -1238,6 +1238,12 @@ grep <pattern> -r . | head -10
 grep <^pattern> -r .
 ```
 
+### grep, show only a part of matching long lines
+[How to truncate long matching lines returned by grep or ack](https://stackoverflow.com/questions/2034799/how-to-truncate-long-matching-lines-returned-by-grep-or-ack)
+```sh
+grep ".{0,20}<pattern>.{0,20}" -oE .
+```
+
 ## awk
 ### cut a string and get the Nth part
 ```sh
