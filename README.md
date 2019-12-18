@@ -1590,6 +1590,22 @@ bzip2 -dk <xxx.bz2>
 cd -
 ```
 
+## check directory stack
+```sh
+dirs
+```
+
+## operate with directory stack
+Change directory and push it to directory stack:
+```sh
+pushd <dir>
+```
+
+Pop a directory from the stack and cd to it:
+```sh
+popd
+```
+
 ## show difference between two files
 ```sh
 diff <file1> <file2>
