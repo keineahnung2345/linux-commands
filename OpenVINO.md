@@ -2,6 +2,21 @@
 
 ## Model Optimizer
 
+### Install Prerequisites
+For all frameworks:
+
+```sh
+cd /opt/intel/openvino/deployment_tools/model_optimizer/install_prerequisites
+./install_prerequisites.sh
+```
+
+Just for one framework:
+
+```sh
+cd /opt/intel/openvino/deployment_tools/model_optimizer/install_prerequisites
+./install_prerequisites_tf.sh
+```
+
 ### Darknet 
 #### Convert YOLOv1 and YOLOv2 Models to the IR
 Ref to the link: [Convert YOLOv1 and YOLOv2 Models to the IR](https://docs.openvinotoolkit.org/latest/_docs_MO_DG_prepare_model_convert_model_tf_specific_Convert_YOLO_From_Tensorflow.html#convert_yolov1_and_yolov2_models_to_the_ir)
