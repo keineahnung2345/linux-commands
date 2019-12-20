@@ -61,6 +61,14 @@ cd SqueezeNet/SqueezeNet_v1.1
 python /opt/intel/openvino/deployment_tools/model_optimizer/mo.py --input_model squeezenet_v1.1.caffemodel --input_proto deploy.prototxt # --mean_values "data(123.68,116.779,103.939)" --scale_values "data(127.5)"
 ```
 
+## Inference Engine
+### Build samples
+```sh
+cd /opt/intel/openvino/deployment_tools/inference_engine/samples
+./build_samples.sh
+```
+This will generate executable files in `~/inference_engine_samples_build`.
+
 ## Accuracy Checker
 [Deep Learning accuracy validation framework](https://docs.openvinotoolkit.org/latest/_tools_accuracy_checker_README.html)
 ```sh
