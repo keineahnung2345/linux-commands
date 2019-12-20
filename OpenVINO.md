@@ -51,6 +51,19 @@ tar -xvf ssd_mobilenet_v2_coco_2018_03_29.tar.gz
 cd ssd_mobilenet_v2_coco_2018_03_29
 python3 /opt/intel/openvino/deployment_tools/model_optimizer/mo.py --input_model frozen_inference_graph.pb --tensorflow_object_detection_api_pipeline_config pipeline.config --reverse_input_channels --tensorflow_use_custom_operations_config /opt/intel/openvino/deployment_tools/model_optimizer/extensions/front/tf/ssd_v2_support.json
 ```
+This will generate `frozen_inference_graph.xml` and `frozen_inference_graph.bin`.
+
+To test them:
+```sh
+~/inference_engine_samples_build/intel64/Release/object_detection_sample_ssd -i <input_image> -m frozen_inference_graph.xml -d CPU
+```
+This will generate `out_0.bmp`, on which the bounding boxes are drawed.
+
+Sample output:
+```
+[0,2] element, prob = 0.980039    (55,66)-(969,649) batch id : 0 WILL BE PRINTED!
+# [curProposal, label] element, prob = confidence    (xmin,ymin)-(xmax,ymax) batch id : image_id
+```
 
 ### Caffe
 #### Convert SqueezeNet_v1.1 to IR
