@@ -45,6 +45,9 @@ P.S. In darknet, it will convert image from BGR to RGB before training. [BGR or 
 
 ### TensorFlow
 #### Convert frozen ssd_mobilenet_v2 to IR
+This model is trained on COCO and will output 91 classes, [here](https://tech.amikelive.com/node-718/what-object-categories-labels-are-in-coco-dataset/) is the mapping.
+
+Ref: [Tensorflow/models uses COCO 90 class ids although COCO has only 80 categories](https://stackoverflow.com/questions/50665110/tensorflow-models-uses-coco-90-class-ids-although-coco-has-only-80-categories)
 ```sh
 wget http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v2_coco_2018_03_29.tar.gz
 tar -xvf ssd_mobilenet_v2_coco_2018_03_29.tar.gz
