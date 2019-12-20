@@ -292,3 +292,6 @@ and clean the field `proxy`, like:
 [https "https://github.com"]
         proxy =
 ```
+
+## upload large file(> 100MB)
+[Git Large File Storage](https://git-lfs.github.com/)
