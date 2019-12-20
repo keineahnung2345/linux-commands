@@ -120,6 +120,20 @@ Test:
 ~/inference_engine_samples_build/intel64/Release/classification_sample_async -i <input_image> -m squeezenet_v1.1.xml -d CPU
 ```
 
+### ONNX
+#### Convert AlexNet to IR
+This model is trained on ImageNet, and it will output 1000 classes.
+```sh
+wget https://s3.amazonaws.com/download.onnx/models/opset_8/bvlc_alexnet.tar.gz
+tar -xzf bvlc_alexnet.tar.gz
+cd bvlc_alexnet
+python3 /opt/intel/openvino/deployment_tools/model_optimizer/mo.py --input_model model.onnx
+```
+Test: 
+```sh
+~/inference_engine_samples_build/intel64/Release/classification_sample_async -i <input_image> -m model.xml -d CPU
+```
+
 ## Inference Engine
 ### Build samples
 ```sh
