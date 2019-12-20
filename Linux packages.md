@@ -501,6 +501,14 @@ Then one can find `<tf_yolov2_pb_filename>.bin`, `<tf_yolov2_pb_filename>.mappin
 #### Convert YOLOv3 Model to IR
 Just follow the instruction here: [Convert YOLOv3 Model to IR](https://docs.openvinotoolkit.org/latest/_docs_MO_DG_prepare_model_convert_model_tf_specific_Convert_YOLO_From_Tensorflow.html#yolov3-to-ir), the process is quite smooth.
 
+#### Convert SqueezeNet_v1.1 to IR
+Clone the repo [forresti/SqueezeNet](https://github.com/forresti/SqueezeNet.git):
+```sh
+git clone https://github.com/forresti/SqueezeNet.git
+cd SqueezeNet/SqueezeNet_v1.1
+python /opt/intel/openvino/deployment_tools/model_optimizer/mo.py --input_model squeezenet_v1.1.caffemodel --input_proto deploy.prototxt # --mean_values "data(123.68,116.779,103.939)" --scale_values "data(127.5)"
+```
+
 #### model input: RGB -> BGR
 Remember that when converting from tensorflow model to IR, we can specify `--reverse_input_channels` so that the model will expect BGR input image rather than RGB ones.
 ```sh
