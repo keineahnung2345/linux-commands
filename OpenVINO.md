@@ -105,7 +105,19 @@ Clone the repo [forresti/SqueezeNet](https://github.com/forresti/SqueezeNet.git)
 ```sh
 git clone https://github.com/forresti/SqueezeNet.git
 cd SqueezeNet/SqueezeNet_v1.1
-python /opt/intel/openvino/deployment_tools/model_optimizer/mo.py --input_model squeezenet_v1.1.caffemodel --input_proto deploy.prototxt # --mean_values "data(123.68,116.779,103.939)" --scale_values "data(127.5)"
+```
+The model is trained on ImageNet, and it will output 1000 classes.
+
+Convert it to IR:
+```sh
+python3 /opt/intel/openvino/deployment_tools/model_optimizer/mo.py --input_model squeezenet_v1.1.caffemodel --input_proto deploy.prototxt
+# the following is wrong but it could be helpful in other cases
+# python3 /opt/intel/openvino/deployment_tools/model_optimizer/mo.py --input_model squeezenet_v1.1.caffemodel --input_proto deploy.prototxt --mean_values "data(123.68,116.779,103.939)" --scale_values "data(127.5)"
+```
+
+Test:
+```sh
+~/inference_engine_samples_build/intel64/Release/classification_sample_async -i <input_image> -m squeezenet_v1.1.xml -d CPU
 ```
 
 ## Inference Engine
