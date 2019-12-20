@@ -65,6 +65,37 @@ Sample output:
 # [curProposal, label] element, prob = confidence    (xmin,ymin)-(xmax,ymax) batch id : image_id
 ```
 
+#### Convert unfrozen inception_resnet_v2 to IR
+Follow [tensorflow-code-snippets/tf_freeze_checkpoint_to_pb](https://github.com/keineahnung2345/tensorflow-code-snippets/tree/master/tf_freeze_checkpoint_to_pb) to download the tensorflow checkpoint file and freeze it.
+
+This model is trained on ImageNet and will output 1001 classes, where the 0th class is background, for the later 1000 classes, there is a [mapping from imagenet class id to class name](https://gist.github.com/yrevar/942d3a0ac09ec9e5eb3a).
+
+Convert it to IR:
+```sh
+python3 /opt/intel/openvino/deployment_tools/model_optimizer/mo.py --input_model inception_resnet_v2.pb --reverse_input_channel --input_shape "(1,299,299,3)" --mean_values "(127.5,127.5,127.5)" --scale 127.5
+```
+
+Test:
+```sh
+~/inference_engine_samples_build/intel64/Release/classification_sample_async -i <input_image> -m inception_resnet_v2.xml -d CPU
+```
+
+Sample output:
+```
+classid probability
+------- -----------
+944     0.5505478  
+940     0.3143223  
+474     0.0010462  
+924     0.0010045  
+303     0.0009022  
+507     0.0008387  
+999     0.0008005  
+894     0.0007374  
+564     0.0007317  
+785     0.0007239
+```
+
 ### Caffe
 #### Convert SqueezeNet_v1.1 to IR
 Clone the repo [forresti/SqueezeNet](https://github.com/forresti/SqueezeNet.git):
