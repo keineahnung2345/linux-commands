@@ -134,6 +134,48 @@ Test:
 ~/inference_engine_samples_build/intel64/Release/classification_sample_async -i <input_image> -m model.xml -d CPU
 ```
 
+### PyTorch
+#### ShuffleNetV2
+First convert .pt or .pth to .onnx, following the link: https://github.com/keineahnung2345/pytorch-code-snippets/blob/master/README.md#export-model-to-onnx.
+
+And then convert to IR:
+```sh
+python3 /opt/intel/openvino/deployment_tools/model_optimizer/mo.py --input_model shufflenet.onnx --mean_values "(123.675,116.28,103.53)" --scale_values "(58.395,57.12,57.375)"
+```
+Where mean values and scale values are calculated based on the information from [PyTorch ShuffleNetV2 official webpage](https://pytorch.org/hub/pytorch_vision_shufflenet_v2/):
+
+```
+The images have to be loaded in to a range of [0, 1] and then normalized using mean = [0.485, 0.456, 0.406] and std = [0.229, 0.224, 0.225].
+```
+
+They are calculated by:
+```
+(x/255 - [0.485, 0.456, 0.406])/([0.229, 0.224, 0.225])
+= x/[58.395, 57.120000000000005, 57.375] - [2.1179039301310043,2.0357142857142856,1.8044444444444445]
+= (x - [123.675, 116.28, 103.53])/[58.395, 57.120000000000005, 57.375]
+```
+
+Test: 
+```sh
+~/inference_engine_samples_build/intel64/Release/classification_sample_async -i <input_image> -m shufflenet.xml -d CPU
+```
+Sample output:
+```
+classid probability
+------- -----------
+281     10.2143707 
+282     9.9564438  
+285     9.5348167  
+340     8.8790054  
+643     8.4198780  
+24      8.3956766  
+397     7.4016151  
+725     6.7973700  
+288     6.7509956  
+23      6.7055311
+```
+The probabilities are not in the range of [0,1], that's because the last layer of ShuffleNetV2 is FC, not softmax.
+
 ## Inference Engine
 ### Build samples
 ```sh
