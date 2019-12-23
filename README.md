@@ -131,6 +131,17 @@ lsusb
 nvidia-smi
 ```
 
+If it says:
+```
+NVIDIA-SMI couldn't find libnvidia-ml.so library in your system. Please make sure that the NVIDIA Display Driver is properly installed and present in your system.
+Please also try adding directory that contains libnvidia-ml.so to your system PATH.
+```
+Following [NVIDIA-SMI couldn't find libnvidia-ml.so library](https://askubuntu.com/questions/833862/nvidia-smi-couldnt-find-libnvidia-ml-so-library), add the following line to your `~/.bashrc`:
+```sh
+export LD_PRELOAD=/usr/lib/nvidia-418/libnvidia-ml.so
+```
+And then `source ~/.bashrc`.
+
 ## monitor GPU usage
 ### nvidia-smi
 ```sh
