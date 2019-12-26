@@ -251,6 +251,16 @@ apt-get install pciutils
 apt-get install cpio
 ```
 
+### openssl
+[How do I install the OpenSSL libraries on Ubuntu?](https://stackoverflow.com/questions/3016956/how-do-i-install-the-openssl-libraries-on-ubuntu)
+```sh
+apt-get install libssl-dev
+```
+Check version:
+```
+openssl version -a
+```
+
 ### curl.h
 [Installing curl.h library [duplicate]](https://askubuntu.com/questions/78183/installing-curl-h-library)
 ```sh
