@@ -1093,6 +1093,14 @@ find . -regex "./[0-9]+\.jpg"
 find <prefix>* -name "*.jpg"
 ```
 
+### find by modification time
+[Find Files By Access, Modification Date / Time Under Linux or UNIX](https://www.cyberciti.biz/faq/howto-finding-files-by-date/)
+
+To find a file modified less than 60 days:
+```sh
+find . -name "<filename>" -mtime -60 -print
+```
+
 ### list all subdirectories' file count
 [How to report number of files in all subdirectories?](https://unix.stackexchange.com/questions/23130/how-to-report-number-of-files-in-all-subdirectories)
 
