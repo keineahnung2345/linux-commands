@@ -235,7 +235,11 @@ $git push origin <branch-name> --force
 ```
 
 ## Compare two branches
-`$git diff <branch-name1>...<branch-name2>`
+```sh
+$git diff <branch-name1> <branch-name2>
+# specify the file to compare
+$git diff <branch-name1> <branch-name2> <filename>
+```
 
 ## Check git branch graph
 `$git log --oneline --graph`
