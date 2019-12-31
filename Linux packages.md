@@ -518,6 +518,37 @@ export ANDROID_NDK_HOME=/home/jian/Documents/installation/android-ndk-r20
 export PATH=$ANDROID_NDK_HOME:$PATH
 ```
 
+### Protocol Buffers
+First download the required version from https://github.com/protocolbuffers/protobuf/tags (here I download v2.6.1 because TensorRT uses proto2).
+```sh
+tar -xzf v2.6.1.tar.gz
+```
+And you will get a folder `protobuf-2.6.1`.
+
+Since the link of googletest in `./autogen.sh` is broken, we need to download it ourselves.
+Download googletest from https://github.com/google/googletest/releases (here I download release-1.5.0 because proto buffers v2.6.1 requires it).
+```sh
+tar -xzf release-1.5.0.tar.gz
+# got folder: googletest-release-1.5.0
+mv googletest-release-1.5.0 protobuf-2.6.1/gtest
+```
+Then following the [official instruction](https://github.com/protocolbuffers/protobuf/tree/master/src):
+```sh
+./autogen.sh
+./configure
+make
+make check
+sudo make install
+sudo ldconfig # refresh shared library cache.
+```
+To generate c++ code:
+```sh
+protoc --cpp_out=`pwd` <your_file>.proto
+```
+It will generate `<your_file>.pb.cc` and `<your_file>.pb.h`.
+
+For more: check the [developer guide](https://developers.google.com/protocol-buffers/docs/proto#specifying-field-rules).
+
 ## CentOS
 ### facter
 ```sh
