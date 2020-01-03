@@ -47,6 +47,11 @@ $echo "some/dir/" >> .git/info/sparse-checkout
 $git pull origin master
 ```
 
+## Just clone a branch of a repo
+```sh
+$git clone -b <branch-name> https://github.com/<user-name>/<repo-name>.git
+```
+
 ## Synchronize local repo with remote one
 [git: sync local repo with remote one](https://stackoverflow.com/questions/6373277/git-sync-local-repo-with-remote-one)
 
@@ -106,11 +111,6 @@ git checkout <other-branch-name> <relative_path_to_file_or_dir>
 ## List commits of a branch since its creation from `master`
 ```sh
 git log master...<branch-name>
-```
-
-## Just clone a branch of a repo
-```sh
-$git clone -b <branch-name> https://github.com/<user-name>/<repo-name>.git
 ```
 
 ## Fork and then create a pull request
