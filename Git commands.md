@@ -153,6 +153,13 @@ $git add .
 $git commit -m "fixed untracked files"
 ```
 
+## Untrack files
+[Untrack files from git temporarily](https://stackoverflow.com/questions/6964297/untrack-files-from-git-temporarily)
+```sh
+git rm -r --cached <folder-or-file-name>
+```
+Then you can see when using `git commit`, the file or folder moves from `Changes to be committed` part to `Untracked files` part.
+
 ## Delete files and then commit
 Ref : [Removing multiple files from a Git repo that have already been deleted from disk](https://stackoverflow.com/questions/492558/removing-multiple-files-from-a-git-repo-that-have-already-been-deleted-from-disk)
 ```sh
