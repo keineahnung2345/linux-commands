@@ -363,8 +363,28 @@ Configure:
 ```sh
 cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local OPENCV_EXTRA_MODULES_PATH=/xxx/opencv_contrib-3.4.1/modules ..
 ```
-Add `OPENCV_EXTRA_MODULES_PATH` to build with modules from opencv_contrib.
 
+From [Build specific modules OpenCV](https://stackoverflow.com/questions/25594003/build-specific-modules-opencv), to only install some modules, one can specify `-DBUILD_LIST=...`:
+```sh
+-DBUILD_LIST=core,improc,imgcodecs,dnn,videoio,cudev,highgui
+```
+To determine which modules are required, one should check one's source code and find the opencv headers included, for me, they are:
+```cpp
+#include <opencv2/opencv.hpp>
+#include <opencv2/core/types.hpp>
+#include <opencv2/imgproc.hpp>
+#include <opencv2/imgcodecs.hpp>
+#include <opencv2/dnn/dnn.hpp>
+#include <opencv2/videoio.hpp>
+```
+Note that `cudev` and `highgui` are not directly included, but they are required because `cudev` is for gpu programming and `highgui` is for the user interface window.
+
+After specifying `-DBUILD_LIST=...`, part of `cmake`'s output would be:
+```
+--     Disabled by dependency:      calib3d cudaarithm cudabgsegm cudacodec cudafeatures2d cudafilters cudaimgproc cudalegacy cudaobjdetect cudaoptflow cudastereo cudawarping features2d flann ml objdetect photo python2 python_bindings_generator shape stitching superres ts video videostab viz
+```
+
+Add `OPENCV_EXTRA_MODULES_PATH` to build with modules from opencv_contrib.
 
 Build:
 ```sh
