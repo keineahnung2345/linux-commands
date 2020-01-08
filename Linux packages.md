@@ -514,6 +514,13 @@ cd /opt/intel/openvino/deployment_tools/demo
 ./demo_security_barrier_camera.sh
 ```
 
+#### Uninstall
+[Uninstall OpenVINO completely from Ubuntu machine](https://software.intel.com/en-us/forums/intel-distribution-of-openvino-toolkit/topic/814827)
+```sh
+cd /opt/intel/openvino/openvino_toolkit_uninstaller
+sudo ./uninstall.sh
+```
+
 ### Android SDK
 [How to install Android SDK on Ubuntu?](https://stackoverflow.com/a/53508177/10651567)
 
