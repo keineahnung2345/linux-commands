@@ -365,6 +365,12 @@ To make this change pernament, add the following line in the last of `~/.profile
 TZ='Asia/Taipei'; export TZ
 ```
 
+## sleep
+[What does the sleep command do in Linux?](https://www.cyberciti.biz/faq/what-does-the-sleep-command-do-in-linux/)
+```sh
+sleep <number_of_seconds>
+```
+
 ## check system log around the date \<yyyymmdd\>(It records the boot and shutdown histories)
 ```sh
 cat /var/log/messages-<yyyymmdd> | less
