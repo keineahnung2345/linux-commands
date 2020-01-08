@@ -160,6 +160,13 @@ git rm -r --cached <folder-or-file-name>
 ```
 Then you can see when using `git commit`, the file or folder moves from `Changes to be committed` part to `Untracked files` part.
 
+## Unstage files
+[Why are there two ways to unstage a file in Git?](https://stackoverflow.com/questions/6919121/why-are-there-two-ways-to-unstage-a-file-in-git)
+```sh
+git reset -- <filePath>
+```
+Then you can see when using `git commit`, the file or folder moves from `Changes to be committed` part to `Changes not staged for commit` part.
+
 ## Delete files and then commit
 Ref : [Removing multiple files from a Git repo that have already been deleted from disk](https://stackoverflow.com/questions/492558/removing-multiple-files-from-a-git-repo-that-have-already-been-deleted-from-disk)
 ```sh
