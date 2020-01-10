@@ -48,6 +48,12 @@ Show columns:
 SHOW COLUMNS FROM mytable;
 ```
 
+Set column(s) as primary key:
+[MySQL Primary Key](https://www.mysqltutorial.org/mysql-primary-key/)
+```sql
+ALTER TABLE mytable ADD PRIMARY KEY(phone, buy_time);
+```
+
 ## Stored procedure
 This stored procedure add 128 columns named `embedding_1` to `embedding_128` to `mytable`. (Adapted from [Add columns to mySQL table with loops](https://stackoverflow.com/questions/14313418/add-columns-to-mysql-table-with-loops) and [MySQL REPEAT Loop](https://www.mysqltutorial.org/mysql-stored-procedure/mysql-repeat-loop/) and [Dynamic add column with loop](https://stackoverflow.com/questions/20108188/dynamic-add-column-with-loop) and [How To have Dynamic SQL in MySQL Stored Procedure](https://stackoverflow.com/questions/190776/how-to-have-dynamic-sql-in-mysql-stored-procedure)).
 
