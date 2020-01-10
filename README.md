@@ -275,6 +275,12 @@ Note that it should be used on a computer with GUI, otherwise it gives the follo
 Error: unable to open display
 ```
 
+Another option(can be used when there is no display):
+[How do I find version of Intel graphics card drivers installed?](https://askubuntu.com/questions/1163390/how-do-i-find-version-of-intel-graphics-card-drivers-installed)
+```sh
+lspci -k | grep -EA3 'VGA|3D|Display'
+```
+
 ## check Intel GPU usage
 Ref: [Check your intel gpu usage via commandline](https://medium.com/@niklaszantner/check-your-intel-gpu-usage-via-commandline-11196a7ee827)
 ```sh
