@@ -1,5 +1,8 @@
 # OpenVINO
 
+## Installation
+[Linux packages - OpenVINO](https://github.com/keineahnung2345/linux-commands/blob/master/Linux%20packages.md#openvino)
+
 ## Model Optimizer
 
 ### Install Prerequisites
