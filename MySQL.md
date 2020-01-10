@@ -11,6 +11,11 @@ sudo apt-get install mysql-server
 sudo systemctl start mysql
 ```
 
+## Check version
+```sh
+mysql -V
+```
+
 ## Start shell
 ```sh
 mysql -u root -p
