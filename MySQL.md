@@ -61,12 +61,17 @@ ALTER TABLE mytable ADD PRIMARY KEY(phone, buy_time);
 
 Insert:
 ```sql
-INSERT INTO mytable VALUES (12345678901, FROM_UNIXTIME(1578635060), 3.000000, 3.000000)
+INSERT INTO mytable VALUES (12345678901, FROM_UNIXTIME(1578635060), 3.000000, 3.000000);
 ```
 
 Delete:
 ```sql
 DELETE FROM mytable WHERE phone=12345678901;
+```
+
+Update:
+```sql
+UPDATE mytable SET phone=09876543210 WHERE phone=12345678901;
 ```
 
 ## Stored procedure
