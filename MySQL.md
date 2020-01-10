@@ -68,6 +68,10 @@ Delete:
 ```sql
 DELETE FROM mytable WHERE phone=12345678901;
 ```
+[How to delete a MySQL record after a certain time](https://stackoverflow.com/questions/14096429/how-to-delete-a-mysql-record-after-a-certain-time)
+```sql
+DELETE FROM mytable WHERE buy_time < (CURDATE() - INTERVAL 2 DAY);
+```
 
 Update:
 ```sql
