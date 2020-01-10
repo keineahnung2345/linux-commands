@@ -26,3 +26,36 @@ Show databases:
 ```sql
 SHOW DATABASES;
 ```
+
+## Table
+```sql
+CREATE TABLE mytable(phone char(11), buy_time timestamp);
+```
+
+## Stored procedure
+This stored procedure add 128 columns named `embedding_1` to `embedding_128` to `mytable`. (Adapted from [Add columns to mySQL table with loops](https://stackoverflow.com/questions/14313418/add-columns-to-mysql-table-with-loops)).
+```sql
+DELIMITER $$
+DROP PROCEDURE IF EXISTS AddColumns$$
+CREATE PROCEDURE AddColumns()
+BEGIN
+    DECLARE counter INT DEFAULT 1;
+    DECLARE result VARCHAR(100) DEFAULT '';
+
+    REPEAT
+        SET result = '';
+        SET result = CONCAT(result,'embedding_',counter);
+        SET counter = counter + 1;
+        SET @sql = CONCAT('ALTER TABLE mytable ADD ',result,' float');
+        PREPARE stmt FROM @sql;
+        EXECUTE stmt;
+        DEALLOCATE PREPARE stmt;
+    UNTIL counter > 128
+    END REPEAT;
+
+    -- display result
+    SELECT result;
+END
+$$
+DELIMITER ;
+```
