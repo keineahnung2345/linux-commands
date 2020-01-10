@@ -17,19 +17,35 @@ mysql -u root -p
 ```
 
 ## Database
-Create database
-```sql
-CREATE DATABASE mydb;
-```
-
 Show databases:
 ```sql
 SHOW DATABASES;
 ```
 
+Create database:
+```sql
+CREATE DATABASE mydb;
+```
+
 ## Table
+First we need to select the database to use:
+```sql
+USE mydb;
+```
+
+Show tables:
+```sql
+SHOW TABLES;
+```
+
+Create table:
 ```sql
 CREATE TABLE mytable(phone char(11), buy_time timestamp);
+```
+
+Show columns:
+```sql
+SHOW COLUMNS FROM mytable;
 ```
 
 ## Stored procedure
