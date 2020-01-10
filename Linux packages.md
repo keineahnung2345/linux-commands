@@ -490,6 +490,22 @@ cd /opt/intel/openvino/install_dependencies
 sudo -E ./install_openvino_dependencies.sh
 ```
 
+#### Install NEO OCL driver:
+[Assign to GPU Failed](https://software.intel.com/en-us/forums/intel-distribution-of-openvino-toolkit/topic/780703#comment-1927023)
+
+This is required if you want to run on Intel GPU!
+```sh
+cd /opt/intel/openvino/install_dependencies
+./install_NEO_OCL_driver.sh
+sudo usermod -a -G video USERNAME
+```
+If this is not installed, trying to run on GPU will generate the following error!
+```
+[ ERROR ] Failed to create plugin /opt/intel/openvino_2019.3.376/deployment_tools/inference_engine/lib/intel64/libclDNNPlugin.so for device GPU
+Please, check your environment
+clGetPlatformIDs error -1001
+```
+
 #### Set the Environment Variables:
 add the following into `~/.bashrc`:
 ```sh
