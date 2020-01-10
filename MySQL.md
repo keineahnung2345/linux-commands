@@ -59,6 +59,11 @@ Set column(s) as primary key:
 ALTER TABLE mytable ADD PRIMARY KEY(phone, buy_time);
 ```
 
+Count:
+```sql
+SELECT COUNT(*) from mytable;
+```
+
 Insert:
 ```sql
 INSERT INTO mytable VALUES (12345678901, FROM_UNIXTIME(1578635060), 3.000000, 3.000000);
@@ -68,9 +73,17 @@ Delete:
 ```sql
 DELETE FROM mytable WHERE phone=12345678901;
 ```
+Delete all:
+```sql
+DELETE FROM mytable;
+```
 [How to delete a MySQL record after a certain time](https://stackoverflow.com/questions/14096429/how-to-delete-a-mysql-record-after-a-certain-time)
 ```sql
 DELETE FROM mytable WHERE buy_time < (CURDATE() - INTERVAL 2 DAY);
+```
+Delete by some order([mysql deleting oldest record in a table](https://stackoverflow.com/questions/20093361/mysql-deleting-oldest-record-in-a-table)), this delete the earliest buying record of "9876543210":
+```sql
+DELETE FROM mytable WHERE phone = 9876543210 ORDER BY buy_time ASC LIMIT 1;
 ```
 
 Update:
