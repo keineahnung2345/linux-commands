@@ -66,3 +66,5 @@ To run it, from [How to create a mysql stored procedure through linux terminal](
 ```sh
 mysql -u root -p<password> <mydb> < addcolumns.sql
 ```
+
+This sample use 128 columns to store a vector, for an alternative way, try [How do I create a field with a vector type in MySQL?](https://stackoverflow.com/questions/24346424/how-do-i-create-a-field-with-a-vector-type-in-mysql).
