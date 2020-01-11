@@ -105,6 +105,8 @@ DELETE FROM mytable WHERE phone = 9876543210 ORDER BY buy_time ASC LIMIT 1;
 ### Update
 ```sql
 UPDATE mytable SET phone=09876543210 WHERE phone=12345678901;
+UPDATE mytable SET sex=TRUE WHERE phone=12345678901;
+UPDATE mytable SET sex=0 WHERE phone=12345678902;
 ```
 
 ### Time
