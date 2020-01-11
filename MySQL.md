@@ -138,6 +138,13 @@ Use as subquery:
 INSERT INTO mytable VALUES("12345678902", CURRENT_TIMESTAMP());
 ```
 
+### SubQuery
+[MySQL SubQuery Tutorial with Examples](https://www.guru99.com/sub-queries.html)
+```sql
+SELECT phone, buy_time FROM mytable WHERE (phone, buy_time) IN 
+    (SELECT phone, buy_time FROM mytable2 WHERE sex =0);
+```
+
 ## Stored procedure
 This stored procedure add 128 columns named `embedding_1` to `embedding_128` to `mytable`. (Adapted from [Add columns to mySQL table with loops](https://stackoverflow.com/questions/14313418/add-columns-to-mysql-table-with-loops) and [MySQL REPEAT Loop](https://www.mysqltutorial.org/mysql-stored-procedure/mysql-repeat-loop/) and [Dynamic add column with loop](https://stackoverflow.com/questions/20108188/dynamic-add-column-with-loop) and [How To have Dynamic SQL in MySQL Stored Procedure](https://stackoverflow.com/questions/190776/how-to-have-dynamic-sql-in-mysql-stored-procedure)).
 
