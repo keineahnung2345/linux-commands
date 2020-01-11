@@ -45,7 +45,7 @@ SHOW TABLES;
 
 Create table:
 ```sql
-CREATE TABLE mytable(phone char(11), buy_time timestamp);
+CREATE TABLE mytable(phone char(11) primary key, buy_time timestamp);
 ```
 
 Show columns:
@@ -57,6 +57,11 @@ Set column(s) as primary key:
 [MySQL Primary Key](https://www.mysqltutorial.org/mysql-primary-key/)
 ```sql
 ALTER TABLE mytable ADD PRIMARY KEY(phone, buy_time);
+```
+
+Delete table:
+```sql
+DROP TABLE mytable;
 ```
 
 ## Query
