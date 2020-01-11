@@ -158,6 +158,14 @@ SELECT phone, COUNT(*) AS ALL_COUNT FROM mytable WHERE phone IN
 GROUP BY phone;
 ```
 
+### Temporary table
+[Create a temporary table in a SELECT statement without a separate CREATE TABLE](https://stackoverflow.com/questions/5859391/create-a-temporary-table-in-a-select-statement-without-a-separate-create-table)
+
+Store the query result into a temp table, this can be used to simplify nested query.
+```sql
+CREATE TEMPORARY TABLE IF NOT EXISTS T1 AS (<another_query>);
+```
+
 ## Stored procedure
 This stored procedure add 128 columns named `embedding_1` to `embedding_128` to `mytable`. (Adapted from [Add columns to mySQL table with loops](https://stackoverflow.com/questions/14313418/add-columns-to-mysql-table-with-loops) and [MySQL REPEAT Loop](https://www.mysqltutorial.org/mysql-stored-procedure/mysql-repeat-loop/) and [Dynamic add column with loop](https://stackoverflow.com/questions/20108188/dynamic-add-column-with-loop) and [How To have Dynamic SQL in MySQL Stored Procedure](https://stackoverflow.com/questions/190776/how-to-have-dynamic-sql-in-mysql-stored-procedure)).
 
