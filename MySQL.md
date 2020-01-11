@@ -85,6 +85,11 @@ SELECT COUNT(*) from mytable;
 SELECT MAX(buy_time) AS latest FROM mytable;
 ```
 
+### Operation on columns
+```sql
+SELECT width * height AS area FROM rectangle;
+```
+
 ### Insert
 ```sql
 INSERT INTO mytable VALUES (12345678901, FROM_UNIXTIME(1578635060), 3.000000, 3.000000);
