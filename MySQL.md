@@ -109,6 +109,12 @@ UPDATE mytable SET sex=TRUE WHERE phone=12345678901;
 UPDATE mytable SET sex=0 WHERE phone=12345678902;
 ```
 
+### GROUP BY
+Note that it's `GROUP BY`, not `GROUPBY`.
+```sql
+SELECT sex, COUNT(*) FROM mytable GROUP BY sex;
+```
+
 ### Time
 Date:
 ```sql
