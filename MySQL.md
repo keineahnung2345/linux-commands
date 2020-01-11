@@ -50,7 +50,7 @@ CREATE TABLE mytable(phone char(11) primary key, buy_time timestamp);
 
 Delete table:
 ```sql
-DROP TABLE mytable;
+DROP TABLE [IF EXISTS] mytable;
 ```
 
 Rename table:
