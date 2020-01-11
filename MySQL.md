@@ -145,9 +145,17 @@ INSERT INTO mytable VALUES("12345678902", CURRENT_TIMESTAMP());
 
 ### SubQuery
 [MySQL SubQuery Tutorial with Examples](https://www.guru99.com/sub-queries.html)
+
+Query from 2 different tables:
 ```sql
 SELECT phone, buy_time FROM mytable WHERE (phone, buy_time) IN 
     (SELECT phone, buy_time FROM mytable2 WHERE sex =0);
+```
+Get the record count of the phones who contain at least one record of embedding_1 < 0.01.
+```sql
+SELECT phone, COUNT(*) AS ALL_COUNT FROM mytable WHERE phone IN 
+    (SELECT DISTINCT phone FROM mytable WHERE embedding_1 < 0.01)
+GROUP BY phone;
 ```
 
 ## Stored procedure
