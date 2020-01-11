@@ -59,17 +59,18 @@ Set column(s) as primary key:
 ALTER TABLE mytable ADD PRIMARY KEY(phone, buy_time);
 ```
 
-Count:
+## Query
+### Count
 ```sql
 SELECT COUNT(*) from mytable;
 ```
 
-Insert:
+### Insert
 ```sql
 INSERT INTO mytable VALUES (12345678901, FROM_UNIXTIME(1578635060), 3.000000, 3.000000);
 ```
 
-Delete:
+### Delete
 ```sql
 DELETE FROM mytable WHERE phone=12345678901;
 ```
@@ -86,7 +87,7 @@ Delete by some order([mysql deleting oldest record in a table](https://stackover
 DELETE FROM mytable WHERE phone = 9876543210 ORDER BY buy_time ASC LIMIT 1;
 ```
 
-Update:
+### Update
 ```sql
 UPDATE mytable SET phone=09876543210 WHERE phone=12345678901;
 ```
