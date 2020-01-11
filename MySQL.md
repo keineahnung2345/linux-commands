@@ -114,6 +114,11 @@ UPDATE mytable SET sex=TRUE WHERE phone=12345678901;
 UPDATE mytable SET sex=0 WHERE phone=12345678902;
 ```
 
+### DISTINCT
+```sql
+SELECT DISTINCT phone FROM mytable WHERE embedding_1 < 0.01;
+```
+
 ### GROUP BY
 Note that it's `GROUP BY`, not `GROUPBY`.
 ```sql
