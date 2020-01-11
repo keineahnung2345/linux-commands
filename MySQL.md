@@ -64,6 +64,11 @@ Delete table:
 DROP TABLE mytable;
 ```
 
+Rename table:
+```sql
+RENAME TABLE mytable2 TO mytable;
+```
+
 ## Query
 ### Count
 ```sql
