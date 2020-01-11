@@ -167,6 +167,17 @@ SELECT @latest := MAX(buy_time) FROM mytable;
 SELECT @latest;
 ```
 
+### Derived table(Subquery in the FROM clause)
+[An Essential Guide to MySQL Derived Table](https://www.mysqltutorial.org/mysql-derived-table/) and [Using A Subquery in the FROM clause](https://www.essentialsql.com/get-ready-to-learn-sql-server-22-using-subqueries-in-the-from-clause/)
+
+First find the phones containing at least one record meeting embedding_1 < 0.01, and then calculate the ratio of records meeting this requirement for each phone.
+```sql
+SELECT T1.phone, T1.VALID_COUNT/T2.ALL_COUNT AS RATIO FROM 
+    (SELECT phone, COUNT(*) AS VALID_COUNT FROM mytable WHERE (phone, buy_time) IN (SELECT phone, buy_time FROM mytable WHERE embedding_1 < 0.01) GROUP BY phone) T1,  
+    (SELECT phone, COUNT(*) AS ALL_COUNT FROM mytable WHERE phone in (SELECT DISTINCT phone FROM mytable WHERE embedding_1 < 0.01) GROUP BY phone) T2 
+WHERE T1.phone = T2.phone;
+```
+
 ### Temporary table
 [Create a temporary table in a SELECT statement without a separate CREATE TABLE](https://stackoverflow.com/questions/5859391/create-a-temporary-table-in-a-select-statement-without-a-separate-create-table)
 
@@ -174,6 +185,13 @@ Store the query result into a temp table, this can be used to simplify nested qu
 ```sql
 CREATE TEMPORARY TABLE IF NOT EXISTS T1 AS (<another_query>);
 ```
+Using temporary table, the example in `Derived table` can be simplified as:
+```sql
+CREATE TEMPORARY TABLE IF NOT EXISTS T1 AS (SELECT phone, count(*) AS VALID_COUNT FROM mytable WHERE embedding_1 < 0.01 GROUP BY phone);
+CREATE TEMPORARY TABLE IF NOT EXISTS T2 AS (SELECT phone, COUNT(*) AS ALL_COUNT FROM mytable WHERE phone in (SELECT DISTINCT phone FROM mytable WHERE embedding_1 < 0.01) GROUP BY phone);
+SELECT T1.phone, T1.VALID_COUNT/T2.ALL_COUNT AS RATIO FROM T1, T2 WHERE T1.phone = T2.phone;
+```
+
 
 ## Stored procedure
 This stored procedure add 128 columns named `embedding_1` to `embedding_128` to `mytable`. (Adapted from [Add columns to mySQL table with loops](https://stackoverflow.com/questions/14313418/add-columns-to-mysql-table-with-loops) and [MySQL REPEAT Loop](https://www.mysqltutorial.org/mysql-stored-procedure/mysql-repeat-loop/) and [Dynamic add column with loop](https://stackoverflow.com/questions/20108188/dynamic-add-column-with-loop) and [How To have Dynamic SQL in MySQL Stored Procedure](https://stackoverflow.com/questions/190776/how-to-have-dynamic-sql-in-mysql-stored-procedure)).
