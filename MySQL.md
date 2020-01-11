@@ -48,6 +48,16 @@ Create table:
 CREATE TABLE mytable(phone char(11) primary key, buy_time timestamp);
 ```
 
+Delete table:
+```sql
+DROP TABLE mytable;
+```
+
+Rename table:
+```sql
+RENAME TABLE mytable2 TO mytable;
+```
+
 Show columns:
 ```sql
 SHOW COLUMNS FROM mytable;
@@ -59,14 +69,9 @@ Set column(s) as primary key:
 ALTER TABLE mytable ADD PRIMARY KEY(phone, buy_time);
 ```
 
-Delete table:
+Add column:
 ```sql
-DROP TABLE mytable;
-```
-
-Rename table:
-```sql
-RENAME TABLE mytable2 TO mytable;
+ALTER TABLE mytable ADD COLUMN sex BOOLEAN;
 ```
 
 ## Query
