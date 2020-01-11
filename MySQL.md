@@ -102,6 +102,24 @@ DELETE FROM mytable WHERE phone = 9876543210 ORDER BY buy_time ASC LIMIT 1;
 UPDATE mytable SET phone=09876543210 WHERE phone=12345678901;
 ```
 
+### Time
+Date:
+```sql
+SELECT CURRENT_DATE();
+```
+Time:
+```sql
+SELECT CURRENT_TIME();
+```
+Timestamp(Date + Time):
+```sql
+SELECT CURRENT_TIMESTAMP();
+```
+Use as subquery:
+```sql
+INSERT INTO mytable VALUES("12345678902", CURRENT_TIMESTAMP());
+```
+
 ## Stored procedure
 This stored procedure add 128 columns named `embedding_1` to `embedding_128` to `mytable`. (Adapted from [Add columns to mySQL table with loops](https://stackoverflow.com/questions/14313418/add-columns-to-mysql-table-with-loops) and [MySQL REPEAT Loop](https://www.mysqltutorial.org/mysql-stored-procedure/mysql-repeat-loop/) and [Dynamic add column with loop](https://stackoverflow.com/questions/20108188/dynamic-add-column-with-loop) and [How To have Dynamic SQL in MySQL Stored Procedure](https://stackoverflow.com/questions/190776/how-to-have-dynamic-sql-in-mysql-stored-procedure)).
 
