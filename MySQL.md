@@ -158,6 +158,15 @@ SELECT phone, COUNT(*) AS ALL_COUNT FROM mytable WHERE phone IN
 GROUP BY phone;
 ```
 
+### Variable
+[How to store Query Result in variable using mysql](https://stackoverflow.com/questions/10070406/how-to-store-query-result-in-variable-using-mysql)
+
+Store the query result into a variable.
+```sql
+SELECT @latest := MAX(buy_time) FROM mytable;
+SELECT @latest;
+```
+
 ### Temporary table
 [Create a temporary table in a SELECT statement without a separate CREATE TABLE](https://stackoverflow.com/questions/5859391/create-a-temporary-table-in-a-select-statement-without-a-separate-create-table)
 
