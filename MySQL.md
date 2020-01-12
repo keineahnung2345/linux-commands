@@ -48,6 +48,13 @@ Create table:
 CREATE TABLE mytable(phone char(11) primary key, buy_time timestamp);
 ```
 
+Copy table:
+
+[SQL Cloning Tables](https://www.tutorialrepublic.com/sql-tutorial/sql-cloning-tables.php)
+```sql
+CREATE TABLE mytable2 SELECT * FROM mytable;
+```
+
 Delete table:
 ```sql
 DROP TABLE [IF EXISTS] mytable;
