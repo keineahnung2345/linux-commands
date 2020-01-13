@@ -71,6 +71,7 @@ SHOW COLUMNS FROM mytable;
 ```
 
 Set column(s) as primary key:
+
 [MySQL Primary Key](https://www.mysqltutorial.org/mysql-primary-key/)
 ```sql
 ALTER TABLE mytable ADD PRIMARY KEY(phone, buy_time);
@@ -79,6 +80,13 @@ ALTER TABLE mytable ADD PRIMARY KEY(phone, buy_time);
 Add column:
 ```sql
 ALTER TABLE mytable ADD COLUMN sex BOOLEAN;
+```
+
+Change column's data type:
+
+[How do I change the data type for a column in MySQL?](https://stackoverflow.com/questions/1356866/how-do-i-change-the-data-type-for-a-column-in-mysql)
+```sql
+ALTER TABLE mytable MODIFY embedding_1 INTEGER [NOT NULL];
 ```
 
 ## Query
