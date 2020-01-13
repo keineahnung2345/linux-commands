@@ -300,7 +300,7 @@ END $$
 
 Edit the stored procedure used for looping through columns `loop_columns.sql` and multiply each column by 1000:
 
-[mysql, iterate through column names](https://stackoverflow.com/questions/4950252/mysql-iterate-through-column-names) and [MySQL REPEAT Loop](https://www.mysqltutorial.org/mysql-stored-procedure/mysql-repeat-loop/)
+[mysql, iterate through column names](https://stackoverflow.com/questions/4950252/mysql-iterate-through-column-names) and [MySQL REPEAT Loop](https://www.mysqltutorial.org/mysql-stored-procedure/mysql-repeat-loop/) and [MYSQL WHILE LOOP CONTINUE is not recognized](https://stackoverflow.com/questions/49034402/mysql-while-loop-continue-is-not-recognized)
 ```sql
 DELIMITER $$
 DROP PROCEDURE IF EXISTS LoopColumns$$
@@ -322,6 +322,7 @@ the_loop: REPEAT
     -- the first 2 column of mytable is phone and buy_time, last 128s are embedding_x
     IF i < 3 THEN
         SET i = i + 1;
+        -- "ITERATE" acts as "continue;" in C/C++
         ITERATE the_loop;
     END IF;
     SET @s = CONCAT('UPDATE mytable SET ', COALESCE(col_name, ''), '=', COALESCE(col_name, ''), '*1000');
