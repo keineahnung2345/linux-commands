@@ -248,8 +248,8 @@ Edit the stored procedure used for debugging `debug_msg.sql`:
 [How do you debug MySQL stored procedures?](https://stackoverflow.com/questions/273437/how-do-you-debug-mysql-stored-procedures)
 ```sql
 DELIMITER $$
-DROP PROCEDURE IF EXISTS `debug_msg`$$
-CREATE PROCEDURE debug_msg(enabled INTEGER, msg VARCHAR(255))
+DROP PROCEDURE IF EXISTS `DebugMessage`$$
+CREATE PROCEDURE DebugMessage(enabled INTEGER, msg VARCHAR(255))
 BEGIN
   IF enabled THEN
     select concat('** ', msg) AS '** DEBUG:';
@@ -259,7 +259,12 @@ END $$
 
 To run it, from [How to create a mysql stored procedure through linux terminal](https://dba.stackexchange.com/questions/41336/how-to-create-a-mysql-stored-procedure-through-linux-terminal?newreg=b13a7c3337fa4f918f22ddedc3d29579):
 ```sh
-mysql -u root -p<password> <mydb> < addcolumns.sql
+mysql -u root -p<password> <mydb> < <sql_file_name>.sql
+```
+
+To run stored procedure in mysql shell([Execute MySQL Stored Procedure using Command Line](https://stackoverflow.com/questions/3828341/execute-mysql-stored-procedure-using-command-line)):
+```sql
+CALL DebugMessage(TRUE, "ABC");
 ```
 
 This sample use 128 columns to store a vector, for an alternative way, try [How do I create a field with a vector type in MySQL?](https://stackoverflow.com/questions/24346424/how-do-i-create-a-field-with-a-vector-type-in-mysql).
