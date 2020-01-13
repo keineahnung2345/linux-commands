@@ -43,6 +43,11 @@ Show tables:
 SHOW TABLES;
 ```
 
+Show description of a table:
+```sql
+DESC[RIBE] mytable;
+```
+
 Create table:
 ```sql
 CREATE TABLE mytable(phone char(11) primary key, buy_time timestamp);
