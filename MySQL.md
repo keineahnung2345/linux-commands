@@ -120,8 +120,13 @@ SELECT COUNT(*) from mytable;
 ```
 
 ### Max
+Get the max value of buy_time:
 ```sql
 SELECT MAX(buy_time) AS latest FROM mytable;
+```
+Get the row containing the max value of buy_time([MySQL - How to select rows with max value of a field](https://stackoverflow.com/questions/40414137/mysql-how-to-select-rows-with-max-value-of-a-field)):
+```sql
+SELECT phone, buy_time FROM mytable WHERE buy_time = (SELECT MAX(buy_time) FROM mytable);
 ```
 
 ### Operation on columns
