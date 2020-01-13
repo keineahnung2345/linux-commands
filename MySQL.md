@@ -308,6 +308,7 @@ DECLARE col_names CURSOR FOR
   FROM INFORMATION_SCHEMA.COLUMNS
   WHERE table_name = 'mytable'
   ORDER BY ordinal_position;
+-- https://stackoverflow.com/questions/4955231/cursor-not-open-error
 OPEN col_names;
 
 the_loop: REPEAT
@@ -326,6 +327,7 @@ the_loop: REPEAT
     SET i = i + 1;
 UNTIL i > 130
 END REPEAT;
+CLOSE col_names;
 END
 $$
 DELIMITER ;
