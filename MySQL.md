@@ -179,6 +179,13 @@ GROUP BY phone;
 ```
 
 ### Variable
+Set variable
+
+[How to declare a variable in MySQL?](https://stackoverflow.com/questions/11754781/how-to-declare-a-variable-in-mysql)
+```sql
+SET @a="abc";
+```
+
 [How to store Query Result in variable using mysql](https://stackoverflow.com/questions/10070406/how-to-store-query-result-in-variable-using-mysql)
 
 Store the query result into a variable.
