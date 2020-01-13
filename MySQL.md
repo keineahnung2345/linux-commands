@@ -300,7 +300,7 @@ END $$
 
 Edit the stored procedure used for looping through columns `loop_columns.sql` and multiply each column by 1000:
 
-[mysql, iterate through column names](https://stackoverflow.com/questions/4950252/mysql-iterate-through-column-names)
+[mysql, iterate through column names](https://stackoverflow.com/questions/4950252/mysql-iterate-through-column-names) and [MySQL REPEAT Loop](https://www.mysqltutorial.org/mysql-stored-procedure/mysql-repeat-loop/)
 ```sql
 DELIMITER $$
 DROP PROCEDURE IF EXISTS LoopColumns$$
