@@ -105,6 +105,14 @@ ALTER TABLE mytable CHANGE COLUMN buy_time buy_time TIMESTAMP NOT NULL DEFAULT C
 ALTER TABLE mytable ALTER COLUMN buy_time DROP DEFAULT;
 ```
 
+To allow zero date in MySQL:
+
+[Invalid default value for 'create_date' timestamp field](https://stackoverflow.com/questions/9192027/invalid-default-value-for-create-date-timestamp-field)
+```sql
+SET SQL_MODE='ALLOW_INVALID_DATES';
+```
+This solves `ERROR 1067 (42000): Invalid default value for 'buy_time'`.
+
 ## Query
 ### Count
 ```sql
