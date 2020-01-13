@@ -293,6 +293,44 @@ BEGIN
 END $$
 ```
 
+Edit the stored procedure used for looping through columns `loop_columns.sql` and multiply each column by 1000:
+
+[mysql, iterate through column names](https://stackoverflow.com/questions/4950252/mysql-iterate-through-column-names)
+```sql
+DELIMITER $$
+DROP PROCEDURE IF EXISTS LoopColumns$$
+CREATE PROCEDURE LoopColumns()
+BEGIN
+DECLARE i INT DEFAULT 1;
+DECLARE col_name VARCHAR(100) DEFAULT '';
+DECLARE col_names CURSOR FOR
+  SELECT column_name
+  FROM INFORMATION_SCHEMA.COLUMNS
+  WHERE table_name = 'mytable'
+  ORDER BY ordinal_position;
+OPEN col_names;
+
+the_loop: REPEAT
+    FETCH col_names INTO col_name;
+
+    -- the first 2 column of mytable is phone and buy_time, last 128s are embedding_x
+    IF i < 3 THEN
+        SET i = i + 1;
+        ITERATE the_loop;
+    END IF;
+    SET @s = CONCAT('UPDATE mytable SET ', COALESCE(col_name, ''), '=', COALESCE(col_name, ''), '*1000');
+
+    PREPARE stmt FROM @s;
+    EXECUTE stmt;
+
+    SET i = i + 1;
+UNTIL i > 130
+END REPEAT;
+END
+$$
+DELIMITER ;
+```
+
 To run it, from [How to create a mysql stored procedure through linux terminal](https://dba.stackexchange.com/questions/41336/how-to-create-a-mysql-stored-procedure-through-linux-terminal?newreg=b13a7c3337fa4f918f22ddedc3d29579):
 ```sh
 mysql -u root -p<password> <mydb> < <sql_file_name>.sql
