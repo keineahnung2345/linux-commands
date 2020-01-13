@@ -163,6 +163,11 @@ UPDATE mytable SET sex=TRUE WHERE phone=12345678901;
 UPDATE mytable SET sex=0 WHERE phone=12345678902;
 ```
 
+[Multiply every entry in column by a fixed number in SQL](https://stackoverflow.com/questions/12022999/multiply-every-entry-in-column-by-a-fixed-number-in-sql)
+```sql
+UPDATE mytable SET embedding_1=embedding_1*1000;
+```
+
 ### DISTINCT
 ```sql
 SELECT DISTINCT phone FROM mytable WHERE embedding_1 < 0.01;
