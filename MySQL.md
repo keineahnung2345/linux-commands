@@ -105,6 +105,19 @@ SELECT MAX(buy_time) AS latest FROM mytable;
 SELECT width * height AS area FROM rectangle;
 ```
 
+### Concat
+```sql
+SET @a="abc";
+CALL DebugMessage(TRUE, CONCAT(@a, "def")); -- abcdef
+-- note that the variable 'b' is not declared
+CALL DebugMessage(TRUE, CONCAT(@a, "def", @b)); -- NULL
+```
+
+To ignore `NULL` value automatically([MySQL CONCAT returns NULL if any field contain NULL](https://stackoverflow.com/questions/15741314/mysql-concat-returns-null-if-any-field-contain-null)):
+```sql
+CALL DebugMessage(TRUE, CONCAT(@a, "def", COALESCE(@b,""))); -- abcdef
+```
+
 ### Insert
 ```sql
 INSERT INTO mytable VALUES (12345678901, FROM_UNIXTIME(1578635060), 3.000000, 3.000000);
