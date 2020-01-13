@@ -243,6 +243,20 @@ $$
 DELIMITER ;
 ```
 
+Edit the stored procedure used for debugging `debug_msg.sql`:
+
+[How do you debug MySQL stored procedures?](https://stackoverflow.com/questions/273437/how-do-you-debug-mysql-stored-procedures)
+```sql
+DELIMITER $$
+DROP PROCEDURE IF EXISTS `debug_msg`$$
+CREATE PROCEDURE debug_msg(enabled INTEGER, msg VARCHAR(255))
+BEGIN
+  IF enabled THEN
+    select concat('** ', msg) AS '** DEBUG:';
+  END IF;
+END $$
+```
+
 To run it, from [How to create a mysql stored procedure through linux terminal](https://dba.stackexchange.com/questions/41336/how-to-create-a-mysql-stored-procedure-through-linux-terminal?newreg=b13a7c3337fa4f918f22ddedc3d29579):
 ```sh
 mysql -u root -p<password> <mydb> < addcolumns.sql
