@@ -304,6 +304,7 @@ BEGIN
     select concat('** ', msg) AS '** DEBUG:';
   END IF;
 END $$
+DELIMITER ;
 ```
 
 Edit the stored procedure used for looping through columns `loop_columns.sql` and multiply each column by 1000:
