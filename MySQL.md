@@ -89,6 +89,17 @@ Change column's data type:
 ALTER TABLE mytable MODIFY embedding_1 INTEGER [NOT NULL];
 ```
 
+For a timestamp column, Remove `on update CURRENT_TIMESTAMP` and default `CURRENT_TIMESTAMP`:
+
+[How do I remove ON UPDATE CURRENT_TIMESTAMP from an existing column?](https://stackoverflow.com/questions/31839542/how-do-i-remove-on-update-current-timestamp-from-an-existing-column)
+
+```sql
+-- to remove "on update CURRENT_TIMESTAMP" from Extra
+ALTER TABLE mytable CHANGE COLUMN buy_time buy_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP;
+-- to remove "CURRENT_TIMESTAMP" from Default
+ALTER TABLE mytable ALTER COLUMN buy_time DROP DEFAULT;
+```
+
 ## Query
 ### Count
 ```sql
