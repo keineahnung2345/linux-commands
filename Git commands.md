@@ -255,6 +255,17 @@ $git diff <branch-name1> <branch-name2>
 $git diff <branch-name1> <branch-name2> <filename>
 ```
 
+## Compare current state and last commit
+[See diff between current state and last commit](https://stackoverflow.com/questions/17244471/see-diff-between-current-state-and-last-commit)
+```sh
+$git diff
+```
+Ignore a specific directory([Exclude a directory from git diff](https://stackoverflow.com/questions/4380945/exclude-a-directory-from-git-diff)):
+```sh
+$shopt -s extglob
+$git diff !(<dir_name>)
+```
+
 ## Check git branch graph
 `$git log --oneline --graph`
 
