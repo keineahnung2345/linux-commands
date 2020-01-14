@@ -38,6 +38,35 @@ Then one can find `<tf_yolov2_pb_filename>.bin`, `<tf_yolov2_pb_filename>.mappin
 #### Convert YOLOv3 Model to IR
 Just follow the instruction here: [Convert YOLOv3 Model to IR](https://docs.openvinotoolkit.org/latest/_docs_MO_DG_prepare_model_convert_model_tf_specific_Convert_YOLO_From_Tensorflow.html#yolov3-to-ir), the process is quite smooth.
 
+First clone [tensorflow-yolo-v3](https://github.com/mystic123/tensorflow-yolo-v3.git), prepare your class names file(just like `coco.names` and the yolov3 darknet weight file. And then run:
+```sh
+python3 convert_weights_pb.py --class_names <class_names_path> --data_format NHWC --weights_file <yolov3_weights_path> --size 352
+```
+After this, you will get `frozen_darknet_yolov3_model.pb`.
+
+Edit your yolov3 json file like:
+```
+[
+  {
+    "id": "TFYOLOV3",
+    "match_kind": "general",
+    "custom_attributes": {
+      "classes": 40,
+      "anchors": [26,33, 33,59, 58,61, 44,96, 69,104, 71,176, 106,133, 113,230, 167,298],
+      "coords": 4,
+      "num": 9,
+      "masks":[[6, 7, 8], [3, 4, 5], [0, 1, 2]],
+      "entry_points": ["detector/yolo-v3/Reshape", "detector/yolo-v3/Reshape_4", "detector/yolo-v3/Reshape_8"]
+    }
+  }
+]
+```
+
+And then run model optimizer for TF to get IR:
+```sh
+python3 mo_tf.py --input_model frozen_darknet_yolov3_model.pb --tensorflow_use_custom_operations_config <yolo_v3_json_path> --batch <batch_size> --reverse_input_channels --data_type <FP16 or FP32>
+```
+
 #### model input: RGB -> BGR
 Remember that when converting from tensorflow model to IR, we can specify `--reverse_input_channels` so that the model will expect BGR input image rather than RGB ones.
 ```sh
