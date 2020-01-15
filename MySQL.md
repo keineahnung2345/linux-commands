@@ -168,6 +168,10 @@ Delete by some order([mysql deleting oldest record in a table](https://stackover
 ```sql
 DELETE FROM mytable WHERE phone = 9876543210 ORDER BY buy_time ASC LIMIT 1;
 ```
+Delete all records with phone = 99999999999 but remain the one with largest buy_time([Delete all Duplicate Rows except for One in MySQL? [duplicate]](https://stackoverflow.com/questions/4685173/delete-all-duplicate-rows-except-for-one-in-mysql)):
+```sql
+DELETE r1 FROM mytable r1, mytable r2 where r1.buy_time < r2.buy_time and r1.phone = r2.phone and r1.phone = 99999999999;
+```
 
 ### Update
 ```sql
