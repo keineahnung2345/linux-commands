@@ -331,3 +331,9 @@ and clean the field `proxy`, like:
 
 ## upload large file(> 100MB)
 [Git Large File Storage](https://git-lfs.github.com/)
+
+## fatal: The remote end hung up unexpectedly
+[Git, fatal: The remote end hung up unexpectedly](https://stackoverflow.com/questions/15240815/git-fatal-the-remote-end-hung-up-unexpectedly)
+```sh
+git config --global http.postBuffer 524288000
+```
