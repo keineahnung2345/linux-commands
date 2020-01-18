@@ -299,6 +299,13 @@ git config --local --list
 git config --global --list
 ```
 
+## set git proxy
+[为 git bash 设置代理](https://jjayyyyyyy.github.io/2019/08/11/git_bash_proxy.html)
+```sh
+git config --global http.proxy "http://127.0.0.1:1080"
+git config --global https.proxy "https://127.0.0.1:1080"
+```
+
 ## unset git proxy
 [Git: How to remove proxy](https://stackoverflow.com/questions/32268986/git-how-to-remove-proxy/32269086)
 ```sh
