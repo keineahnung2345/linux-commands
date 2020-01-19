@@ -260,11 +260,16 @@ $git diff <branch-name1> <branch-name2> <filename>
 ```sh
 $git diff
 ```
+Only show the filenames([Can I make 'git diff' only show the changed file names and line numbers?](https://stackoverflow.com/questions/9848347/can-i-make-git-diff-only-show-the-changed-file-names-and-line-numbers)):
+```sh
+$git diff --name-only
+```
 Ignore a specific directory([Exclude a directory from git diff](https://stackoverflow.com/questions/4380945/exclude-a-directory-from-git-diff)):
 ```sh
 $shopt -s extglob
 $git diff !(<dir_name>)
 ```
+
 
 ## Check git branch graph
 `$git log --oneline --graph`
