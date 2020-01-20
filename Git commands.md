@@ -364,6 +364,8 @@ and clean the field `proxy`, like:
 ## upload large file(> 100MB)
 [Git Large File Storage](https://git-lfs.github.com/)
 
+For installation, please check https://github.com/keineahnung2345/linux-commands/blob/master/Linux%20packages.md#git-lfs.
+
 ## fatal: The remote end hung up unexpectedly
 [Git, fatal: The remote end hung up unexpectedly](https://stackoverflow.com/questions/15240815/git-fatal-the-remote-end-hung-up-unexpectedly)
 ```sh
