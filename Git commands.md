@@ -85,6 +85,18 @@ git pull
 ## Switch to another branch
 `$git checkout <branch-name>`
 
+[Git: cannot checkout branch - error: pathspec '…' did not match any file(s) known to git](https://stackoverflow.com/questions/5989592/git-cannot-checkout-branch-error-pathspec-did-not-match-any-files-kn)
+
+If there is an error: 
+
+`error: pathspec 'xxx' did not match any file(s) known to git.`, 
+
+one can use:
+
+`$git fetch`
+
+to make local repo updated with the remote one.
+
 ## Delete a branch
 ```sh
 $git checkout master
