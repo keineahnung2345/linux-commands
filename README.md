@@ -1144,6 +1144,11 @@ $RECYCLE.BIN	72
 System	3
 ```
 
+### find by size
+[How To Find Files Bigger Or Smaller Than X Size In Linux](https://www.ostechnix.com/find-files-bigger-smaller-x-size-linux/)
+```sh
+find . -type f -size +100M
+```
 
 ## print the content of a file
 ### show line number
