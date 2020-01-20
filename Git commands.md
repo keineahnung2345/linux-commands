@@ -52,7 +52,7 @@ $git pull origin master
 $git clone -b <branch-name> https://github.com/<user-name>/<repo-name>.git
 ```
 
-## Synchronize local repo with remote one
+## Synchronize(Reset) local repo with remote one
 [git: sync local repo with remote one](https://stackoverflow.com/questions/6373277/git-sync-local-repo-with-remote-one)
 
 ```bash
@@ -64,6 +64,16 @@ If the commands above do not work, try:
 
 ```sh
 git pull
+```
+
+Method 2:
+
+[Reset local repository branch to be just like remote repository HEAD](https://stackoverflow.com/questions/1628088/reset-local-repository-branch-to-be-just-like-remote-repository-head)
+
+```sh
+git fetch origin
+git reset --hard origin/master
+git clean -n -f
 ```
 
 ## List all branch and get current branch name
