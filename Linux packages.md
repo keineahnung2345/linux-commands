@@ -339,6 +339,14 @@ systemctl status ssh
 apt-get install intel-gpu-tools
 ```
 
+### git-lfs
+[git-lfs installation](https://github.com/git-lfs/git-lfs/wiki/Installation)
+```sh
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+sudo apt-get install git-lfs
+git lfs install
+```
+
 ### OpenCV
 
 #### apt
