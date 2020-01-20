@@ -189,6 +189,11 @@ $git push origin <branch-name> --force #--force solves non-fast-forward error
 $git remote rm upstream
 ```
 
+## `fatal: remote origin already exists.`
+```sh
+$git remote rm origin
+```
+
 ## Sync your forked repository
 ```sh
 $git remote add upstream <the-url-of-upstream-repo>
