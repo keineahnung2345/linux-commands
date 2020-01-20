@@ -122,6 +122,16 @@ Sample output:
   -march=                     		broadwell
 ```
 
+## get logical core count
+[How to know number of cores of a system in Linux?](https://unix.stackexchange.com/questions/218074/how-to-know-number-of-cores-of-a-system-in-linux)
+```sh
+echo $(nproc) # 4
+```
+The equivalent for Mac([nproc is not a command on Mac](https://github.com/memkind/memkind/issues/33)):
+```sh
+sysctl -n hw.logicalcpu
+```
+
 ## check external devices' information
 ```sh
 lsusb
