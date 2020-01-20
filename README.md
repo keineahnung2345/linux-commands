@@ -54,6 +54,7 @@ apt-get install -y lsb-release
 ```
 
 ## check ubuntu architecture
+[Easy command line method to determine specific ARM architecture string?](https://unix.stackexchange.com/questions/180726/easy-command-line-method-to-determine-specific-arm-architecture-string)
 ```sh
 dpkg --print-architecture
 # amd64
