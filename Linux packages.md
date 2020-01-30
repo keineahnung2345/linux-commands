@@ -131,6 +131,11 @@ apt install sshpass
 apt-get install -y vim
 ```
 
+### curl
+```sh
+apt-get install -y curl
+```
+
 ### less
 ```sh
 apt-get install -y less
