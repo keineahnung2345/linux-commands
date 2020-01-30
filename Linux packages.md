@@ -479,6 +479,8 @@ source ~/.bashrc
 Test, follow the instruction [here](https://docs.nvidia.com/deeplearning/sdk/tensorrt-sample-support-guide/index.html#mnist_sample):
 ```sh
 cd <TensorRT root directory>/samples && make
+# download 0.pgm ~ 9.pgm
+cd <TensorRT root directory>/data/mnist && python3 download_pgms.py
 cd <TensorRT root directory>/bin && ./sample_mnist
 ```
 
