@@ -335,6 +335,12 @@ git config --local --list
 git config --global --list
 ```
 
+## set user name and email
+```sh
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+```
+
 ## set git proxy
 [为 git bash 设置代理](https://jjayyyyyyy.github.io/2019/08/11/git_bash_proxy.html)
 ```sh
