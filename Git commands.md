@@ -158,6 +158,13 @@ $git push origin <branch-name>
 
 If got `Changes not staged for commit` even after using `git add`, one can try change to the specific folder and then use `git add` again.
 
+## Sign off
+First [set user name and email](https://github.com/keineahnung2345/linux-commands/blob/master/Git%20commands.md#set-user-name-and-email) and then:
+
+```sh
+git commit -s
+```
+
 ## Revert `git add`
 [How can you undo the last git add?](https://stackoverflow.com/questions/12132272/how-can-you-undo-the-last-git-add)
 ```sh
