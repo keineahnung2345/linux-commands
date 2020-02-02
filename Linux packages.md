@@ -356,6 +356,12 @@ sudo apt-get install git-lfs
 git lfs install
 ```
 
+### zlib
+[Configure error: could not find the zlib library](https://askubuntu.com/questions/1169754/configure-error-could-not-find-the-zlib-library)
+```sh
+apt-get install zlib1g-dev
+```
+
 ### OpenCV
 
 #### apt
