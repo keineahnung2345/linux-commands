@@ -284,6 +284,8 @@ apt-get install libconfig++8-dev
 apt-get install -y pkg-config
 ```
 
+[CMAKE Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE)](https://askubuntu.com/questions/717302/cmake-could-not-find-pkgconfig-missing-pkg-config-executable): This can solve `Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE)` when running cmake.
+
 ### mysql/mysql.h
 [mysql.h file can't be found](https://stackoverflow.com/questions/14604228/mysql-h-file-cant-be-found/20634454)
 ```sh
