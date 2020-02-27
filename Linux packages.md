@@ -474,7 +474,7 @@ dpkg -l | grep TensorRT
 ```
 
 #### Tar File Installation
-First download TensorRT tar.gz file.
+First download TensorRT tar.gz file from [NVIDIA TensorRT](https://developer.nvidia.com/tensorrt).
 ```sh
 tar xzvf TensorRT-5.1.x.x.<os>.<arch>-gnu.cuda-x.x.cudnn7.x.tar.gz
 ```
