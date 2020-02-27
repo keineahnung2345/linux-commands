@@ -373,7 +373,7 @@ The installation path is: `/usr/share/OpenCV/`.
 #### build from source
 Follow the instruction here: [OpenCV Tutorials/Introduction to OpenCV/Installation in Linux](https://docs.opencv.org/3.4.6/d7/d9f/tutorial_linux_install.html)
 
-First download opencv-x.x.x.zip and opencv_contrib-x.x.x.zip, and then unzip.
+First download opencv-x.x.x.zip from [OpenCV - Releases](https://opencv.org/releases/) and opencv_contrib-x.x.x.zip from [opencv/opencv_contrib - Releases](https://github.com/opencv/opencv_contrib/releases), and then unzip.
 
 Create directory:
 ```sh
