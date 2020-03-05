@@ -303,6 +303,14 @@ $git diff <branch-name1> <branch-name2> <filename>
 ```sh
 $git diff
 ```
+or 
+
+[How to see the changes in a Git commit?](https://stackoverflow.com/questions/17563726/how-to-see-the-changes-in-a-git-commit)
+
+```sh
+$git show <sha-of-a-commit>
+```
+
 Only show the filenames([Can I make 'git diff' only show the changed file names and line numbers?](https://stackoverflow.com/questions/9848347/can-i-make-git-diff-only-show-the-changed-file-names-and-line-numbers)):
 ```sh
 $git diff --name-only
