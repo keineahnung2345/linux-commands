@@ -79,6 +79,11 @@ git clean -n -f
 ## List all branch and get current branch name
 `$git branch`
 
+## List all remote branch
+[How do I list all remote branches in Git 1.7+?](https://stackoverflow.com/questions/3471827/how-do-i-list-all-remote-branches-in-git-1-7)
+
+`$git branch -r`
+
 ## Create a branch
 
 `$git checkout master` Make sure you are in master branch every time you create a branch!!
