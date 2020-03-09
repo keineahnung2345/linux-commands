@@ -978,6 +978,12 @@ find . -type d -links 2 ! -empty
 find . -type f -printf "%f\n"
 ```
 
+### find file and only print their basename(without directory path and extension)
+[How to get only names from find command without path](https://superuser.com/questions/559824/how-to-get-only-names-from-find-command-without-path)
+```sh
+find . -name "*.jpg" -exec basename \{} .jpg \;  
+```
+
 ### find files without an extension
 ```sh
 find . -type f ! -name "*.*"
