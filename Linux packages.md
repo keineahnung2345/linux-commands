@@ -411,7 +411,7 @@ Add `OPENCV_EXTRA_MODULES_PATH` to build with modules from opencv_contrib.
 
 Build:
 ```sh
-make -j7
+make -j$(nproc)
 ```
 
 Install libraries:
