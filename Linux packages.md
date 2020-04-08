@@ -419,6 +419,11 @@ Install libraries:
 sudo make install
 ```
 
+Setting environment variables:
+```sh
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+```
+
 To uninstall, go to the build directory, and then:
 ```sh
 sudo make uninstall
