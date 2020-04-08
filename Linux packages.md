@@ -402,6 +402,11 @@ To determine which modules are required, one should check one's source code and 
 ```
 Note that `cudev` and `highgui` are not directly included, but they are required because `cudev` is for gpu programming and `highgui` is for the user interface window.
 
+Prerequisite for `highgui`:
+```sh
+apt-get install -y libgtk2.0-dev pkg-config
+```
+
 After specifying `-DBUILD_LIST=...`, part of `cmake`'s output would be:
 ```
 --     Disabled by dependency:      calib3d cudaarithm cudabgsegm cudacodec cudafeatures2d cudafilters cudaimgproc cudalegacy cudaobjdetect cudaoptflow cudastereo cudawarping features2d flann ml objdetect photo python2 python_bindings_generator shape stitching superres ts video videostab viz
