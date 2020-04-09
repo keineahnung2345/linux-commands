@@ -2005,6 +2005,11 @@ do
 done
 ```
 
+## pass argument to shell script
+[How can I pass a command line argument into a shell script?](https://unix.stackexchange.com/questions/31414/how-can-i-pass-a-command-line-argument-into-a-shell-script)
+
+In your script, use `"$1"`, `"$2"`, ... to represent the first, second, ... arguments.
+
 ## get video codec
 [how to recognize video codec of a file with ffmpeg](https://stackoverflow.com/questions/2869281/how-to-recognize-video-codec-of-a-file-with-ffmpeg)
 ```sh
