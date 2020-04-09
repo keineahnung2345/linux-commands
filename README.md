@@ -1760,6 +1760,14 @@ mount --bind <dir1> <dir2>
 
 > mount:  <dir1> is not a block devicere
 
+In VirtualBox's VM, assume `/media/sf_implementation` is a directory shared from host. Use the following to create a binding from `/home/ubt/Documents/implementation` to `/media/sf_implementation`:
+
+```bash
+mkdir /home/ubt/Documents/implementation
+cd /media
+sudo mount -t vboxsf implementation /home/ubt/Documents/implementation
+```
+
 ## unmount \<dir2>
 ```bash
 umount <dir2>
