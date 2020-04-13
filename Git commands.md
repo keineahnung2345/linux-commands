@@ -344,6 +344,11 @@ Add the following into your README.md:
 ![image](<image_url>)
 ```
 
+To resize([Changing image size in Markdown](https://stackoverflow.com/questions/14675913/changing-image-size-in-markdown)):
+```
+<img src="<image_url>" alt="drawing" width="200"/>
+```
+
 ## check git config
 [Easiest way to reset git config file](https://stackoverflow.com/questions/35853986/easiest-way-to-reset-git-config-file)
 ```sh
