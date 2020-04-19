@@ -770,6 +770,48 @@ it will do nothing if \<dir-name> already exists, so we can always use this comm
 mkdir -p <dir-name>
 ```
 
+## manage user and group
+[Add a User to a Group (or Second Group) on Linux](https://www.howtogeek.com/50787/add-a-user-to-a-group-or-second-group-on-linux/)
+
+[Linux Show All Members of a Group Command](https://www.cyberciti.biz/faq/linux-list-all-members-of-a-group/)
+### show all groups on a system
+```sh
+getent group
+```
+Sample output:
+```
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,ubt
+...
+```
+### show the groups a user account is assigned to
+```sh
+groups
+```
+Sample output:
+```
+ubt adm cdrom sudo dip plugdev lpadmin sambashare vboxsf
+```
+### show all members of a group
+```sh
+grep <groupname> /etc/group
+```
+Sample output:
+```
+vboxsf:x:999:ubt
+```
+### add a new group
+```sh
+sudo groupadd <groupname>
+```
+### add an existing user account to a group
+```sh
+usermod -a -G <groupname> <username>
+```
+
 ## manage privilege of a file
 ### check the status of a file
 ```sh
