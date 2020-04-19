@@ -1705,6 +1705,13 @@ popd
 ```sh
 diff <file1> <file2>
 ```
+To ignore changes in spaces:
+
+[How can I diff 2 files while ignoring leading white space](https://stackoverflow.com/questions/16423024/how-can-i-diff-2-files-while-ignoring-leading-white-space)
+
+```sh
+diff <file1> <file2> -b
+```
 
 ## show difference between two directories
 
