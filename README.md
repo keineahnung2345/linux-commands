@@ -571,6 +571,16 @@ ssh-keygen -R <ip-address>
 sshpass -p <password> scp -r user@example.com:/some/remote/path /some/local/path
 ```
 
+## check ssh server status
+[Ubuntu Linux: Start / Stop / Restart / Reload OpenSSH Server](https://www.cyberciti.biz/faq/howto-start-stop-ssh-server/)
+```sh
+sudo systemctl status ssh
+```
+or
+```sh
+sudo service ssh status
+```
+
 ## copy multiple directories from remote host to current directory
 ```sh
 scp <username>@<ip-address>:/some/remote/directory/\{a,b,c\} ./
