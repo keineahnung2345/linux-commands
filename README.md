@@ -2069,6 +2069,18 @@ done
 
 In your script, use `"$1"`, `"$2"`, ... to represent the first, second, ... arguments.
 
+[Propagate all arguments in a bash shell script](https://stackoverflow.com/questions/4824590/propagate-all-arguments-in-a-bash-shell-script)
+
+To pass all arguments at one time, use `"$@"`, for example, writing a script file named `compile.sh` with following content:
+```sh
+g++ "$@" -I /usr/local/include/opencv4 -L /usr/local/lib -lopencv_imgcodecs -lopencv_core -lopencv_imgproc -lopencv_highgui -std=c++11
+```
+And by using:
+```sh
+./compile.sh a.cpp b.cpp c.cpp
+```
+All `a.cpp`, `b.cpp`, `c.cpp` will be the argument of `g++`.
+
 ## get video codec
 [how to recognize video codec of a file with ffmpeg](https://stackoverflow.com/questions/2869281/how-to-recognize-video-codec-of-a-file-with-ffmpeg)
 ```sh
