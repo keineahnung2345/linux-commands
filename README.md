@@ -1517,6 +1517,17 @@ sed -i -e "s?^?`pwd`/?" <filename>
 tr -s '<char>'
 ```
 
+## delete characters
+```sh
+tr -d '<char>' 
+```
+
+To use it with a file:
+
+```sh
+tr -d '<char>' < a.txt > tmp.txt && mv tmp.txt a.txt
+```
+
 ## cut by \<delimiter> and get the specific \<fields>
 ```sh
 cut -d '<delimiter>' -f <fields>
