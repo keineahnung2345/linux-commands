@@ -1528,6 +1528,12 @@ To use it with a file:
 tr -d '<char>' < a.txt > tmp.txt && mv tmp.txt a.txt
 ```
 
+## delete '\r' in files
+[What is `^M` and how do I get rid of it?](https://unix.stackexchange.com/questions/32001/what-is-m-and-how-do-i-get-rid-of-it)
+```sh
+dos2unix <filename> #support the wildcard sign *
+```
+
 ## cut by \<delimiter> and get the specific \<fields>
 ```sh
 cut -d '<delimiter>' -f <fields>
