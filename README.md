@@ -1218,6 +1218,19 @@ System	3
 find . -type f -size +100M
 ```
 
+### find and count lines
+[How to count total number of lines of found files?](https://superuser.com/questions/260022/how-to-count-total-number-of-lines-of-found-files)
+
+This will show line counts for each file and finally total line count:
+```sh
+find . -name <pattern> -print0 | wc -l --files0-from=-
+```
+
+This will only show total line count:
+```sh
+find . -name <pattern> -exec cat {} + | wc -l 
+```
+
 ## print the content of a file
 ### show line number
 ```sh
