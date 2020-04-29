@@ -391,6 +391,18 @@ apt-get install -y libhdf5-dev
 apt-get install -y texlive-latex-extra
 ```
 
+### OpenGL
+[CMake could not find OpenGL in Ubuntu](https://stackoverflow.com/questions/31170869/cmake-could-not-find-opengl-in-ubuntu)
+```sh
+apt-get install -y libgl1-mesa-dev
+```
+
+### X11_Xt_LIB 
+[how to install x11_xt_lib when configure VTK?](https://stackoverflow.com/questions/23528248/how-to-install-x11-xt-lib-when-configure-vtk)
+```sh
+apt-get install -y libxt-dev
+```
+
 ### OpenCV
 
 #### apt
