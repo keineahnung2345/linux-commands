@@ -412,6 +412,7 @@ wget http://download.qt-project.org/official_releases/qt/5.14/5.14.2/qt-opensour
 chmod +x qt-opensource-linux-x64-5.14.2.run
 ./qt-opensource-linux-x64-5.14.2.run
 ```
+A dialog window will pop out, and you can choose the directory(must exist and empty) to install to, say its `Qt5.14.2`.
 
 ### VTK
 [VTK/Building/Linux](https://vtk.org/Wiki/VTK/Building/Linux)
@@ -431,9 +432,9 @@ Finally configure VTK with the following options:
 ```sh
 cd /path/to/VTK-Release-build
 cmake -DVTK_QT_VERSION:STRING=5 \
-      -DQT_QMAKE_EXECUTABLE:PATH=/path/to/qt5.14.2-install/5.14.2/gcc_64/bin/qmake \
+      -DQT_QMAKE_EXECUTABLE:PATH=/path/to/Qt5.14.2/5.14.2/gcc_64/bin/qmake \
       -DVTK_Group_Qt:BOOL=ON \
-      -DCMAKE_PREFIX_PATH:PATH=/path/to/qt.5.14.2-install/5.14.2/gcc_64/lib/cmake  \
+      -DCMAKE_PREFIX_PATH:PATH=/path/to/Qt5.14.2/5.14.2/gcc_64/lib/cmake  \
       -DBUILD_SHARED_LIBS:BOOL=ON
       /path/to/VTK
 ```
