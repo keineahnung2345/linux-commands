@@ -1810,6 +1810,26 @@ The `<target>` should be full path, otherwise there will be an error: `Too many 
 
 Difference of hard and soft link can be found in: [Linux ln command](https://www.computerhope.com/unix/uln.htm).
 
+To check if it successes, use:
+
+```sh
+ls -l <linkname>
+```
+
+If it successes, it will output something like:
+
+```
+lrwxrwxrwx 1 root root 50  四  29 10:21 Eigen -> /home/ubt/Documents/installation/eigen-3.3.4/Eigen
+```
+in blue.
+
+Otherwise it will output something like:
+```
+total 0
+lrwxrwxrwx 1 root root 41  四  29 10:18 Eigen -> /Documents/installation/eigen-3.3.4/Eigen
+```
+in red.
+
 ## check the target of a symbolic link
 ```bash
 readlink <linkname>
