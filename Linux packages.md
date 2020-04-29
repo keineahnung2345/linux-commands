@@ -198,12 +198,12 @@ apt-get install -y uni2ascii
 ```
 
 ### cmake
+Before installing `cmake`, it's required to install `openssl`.
+
 ```sh
 apt-get install -y cmake
 ```
 To install newer version of `cmake`, follows [How do I install the latest version of cmake from the command line?](https://askubuntu.com/a/865294/913680)
-
-Need to install `openssl` first.
 
 ### gcc, g++, make
 ```sh
