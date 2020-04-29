@@ -373,6 +373,18 @@ The installation path is: `/usr/share/OpenCV/`.
 #### build from source
 Follow the instruction here: [OpenCV Tutorials/Introduction to OpenCV/Installation in Linux](https://docs.opencv.org/3.4.6/d7/d9f/tutorial_linux_install.html)
 
+Prerequistie: python3 and numpy
+```sh
+apt-get install -y python3-dev
+apt-get install -y python3-pip
+python3 -m pip install numpy
+```
+
+Prerequisite for `highgui`:
+```sh
+apt-get install -y libgtk2.0-dev pkg-config
+```
+
 First download opencv-x.x.x.zip from [OpenCV - Releases](https://opencv.org/releases/) and opencv_contrib-x.x.x.zip from [opencv/opencv_contrib - Releases](https://github.com/opencv/opencv_contrib/releases), and then unzip.
 
 Create directory:
@@ -401,11 +413,6 @@ To determine which modules are required, one should check one's source code and 
 #include <opencv2/videoio.hpp>
 ```
 Note that `cudev` and `highgui` are not directly included, but they are required because `cudev` is for gpu programming and `highgui` is for the user interface window.
-
-Prerequisite for `highgui`:
-```sh
-apt-get install -y libgtk2.0-dev pkg-config
-```
 
 After specifying `-DBUILD_LIST=...`, part of `cmake`'s output would be:
 ```
