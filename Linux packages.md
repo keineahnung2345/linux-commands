@@ -243,6 +243,22 @@ apt install python3-pip
 apt-get install -y libgoogle-glog-dev
 ```
 
+### gtest(Googletest)
+[Cartexius/install_gtest_ubuntu.md](https://gist.github.com/Cartexius/4c437c084d6e388288201aadf9c8cdd5)
+```sh
+# this only download google/googletest's source code, not install it!
+sudo apt-get install libgtest-dev
+# the source code is put here
+cd /usr/src/gtest
+mkdir build && cd build
+sudo cmake ..
+sudo make
+sudo cp *.a /usr/lib
+mkdir /usr/local/lib/gtest
+sudo ln -s /usr/lib/libgtest.a /usr/local/lib/gtest/libgtest.a
+sudo ln -s /usr/lib/libgtest_main.a /usr/local/lib/gtest/libgtest_main.a
+```
+
 ### gflags
 ```sh
 apt-get install -y libgflags-dev
@@ -360,6 +376,19 @@ git lfs install
 [Configure error: could not find the zlib library](https://askubuntu.com/questions/1169754/configure-error-could-not-find-the-zlib-library)
 ```sh
 apt-get install zlib1g-dev
+```
+
+### HDF5
+[How to check if HDF5 is installed?](https://unix.stackexchange.com/questions/287974/how-to-check-if-hdf5-is-installed)
+
+```sh
+apt-get install -y libhdf5-dev
+```
+
+### Latex
+[How to install LaTex on Ubuntu 18.04 Bionic Beaver Linux](https://linuxconfig.org/how-to-install-latex-on-ubuntu-18-04-bionic-beaver-linux)
+```sh
+apt-get install -y texlive-latex-extra
 ```
 
 ### OpenCV
