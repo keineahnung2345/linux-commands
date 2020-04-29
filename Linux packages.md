@@ -403,6 +403,41 @@ apt-get install -y libgl1-mesa-dev
 apt-get install -y libxt-dev
 ```
 
+### Qt5
+Download Qt installer from [Qt Downloads](http://download.qt-project.org/official_releases/qt/), and then:
+
+```sh
+mkdir qt5.14.2-install && cd qt5.14.2-install
+wget http://download.qt-project.org/official_releases/qt/5.14/5.14.2/qt-opensource-linux-x64-5.14.2.run
+chmod +x qt-opensource-linux-x64-5.14.2.run
+./qt-opensource-linux-x64-5.14.2.run
+```
+
+### VTK
+[VTK/Building/Linux](https://vtk.org/Wiki/VTK/Building/Linux)
+
+Download `VTK-8.2.0.tar.gz` from [VTK download page](https://vtk.org/download/) and then untar it.
+
+Configure:
+```sh
+mkdir VTK-Release-build
+cd VTK-Release-build
+cmake -DCMAKE_BUILD_TYPE:STRING=Release /path/to/VTK-8.2.0
+```
+
+Then download and install Qt5.
+
+Finally configure VTK with the following options:
+```sh
+cd /path/to/VTK-Release-build
+cmake -DVTK_QT_VERSION:STRING=5 \
+      -DQT_QMAKE_EXECUTABLE:PATH=/path/to/qt5.14.2-install/5.14.2/gcc_64/bin/qmake \
+      -DVTK_Group_Qt:BOOL=ON \
+      -DCMAKE_PREFIX_PATH:PATH=/path/to/qt.5.14.2-install/5.14.2/gcc_64/lib/cmake  \
+      -DBUILD_SHARED_LIBS:BOOL=ON
+      /path/to/VTK
+```
+
 ### OpenCV
 
 #### apt
