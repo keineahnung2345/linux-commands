@@ -205,6 +205,11 @@ apt-get install -y cmake
 ```
 To install newer version of `cmake`, follows [How do I install the latest version of cmake from the command line?](https://askubuntu.com/a/865294/913680)
 
+### ccmake 
+```sh
+apt-get install -y cmake-curses-gui
+```
+
 ### gcc, g++, make
 ```sh
 apt-get install -y build-essential
