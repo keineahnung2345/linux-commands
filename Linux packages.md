@@ -428,7 +428,7 @@ cmake -DCMAKE_BUILD_TYPE:STRING=Release /path/to/VTK-8.2.0
 
 Then download and install Qt5.
 
-Finally configure VTK with the following options:
+Configure VTK with the following options:
 ```sh
 cd /path/to/VTK-Release-build
 cmake -DVTK_QT_VERSION:STRING=5 \
@@ -437,6 +437,11 @@ cmake -DVTK_QT_VERSION:STRING=5 \
       -DCMAKE_PREFIX_PATH:PATH=/path/to/Qt5.14.2/5.14.2/gcc_64/lib/cmake  \
       -DBUILD_SHARED_LIBS:BOOL=ON
       /path/to/VTK
+```
+
+Finally build:
+```sh
+make -j$(nproc)
 ```
 
 ### OpenCV
