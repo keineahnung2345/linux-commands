@@ -444,6 +444,11 @@ Finally build:
 make -j$(nproc)
 ```
 
+And install:
+```sh
+make install
+```
+
 ### OpenCV
 
 #### apt
