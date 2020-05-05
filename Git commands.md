@@ -296,6 +296,17 @@ $git reset --hard <sha-of-a-commit>
 $git push origin <branch-name> --force
 ```
 
+Another method([How to remove commits from a pull request](https://stackoverflow.com/a/51400593/10651567)):
+```sh
+$git checkout <branch-name>
+$git rebase -i HEAD~n # this will include `n` last commits in interactive rebase
+# a nano editor will show up
+# the work `pick` precedes every commit
+# now replace `pick` with `drop`
+# then write out(Ctrl+O) and exit(Ctrl+X)
+$git push origin <branch-name> --force
+```
+
 ## Compare two branches
 ```sh
 $git diff <branch-name1> <branch-name2>
