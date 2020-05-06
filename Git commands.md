@@ -341,6 +341,10 @@ $git diff !(<dir_name>)
 ## Check git branch graph
 `$git log --oneline --graph`
 
+To see log info of all branches:
+
+`$git log --oneline --graph --branches`
+
 ## Compare commits
 [Comparing commits](https://help.github.com/en/articles/comparing-commits-across-time#comparing-commits)
 
