@@ -34,6 +34,11 @@ And to start work on one branch, just:
 
 `$git checkout <branch-name>`
 
+## list all remote version control base's name and website
+```
+$git remote -v
+```
+
 ## Just clone a folder from a repository
 [How do I clone a subdirectory only of a Git repository?](https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository)
 
