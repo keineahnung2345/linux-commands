@@ -355,6 +355,13 @@ To see log info of all branches:
 
 First find out the SHA codes of the two commits, and then open `https://github.com/<repo_owner>/<repo_name>/compare/<commit_sha1>..<commit_sha2>` in the browser.
 
+## Get number of lines changed between two commits
+[How can I calculate the number of lines changed between two commits in git?](https://stackoverflow.com/questions/2528111/how-can-i-calculate-the-number-of-lines-changed-between-two-commits-in-git/2528129)
+```sh
+$git log --stat
+$git diff --shortstat <branch-name>
+```
+
 ## Add equation into Github README.md
 [How to show math equations in general github's markdown(not github's blog)](https://stackoverflow.com/questions/11256433/how-to-show-math-equations-in-general-githubs-markdownnot-githubs-blog)
 
