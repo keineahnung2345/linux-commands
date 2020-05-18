@@ -326,6 +326,13 @@ $git diff
 ```
 or 
 
+[Finding diff between current and last version
+](https://stackoverflow.com/questions/9903541/finding-diff-between-current-and-last-version)
+
+```sh
+$git diff HEAD
+```
+
 [How to see the changes in a Git commit?](https://stackoverflow.com/questions/17563726/how-to-see-the-changes-in-a-git-commit)
 
 ```sh
