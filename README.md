@@ -1525,6 +1525,14 @@ Example: add current directory as prefix to a file
 sed -i -e "s?^?`pwd`/?" <filename>
 ```
 
+### sed, reserve windows line ending
+```sh
+sed -bi '/View.*\(.*\);/d' <filename>
+```
+
+`-b` for binary mode, which prevents from changing windows line ending to that of linux.
+`-i` for inplace.
+
 ## translate or delete characters - squeeze multiple \<char> into one
 ```sh
 tr -s '<char>'
