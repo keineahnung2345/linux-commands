@@ -94,6 +94,23 @@ git clean -n -f
 
 `$git checkout -f <branch-name>`
 
+## Stash local changes(before switching to another branch)
+[Stash暫存](https://kingofamani.gitbooks.io/git-teach/content/chapter_3_branch/stash.html)
+
+```sh
+# now we are on <original-branch-name>
+git stash -u
+# switch to <another-branch-name>
+git checkout <another-branch-name>
+# after the work is done on <another-branch-name>, change back to <original-branch-name>
+# this is important!
+# if you don't switch to <original-branch-name> first,
+# the stashed changes will be applied to <another-branch-name>!!
+git checkout <original-branch-name>
+git stash list
+git stash pop
+```
+
 ## Create a branch
 
 `$git checkout master` Make sure you are in master branch every time you create a branch!!
