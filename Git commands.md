@@ -89,6 +89,10 @@ git clean -n -f
 
 `$git branch -r`
 
+## Switch branch, discard all changes
+[Error when changing to master branch: my local changes would be overwritten by checkout](https://stackoverflow.com/questions/22424142/error-when-changing-to-master-branch-my-local-changes-would-be-overwritten-by-c)
+`$git checkout -f <branch-name>`
+
 ## Create a branch
 
 `$git checkout master` Make sure you are in master branch every time you create a branch!!
