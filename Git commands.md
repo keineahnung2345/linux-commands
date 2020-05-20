@@ -91,6 +91,7 @@ git clean -n -f
 
 ## Switch branch, discard all changes
 [Error when changing to master branch: my local changes would be overwritten by checkout](https://stackoverflow.com/questions/22424142/error-when-changing-to-master-branch-my-local-changes-would-be-overwritten-by-c)
+
 `$git checkout -f <branch-name>`
 
 ## Create a branch
@@ -203,6 +204,21 @@ Just add `.gitignore` in that empty folder, so GitHub will keep it.
 $git rm -r --cached .
 $git add .
 $git commit -m "fixed untracked files"
+```
+
+## Make git ignore lines matching specific patter
+[How to tell git to ignore individual lines, i.e. gitignore for specific lines of code [duplicate]](https://stackoverflow.com/questions/16244969/how-to-tell-git-to-ignore-individual-lines-i-e-gitignore-for-specific-lines-of)
+
+Create `<project root>/.git/info/attributes` and then add into the file:
+```sh
+*.cpp filter=gitignore
+```
+
+Use `git config` to define the filter named `gitignore`:
+
+```sh
+git config --global filter.gitignore.clean "sed '/#gitignore$/d'"
+git config --global filter.gitignore.smudge cat
 ```
 
 ## Untrack files
