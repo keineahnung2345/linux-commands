@@ -234,7 +234,7 @@ Create `<project root>/.git/info/attributes` and then add into the file:
 Use `git config` to define the filter named `gitignore`:
 
 ```sh
-git config --global filter.gitignore.clean "sed '/#gitignore$/d'"
+git config --global filter.gitignore.clean "sed  '/View.*\(.*\);/d'"
 git config --global filter.gitignore.smudge cat
 ```
 
