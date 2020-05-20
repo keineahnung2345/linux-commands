@@ -326,6 +326,13 @@ Give it a new name and click "Begin import"
 After the process is done, Github will send you a email confirming with that
 ```
 
+## Restore a file to specific commit version
+[How can I reset or revert a file to a specific revision?](https://stackoverflow.com/questions/215718/how-can-i-reset-or-revert-a-file-to-a-specific-revision)
+
+```sh
+git checkout <sha-of-a-commit> -- /file1/to/restore
+```
+
 ## Revert a commit
 (This will create a new commit)
 `$git revert <sha-of-a-commit>`
