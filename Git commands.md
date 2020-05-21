@@ -89,6 +89,11 @@ git clean -n -f
 
 `$git branch -r`
 
+## Discard unstaged changes
+[How do I discard unstaged changes in Git?](https://stackoverflow.com/questions/52704/how-do-i-discard-unstaged-changes-in-git)
+
+`$git checkout -- .`
+
 ## Switch branch, discard all changes
 [Error when changing to master branch: my local changes would be overwritten by checkout](https://stackoverflow.com/questions/22424142/error-when-changing-to-master-branch-my-local-changes-would-be-overwritten-by-c)
 
