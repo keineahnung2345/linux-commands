@@ -315,6 +315,18 @@ $git push origin <branch-base>
 ```
 If met with the problem `merge: <branch-feature> - not something we can merge`, try `$git checkout <branch-feature>` and then repeat the commands above.
 
+If there is a conflict:
+```
+Auto-merging xxx.cpp
+CONFLICT (content): Merge conflict in xxx.cpp
+Automatic merge failed; fix conflicts and then commit the result.
+```
+Then edit the `xxx.cpp` to resolve the conflicts, and then:
+```sh
+$git add xxx.cpp
+$git commit
+```
+
 ## Pull a specific branch from remote to local
 ```sh
 $git pull origin <branch-name>
