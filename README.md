@@ -1401,6 +1401,12 @@ awk '{ print length }' <filename>
 <other-command> | awk 'length($0) < <number>'
 ```
 
+### exclude Nth column
+[Exclude multiple columns using AWK](https://www.commandlinefu.com/commands/view/9578/exclude-multiple-columns-using-awk)
+```sh
+awk '{$1="";print}'
+```
+
 ## split a file into two according to a ratio
 [Split: how to split into different percentages?](https://unix.stackexchange.com/questions/10219/split-how-to-split-into-different-percentages)
 
