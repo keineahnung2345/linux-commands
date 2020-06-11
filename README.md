@@ -1561,6 +1561,25 @@ tr -d '<char>' < a.txt > tmp.txt && mv tmp.txt a.txt
 dos2unix <filename> #support the wildcard sign *
 ```
 
+## cut, remove first N characters
+[What is a unix command for deleting the first N characters of a line?](https://stackoverflow.com/questions/971879/what-is-a-unix-command-for-deleting-the-first-n-characters-of-a-line)
+```sh
+cut -c 3-
+```
+
+## cut, remove last character
+[Remove last character from line](https://unix.stackexchange.com/questions/83038/remove-last-character-from-line)
+
+This only works when all lines' ending characters are the same.
+
+```sh
+# -107.484, 56.0374, -3.34328)
+# -79.6017, 21.7058, -1.92846)
+cut -d "%" -f1
+# -107.484, 56.0374, -3.34328
+# -79.6017, 21.7058, -1.92846
+```
+
 ## cut by \<delimiter> and get the specific \<fields>
 ```sh
 cut -d '<delimiter>' -f <fields>
