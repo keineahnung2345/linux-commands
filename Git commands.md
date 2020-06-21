@@ -192,8 +192,21 @@ git log master...<branch-name>
 ## work on two branches simultaneously
 [git working on two branches simultaneously](https://stackoverflow.com/questions/2048470/git-working-on-two-branches-simultaneously)
 
+[Git worktree: 同時開多個工作目錄](https://ihower.tw/blog/archives/8740)
+
 ```sh
 git worktree add ../<project-name>_<branch-name> <branch-name>
+
+# work on that branch
+cd ../<project-name>_<branch-name>
+git commit ...
+
+# after commiting, one can delete the directory safely
+rm -rf ../<project-name>_<branch-name>
+
+# notify git that the secondary worktree is removed,
+# so we can checkout <branch-name> in the old directory
+git worktree prune
 ```
 
 ## Fork and then create a pull request
