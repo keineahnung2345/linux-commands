@@ -183,6 +183,13 @@ git checkout <other-branch-name> <relative_path_to_file_or_dir>
 git log master...<branch-name>
 ```
 
+## work on two branches simultaneously
+[git working on two branches simultaneously](https://stackoverflow.com/questions/2048470/git-working-on-two-branches-simultaneously)
+
+```sh
+git worktree add ../<project-name>_<branch-name> <branch-name>
+```
+
 ## Fork and then create a pull request
 Follow the instructions here: https://help.github.com/articles/creating-a-pull-request-from-a-fork/
 
