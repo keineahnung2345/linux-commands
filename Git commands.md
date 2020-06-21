@@ -84,6 +84,12 @@ git clean -n -f
 ## List all branch and get current branch name
 `$git branch`
 
+## List all branches, sort by commit time, descending
+[How can I get a list of Git branches, ordered by most recent commit?](https://stackoverflow.com/questions/5188320/how-can-i-get-a-list-of-git-branches-ordered-by-most-recent-commit)
+```sh
+git branch --sort=-committerdate 
+```
+
 ## List all remote branch
 [How do I list all remote branches in Git 1.7+?](https://stackoverflow.com/questions/3471827/how-do-i-list-all-remote-branches-in-git-1-7)
 
