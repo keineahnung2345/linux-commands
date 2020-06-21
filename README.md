@@ -1362,6 +1362,11 @@ grep <^pattern> -r .
 grep ".{0,20}<pattern>.{0,20}" -oE .
 ```
 
+### egrep, search for pattern A or pattern B
+```sh
+egrep "<pattern-A>|<pattern-B>" <filename>
+```
+
 ## awk
 ### cut a string and get the Nth part
 ```sh
