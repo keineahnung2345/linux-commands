@@ -353,6 +353,15 @@ $git add xxx.cpp
 $git commit
 ```
 
+## Undo merge
+[Undo a Git merge that hasn't been pushed yet](https://stackoverflow.com/questions/2389361/undo-a-git-merge-that-hasnt-been-pushed-yet)
+```sh
+# find out the commit just prior to the merge, get its sha
+$git reflog
+# reset
+$git reset --hard <sha-of-a-commit>
+```
+
 ## Pull a specific branch from remote to local
 ```sh
 $git pull origin <branch-name>
