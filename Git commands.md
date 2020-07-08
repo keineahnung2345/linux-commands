@@ -171,6 +171,10 @@ $git push origin :<branch-name>
 ## Recover a deleted branch
 [Can I recover a branch after its deletion in Git?](https://stackoverflow.com/questions/3640764/can-i-recover-a-branch-after-its-deletion-in-git)
 
+[umayr/recover-deleted-branch.sh](https://gist.github.com/umayr/b95e11d5f22c24a872ef95d215ba2ab1)
+
+[MarioRicalde/git-recover-branch.md](https://gist.github.com/MarioRicalde/3970881)
+
 ```sh
 # use this command to find the SHA1 for the commit at the tip of your deleted branch
 git reflog
