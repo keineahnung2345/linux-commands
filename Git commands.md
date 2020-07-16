@@ -193,6 +193,12 @@ git checkout <other-branch-name> <relative_path_to_file_or_dir>
 git log master...<branch-name>
 ```
 
+## Check remote git log
+[Commit history on remote repository](https://stackoverflow.com/questions/13941976/commit-history-on-remote-repository)
+```sh
+git log origin/<branch-name>
+```
+
 ## work on two branches simultaneously
 [git working on two branches simultaneously](https://stackoverflow.com/questions/2048470/git-working-on-two-branches-simultaneously)
 
