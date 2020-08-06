@@ -98,7 +98,13 @@ git branch --sort=-committerdate
 ## Discard unstaged changes
 [How do I discard unstaged changes in Git?](https://stackoverflow.com/questions/52704/how-do-i-discard-unstaged-changes-in-git)
 
+[Undo working copy modifications of one file in Git?](https://stackoverflow.com/questions/692246/undo-working-copy-modifications-of-one-file-in-git)
+
 `$git checkout -- .`
+
+We can also specify the filename:
+
+`$git checkout -- <filename>`
 
 ## Switch branch, discard all changes
 [Error when changing to master branch: my local changes would be overwritten by checkout](https://stackoverflow.com/questions/22424142/error-when-changing-to-master-branch-my-local-changes-would-be-overwritten-by-c)
