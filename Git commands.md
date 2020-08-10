@@ -291,6 +291,13 @@ git config --global filter.gitignore.clean "sed  '/View.*\(.*\);/d'"
 git config --global filter.gitignore.smudge cat
 ```
 
+## List all files under source control
+[Git - List all files currently under source control?](https://superuser.com/questions/429693/git-list-all-files-currently-under-source-control)
+
+```sh
+git ls-files
+```
+
 ## Untrack files
 [Untrack files from git temporarily](https://stackoverflow.com/questions/6964297/untrack-files-from-git-temporarily)
 ```sh
