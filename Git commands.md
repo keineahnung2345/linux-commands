@@ -540,6 +540,27 @@ git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
 
+## change user name and email of matching commits from all branches
+[Changing author info](https://docs.github.com/en/github/using-git/changing-author-info)
+
+```sh
+git filter-branch -f --env-filter '
+OLD_NAME="jack"
+CORRECT_NAME="james"
+CORRECT_EMAIL="james.example.com"
+if [ "$GIT_COMMITTER_NAME" = "$OLD_NAME" ]
+then
+    export GIT_COMMITTER_NAME="$CORRECT_NAME"
+    export GIT_COMMITTER_EMAIL="$CORRECT_EMAIL"
+fi
+if [ "$GIT_AUTHOR_NAME" = "$OLD_NAME" ]
+then
+    export GIT_AUTHOR_NAME="$CORRECT_NAME"
+    export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"
+fi
+' --tag-name-filter cat -- --branches --tags
+```
+
 ## set git proxy
 [为 git bash 设置代理](https://jjayyyyyyy.github.io/2019/08/11/git_bash_proxy.html)
 ```sh
