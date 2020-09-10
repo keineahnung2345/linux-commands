@@ -391,6 +391,19 @@ $git pull origin <branch-name>
 ```
 
 ## Rebase a branch to origin
+
+[Git push rejected after feature branch rebase](https://stackoverflow.com/questions/8939977/git-push-rejected-after-feature-branch-rebase)
+
+Rebase a branch after updating master:
+```sh
+//update master branch
+$git checkout <branch-name>
+$git rebase master
+$git push --force-with-lease origin <branch-name>
+```
+
+or
+
 ```sh
 $git fetch
 $git rebase master
