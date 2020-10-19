@@ -497,6 +497,12 @@ $shopt -s extglob
 $git diff !(<dir_name>)
 ```
 
+## Compare staged changes with last commit
+[How do I show the changes which have been staged?](https://stackoverflow.com/questions/1587846/how-do-i-show-the-changes-which-have-been-staged)
+
+```sh
+$git diff --name-only --cached
+```
 
 ## Check git branch graph
 `$git log --oneline --graph`
