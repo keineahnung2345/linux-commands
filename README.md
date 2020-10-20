@@ -1560,6 +1560,14 @@ To use it with a file:
 tr -d '<char>' < a.txt > tmp.txt && mv tmp.txt a.txt
 ```
 
+## replace characters
+[How to concatenate multiple lines of output to one line?](https://stackoverflow.com/questions/15580144/how-to-concatenate-multiple-lines-of-output-to-one-line)
+```sh
+tr '\r' ';'
+```
+
+This replace the Windows `^r` with `;`.
+
 ## delete '\r' in files
 [What is `^M` and how do I get rid of it?](https://unix.stackexchange.com/questions/32001/what-is-m-and-how-do-i-get-rid-of-it)
 ```sh
