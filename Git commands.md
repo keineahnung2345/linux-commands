@@ -450,6 +450,15 @@ $git rebase -i HEAD~n # this will include `n` last commits in interactive rebase
 $git push origin <branch-name> --force
 ```
 
+## Apply a commit onto another branch
+[How to copy commits from one branch to another?](https://stackoverflow.com/questions/2474353/how-to-copy-commits-from-one-branch-to-another)
+
+```sh
+$git cherry-pick <sha-of-a-commit>
+```
+
+This apply the specific commit onto *current* branch.
+
 ## Compare, ignore ^M
 [git-diff to ignore ^M](https://stackoverflow.com/questions/1889559/git-diff-to-ignore-m)
 
