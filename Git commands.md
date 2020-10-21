@@ -136,6 +136,11 @@ git stash pop
 
 `$git push origin <branch-name>` Push the branch from local to remote
 
+## Make a commit as a branch
+[How to create the branch from specific commit in different branch](https://stackoverflow.com/questions/8483983/how-to-create-the-branch-from-specific-commit-in-different-branch/8491176)
+
+`$git checkout <branch-name> <sha>`
+
 ## Rename a branch
 [How do I rename a local Git branch?](https://stackoverflow.com/questions/6591213/how-do-i-rename-a-local-git-branch)
 
