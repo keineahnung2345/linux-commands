@@ -310,6 +310,12 @@ git rm -r --cached <folder-or-file-name>
 ```
 Then you can see when using `git commit`, the file or folder moves from `Changes to be committed` part to `Untracked files` part.
 
+## Remove files from git repo and the file system
+[How can I delete a file from a Git repository?](https://stackoverflow.com/questions/2047465/how-can-i-delete-a-file-from-a-git-repository)
+```sh
+git rm -r <folder-or-file-name>
+```
+
 ## Unstage files
 [Why are there two ways to unstage a file in Git?](https://stackoverflow.com/questions/6919121/why-are-there-two-ways-to-unstage-a-file-in-git)
 ```sh
