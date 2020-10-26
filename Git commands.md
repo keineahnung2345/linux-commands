@@ -166,6 +166,12 @@ one can use:
 
 to make local repo updated with the remote one.
 
+## Make a commit a branch
+[Branch from a previous commit using Git](https://stackoverflow.com/questions/2816715/branch-from-a-previous-commit-using-git/2816728)
+```sh
+git branch branchname <sha>
+```
+
 ## Move uncommited work to another branch
 [Move existing, uncommitted work to a new branch in Git](https://stackoverflow.com/questions/1394797/move-existing-uncommitted-work-to-a-new-branch-in-git)
 ```sh
