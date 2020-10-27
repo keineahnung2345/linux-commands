@@ -356,6 +356,12 @@ $git remote rm upstream
 $git remote rm origin
 ```
 
+## get the url of origin
+[How can I determine the URL that a local Git repository was originally cloned from?](https://stackoverflow.com/questions/4089430/how-can-i-determine-the-url-that-a-local-git-repository-was-originally-cloned-fr)
+```sh
+$git config --get remote.origin.url
+```
+
 ## Sync your forked repository
 ```sh
 $git remote add upstream <the-url-of-upstream-repo>
