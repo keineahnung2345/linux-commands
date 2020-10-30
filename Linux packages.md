@@ -409,10 +409,20 @@ apt-get install -y libxt-dev
 ```
 
 ### libpng
-[How to install libpng and zlib](https://askubuntu.com/questions/508934/how-to-install-libpng-and-zlib)
+[error while loading shared libraries: libpng12.so.0](https://askubuntu.com/a/1109438/913680)
 ```sh
-sudo apt-get install libpng-dev
+wget http://security.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1.1_amd64.deb
+tar xvf  libpng_1.2.54.orig.tar.xz 
+cd libpng-1.2.54
+./autogen.sh
+./configure
+make -j8 
+sudo make install
+sudo ldconfig
 ```
+
+Note: `png++-0.2.9` requires `libpng12.so.0`, but the following command will install libpng16.
+~~sudo apt-get install libpng-dev~~
 
 ### png++
 [PNG++ Installation on Ubuntu 16.04](https://gist.github.com/satriahrh/32647b296540a686ea3cd083908195ff)
