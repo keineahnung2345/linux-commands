@@ -408,6 +408,15 @@ apt-get install -y libgl1-mesa-dev
 apt-get install -y libxt-dev
 ```
 
+### libpng
+[How to install libpng and zlib](https://askubuntu.com/questions/508934/how-to-install-libpng-and-zlib)
+```sh
+sudo apt-get install libpng-dev
+```
+
+### png++
+[PNG++ Installation on Ubuntu 16.04](https://gist.github.com/satriahrh/32647b296540a686ea3cd083908195ff)
+
 ### Qt5
 Download Qt installer from [Qt Downloads](http://download.qt-project.org/official_releases/qt/), and then:
 
