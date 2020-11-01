@@ -591,6 +591,13 @@ git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
 
+## change user name and email of last commits
+[How to amend several commits in Git to change author](https://stackoverflow.com/questions/4981126/how-to-amend-several-commits-in-git-to-change-author/31669789#31669789)
+
+```sh
+git rebase -i HEAD~4 -x "git commit --amend --author 'John Doe <johndoe@example.com>' --no-edit"
+```
+
 ## change user name and email of matching commits from all branches
 [Changing author info](https://docs.github.com/en/github/using-git/changing-author-info)
 
