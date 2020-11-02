@@ -492,6 +492,12 @@ $git diff --ignore-space-change
 $git diff --ignore-all-space
 ```
 
+## Compare, char by char
+[How can I visualize per-character differences in a unified diff file?](https://stackoverflow.com/questions/3231759/how-can-i-visualize-per-character-differences-in-a-unified-diff-file)
+```sh
+git diff --color-words=. <filename>
+```
+
 ## Compare two branches
 ```sh
 $git diff <branch-name1> <branch-name2>
