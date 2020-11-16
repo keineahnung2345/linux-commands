@@ -351,6 +351,16 @@ $git push origin <branch-name> --force #--force solves non-fast-forward error
 $git remote rm upstream
 ```
 
+## add origin
+```sh
+$git remote add origin "//xxx/yyy/zzz.git"
+```
+
+## set origin
+```sh
+$git remote set-url origin "//xxx/yyy/zzz.git"
+```
+
 ## `fatal: remote origin already exists.`
 ```sh
 $git remote rm origin
