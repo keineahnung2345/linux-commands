@@ -1103,6 +1103,11 @@ find . -name "<filename>" -exec cp {} "<dst_path>"  \;
 find . -maxdepth 1 -name "<*word*>"
 ```
 
+### find in specific depth
+```sh
+find . -maxdepth <depth> -mindepth <depth> -name "<*word*>"
+```
+
 ### find directory with name length greater than \<length> and delete
 ```sh
 find . -maxdepth 1 -print| awk -F/ ' length($NF)> <length> ' | xargs rm -rf
