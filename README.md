@@ -1696,6 +1696,13 @@ apt-get install uni2ascii
 
 `2>&1` means redirect standard error to standard output.
 
+## redirect to both file and console(stdout)
+[How to redirect output to a file and stdout](https://stackoverflow.com/questions/418896/how-to-redirect-output-to-a-file-and-stdout)
+```sh
+apt-get install expect #install unbuffer
+unbuffer <some-command> 2>&1 | tee <filename.txt>
+```
+
 ## count number of lines of other command's output
 ```sh
 <some-command> | wc -l
