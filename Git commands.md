@@ -351,6 +351,11 @@ $git push origin <branch-name> --force #--force solves non-fast-forward error
 $git remote rm upstream
 ```
 
+## show origin
+```sh
+$git remote show origin
+```
+
 ## add origin
 ```sh
 $git remote add origin "//xxx/yyy/zzz.git"
