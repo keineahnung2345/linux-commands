@@ -1466,6 +1466,14 @@ sed -i -e '<start_line_number,end_line_number>d;<another_line_number>d' <filenam
 sed -i 's/<regular expression>/<replacement>/g' <filename>
 ```
 
+[How to replace a string in multiple files in linux command line](https://stackoverflow.com/questions/11392478/how-to-replace-a-string-in-multiple-files-in-linux-command-line)
+
+To do this recursively:
+
+```sh
+!sed -i -e 's/<regular expression>/<replacement>/g' $(find . -name *.<file_extension>)
+```
+
 ### insert a line after Nth line(it will be N+1-th line)
 ```sh
 sed -n -i 'p;<line_number>a <line_to_insert>' <filename>
