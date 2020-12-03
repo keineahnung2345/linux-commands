@@ -57,6 +57,12 @@ $git pull origin master
 $git clone -b <branch-name> https://github.com/<user-name>/<repo-name>.git
 ```
 
+Or:
+
+```sh
+git clone --single-branch --branch <branch-name> <remote-repo>
+```
+
 ## Synchronize(Reset) local repo with remote one
 [git: sync local repo with remote one](https://stackoverflow.com/questions/6373277/git-sync-local-repo-with-remote-one)
 
