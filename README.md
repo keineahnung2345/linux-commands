@@ -1721,6 +1721,17 @@ unbuffer <some-command> 2>&1 | tee <filename.txt>
 zip -r <foldername>.zip <foldername>
 ```
 
+## unzip troubleshooting: please check that you have transferred or created the zipfile in the appropriate BINARY mode and that you have compiled UnZip properly
+[Cannot open large concatenated zip file with unzip, though it opened fine with Archive Utility, get a central directory error](https://superuser.com/questions/839711/cannot-open-large-concatenated-zip-file-with-unzip-though-it-opened-fine-with-a)
+
+```sh
+zip -F <name>.zip -O <name>.fixed.zip
+```
+
+```sh
+zip -FF <name>.zip -O <name>.fixed.zip
+```
+
 ## unzip a file to a desinated directory
 ```sh
 unzip <xxx.zip> -d </target/directory/to/unzip>
