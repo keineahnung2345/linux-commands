@@ -8,6 +8,12 @@ If not, there will be an error message:
 remote: Permission to \<other-user-name>/\<repo-name>.git denied to \<your-name>. \
 fatal: unable to access 'https://github.com/<other-user-name\>/\<repo-name>/': The requested URL returned error: 403
 
+## Create an alias
+[Shortcuts for git commands](https://stackoverflow.com/questions/14753603/shortcuts-for-git-commands)
+```sh
+git config --global alias.<short> "<long>"
+```
+
 ## Make a directory git repository
 [A new repo from an existing project](https://kbroman.org/github_tutorial/pages/init.html)
 ```sh
