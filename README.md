@@ -2073,6 +2073,11 @@ Rename file with extension `.cloud` to `_cloud.cpp`.
 rename 's/.cloud$/_cloud.cpp/' *.cloud
 ```
 
+Rename: delete something like `-0_1`, `-1_2` from file names:
+```sh
+rename 's/-[0-9]_[0-9]//' *
+```
+
 Or using for loop and mv:
 
 ```sh
