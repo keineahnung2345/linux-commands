@@ -18,7 +18,7 @@ apt-get install unity-asset-pool
 reboot
 ```
 
-### add-apt-repository
+### apt-add-repository
 ```sh
 apt-get install -y software-properties-common python-software-properties
 ```
