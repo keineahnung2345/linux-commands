@@ -360,6 +360,12 @@ apt-get install -y mediainfo
 snap install vlc
 ```
 
+### systemctl
+[systemctl: command not found on ubuntu 16.04](https://askubuntu.com/questions/988266/systemctl-command-not-found-on-ubuntu-16-04)
+```sh
+apt-get -y install systemd
+```
+
 ### ssh server
 [Ubuntu Linux install OpenSSH server](https://www.cyberciti.biz/faq/ubuntu-linux-install-openssh-server/)
 ```sh
