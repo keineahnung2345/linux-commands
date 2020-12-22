@@ -1628,6 +1628,14 @@ cut -d '<delimiter>' -f <fields> <filename>
 <other-command> | rev | cut -d ' ' -f2- | rev
 ```
 
+## join by a delimiter
+[How to join multiple lines of file names into one with custom delimiter?](https://stackoverflow.com/questions/2764051/how-to-join-multiple-lines-of-file-names-into-one-with-custom-delimiter)
+```sh
+<other-command> | paste -sd "," -
+```
+
+`-s` for serial, `-d ","` for delimiter
+
 ## reverse the output of \<other-command>
 ```sh
 <other-command> | tac
