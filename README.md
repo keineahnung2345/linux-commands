@@ -1636,6 +1636,12 @@ cut -d '<delimiter>' -f <fields> <filename>
 
 `-s` for serial, `-d ","` for delimiter
 
+## remove a specific character
+[remove particular characters from a variable using bash](https://unix.stackexchange.com/questions/104881/remove-particular-characters-from-a-variable-using-bash)
+```sh
+<other-command> | tr -d '.'
+```
+
 ## reverse the output of \<other-command>
 ```sh
 <other-command> | tac
