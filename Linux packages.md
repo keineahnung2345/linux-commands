@@ -152,6 +152,11 @@ apt-get install -y less
 apt-get install -y procps
 ```
 
+### ping
+```sh
+apt-get install -y iputils-ping
+```
+
 ### ifconfig, netstat
 ```sh
 apt-get install -y net-tools
