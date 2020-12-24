@@ -47,6 +47,8 @@ This could be helpful when your tmux gives you a small window.
 Note that in Mac, <kbd>Page Up</kbd> and <kbd>Page Down</kbd> are <kbd>fn</kbd> + <kbd>↑</kbd> and 
 <kbd>fn</kbd> + <kbd>↓</kbd> respectively.
 
+In Windows, using <kbd>Alt</kbd> + <kbd>↑</kbd> and <kbd>Alt</kbd> + <kbd>↓</kbd>.
+
 To leave scroll mode, press <kbd>q</kbd>.
 
 To search through history, press <kbd>Ctrl</kbd> + <kbd>s</kbd>. And then use <kbd>n</kbd> to go next, use <kbd>N</kbd> to go previous.
