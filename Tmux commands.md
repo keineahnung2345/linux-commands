@@ -51,7 +51,7 @@ In Windows, using <kbd>Alt</kbd> + <kbd>↑</kbd> and <kbd>Alt</kbd> + <kbd>↓<
 
 To leave scroll mode, press <kbd>q</kbd>.
 
-To search through history, press <kbd>Ctrl</kbd> + <kbd>s</kbd>. And then use <kbd>n</kbd> to go next, use <kbd>N</kbd> to go previous.
+To search(find) through history, press <kbd>Ctrl</kbd> + <kbd>s</kbd>. And then use <kbd>n</kbd> to go next, use <kbd>N</kbd> to go previous.
 
 ## Panes
 split panes horizontally: `"`
