@@ -354,6 +354,16 @@ user	0m54.368s
 sys	0m16.128s
 ```
 
+## list all locale
+```sh
+locale -a
+```
+
+## generate locale
+```sh
+sudo locale-gen zh_TW.UTF-8
+```
+
 ## check current date and time
 ```sh
 date
