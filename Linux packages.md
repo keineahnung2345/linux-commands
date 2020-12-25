@@ -105,6 +105,12 @@ Suppress apt-fast confirmation dialog? [yes/no] yes
 apt search <package-name>
 ```
 
+### Search for installed package
+[How do I see what packages are installed on Ubuntu Linux?](https://www.cyberciti.biz/faq/apt-get-list-packages-are-installed-on-ubuntu-linux/)
+```sh
+apt list | grep <package-name>
+```
+
 ### Check available version of a package
 [How can I check the available version of a package in the repositories?](https://askubuntu.com/questions/340530/how-can-i-check-the-available-version-of-a-package-in-the-repositories)
 ```sh
