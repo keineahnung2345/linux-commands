@@ -1016,6 +1016,12 @@ kill -9 <pid>
 ```
 
 ## find
+### find files whose names are str1 or str2
+[How to combine 2 -name conditions in find?](https://unix.stackexchange.com/questions/50612/how-to-combine-2-name-conditions-in-find)
+```sh
+find . \( -name "str1*" -o -name "str2*" \)
+```
+
 ### find, return full directory
 [How can I generate a list of files with their absolute path in Linux?](https://stackoverflow.com/questions/246215/how-can-i-generate-a-list-of-files-with-their-absolute-path-in-linux)
 ```sh
