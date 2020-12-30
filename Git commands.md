@@ -40,6 +40,16 @@ And to start work on one branch, just:
 
 `$git checkout <branch-name>`
 
+Clone from windows server:
+
+[Cannot clone GIT repository on network drive](https://stackoverflow.com/questions/13714151/cannot-clone-git-repository-on-network-drive)
+
+```sh
+git clone "file:////Venus/aaa/bbb/proj1.git"
+git clone --no-hardlinks "//Venus/aaa/bbb/proj1.git"
+git clone file:////<ip-addr>/aaa/bbb/proj1.git
+```
+
 ## list all remote version control base's name and website
 ```
 $git remote -v
