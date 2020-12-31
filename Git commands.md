@@ -128,6 +128,12 @@ We can also specify the filename:
 
 `$git checkout -- <filename>`
 
+## Switch branch in a bare repo
+[Git: Correct way to change Active Branch in a bare repository?](https://stackoverflow.com/questions/3301956/git-correct-way-to-change-active-branch-in-a-bare-repository)
+```sh
+git symbolic-ref HEAD refs/heads/<branch-name>
+```
+
 ## Switch branch, discard all changes
 [Error when changing to master branch: my local changes would be overwritten by checkout](https://stackoverflow.com/questions/22424142/error-when-changing-to-master-branch-my-local-changes-would-be-overwritten-by-c)
 
