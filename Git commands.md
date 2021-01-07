@@ -365,6 +365,16 @@ $git commit
 $git push origin <branch-name>
 ```
 
+## Move commits to a new branch
+[Move the most recent commit(s) to a new branch with Git](https://stackoverflow.com/questions/1628563/move-the-most-recent-commits-to-a-new-branch-with-git)
+
+Assume you have commited to master, but actually you want to commit to <branch-name>
+```sh
+git branch <branch-name> # on master branch
+git reset HEAD~1 # on master branch
+git checkout <branch-name>
+```
+
 ## Reset your \<branch-name> in forked repository
 ```sh
 $git remote add upstream <the-url-of-upstream-repo>
