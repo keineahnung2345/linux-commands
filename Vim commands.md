@@ -264,6 +264,13 @@ Method 3: to indent
 :'<,'>s!^!    !
 ```
 
+To indent the whole file:
+
+[How do I fix the indentation of an entire file in Vi?](https://stackoverflow.com/questions/506075/how-do-i-fix-the-indentation-of-an-entire-file-in-vi)
+```
+gg=G''
+```
+
 ## Comment multiple lines
 [What's a quick way to comment/uncomment lines in Vim?](https://stackoverflow.com/questions/1676632/whats-a-quick-way-to-comment-uncomment-lines-in-vim)
 
