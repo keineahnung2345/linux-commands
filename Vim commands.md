@@ -102,6 +102,20 @@ move the cursor to the word you want to find
 <P>: paste before
 ```
 
+
+## paste, disable autoindent
+[Turning off auto indent when pasting text into vim](https://stackoverflow.com/questions/2514445/turning-off-auto-indent-when-pasting-text-into-vim/38258720#38258720)
+
+Before pasting:
+```
+:set paste
+```
+
+After pasting:
+```
+:set nopaste
+```
+
 ## Copy, Delete a character
 ```
 <y> and then move left: copy the character the cursor move to
