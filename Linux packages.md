@@ -233,6 +233,12 @@ apt-get install -y build-essential
 ```
 Use `gcc -v`, `g++ --version` and `make -v` to check their versions.
 
+This solves:
+
+```
+No CMAKE_CXX_COMPILER could be found.
+```
+
 ### dlocate
 ```sh
 apt-get install -y dlocate
