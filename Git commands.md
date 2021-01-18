@@ -315,7 +315,7 @@ $git add .
 $git commit -m "fixed untracked files"
 ```
 
-## Make git ignore lines matching specific patter
+## Make git ignore lines matching specific pattern
 [How to tell git to ignore individual lines, i.e. gitignore for specific lines of code [duplicate]](https://stackoverflow.com/questions/16244969/how-to-tell-git-to-ignore-individual-lines-i-e-gitignore-for-specific-lines-of)
 
 Create `<project root>/.git/info/attributes` and then add into the file:
@@ -328,6 +328,13 @@ Use `git config` to define the filter named `gitignore`:
 ```sh
 git config --global filter.gitignore.clean "sed  '/View.*\(.*\);/d'"
 git config --global filter.gitignore.smudge cat
+```
+
+## Make git ignore file mode changes
+[How do I make Git ignore file mode (chmod) changes?](https://stackoverflow.com/questions/1580596/how-do-i-make-git-ignore-file-mode-chmod-changes)
+
+```sh
+git config core.fileMode false
 ```
 
 ## List all files under source control
