@@ -53,6 +53,9 @@ To leave scroll mode, press <kbd>q</kbd>.
 
 To search(find) through history, press <kbd>Ctrl</kbd> + <kbd>s</kbd>. And then use <kbd>n</kbd> to go next, use <kbd>N</kbd> to go previous.
 
+## Window
+kill window: `&`
+
 ## Panes
 split panes horizontally: `"`
 
