@@ -437,6 +437,16 @@ apt-get install -y libgl1-mesa-dev
 apt-get install -y libxt-dev
 ```
 
+### yarn
+[How to install Yarn on Ubuntu 20.04 LTS](https://linuxhint.com/install_yarn_ubuntu/)
+```sh
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update
+sudo apt install yarn
+yarn --version
+```
+
 ### libpng
 [error while loading shared libraries: libpng12.so.0](https://askubuntu.com/a/1109438/913680)
 ```sh
