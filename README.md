@@ -1324,7 +1324,7 @@ grep <pattern> --exclude=<file-to-be-excluded> -rnw <directory>
 
 ### search file, but exclude some directories
 ```sh
-grep <pattern> --exclude-dir=<directory-to-be-excluded> -rnw <directory>
+grep <pattern> --exclude-dir={<directory-to-be-excluded-1>,<directory-to-be-excluded-2>,<directory-to-be-excluded-3>} -rnw <directory>
 ```
 
 ### find file in current directory and fetch the lowest level's directory name
