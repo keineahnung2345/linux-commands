@@ -382,15 +382,6 @@ git reset HEAD~1 # on master branch
 git checkout <branch-name>
 ```
 
-## Reset your \<branch-name> in forked repository
-```sh
-$git remote add upstream <the-url-of-upstream-repo>
-$git fetch upstream
-$git checkout <branch-name>
-$git reset --hard upstream/master
-$git push origin <branch-name> --force #--force solves non-fast-forward error
-```
-
 ## Undo `git remote add upstream`
 ```sh
 $git remote rm upstream
@@ -430,6 +421,15 @@ $git fetch upstream
 $git checkout master
 $git merge upstream/master
 $git push origin master
+```
+
+## Reset your \<branch-name> in forked repository
+```sh
+$git remote add upstream <the-url-of-upstream-repo>
+$git fetch upstream
+$git checkout <branch-name>
+$git reset --hard upstream/master
+$git push origin <branch-name> --force #--force solves non-fast-forward error
 ```
 
 ## Sync a branch with master branch
