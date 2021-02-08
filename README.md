@@ -1317,8 +1317,14 @@ grep '<xxx\.xxx>' -rnw <directory>
 grep <pattern> --include=\*.{type1, type2} -rnw <directory>
 ```
 
+### search file, but exclude binary files
+```sh
+grep <pattern> -Irn <directory>
+```
+
 ### search file, but exclude some files
 ```sh
+# process a binary file as if it did not contain matching data
 grep <pattern> --exclude=<file-to-be-excluded> -rnw <directory>
 ```
 
