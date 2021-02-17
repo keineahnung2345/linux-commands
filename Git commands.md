@@ -543,6 +543,13 @@ $git cherry-pick <sha-of-a-commit>
 
 This apply the specific commit onto *current* branch.
 
+## Check status with modification date
+[git status - list last modified date](https://stackoverflow.com/questions/14141344/git-status-list-last-modified-date)
+
+```sh
+git status -s | while read mode file; do if [ "$mode" != "D" ]; then echo $mode $file $(stat -c %y $file); fi; done
+```
+
 ## Compare, ignore ^M
 [git-diff to ignore ^M](https://stackoverflow.com/questions/1889559/git-diff-to-ignore-m)
 
