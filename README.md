@@ -2114,6 +2114,12 @@ Rename: delete something like `-0_1`, `-1_2` from file names:
 rename 's/-[0-9]_[0-9]//' *
 ```
 
+Rename: add and remove .bak:
+```sh
+rename 's/$/.bak/' *
+rename 's/.bak//' *
+```
+
 Or using for loop and mv:
 
 ```sh
