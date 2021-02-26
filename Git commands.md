@@ -573,6 +573,10 @@ $git diff <branch-name1> <branch-name2>
 $git diff <branch-name1> <branch-name2> <filename>
 ```
 
+To compare two branches on Github website, go to:
+
+`https://github.com/<user_name>/<repo_name>/compare/<branch1>...<branch2>`
+
 ## Compare current state and last commit
 [See diff between current state and last commit](https://stackoverflow.com/questions/17244471/see-diff-between-current-state-and-last-commit)
 ```sh
