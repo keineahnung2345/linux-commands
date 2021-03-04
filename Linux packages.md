@@ -466,6 +466,11 @@ Note: `png++-0.2.9` requires `libpng12.so.0`, but the following command will ins
 ### png++
 [PNG++ Installation on Ubuntu 16.04](https://gist.github.com/satriahrh/32647b296540a686ea3cd083908195ff)
 
+### libtoolize
+```sh
+apt install -y libtool
+```
+
 ### Qt5
 Download Qt installer from [Qt Downloads](http://download.qt-project.org/official_releases/qt/), and then:
 
