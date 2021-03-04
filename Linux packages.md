@@ -450,7 +450,7 @@ yarn --version
 ### libpng
 [error while loading shared libraries: libpng12.so.0](https://askubuntu.com/a/1109438/913680)
 ```sh
-wget http://security.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1.1_amd64.deb
+wget http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng_1.2.54.orig.tar.xz
 tar xvf  libpng_1.2.54.orig.tar.xz 
 cd libpng-1.2.54
 ./autogen.sh
