@@ -466,6 +466,15 @@ Note: `png++-0.2.9` requires `libpng12.so.0`, but the following command will ins
 ### png++
 [PNG++ Installation on Ubuntu 16.04](https://gist.github.com/satriahrh/32647b296540a686ea3cd083908195ff)
 
+```sh
+wget http://download.savannah.nongnu.org/releases/pngpp/png++-0.2.9.tar.gz
+sudo tar -xzvf png++-0.2.9.tar.gz -C /usr/src
+cd /usr/src/png++-0.2.9/
+make 
+make test
+sudo make install
+```
+
 ### libtoolize
 ```sh
 apt install -y libtool
