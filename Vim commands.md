@@ -5,6 +5,15 @@ export TERM=xterm
 stty rows 40 cols 120
 ```
 
+# Merge a .swp file to the original file
+[How to merge a swap (.swp) file to the original file?](https://askubuntu.com/questions/1021766/how-to-merge-a-swap-swp-file-to-the-original-file)
+
+```sh
+vim .xxx.swp
+# in the editor, :recover
+rm .xxx.swp
+```
+
 # Vim commands in Visual Mode
 
 ## Get help message(manual) of a vim command
