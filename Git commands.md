@@ -14,6 +14,21 @@ fatal: unable to access 'https://github.com/<other-user-name\>/\<repo-name>/': T
 git config --global alias.<short> "<long>"
 ```
 
+## Create a repository on remote server
+
+in remote server's abc\def folder:
+```sh
+mkdir <xxx>.git
+cd <xxx>.git
+git init --bare
+```
+
+on local machine:
+```sh
+git remote add origin "\\\\Servername\\abc\\def\\<xxx.git>"
+git push origin master
+```
+
 ## Make a directory git repository
 [A new repo from an existing project](https://kbroman.org/github_tutorial/pages/init.html)
 ```sh
