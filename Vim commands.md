@@ -290,6 +290,15 @@ gg=G''
 
 Note that `'<,'>` appears automatically after `:` is entered.
 
+## Dispose of "\ No newline at end of file"
+[VIM Disable Automatic Newline At End Of File](https://stackoverflow.com/questions/1050640/vim-disable-automatic-newline-at-end-of-file)
+
+```sh
+vim -b file.txt
+:set noeol
+:wq
+```
+
 ## Quit
 ```
 <:q!>
