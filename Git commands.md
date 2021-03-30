@@ -404,6 +404,15 @@ git reset HEAD~1 # on master branch
 git checkout <branch-name>
 ```
 
+## Make current branch master branch
+[Make the current Git branch a master branch](https://stackoverflow.com/questions/2763006/make-the-current-git-branch-a-master-branch)
+```sh
+git checkout <better-branch>
+git merge --strategy=ours master    # keep the content of this branch, but record a merge
+git checkout master
+git merge <better-branch>           # fast-forward master up to the merge
+```
+
 ## Undo `git remote add upstream`
 ```sh
 $git remote rm upstream
