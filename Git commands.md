@@ -182,7 +182,14 @@ git stash pop
 ## Make a commit as a branch
 [How to create the branch from specific commit in different branch](https://stackoverflow.com/questions/8483983/how-to-create-the-branch-from-specific-commit-in-different-branch/8491176)
 
-`$git checkout <branch-name> <sha>`
+[How do I check out a particular version in Git from 'git log'?](https://stackoverflow.com/questions/6533222/how-do-i-check-out-a-particular-version-in-git-from-git-log)
+```sh
+git checkout <branch-name> <sha>
+
+#or
+
+git checkout <sha> -b <branch-name>
+```
 
 ## Rename a branch
 [How do I rename a local Git branch?](https://stackoverflow.com/questions/6591213/how-do-i-rename-a-local-git-branch)
