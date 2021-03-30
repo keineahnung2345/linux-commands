@@ -54,7 +54,15 @@ To leave scroll mode, press <kbd>q</kbd>.
 To search(find) through history, press <kbd>Ctrl</kbd> + <kbd>s</kbd>. And then use <kbd>n</kbd> to go next, use <kbd>N</kbd> to go previous.
 
 ## Window
-kill window: `&`
+### kill window
+`&`
+
+### swap window
+[How do I reorder tmux windows?](https://superuser.com/questions/343572/how-do-i-reorder-tmux-windows)
+
+`:swap-window -t <target-window-id>`
+
+`:swap-window -s <source-window-id> -t <target-window-id>`
 
 ## Panes
 split panes horizontally: `"`
