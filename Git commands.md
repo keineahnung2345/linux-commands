@@ -642,7 +642,7 @@ $git diff !(<dir_name>)
 [How do I show the changes which have been staged?](https://stackoverflow.com/questions/1587846/how-do-i-show-the-changes-which-have-been-staged)
 
 ```sh
-$git diff --name-only --cached
+$git diff --cached
 ```
 
 ## Check git branch graph
