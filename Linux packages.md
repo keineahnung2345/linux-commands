@@ -385,12 +385,18 @@ apt-get -y install systemd
 
 ### ssh server
 [Ubuntu Linux install OpenSSH server](https://www.cyberciti.biz/faq/ubuntu-linux-install-openssh-server/)
+
+[Start SSH automatically on boot](https://askubuntu.com/questions/892447/start-ssh-automatically-on-boot)
 ```sh
 apt-get install -y openssh-server
 ```
 Verify that ssh service running:
 ```sh
 systemctl status ssh
+```
+To start it automatically after reboot:
+```sh
+sudo systemctl enable ssh
 ```
 
 ### intel_gpu_top, intel_gpu_time, intel_gpu_frequency, intel_gpu_abrt
