@@ -309,6 +309,12 @@ $git push origin <branch-name>
 
 If got `Changes not staged for commit` even after using `git add`, one can try change to the specific folder and then use `git add` again.
 
+## Track items but not add
+[How to track but not stage and how to unstage but not untrack?](https://stackoverflow.com/questions/15653066/how-to-track-but-not-stage-and-how-to-unstage-but-not-untrack)
+```sh
+git add -N <folder-or-file-name>
+```
+
 ## Sign off
 First [set user name and email](https://github.com/keineahnung2345/linux-commands/blob/master/Git%20commands.md#set-user-name-and-email) and then:
 
