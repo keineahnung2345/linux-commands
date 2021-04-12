@@ -571,6 +571,24 @@ chmod 600 ~/.ssh/config
 ```
 
 ## remove host name from known_hosts file(used when you have previously failed to login the host)
+Error message:
+```
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ECDSA key sent by the remote host is
+SHA256:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
+Please contact your system administrator.
+Add correct host key in C:\\Users\\xxx/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in C:\\Users\\xxx/.ssh/known_hosts:8
+ECDSA host key for 192.168.1.17 has changed and you have requested strict checking.
+Host key verification failed.
+```
+
+Solution:
 ```sh
 ssh-keygen -R <ip-address>
 ```
