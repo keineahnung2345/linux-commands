@@ -591,6 +591,17 @@ or
 sudo service ssh status
 ```
 
+## allow ssh server starts on reboot
+```sh
+sudo systemctl enable ssh
+```
+
+## check whether a service is enabled
+[How to list all enabled services from systemctl?](https://askubuntu.com/questions/795226/how-to-list-all-enabled-services-from-systemctl)
+```sh
+sudo systemctl list-unit-files | grep <service-name>
+```
+
 ## copy multiple directories from remote host to current directory
 ```sh
 scp <username>@<ip-address>:/some/remote/directory/\{a,b,c\} ./
