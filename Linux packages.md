@@ -303,6 +303,12 @@ apt-get install pciutils
 apt install libffi-dev -y
 ```
 
+### libreadline
+[How do I install GNU Readline?](https://askubuntu.com/questions/194523/how-do-i-install-gnu-readline)
+```sh
+sudo apt install libreadline8 libreadline-dev -y
+```
+
 ### cpio
 ```sh
 apt-get install cpio
