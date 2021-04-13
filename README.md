@@ -1045,6 +1045,12 @@ kill -9 <pid>
 ```
 
 ## find
+### find, ignore "Permission denied" error
+[Linux / Unix Find Command Avoid Permission Denied Messages](https://www.cyberciti.biz/faq/bash-find-exclude-all-permission-denied-messages/)
+```sh
+find . -name "<filename>" 2>/dev/null
+```
+
 ### find files whose names are str1 or str2
 [How to combine 2 -name conditions in find?](https://unix.stackexchange.com/questions/50612/how-to-combine-2-name-conditions-in-find)
 ```sh
