@@ -297,6 +297,12 @@ apt-get install -y libgflags-dev
 apt-get install pciutils
 ```
 
+### libffi
+[How To Install "libffi-dev" Package on Ubuntu](https://zoomadmin.com/HowToInstall/UbuntuPackage/libffi-dev)
+```sh
+apt install libffi-dev -y
+```
+
 ### cpio
 ```sh
 apt-get install cpio
