@@ -309,6 +309,13 @@ apt install libffi-dev -y
 sudo apt install libreadline8 libreadline-dev -y
 ```
 
+### MagickCore
+[Package MagickCore was not found in the pkg-config search path](https://stackoverflow.com/questions/38200015/package-magickcore-was-not-found-in-the-pkg-config-search-path)
+
+```sh
+sudo apt install libmagickwand-dev -y
+```
+
 ### cpio
 ```sh
 apt-get install cpio
