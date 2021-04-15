@@ -21,6 +21,13 @@ rm .xxx.swp
 :h <vim-command>
 ```
 
+## Turn on and off syntax highlight
+[How to Turn On or Off Color Syntax Highlighting In vi or vim Editor](https://u.osu.edu/cstutorials/2016/10/28/turn-on-syntax/)
+```
+:syntax on
+:syntax off
+```
+
 ## Show and hide line numbers
 [How To Show or Hide Line Numbers In vi / vim Text Editor](https://www.cyberciti.biz/faq/vi-show-line-numbers/)
 ```
