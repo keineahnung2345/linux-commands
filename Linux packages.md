@@ -472,6 +472,12 @@ sudo apt install yarn
 yarn --version
 ```
 
+### glew
+[How to install GLEW on ubuntu?](https://www.reddit.com/r/learnprogramming/comments/51u1bg/how_to_install_glew_on_ubuntu/)
+```sh
+apt install libglew-dev -y
+```
+
 ### jpeg
 [使用cmake编译出现missing: JPEG_LIBRARY JPEG_INCLUDE_DIR？](https://www.zhihu.com/question/52911931)
 ```sh
