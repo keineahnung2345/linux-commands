@@ -472,6 +472,12 @@ sudo apt install yarn
 yarn --version
 ```
 
+### jpeg
+[使用cmake编译出现missing: JPEG_LIBRARY JPEG_INCLUDE_DIR？](https://www.zhihu.com/question/52911931)
+```sh
+apt install libjpeg-dev -y
+```
+
 ### libpng
 [error while loading shared libraries: libpng12.so.0](https://askubuntu.com/a/1109438/913680)
 ```sh
