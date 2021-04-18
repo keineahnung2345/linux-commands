@@ -478,6 +478,12 @@ yarn --version
 apt install libjpeg-dev -y
 ```
 
+### tiff
+[How to Install libtiff-dev in Ubuntu 18.04](https://www.howtoinstall.me/ubuntu/18-04/libtiff-dev/)
+```sh
+apt install libtiff-dev -y
+```
+
 ### libpng
 [error while loading shared libraries: libpng12.so.0](https://askubuntu.com/a/1109438/913680)
 ```sh
