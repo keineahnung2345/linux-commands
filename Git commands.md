@@ -792,3 +792,39 @@ For installation, please check https://github.com/keineahnung2345/linux-commands
 ```sh
 git config --global http.postBuffer 524288000
 ```
+
+## Create a patch
+[format-patch製作patch及git am匯入patch](https://ithelp.ithome.com.tw/articles/10188265)
+
+[What is the difference between 'git format-patch and 'git diff'?](https://stackoverflow.com/questions/4624127/what-is-the-difference-between-git-format-patch-and-git-diff)
+
+Generate patch of last commit:
+
+```sh
+git diff <commit_sha_1> <commit_sha_1> > xxx.patch
+```
+
+```sh
+git format-patch -1
+```
+
+## Apply a patch
+[How to apply a patch generated with git format-patch?](https://stackoverflow.com/questions/2249852/how-to-apply-a-patch-generated-with-git-format-patch)
+ and [4.2.1 git am patch手动解决冲突的办法](https://zhuanlan.zhihu.com/p/104055075)
+```sh
+git apply --reject xxx.patch
+```
+It shows:
+```
+error: patch failed: aaa.txt
+```
+Modify `aaa.txt` to resolve the conflict:
+```sh
+vim -O aaa.txt.rej aaa.txt
+```
+And then commit:
+```sh
+git add <files> # but not adding *.rej
+git commit
+ ```
+ 
