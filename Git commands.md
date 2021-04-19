@@ -559,6 +559,16 @@ git checkout <sha-of-a-commit> -- /file1/to/restore
 (This will create a new commit)
 `$git revert <sha-of-a-commit>`
 
+## Revert a commit and make them untracked
+[Undo git add, commit and push WITHOUT losing untracked files](https://stackoverflow.com/questions/28617950/undo-git-add-commit-and-push-without-losing-untracked-files)
+```sh
+$ git log
+# copy hash of the commit that you accidentally pushed as HASHFROMSTEPTWO
+$ git revert HEAD
+$ git push
+$ git cherry-pick -n HASHFROMSTEPTWO
+```
+
 ## Revert multiple commits to a specific point
 (This won't create new commit, it just remove the specific commits)
 ```sh
