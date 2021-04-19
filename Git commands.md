@@ -29,6 +29,12 @@ git remote add origin "\\\\Servername\\abc\\def\\<xxx.git>"
 git push origin master
 ```
 
+## list all remote version control base's name and website
+(To check origin)
+```
+$git remote -v
+```
+
 ## Make a directory git repository
 [A new repo from an existing project](https://kbroman.org/github_tutorial/pages/init.html)
 ```sh
@@ -63,11 +69,6 @@ Clone from windows server:
 git clone "file:////Venus/aaa/bbb/proj1.git"
 git clone --no-hardlinks "//Venus/aaa/bbb/proj1.git"
 git clone file:////<ip-addr>/aaa/bbb/proj1.git
-```
-
-## list all remote version control base's name and website
-```
-$git remote -v
 ```
 
 ## Just clone a folder from a repository
