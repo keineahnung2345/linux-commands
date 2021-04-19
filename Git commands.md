@@ -309,6 +309,13 @@ $git push origin <branch-name>
 
 If got `Changes not staged for commit` even after using `git add`, one can try change to the specific folder and then use `git add` again.
 
+## modify commit message
+[How to Change a Git Commit Message](https://linuxize.com/post/change-git-commit-message/)
+To modify the commit message of last commit:
+```sh
+$ git commit --amend -m "New commit message."
+```
+
 ## Track items but not add
 [How to track but not stage and how to unstage but not untrack?](https://stackoverflow.com/questions/15653066/how-to-track-but-not-stage-and-how-to-unstage-but-not-untrack)
 ```sh
