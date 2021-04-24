@@ -720,6 +720,13 @@ apt-get install --download-only <package-name>
 
 The `.deb` file will be put in `/var/cache/apt/archives`.
 
+## install a .deb
+[How to install a deb file, by dpkg -i or by apt?](https://unix.stackexchange.com/questions/159094/how-to-install-a-deb-file-by-dpkg-i-or-by-apt)
+```sh
+dpkg -i /path/to/deb/file
+apt install -f
+```
+
 ## list packages installed
 ```bash
 ldconfig -p | grep <package-name>
