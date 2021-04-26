@@ -636,11 +636,25 @@ rsync -P /local/file <username>@<ip-address>:/some/remote/directory
 ```
 The `-P` option shows the progress.
 
-## rsync: copy only files with specific type and maintain the directory structure
+## rsync: backup
 [Copying only JPG from a directory structure to another location Linux](https://superuser.com/questions/91307/copying-only-jpg-from-a-directory-structure-to-another-location-linux)
+
+[Scheduled folder backup](https://unix.stackexchange.com/questions/469864/scheduled-folder-backup/469868#469868)
+
 ```sh
-rsync -av --include='*.<filetype>' --include='*/' --exclude='*' /src/dir /dst/dir
+rsync -av --include='*.<filetype>' --include='*/' --exclude='*' --progress --delete --log-file=~/$(date +%Y%m%d)rsync.log /src/dir /dst/dir/dataBackup$(date +%Y%m%d_%T)
+date +%Y%m%d_%T >> ~/rsync_time.txt # record the backup time
 ```
+
+`-a`: maintain directory structure
+
+`-v`: verbose
+
+`--progress`: show progress
+
+`--delete`: delete files deleted in /src/dir
+
+`--log-file`: save rsync result to a file
 
 ## rsync: not chown
 [How to keep rsync from chown'ing transferred files?](https://serverfault.com/questions/364709/how-to-keep-rsync-from-chowning-transferred-files)
