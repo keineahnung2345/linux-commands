@@ -2046,7 +2046,13 @@ sudo mount -t vboxsf implementation /home/ubt/Documents/implementation
 
 ## mount CIFS
 ```sh
-mount -t cifs -o vers=1.0,user=<username>,password=<password> "//<ip_addr>/src/dir" /dst/dir
+mount -t cifs -o vers=1.0,user=<cifs_user_name>,password=<cifs_user_password> "//<ip_addr>/src/dir" /dst/dir
+```
+
+To specify the owner of the mount point, ref: [How to chown a file on a CIFS mount?](https://unix.stackexchange.com/questions/337024/how-to-chown-a-file-on-a-cifs-mount):
+
+```sh
+-o uid=<linux_user_name>
 ```
 
 ## unmount /dst/dir
