@@ -2027,14 +2027,14 @@ or
 rm -rf <linkname>
 ```
 
-## mount a \<dir1> to \<dir2>
+## mount /src/dir to /dst/dir
 ```bash
 mkdir <dir2>
-mount --bind <dir1> <dir2>
+mount --bind /src/dir /dst/dir
 ```
 --bind makes it possible to remount part of the file hierarchy somewhere else, and it solves the error: 
 
-> mount:  <dir1> is not a block devicere
+> mount:  /src/dir is not a block devicere
 
 In VirtualBox's VM, assume `/media/sf_implementation` is a directory shared from host. Use the following to create a binding from `/home/ubt/Documents/implementation` to `/media/sf_implementation`:
 
@@ -2044,9 +2044,14 @@ cd /media
 sudo mount -t vboxsf implementation /home/ubt/Documents/implementation
 ```
 
-## unmount \<dir2>
+## mount CIFS
+```sh
+mount -t cifs -o vers=1.0,user=<username>,password=<password> "//<ip_addr>/src/dir" /dst/dir
+```
+
+## unmount /dst/dir
 ```bash
-umount <dir2>
+umount /dst/dir
 ```
 
 ## get the full path of a symbolic link's target
