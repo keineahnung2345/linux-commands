@@ -10,6 +10,12 @@ sudo -s # ~/.bashrc is respected
 sudo -i # ~/.bashrc is ignored
 ```
 
+## sudo, given password
+[sudo 自動帶入 密碼](https://cuteparrot.pixnet.net/blog/post/199347198)
+```sh
+echo '<password>' | sudo -S <command>
+```
+
 ## restart bash
 [Restart bash from terminal without restarting the terminal application (mac)?](https://unix.stackexchange.com/questions/217905/restart-bash-from-terminal-without-restarting-the-terminal-application-mac)
 ```sh
