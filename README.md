@@ -1540,6 +1540,14 @@ To also get their counts, use `uniq -c`.
 cp <filename>{,.bak}
 ```
 
+## copy to another file system
+[How to move a file without preserving permissions](https://unix.stackexchange.com/questions/131180/how-to-move-a-file-without-preserving-permissions)
+
+Following command works when /dst/dir is in CIFS.
+```sh
+sudo cp -f --no-preserve=mode,ownership /src/file /dst/dir
+```
+
 ## sed
 To escape multiple leading spaces, add `\` before the first space.
 ### get the Nth line
