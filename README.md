@@ -648,8 +648,8 @@ The `-P` option shows the progress.
 [Scheduled folder backup](https://unix.stackexchange.com/questions/469864/scheduled-folder-backup/469868#469868)
 
 ```sh
-rsync -av --include='*.<filetype>' --include='*/' --exclude='*' --progress --delete --log-file=~/$(date +%Y%m%d)rsync.log /src/dir /dst/dir/dataBackup$(date +%Y%m%d_%T)
-date +%Y%m%d_%T >> ~/rsync_time.txt # record the backup time
+rsync -av --include='*.<filetype>' --include='*/' --exclude='*' --progress --delete --log-file=/home/<username>/$(date +%Y%m%d-%H%M%S)rsync.log /src/dir /dst/dir/dataBackup-$(date +%Y%m%d-%H%M%S)
+date +%Y%m%d-%H%M%S >> /home/<username>/rsync_time.txt # record the backup time
 ```
 
 `-a`: maintain directory structure
