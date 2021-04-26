@@ -636,6 +636,18 @@ rsync -P /local/file <username>@<ip-address>:/some/remote/directory
 ```
 The `-P` option shows the progress.
 
+## rsync: copy only files with specific type and maintain the directory structure
+[Copying only JPG from a directory structure to another location Linux](https://superuser.com/questions/91307/copying-only-jpg-from-a-directory-structure-to-another-location-linux)
+```sh
+rsync -av --include='*.<filetype>' --include='*/' --exclude='*' /src/dir /dst/dir
+```
+
+## rsync: not chown
+[How to keep rsync from chown'ing transferred files?](https://serverfault.com/questions/364709/how-to-keep-rsync-from-chowning-transferred-files)
+```sh
+rsync -av --no-o --no-g /src/dir /dst/dir
+```
+
 ## show package description
 ```sh
 apt-cache search <package-name>
@@ -2108,12 +2120,6 @@ rm `ls /dirname/filename`
 
 ```bash
 for i in *.jpg; do cp "$i" /target/directory; done
-```
-
-## copy only files with specific type and maintain the directory structure
-[Copying only JPG from a directory structure to another location Linux](https://superuser.com/questions/91307/copying-only-jpg-from-a-directory-structure-to-another-location-linux)
-```bash
-rsync -av --include='*.<filetype>' --include='*/' --exclude='*' /src/dir /dst/dir
 ```
 
 ## move only files with specific type from a directory structure to another directory
