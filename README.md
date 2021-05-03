@@ -1,6 +1,31 @@
 # linux-commands
 Some useful linux commands
 
+## differences of /etc/profile, ~/.bash_profile, ~/.bashrc
+[How can I set a single .bashrc file for several users?](https://askubuntu.com/questions/503216/how-can-i-set-a-single-bashrc-file-for-several-users)
+
+Output of `man bash`(only a part):
+
+```
+FILES
+       /bin/bash
+              The bash executable
+       /etc/profile
+              The systemwide initialization file, executed for login shells
+       /etc/bash.bashrc
+              The systemwide per-interactive-shell startup file
+       /etc/bash.bash.logout
+              The systemwide login shell cleanup file, executed when a login shell exits
+       ~/.bash_profile
+              The personal initialization file, executed for login shells
+       ~/.bashrc
+              The individual per-interactive-shell startup file
+       ~/.bash_logout
+              The individual login shell cleanup file, executed when a login shell exits
+       ~/.inputrc
+              Individual readline initialization file
+```
+
 ## switch to root environment(Ubuntu)
 [Why does su fail with “authentication error”? [duplicate]](https://askubuntu.com/questions/446570/why-does-su-fail-with-authentication-error)
 
