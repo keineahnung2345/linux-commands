@@ -25,6 +25,17 @@ tmux kill-session -t <session-name>
 tmux a -t <session-name>
 ```
 
+## small window
+[Is there any way to redraw tmux window when switching smaller monitor to bigger one?](https://stackoverflow.com/questions/7814612/is-there-any-way-to-redraw-tmux-window-when-switching-smaller-monitor-to-bigger)
+
+Detach any other clients from the sessions when you attach:
+
+```sh
+tmux attach -d
+```
+
+This could be helpful when your tmux gives you a small window.
+
 # Inside tmux
 Press <kbd>Ctrl</kbd> + <kbd>b</kbd> and then do one of the followings.
 
