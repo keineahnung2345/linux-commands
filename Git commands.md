@@ -808,6 +808,11 @@ git diff <commit_sha_1> <commit_sha_1> > xxx.patch
 git format-patch -1
 ```
 
+To create a patch used by redmine, ref: [How to create patch series on Mercurial and Git](https://www.redmine.org/projects/redmine/wiki/How_to_create_patch_series_on_Mercurial_and_Git#Git):
+```sh
+git format-patch -k --stdout -1 > xxx.patch
+```
+
 ## Apply a patch
 [How to apply a patch generated with git format-patch?](https://stackoverflow.com/questions/2249852/how-to-apply-a-patch-generated-with-git-format-patch)
  and [4.2.1 git am patch手动解决冲突的办法](https://zhuanlan.zhihu.com/p/104055075)
