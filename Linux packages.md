@@ -362,6 +362,11 @@ apt-get install libboost-all-dev
 ```
 
 ### cuda
+#### Install
+[How to install CUDA on Ubuntu 20.04 Focal Fossa Linux](https://linuxconfig.org/how-to-install-cuda-on-ubuntu-20-04-focal-fossa-linux)
+```sh
+apt install nvidia-cuda-toolkit -y
+```
 
 #### Uninstall
 [How to uninstall CUDA Toolkit and cuDNN under Linux?](https://devtalk.nvidia.com/default/topic/994466/how-to-uninstall-cuda-toolkit-and-cudnn-under-linux-/)
@@ -370,7 +375,8 @@ apt-get install libboost-all-dev
 
 Add the following:
 ```sh
-sudo apt-get --purge -y remove 'cuda*'
+# sudo apt-get --purge -y remove 'cuda*'
+sudo apt autoremove --purge nvidia-cuda-toolkit
 sudo reboot
 ```
 
