@@ -356,6 +356,21 @@ mysql.h will be located at /usr/include/mysql/.
 apt-get install libboost-all-dev
 ```
 
+### nvidia-driver
+[How to install the NVIDIA drivers on Ubuntu 20.04 Focal Fossa Linux](https://linuxconfig.org/how-to-install-the-nvidia-drivers-on-ubuntu-20-04-focal-fossa-linux)
+```sh
+sudo apt list --installed | grep nvidia
+```
+You will find something like:
+```
+nvidia-utils-460/focal-updates,focal-security,now 460.73.01-0ubuntu0.20.04.1 amd64 [installed,automatic]
+```
+Then install nvidia-driver with corresponding version:
+```sh
+sudo apt install nvidia-driver-460
+sudo reboot # to solve “NVIDIA-SMI has failed because it couldn’t communicate with the NVIDIA driver” when using nvidia-smi
+```
+
 ### cuda(nvcc)
 #### Install
 [How to install CUDA on Ubuntu 20.04 Focal Fossa Linux](https://linuxconfig.org/how-to-install-cuda-on-ubuntu-20-04-focal-fossa-linux)
