@@ -183,11 +183,6 @@ apt-get install -y p7zip-full
 apt-get install -y lsb-release
 ```
 
-### nvcc
-```sh
-apt install -y nvidia-cuda-toolkit
-```
-
 ### glxinfo
 [glxinfo: command not found .... nvidia debian](https://www.linuxquestions.org/questions/debian-26/glxinfo-command-not-found-nvidia-debian-469088/)
 ```sh
@@ -361,7 +356,7 @@ mysql.h will be located at /usr/include/mysql/.
 apt-get install libboost-all-dev
 ```
 
-### cuda
+### cuda(nvcc)
 #### Install
 [How to install CUDA on Ubuntu 20.04 Focal Fossa Linux](https://linuxconfig.org/how-to-install-cuda-on-ubuntu-20-04-focal-fossa-linux)
 ```sh
