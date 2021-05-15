@@ -244,6 +244,9 @@ apt-get install -y dlocate
 apt-get install python3
 ```
 
+### anaconda
+[How to Install Anaconda on Ubuntu 18.04 and 20.04](https://phoenixnap.com/kb/how-to-install-anaconda-ubuntu-18-04-or-20-04)
+
 ### java
 [How to Install JAVA 8 on Ubuntu 18.04/16.04, Linux Mint 19/18](https://tecadmin.net/install-oracle-java-8-ubuntu-via-ppa/)
 ```sh
