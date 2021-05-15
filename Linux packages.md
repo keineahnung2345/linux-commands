@@ -390,6 +390,15 @@ sudo apt autoremove --purge nvidia-cuda-toolkit
 sudo reboot
 ```
 
+#### Install through docker
+```sh
+docker pull nvidia/cuda:11.3.0-cudnn8-devel-ubuntu18.04
+```
+
+cuda installation path: `/usr/local/cuda-11.3`.
+
+cudnn installation path: `/usr/include`, `/usr/include/x86_64-linux-gnu` and `/usr/lib/x86_64-linux-gnu`.
+
 ### gtk+ 3.0
 [How do I Install GTK+ 3.0?](https://askubuntu.com/questions/101306/how-do-i-install-gtk-3-0)
 ```sh
