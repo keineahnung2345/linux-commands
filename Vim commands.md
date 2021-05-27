@@ -5,6 +5,16 @@ export TERM=xterm
 stty rows 40 cols 120
 ```
 
+# Convert tab to 4 spaces
+[vim 把 Tab 轉換為 4 Space](https://www.opencli.com/linux/vim-tab-auto-to-4-space)
+```sh
+syntax enable
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab 
+```
+
 # Merge a .swp file to the original file
 [How to merge a swap (.swp) file to the original file?](https://askubuntu.com/questions/1021766/how-to-merge-a-swap-swp-file-to-the-original-file)
 
