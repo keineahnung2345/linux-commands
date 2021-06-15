@@ -26,6 +26,13 @@ FILES
               Individual readline initialization file
 ```
 
+## check boot/shutdown log
+[[Linux] 查詢 Linux 的 shutdown/reboot 記錄](https://ephrain.net/linux-%E6%9F%A5%E8%A9%A2-linux-%E7%9A%84-shutdownreboot-%E8%A8%98%E9%8C%84/)
+```sh
+last reboot      # check boot log
+last -x shutdown # check shutdown log
+```
+
 ## switch to root environment(Ubuntu)
 [Why does su fail with “authentication error”? [duplicate]](https://askubuntu.com/questions/446570/why-does-su-fail-with-authentication-error)
 
