@@ -259,6 +259,13 @@ And then use `y` to confirm, `n` to skip, `Esc` to quit.
 
 To escape / and \\, add \ before them, they becomes: \\/ and \\\\.
 
+To replace trailing spaces:
+
+[Remove unwanted spaces](https://vim.fandom.com/wiki/Remove_unwanted_spaces)
+```
+:%s/\s\+$//c
+```
+
 ## Undo and Redo
 ```
 <u> or <:undo>: undo
