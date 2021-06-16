@@ -199,6 +199,12 @@ apt-get install -y zip unzip
 apt-get install -y bzip2
 ```
 
+### unrar
+[How to Extract RAR Files in Ubuntu Linux](https://linuxhint.com/extract_rar_files_ubuntu/)
+```sh
+sudo apt install unrar
+```
+
 ### ab
 ```sh
 apt-get install -y apache2-utils
