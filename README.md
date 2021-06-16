@@ -1967,6 +1967,10 @@ extract all its content to the same place:
 unrar e <xxx.rar>
 ```
 
+[Unrar all file in directory without prompting](https://stackoverflow.com/questions/22730756/unrar-all-file-in-directory-without-prompting)
+
+To disable the prompt, add `-o+` option for automatic overriding.
+
 ## go to the previous directory
 ```sh
 cd -
