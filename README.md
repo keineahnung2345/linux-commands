@@ -1952,6 +1952,13 @@ gzip -d <xxx.gz>
 bzip2 -dk <xxx.bz2>
 ```
 
+## extract .rar file
+[How to Extract RAR Files in Ubuntu Linux](https://linuxhint.com/extract_rar_files_ubuntu/)
+
+```sh
+unrar e <xxx.rar>
+```
+
 ## go to the previous directory
 ```sh
 cd -
