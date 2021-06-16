@@ -1955,6 +1955,14 @@ bzip2 -dk <xxx.bz2>
 ## extract .rar file
 [How to Extract RAR Files in Ubuntu Linux](https://linuxhint.com/extract_rar_files_ubuntu/)
 
+[How to Open, Extract and Create RAR Files in Linux](https://www.tecmint.com/how-to-open-extract-and-create-rar-files-in-linux/)
+
+extract .rar file, keep its structure:
+```sh
+unrar x <xxx.rar>
+```
+
+extract all its content to the same place:
 ```sh
 unrar e <xxx.rar>
 ```
