@@ -1887,6 +1887,11 @@ zip -FF <name>.zip -O <name>.fixed.zip
 unzip <xxx.zip> -d </target/directory/to/unzip>
 ```
 
+## pack to a tar file
+```sh
+tar cf </packed/file/name>.tar </folder/name>
+```
+
 ## compress to a gz file
 ```sh
 gzip -c </src/file/name> > </zipped/file/name>.gz
