@@ -1122,6 +1122,12 @@ kill -9 <pid>
 find . -name "<filename>" 2>/dev/null
 ```
 
+### find, stop after first match
+[How to stop the find command after first match?](https://unix.stackexchange.com/questions/62880/how-to-stop-the-find-command-after-first-match)
+```sh
+find . ... -print -quit
+```
+
 ### find files whose names are str1 or str2
 [How to combine 2 -name conditions in find?](https://unix.stackexchange.com/questions/50612/how-to-combine-2-name-conditions-in-find)
 ```sh
