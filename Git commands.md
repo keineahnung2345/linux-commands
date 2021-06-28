@@ -832,4 +832,8 @@ And then commit:
 git add <files> # but not adding *.rej
 git commit
  ```
- 
+    
+## Public and private repo syncing
+
+[Having a private branch of a public repo on GitHub?](https://stackoverflow.com/questions/7983204/having-a-private-branch-of-a-public-repo-on-github)
+
