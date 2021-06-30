@@ -8,6 +8,12 @@ If not, there will be an error message:
 remote: Permission to \<other-user-name>/\<repo-name>.git denied to \<your-name>. \
 fatal: unable to access 'https://github.com/<other-user-name\>/\<repo-name>/': The requested URL returned error: 403
 
+## Create an ssh key
+[How do I avoid the specification of the username and password at every git push?](https://stackoverflow.com/questions/8588768/how-do-i-avoid-the-specification-of-the-username-and-password-at-every-git-push)
+
+## Create an access token
+[Creating a personal access token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+
 ## Create an alias
 [Shortcuts for git commands](https://stackoverflow.com/questions/14753603/shortcuts-for-git-commands)
 ```sh
