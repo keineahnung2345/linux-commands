@@ -360,6 +360,9 @@ apt-get install -y libmysqlclient-dev
 ```
 mysql.h will be located at /usr/include/mysql/.
 
+### redis
+[How To Install and Secure Redis on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-20-04)
+
 ### boost
 ```sh
 apt-get install libboost-all-dev
