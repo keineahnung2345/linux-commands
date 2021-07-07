@@ -316,6 +316,12 @@ $git push origin <branch-name>
 
 If got `Changes not staged for commit` even after using `git add`, one can try change to the specific folder and then use `git add` again.
 
+## git commit, specify author and email
+[How can I change the author name / email of a commit?](https://www.git-tower.com/learn/git/faq/change-author-name-email/)
+```sh
+git commit --author="John Doe <john@doe.org>" # the <> are required!
+```
+
 ## modify commit message
 [How to Change a Git Commit Message](https://linuxize.com/post/change-git-commit-message/)
 To modify the commit message of last commit:
