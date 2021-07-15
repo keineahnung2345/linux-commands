@@ -479,6 +479,7 @@ $git checkout master
 $git merge upstream/master
 $git push origin master
 ```
+If a branch in upstream repo doesn't exist in forked repo, use the same way to sync it.
 
 ## Reset your \<branch-name> in forked repository
 ```sh
