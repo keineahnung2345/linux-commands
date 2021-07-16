@@ -242,6 +242,11 @@ $git branch -d <branch-name>
 $git push origin :<branch-name>
 ```
 
+If you delete a branch from remote(GitHub website), [Git remote branch deleted, but still it appears in 'branch -a'](https://stackoverflow.com/questions/5094293/git-remote-branch-deleted-but-still-it-appears-in-branch-a), use the following command to remove the branch from local `branch -r`:
+```sh
+$git pull -p # git pull --prune
+```
+
 ## Recover a deleted branch
 [Can I recover a branch after its deletion in Git?](https://stackoverflow.com/questions/3640764/can-i-recover-a-branch-after-its-deletion-in-git)
 
