@@ -1452,6 +1452,13 @@ grep <pattern> -rnw . | while IFS= read -r line ; do
 > done
 ```
 
+### find and grep
+[Linux find and grep command together](https://stackoverflow.com/questions/21763904/linux-find-and-grep-command-together/21765587)
+```sh
+find . -name '*fname*' -exec grep -H "text" {} \;
+# -H: --with-filename
+```
+
 ### grep and show multiple surrounding lines
 ```sh
 #show <b> lines before and <a> lines after the matched lines
