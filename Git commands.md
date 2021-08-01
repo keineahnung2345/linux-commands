@@ -459,7 +459,7 @@ $git remote show origin
 $git remote add origin "//xxx/yyy/zzz.git"
 ```
 
-## set origin
+## set origin(change remote url)
 [How to change the URI (URL) for a remote Git repository?](https://stackoverflow.com/questions/2432764/how-to-change-the-uri-url-for-a-remote-git-repository)
 ```sh
 $git remote set-url origin "//xxx/yyy/zzz.git"
