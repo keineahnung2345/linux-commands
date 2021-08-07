@@ -28,3 +28,34 @@ roscore
 roscore is a collection of nodes and programs that are pre-requisites of a ROS-based system. 
 You must have a roscore running in order for ROS nodes to communicate. It is launched using the roscore command. 
 ```
+
+## Exception thrown:"turtle1" passed to lookupTransform argument source_frame does not exist. 
+In [Writing a tf2 broadcaster (C++)](http://wiki.ros.org/tf2/Tutorials/Writing%20a%20tf2%20broadcaster%20%28C%2B%2B%29),
+when running:
+```sh
+roslaunch learning_tf2 start_demo.launch
+```
+It shows:
+```
+Failure at 1628308374.969766010
+Exception thrown:"turtle" passed to lookupTransform argument source_frame does not exist. 
+The current list of frames is:
+Frame turtle1 exists with parent world.
+```
+It turns out that we should create a folder named `launch` and put `start_demo.launch` there.
+```sh
+# in catkin_ws/src/learning_tf2
+mkdir launch
+vim launch/start_demo.launch # fill it
+# and then roslaunch again
+roslaunch learning_tf2 start_demo.launch
+```
+It will successfully outputs:
+```
+At time 1628308379.856
+- Translation: [6.698, 4.107, 0.000]
+- Rotation: in Quaternion [0.000, 0.000, -0.606, 0.796]
+            in RPY (radian) [0.000, 0.000, -1.301]
+            in RPY (degree) [0.000, 0.000, -74.531]
+```
+
