@@ -15,3 +15,16 @@ This solves `roscd: No such package/stack 'learning_tf2'`.
 ```sh
 sudo ln -s /usr/bin/python3 /usr/bin/python
 ```
+
+## [ERROR] [1628307689.337043638]: [registerPublisher] Failed to contact master at [localhost:11311].  Retrying...
+This can be solved by running:
+
+```sh
+roscore
+```
+
+[roscore](http://wiki.ros.org/roscore)
+```
+roscore is a collection of nodes and programs that are pre-requisites of a ROS-based system. 
+You must have a roscore running in order for ROS nodes to communicate. It is launched using the roscore command. 
+```
