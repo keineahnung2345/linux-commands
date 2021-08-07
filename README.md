@@ -2491,3 +2491,8 @@ totem: /usr/share/applications/org.gnome.Totem.desktop
 totem: /usr/share/applications/totem.desktop
 ```
 So the default video player is `totem`.
+
+## open pdf viewer from terminal
+```sh
+evince xxx.pdf
+```
