@@ -15,6 +15,7 @@ Just delete the folder.
 ## catkin_make && source devel/setup.bash
 [roscd: No such package/stack 'beginner_tutorials'](https://answers.ros.org/question/65003/roscd-no-such-packagestack-beginner_tutorials/)
 ```sh
+# in "catkin_ws" directory
 # catkin_create_pkg learning_tf2 tf2 tf2_ros roscpp rospy turtlesim
 catkin_make
 source devel/setup.bash
