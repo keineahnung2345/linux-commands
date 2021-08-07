@@ -1,5 +1,17 @@
 # ROS commands
 
+## catkin_create_pkg
+[CreatingPackage](http://wiki.ros.org/cn/ROS/Tutorials/catkin/CreatingPackage)
+```sh
+cd ~/catkin_ws/src # must cd here and then catkin_create_pkg!
+catkin_create_pkg beginner_tutorials std_msgs rospy roscpp
+```
+
+## remove package
+[catkin: move/remove package and workspace](https://answers.ros.org/question/105576/catkin-moveremove-package-and-workspace/)
+
+Just delete the folder. 
+
 ## catkin_make && source devel/setup.bash
 [roscd: No such package/stack 'beginner_tutorials'](https://answers.ros.org/question/65003/roscd-no-such-packagestack-beginner_tutorials/)
 ```sh
