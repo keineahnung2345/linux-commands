@@ -1,5 +1,11 @@
 # ROS commands
 
+## list installed packages
+[How do I find the list of installed ROS packages?](http://wiki.ros.org/FAQ#How_do_I_find_the_list_of_installed_ROS_packages.3F)
+```sh
+rospack list-names
+```
+
 ## catkin_create_pkg
 [CreatingPackage](http://wiki.ros.org/cn/ROS/Tutorials/catkin/CreatingPackage)
 ```sh
