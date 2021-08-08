@@ -2496,3 +2496,11 @@ So the default video player is `totem`.
 ```sh
 evince xxx.pdf
 ```
+
+## record gif
+[How to create animated GIF images of a screencast?](https://askubuntu.com/questions/107726/how-to-create-animated-gif-images-of-a-screencast)
+```sh
+sudo apt install -y peek
+peek
+```
+  
