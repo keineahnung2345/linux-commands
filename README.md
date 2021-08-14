@@ -791,6 +791,14 @@ dpkg -i /path/to/deb/file
 apt install -f
 ```
 
+## ldconfig
+[error while rtabmapviz tries to load librtabmap_core.so](https://github.com/introlab/rtabmap_ros/issues/180)
+```sh
+ldconfig
+```
+
+This solves: `error while loading shared libraries...`.
+
 ## list packages installed
 ```bash
 ldconfig -p | grep <package-name>
