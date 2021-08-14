@@ -1,5 +1,13 @@
 # ROS commands
 
+## setup environment
+[Ros launch command not found](https://answers.ros.org/question/264704/ros-launch-command-not-found/)
+```sh
+echo "source <catkin_ws_dir>/devel/setup.bash" >> ~/.bashrc
+~/.bashrc
+```
+This solves `Command 'roslaunch' not found`.
+
 ## list installed packages
 [How do I find the list of installed ROS packages?](http://wiki.ros.org/FAQ#How_do_I_find_the_list_of_installed_ROS_packages.3F)
 ```sh
