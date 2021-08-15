@@ -809,6 +809,12 @@ ldconfig -p | grep <package-name>
 apt list --installed
 ```
 
+## check the installation path of a package
+[Determine destination location of apt-get install <package>?](https://askubuntu.com/questions/129022/determine-destination-location-of-apt-get-install-package)
+```bash
+dpkg -L <package-name>
+```
+
 ## list all version of a package(centos)
 ```sh
 yum list --showduplicates <package-name>
