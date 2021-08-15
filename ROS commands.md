@@ -92,3 +92,8 @@ At time 1628308379.856
             in RPY (degree) [0.000, 0.000, -74.531]
 ```
 
+## rosbag info
+[Recording and playing back data](http://wiki.ros.org/rosbag/Tutorials/Recording%20and%20playing%20back%20data)
+```sh
+rosbag info xxx.bag
+```
