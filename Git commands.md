@@ -753,6 +753,17 @@ git config --global user.email johndoe@example.com
 git rebase -i HEAD~4 -x "git commit --amend --author 'John Doe <johndoe@example.com>' --no-edit"
 ```
 
+If there is following error:
+```
+invalid upstream HEAD~4
+```
+[Git: Needed a single revision error](https://stackoverflow.com/questions/26174757/git-needed-a-single-revision-error)
+
+It means there are less than 4 commits, it can be solved with:
+```
+git rebase -i --root ...
+```
+
 ## change user name and email of matching commits from all branches
 [Changing author info](https://docs.github.com/en/github/using-git/changing-author-info)
 
