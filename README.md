@@ -1025,6 +1025,12 @@ sorted by modification time, ascending:
 ls -ltr
 ```
 
+### ls, sorted by size
+[Linux ls Command Sort Files By Size](https://www.cyberciti.biz/faq/linux-ls-command-sort-by-file-size/)
+```sh
+ls -Slh # -S for --sort=size
+```
+       
 ### ll, the short name for ls -l
 ```sh
 ll <filename>
