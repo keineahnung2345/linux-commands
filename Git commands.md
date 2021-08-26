@@ -129,6 +129,9 @@ git reset --hard origin/master
 git clean -n -f
 ```
 
+## Merge two repositories into one
+[How do you merge two Git repositories?](https://stackoverflow.com/a/10548919/10651567)
+
 ## List all branch and get current branch name
 `$git branch`
 
