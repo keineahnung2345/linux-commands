@@ -878,3 +878,8 @@ git commit
 
 [Having a private branch of a public repo on GitHub?](https://stackoverflow.com/questions/7983204/having-a-private-branch-of-a-public-repo-on-github)
 
+## SSL: no alternative certificate subject name matches target host name
+[How do I set GIT_SSL_NO_VERIFY for specific repos only?](https://stackoverflow.com/questions/9008309/how-do-i-set-git-ssl-no-verify-for-specific-repos-only)
+```sh
+git config --global http.sslVerify "false"
+```
