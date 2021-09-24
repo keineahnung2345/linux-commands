@@ -1450,6 +1450,7 @@ grep <pattern> --include=\*.{type1, type2} -rnw <directory>
 ```
 
 ### search file, but exclude binary files
+[How to suppress binary file matching results in grep [closed]](https://stackoverflow.com/questions/25853722/how-to-suppress-binary-file-matching-results-in-grep)
 ```sh
 grep <pattern> -Irn <directory>
 ```
