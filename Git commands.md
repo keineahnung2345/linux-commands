@@ -151,6 +151,12 @@ git branch --sort=-committerdate
 
 `$git branch -r`
 
+## Change remote default branch
+[深入 Git：HEAD refs](https://titangene.github.io/article/git-head-ref.html)
+```sh
+git symbolic-ref HEAD refs/heads/<branch-name>
+```
+
 ## Discard unstaged changes
 [How do I discard unstaged changes in Git?](https://stackoverflow.com/questions/52704/how-do-i-discard-unstaged-changes-in-git)
 
