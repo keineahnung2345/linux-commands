@@ -778,6 +778,9 @@ It means there are less than 4 commits, it can be solved with:
 git rebase -i --root ...
 ```
 
+To also change commiter name:
+[How to change the author and committer name and e-mail of multiple commits in Git?](https://stackoverflow.com/questions/750172/how-to-change-the-author-and-committer-name-and-e-mail-of-multiple-commits-in-gi)
+
 ## change user name and email of matching commits from all branches
 [Changing author info](https://docs.github.com/en/github/using-git/changing-author-info)
 
