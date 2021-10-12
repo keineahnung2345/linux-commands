@@ -1834,6 +1834,13 @@ Method 2: curl
 curl -o </directory/file_name> <your-url>
 ```
 
+## curl, ignore SSL certificate warnings
+[How to ignore invalid and self signed ssl connection errors with curl](https://www.cyberciti.biz/faq/how-to-curl-ignore-ssl-certificate-warnings-command-option/)
+
+```sh
+curl https://<ip-address>:<port>/<subpage> --insecure
+```
+
 ## download a file to \<dirname\> from a url
 ```sh
 wget -P <dirname> <your-url>
