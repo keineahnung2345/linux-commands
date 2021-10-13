@@ -569,6 +569,16 @@ netstat -tulpn #--tcp|-t, --udp|-u, -l, --listening
 #-n, --numeric: Show numerical addresses instead of trying to determine symbolic host, port or user names.
 ```
 
+## check the status of a machine's specific port
+[測試特定的 TCP 連接埠（port）是否有開啟](https://blog.gtwang.org/linux/linux-utility-netcat-examples/)
+```sh
+nc <ip-address> <port-number> -v
+```
+Result:
+```
+Connection to <ip-address> <port-number> port [tcp/http] succeeded!
+```
+
 ## check the process using the port \<port-number>
 ```sh
 lsof -i:<port-number>
