@@ -1,4 +1,12 @@
 # Apache2
+## important paths of Apache2
+```
+/etc/apache2                  #apache2.conf, ports.conf
+/etc/apache2/sites-available  # 000-default.conf
+/var/www/html                 # index.html
+/etc/ssl                      #certs, private
+/var/log/apache2              #access.log  error.log  other_vhosts_access.log
+```
 
 ## find webroot
 [Find out webroot in running apache 2](https://stackoverflow.com/questions/27232596/find-out-webroot-in-running-apache-2)
