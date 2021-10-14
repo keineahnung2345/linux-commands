@@ -1,3 +1,8 @@
+# Plugins
+[[Linux] - 將vim打造成source insight](https://ivan7645.github.io/2016/07/12/vim_to_si/)
+
+[vim附件：cscope+ctag 使用筆記](https://angledark0123.pixnet.net/blog/post/51919594)
+
 # Set vim editor to full screen
 ```
 reset
