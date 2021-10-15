@@ -251,6 +251,8 @@ apt-get install python3
 ```
 
 ### anaconda
+[Anaconda documentation : Installing on Linux](https://docs.anaconda.com/anaconda/install/linux/)
+
 [How to Install Anaconda on Ubuntu 18.04 and 20.04](https://phoenixnap.com/kb/how-to-install-anaconda-ubuntu-18-04-or-20-04)
 
 ### java
