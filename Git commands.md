@@ -443,6 +443,17 @@ $git commit
 $git push origin <branch-name>
 ```
 
+## Move commits to an existing branch
+[Move the most recent commit(s) to a new branch with Git](https://stackoverflow.com/questions/1628563/move-the-most-recent-commits-to-a-new-branch-with-git)
+
+Assume you have commited to master, but actually you want to commit to <existing--branch-name>
+```sh
+git checkout <existing-branch-name>
+git merge master
+git checkout master
+git reset --hard HEAD~3 # Go back 3 commits. You *will* lose uncommitted work.
+```
+
 ## Move commits to a new branch
 [Move the most recent commit(s) to a new branch with Git](https://stackoverflow.com/questions/1628563/move-the-most-recent-commits-to-a-new-branch-with-git)
 
