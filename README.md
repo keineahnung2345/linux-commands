@@ -1515,6 +1515,12 @@ grep -i <pattern> -rnw .
 grep <pattern> -rl .
 ```
 
+### grep, not showing file names
+[How to find lines containing a string and then printing those specific lines and something else](https://unix.stackexchange.com/questions/333121/how-to-find-lines-containing-a-string-and-then-printing-those-specific-lines-and)
+```sh
+grep <pattern> -rh .
+```
+
 ### grep, list file not containing specific string
 [How do I find files that do not contain a given string pattern?](https://stackoverflow.com/questions/1748129/how-do-i-find-files-that-do-not-contain-a-given-string-pattern)
 ```sh
