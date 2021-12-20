@@ -265,6 +265,12 @@ If you delete a branch from remote(GitHub website), [Git remote branch deleted, 
 $git pull -p # git pull --prune
 ```
 
+## Delete a branch(only remote)
+[How to delete remote branches in Git](https://www.educative.io/edpresso/how-to-delete-remote-branches-in-git)
+```sh
+$git push origin --delete <branch-name>
+```
+
 ## Recover a deleted branch
 [Can I recover a branch after its deletion in Git?](https://stackoverflow.com/questions/3640764/can-i-recover-a-branch-after-its-deletion-in-git)
 
