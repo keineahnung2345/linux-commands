@@ -528,6 +528,12 @@ or
 sudo systemctl restart networking
 ```
 
+## check unused ip address
+[Any way to find unused IP addresses on my network?](https://serverfault.com/questions/23724/any-way-to-find-unused-ip-addresses-on-my-network)
+```sh
+nmap -sP -PR 192.168.1.*
+```
+
 ## configure static(fixed) ip address
 Ref to [Configure static IP address on Ubuntu 16.04 LTS Server](https://michael.mckinnon.id.au/2016/05/05/configuring-ubuntu-16-04-static-ip-address/):
 
