@@ -88,3 +88,10 @@ Loaded Modules:
  status_module (shared)
  passenger_module (shared)
 ```
+
+Note: the `sudo` is important, otherwise it will output following error:
+```
+SSLCertificateFile: file '/etc/letsencrypt/live/www.xxx.com/fullchain.pem' does not exist or is empty
+Action '-M' failed.
+The Apache error log may have more information.
+```
