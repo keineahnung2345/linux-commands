@@ -22,3 +22,26 @@ Result:
 /etc/apache2/sites-available/000-default.conf:  DocumentRoot /var/www/html
 /etc/apache2/sites-available/redmine.conf:    DocumentRoot /home/redmine/redmine/public
 ```
+
+## sites
+
+enable site:
+```sh
+sudo a2ensite 000-default # enable the site 000-default
+```
+
+disable site:
+```sh
+sudo a2dissite 000-default # disable the site 000-default
+```
+
+list enabled site:
+[How can I list the current Apache 2 virtual hosts from the command line?](https://serverfault.com/questions/742352/how-can-i-list-the-current-apache-2-virtual-hosts-from-the-command-line)
+```sh
+a2query -s
+```
+result:
+```
+redmine-le-ssl (enabled by unknown)
+redmine (enabled by site administrator)
+```
