@@ -685,6 +685,12 @@ scp <username>@<ip-address>:/some/remote/directory/\{a,b,c\} ./
 xargs -a filenames.txt cp -t /destination/directory
 ```
 
+## move files listed in a text file
+[Linux (mv or cp) specific files from a text list of files?](https://serverfault.com/questions/212439/linux-mv-or-cp-specific-files-from-a-text-list-of-files)
+```sh
+xargs -a filenames.txt mv -t /destination/directory
+```
+
 ## scp and rename the file
 ```sh
 scp <username>@<ip-address>:/some/remote/directory/<original-name>.zip <new-name>.zip 
