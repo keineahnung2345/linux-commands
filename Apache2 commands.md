@@ -6,6 +6,19 @@
 /var/www/html                 # index.html
 /etc/ssl                      #certs, private
 /var/log/apache2              #access.log  error.log  other_vhosts_access.log
+/usr/sbin                     #various executables: apache2,a2ensite,a2enmod...
+```
+
+## check version
+[How can I tell what version of apache I'm running?](https://unix.stackexchange.com/questions/6792/how-can-i-tell-what-version-of-apache-im-running)
+```sh
+/usr/sbin/apache2 -v
+```
+
+Result:
+```
+Server version: Apache/2.4.41 (Ubuntu)
+Server built:   2022-01-05T14:49:56
 ```
 
 ## find webroot
