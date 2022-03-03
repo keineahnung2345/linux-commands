@@ -8,6 +8,7 @@ Method 1:
 
 Go to `http://127.0.0.1/admin/info`, it will be something like this:
 
+![](redmine_info.PNG)
 
 Method 2:
 ```
