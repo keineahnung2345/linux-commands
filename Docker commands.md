@@ -160,9 +160,9 @@ or
 
 ### Run a docker image(create and then start a container)
 ```
-docker run --name <image-name> -td -p <host-port>:<container-port> \
+docker run --name <container-name> -td -p <host-port>:<container-port> \
 -v <host-directory>:<container-directory> \
--e <environment-variable-name>=<environment-variable-value> --restart always <container-name>
+-e <environment-variable-name>=<environment-variable-value> --restart always <image-name>
 ```
 
 ### Start a existing but stopped container
