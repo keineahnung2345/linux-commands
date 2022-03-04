@@ -328,6 +328,15 @@ vim -b file.txt
 :wq
 ```
 
+or 
+
+```sh
+vim file.txt
+:set binary
+:set noeol
+:wq
+```
+
 ## Quit
 ```
 <:q!>
