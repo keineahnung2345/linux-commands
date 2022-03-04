@@ -909,3 +909,10 @@ git commit
 ```sh
 git config --global http.sslVerify "false"
 ```
+
+## fatal: This operation must be run in a work tree
+[Why am I getting the message, "fatal: This operation must be run in a work tree?"](https://stackoverflow.com/questions/1456923/why-am-i-getting-the-message-fatal-this-operation-must-be-run-in-a-work-tree)
+
+```sh
+git config --unset core.bare
+```
