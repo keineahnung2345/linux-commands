@@ -1,5 +1,9 @@
 # PostgreSQL
 
+## install
+
+[Ubuntu 20.04下安裝Postgresql](https://blog.csdn.net/keineahnung2345/article/details/115897265)
+
 ## check version
 
 [How to View Which Postgres Version is Running](https://chartio.com/resources/tutorials/how-to-view-which-postgres-version-is-running/)
