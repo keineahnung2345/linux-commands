@@ -1,3 +1,15 @@
+# vimrc
+[Where is my .vimrc file?](https://stackoverflow.com/questions/10921441/where-is-my-vimrc-file)
+
+It may be located at:
+```
+/etc/vim/vimrc
+```
+Otherwise create it at:
+```
+~/.vimrc
+```
+
 # Plugins
 [[Linux] - 將vim打造成source insight](https://ivan7645.github.io/2016/07/12/vim_to_si/)
 
