@@ -631,7 +631,13 @@ $git reset --hard <sha-of-a-commit>
 $git push origin <branch-name> --force
 ```
 
-Another method([How to remove commits from a pull request](https://stackoverflow.com/a/51400593/10651567)):
+Or using `git rebase` mentioned below.
+
+## Remove commits
+[Remove specific commit](https://stackoverflow.com/questions/2938301/remove-specific-commit)
+
+[How to remove commits from a pull request](https://stackoverflow.com/a/51400593/10651567)
+
 ```sh
 $git checkout <branch-name>
 $git rebase -i HEAD~n # this will include `n` last commits in interactive rebase
