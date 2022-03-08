@@ -349,6 +349,12 @@ vim file.txt
 :wq
 ```
 
+To disable automatic newline forever, add the following into `.vimrc`:
+
+```
+:set nofixendofline
+```
+
 ## Quit
 ```
 <:q!>
