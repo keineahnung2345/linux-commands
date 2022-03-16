@@ -910,6 +910,27 @@ git commit
 
 [Having a private branch of a public repo on GitHub?](https://stackoverflow.com/questions/7983204/having-a-private-branch-of-a-public-repo-on-github)
 
+## Submodule
+
+### clone with submodule
+
+[How to "git clone" including submodules?](https://stackoverflow.com/questions/3796927/how-to-git-clone-including-submodules)
+
+```sh
+git clone --recursive git://github.com/foo/bar.git
+```
+
+### repo already cloned, update submodule
+
+[How to "git clone" including submodules?](https://stackoverflow.com/questions/3796927/how-to-git-clone-including-submodules)
+
+```sh
+git clone git://github.com/foo/bar.git
+cd bar
+git submodule update --init --recursive
+```
+
+    
 ## SSL: no alternative certificate subject name matches target host name
 [How do I set GIT_SSL_NO_VERIFY for specific repos only?](https://stackoverflow.com/questions/9008309/how-do-i-set-git-ssl-no-verify-for-specific-repos-only)
 ```sh
