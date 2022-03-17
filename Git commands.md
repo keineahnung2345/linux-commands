@@ -222,6 +222,12 @@ git stash list
 git stash pop
 ```
 
+## Pop stash accidently, get the hash of the stash commit you dropped
+[How to recover a dropped stash in Git?](https://stackoverflow.com/questions/89332/how-to-recover-a-dropped-stash-in-git)
+```sh
+git fsck --unreachable | grep commit | cut -d" " -f3 | xargs git log --merges --no-walk --grep=WIP
+```
+
 ## Create a branch
 
 `$git checkout master` Make sure you are in master branch every time you create a branch!!
