@@ -168,6 +168,32 @@ We can also specify the filename:
 
 `$git checkout -- <filename>`
 
+If `git checkout` not work, showing:
+```
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   xxx (untracked content)
+```
+Then try:
+```
+rm -rf xxx
+```
+Showing:
+```
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    xxx
+```
+And then:
+```
+git restore xxx
+```
+Finally the `Changes not staged for commit` block disappeared!
+
+
 ## Switch branch in a bare repo
 [Git: Correct way to change Active Branch in a bare repository?](https://stackoverflow.com/questions/3301956/git-correct-way-to-change-active-branch-in-a-bare-repository)
 ```sh
