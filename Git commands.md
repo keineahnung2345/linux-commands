@@ -228,6 +228,12 @@ git stash pop
 git fsck --unreachable | grep commit | cut -d" " -f3 | xargs git log --merges --no-walk --grep=WIP
 ```
 
+## Show the changes of the most recent stash
+[See what's in a stash without applying it [duplicate]](https://stackoverflow.com/questions/10725729/see-whats-in-a-stash-without-applying-it)
+```sh
+git stash show -p
+```
+
 ## Create a branch
 
 `$git checkout master` Make sure you are in master branch every time you create a branch!!
