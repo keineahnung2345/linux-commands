@@ -273,6 +273,13 @@ to make local repo updated with the remote one.
 git branch branchname <sha>
 ```
 
+Or:
+
+```sh
+git checkout <sha>
+git switch -c <new-branch-name>
+```
+
 ## Move uncommited work to another branch
 [Move existing, uncommitted work to a new branch in Git](https://stackoverflow.com/questions/1394797/move-existing-uncommitted-work-to-a-new-branch-in-git)
 ```sh
