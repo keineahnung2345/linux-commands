@@ -965,7 +965,7 @@ git commit
 git clone --recursive git://github.com/foo/bar.git
 ```
 
-### repo already cloned, update submodule
+### repo already cloned, only clone submodule
 
 [How to "git clone" including submodules?](https://stackoverflow.com/questions/3796927/how-to-git-clone-including-submodules)
 
@@ -975,7 +975,18 @@ cd bar
 git submodule update --init --recursive
 ```
 
-    
+### update submodule
+
+```sh
+git submodule update --remote --merge 
+```
+And then commit:
+```sh
+git add .
+git commit -m “update submodule”
+git push
+```
+
 ## SSL: no alternative certificate subject name matches target host name
 [How do I set GIT_SSL_NO_VERIFY for specific repos only?](https://stackoverflow.com/questions/9008309/how-do-i-set-git-ssl-no-verify-for-specific-repos-only)
 ```sh
