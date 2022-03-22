@@ -978,12 +978,12 @@ git submodule update --init --recursive
 ### update submodule
 
 ```sh
-git submodule update --remote --merge 
+git submodule update --remote --merge --recursive
 ```
 And then commit:
 ```sh
 git add .
-git commit -m “update submodule”
+git commit -m "update submodule"
 git push
 ```
 
