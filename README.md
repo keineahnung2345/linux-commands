@@ -567,6 +567,22 @@ dns-nameservers 10.56.6.254 8.8.8.8 8.8.4.4
 
 And then reboot.
 
+## configure dns
+[How do I set my DNS when resolv.conf is being overwritten?](https://unix.stackexchange.com/questions/128220/how-do-i-set-my-dns-when-resolv-conf-is-being-overwritten)
+```sh
+sudo vim /etc/resolvconf/resolv.conf.d/head
+```
+
+Add the following:
+```
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+```
+And then update:
+```sh
+sudo resolvconf -u
+```
+
 ## check port usage(either of one)
 ```sh
 lsof -i -n -P
