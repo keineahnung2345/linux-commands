@@ -923,6 +923,7 @@ git diff <commit_sha_1> <commit_sha_1> > xxx.patch
 ```
 
 ```sh
+# git format-patch -n, n for number of commits
 git format-patch -1
 ```
 
