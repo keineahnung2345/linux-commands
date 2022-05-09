@@ -958,6 +958,13 @@ git commit
 
 ## Submodule
 
+### Add submodule
+```sh
+git submodule add <remote_repository> <local_path>
+git add .
+git commit
+```
+
 ### clone with submodule
 
 [How to "git clone" including submodules?](https://stackoverflow.com/questions/3796927/how-to-git-clone-including-submodules)
