@@ -658,6 +658,16 @@ git checkout <sha-of-a-commit> -- /file1/to/restore
 (This will create a new commit)
 `$git revert <sha-of-a-commit>`
 
+## Undo a commit and make them unstaged
+[Move (or "Undo") last git commit to unstaged area [duplicate]](https://stackoverflow.com/questions/10846875/move-or-undo-last-git-commit-to-unstaged-area)
+```sh
+git reset HEAD^ # move them to unstaged area
+```
+or:
+```sh
+git reset --soft HEAD^ # move them to staged area
+```
+
 ## Revert a commit and make them untracked
 [Undo git add, commit and push WITHOUT losing untracked files](https://stackoverflow.com/questions/28617950/undo-git-add-commit-and-push-without-losing-untracked-files)
 ```sh
