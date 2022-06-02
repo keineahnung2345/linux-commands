@@ -178,6 +178,12 @@ apt-get install -y iproute iproute-doc
 apt-get install -y p7zip-full
 ```
 
+### libarchive
+libarchive.13.so
+```sh
+apt install -y libarchive-dev
+```
+
 ### lsb_release
 ```sh
 apt-get install -y lsb-release
