@@ -208,9 +208,11 @@ git symbolic-ref HEAD refs/heads/<branch-name>
 ## Stash local changes(before switching to another branch)
 [Stash暫存](https://kingofamani.gitbooks.io/git-teach/content/chapter_3_branch/stash.html)
 
+[How do you stash an untracked file?](https://stackoverflow.com/questions/835501/how-do-you-stash-an-untracked-file)
+
 ```sh
 # now we are on <original-branch-name>
-git stash -u
+git stash -u # this will also stash untracked files
 # switch to <another-branch-name>
 git checkout <another-branch-name>
 # after the work is done on <another-branch-name>, change back to <original-branch-name>
