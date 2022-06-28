@@ -507,6 +507,20 @@ or
 hostname -I | cut -d' ' -f1
 ```
 
+To get external ip address:
+
+[How to Find the Public IP Address on a Linux System](https://www.makeuseof.com/get-public-ip-address-in-linux/)
+
+```sh
+host myip.opendns.com resolver1.opendns.com | grep "myip.opendns.com has" | awk '{print $4}'
+```
+
+or
+
+```sh
+dig +short myip.opendns.com @resolver1.opendns.com
+```
+
 ## restart a specific network interface
 [How to Restart Network Interface in Linux](https://www.cyberciti.biz/faq/linux-restart-network-interface/)
 
