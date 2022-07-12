@@ -970,6 +970,34 @@ git commit
 
 ## Submodule
 
+### List submodules
+[List submodules in a Git repository](https://stackoverflow.com/questions/12641469/list-submodules-in-a-git-repository)
+```sh
+cat .gitmodules
+```
+
+```
+[submodule "source/xyz"]
+        path = source/xyz
+        url = https://<ip-addr>/<path>
+```
+
+```sh
+git config --file .gitmodules --name-only --get-regexp path
+```
+
+```
+submodule.source/xyz.path
+```
+
+```sh
+git config --file .gitmodules --get-regexp path | awk '{ print $2 }'
+```
+
+```
+source/xyz
+```
+
 ### Add submodule
 ```sh
 git submodule add <remote_repository> <local_path>
