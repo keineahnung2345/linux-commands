@@ -1047,3 +1047,9 @@ git config --global http.sslVerify "false"
 ```sh
 git config --unset core.bare
 ```
+  
+## HEAD detached from xx00000
+
+```sh
+git checkout master
+```
