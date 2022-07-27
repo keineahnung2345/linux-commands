@@ -1035,6 +1035,25 @@ git commit -m "update submodule"
 git push
 ```
 
+### check submodule version
+[How to see which commit a git submodule points at](https://stackoverflow.com/questions/20655073/how-to-see-which-commit-a-git-submodule-points-at)
+```sh
+git submodule status
+```
+
+```
+4568ae1fee552122f39f55d7be03b03a8ab744334 <submodule_name> (heads/master)
+```
+
+Or:
+```sh
+git ls-tree HEAD | awk '$2 == "commit"'
+```
+
+```
+160000 commit 4568ae1fee552122f39f55d7be03b03a8ab744334  <submodule_name>
+```
+
 ## SSL: no alternative certificate subject name matches target host name
 [How do I set GIT_SSL_NO_VERIFY for specific repos only?](https://stackoverflow.com/questions/9008309/how-do-i-set-git-ssl-no-verify-for-specific-repos-only)
 ```sh
