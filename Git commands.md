@@ -721,6 +721,12 @@ This apply the specific commit onto *current* branch.
 git status -s | while read mode file; do if [ "$mode" != "D" ]; then echo $mode $file $(stat -c %y $file); fi; done
 ```
 
+## Grep in history commits
+[How to grep (search) committed code in the Git history](https://stackoverflow.com/questions/2928584/how-to-grep-search-committed-code-in-the-git-history)
+```sh
+git grep <regexp> $(git rev-list --all)
+```
+
 ## Compare, ignore ^M
 [git-diff to ignore ^M](https://stackoverflow.com/questions/1889559/git-diff-to-ignore-m)
 
