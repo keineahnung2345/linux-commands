@@ -727,6 +727,12 @@ git status -s | while read mode file; do if [ "$mode" != "D" ]; then echo $mode 
 git grep <regexp> $(git rev-list --all)
 ```
 
+## Grep for specific files
+[git grep by file extensions](https://stackoverflow.com/questions/13867705/git-grep-by-file-extensions)
+```sh
+git grep res -- '*.cpp'
+```
+
 ## Compare, ignore ^M
 [git-diff to ignore ^M](https://stackoverflow.com/questions/1889559/git-diff-to-ignore-m)
 
