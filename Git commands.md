@@ -804,6 +804,19 @@ To see log info of all branches:
 
 `$git log --oneline --graph --branches`
 
+## git log, only show commit ids
+
+[git log show one commit id only](https://stackoverflow.com/questions/31448445/git-log-show-one-commit-id-only)
+```sh
+git log --pretty=format:"%h"
+```
+
+Only show <n> commit ids:
+
+```sh
+git log --pretty=format:"%h" -<n>
+```
+
 ## Compare commits
 [Comparing commits](https://help.github.com/en/articles/comparing-commits-across-time#comparing-commits)
 
