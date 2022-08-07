@@ -2254,6 +2254,13 @@ To specify the owner of the mount point, ref: [How to chown a file on a CIFS mou
 umount /dst/dir
 ```
 
+## NTFS partition is read only, to make it writable
+[Why does my NTFS partition mount as read only?](https://askubuntu.com/questions/70281/why-does-my-ntfs-partition-mount-as-read-only)
+```sh
+sudo ntfsfix /dev/sdb1
+```
+And then umount and mount it again.
+
 ## get the full path of a symbolic link's target
 ```bash
 readlink -e <linkname>
