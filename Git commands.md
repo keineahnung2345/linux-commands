@@ -131,6 +131,17 @@ git clean -n -f
 
 Note: `git fetch` will pull the branch that only exist in remtoe to local
 
+## Git fetch
+To fetch a remote branch:
+```sh
+git fetch <remote_branch_name>
+```
+
+To fetch all remote branches:
+```sh
+git fetch --all
+```
+
 ## Merge two repositories into one
 [How do you merge two Git repositories?](https://stackoverflow.com/a/10548919/10651567)
 
