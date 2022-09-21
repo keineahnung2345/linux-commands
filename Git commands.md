@@ -828,6 +828,12 @@ Only show <n> commit ids:
 git log --pretty=format:"%h" -<n>
 ```
 
+## find the branch from commit id
+[How to find the branch from commit id](https://stackoverflow.com/questions/15647221/how-to-find-the-branch-from-commit-id)
+```sh
+git branch --contains <commit>
+```
+
 ## Compare commits
 [Comparing commits](https://help.github.com/en/articles/comparing-commits-across-time#comparing-commits)
 
