@@ -1040,6 +1040,12 @@ git config --file .gitmodules --get-regexp path | awk '{ print $2 }'
 source/xyz
 ```
 
+### Update submodule info
+After editing `.gitmodules`, run the following to make it take effect:
+```sh
+git submodule sync --recursive
+```
+
 ### Add submodule
 ```sh
 git submodule add <remote_repository> <local_path>
