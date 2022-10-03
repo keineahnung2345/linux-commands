@@ -165,6 +165,12 @@ docker run --name <container-name> -td -p <host-port>:<container-port> \
 -e <environment-variable-name>=<environment-variable-value> --restart always <image-name>
 ```
 
+### Check container restart policy
+[Is it possible to show the restart policy of a running Docker container?](https://stackoverflow.com/questions/43108227/is-it-possible-to-show-the-restart-policy-of-a-running-docker-container)
+```sh
+docker inspect -f "{{ .HostConfig.RestartPolicy }}" <container-name>
+```
+
 ### Start a existing but stopped container
 `docker start -i <container-name>`
 
