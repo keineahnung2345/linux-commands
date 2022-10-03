@@ -171,6 +171,16 @@ docker run --name <container-name> -td -p <host-port>:<container-port> \
 docker inspect -f "{{ .HostConfig.RestartPolicy }}" <container-name>
 ```
 
+### Disable auto-restart container
+[docker - how do you disable auto-restart on a container?](https://stackoverflow.com/questions/37599128/docker-how-do-you-disable-auto-restart-on-a-containerdocker update --restart=no)
+```sh
+docker update --restart=no <container-name>
+```
+To update all containers:
+```sh
+docker update --restart=no $(docker ps -a -q)
+```
+   
 ### Start a existing but stopped container
 `docker start -i <container-name>`
 
