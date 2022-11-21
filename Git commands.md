@@ -1120,3 +1120,10 @@ git config --unset core.bare
 ```sh
 git checkout master
 ```
+
+## error: invalid path(Windows)
+[github/git Checkout Returns 'error: invalid path' on Windows](https://stackoverflow.com/questions/63727594/github-git-checkout-returns-error-invalid-path-on-windows)
+
+```sh
+git config core.protectNTFS false
+```
