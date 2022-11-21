@@ -624,6 +624,18 @@ lsof -i:<port-number>
 lsof -n -i4TCP:<port-number>
 ```
 
+## setup ssh server
+
+[How to Install and Enable OpenSSH on Ubuntu 20.04](https://linuxhint.com/how-to-install-and-enable-openssh-on-ubuntu/)
+
+```sh
+sudo apt install -y openssh-server
+sudo systemctl status ssh
+sudo ufw allow ssh
+sudo ufw enable
+sudo ufw status
+```
+
 ## connect to remote host
 ```sh
 ssh <username>@<ip-address>
