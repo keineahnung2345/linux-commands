@@ -2605,6 +2605,8 @@ peek
   
 ## `platform MSFT0101:00 failed to claim resource 1`, `acpi MSFT0101:00: platform device creation failed: -16`
 
+[Failed to claim resource 1 boot error](https://askubuntu.com/questions/844399/failed-to-claim-resource-1-boot-error)
+
 [Failed to claim resource error](https://askubuntu.com/questions/962577/failed-to-claim-resource-error)
 
 On Windows-Ubuntu dual boot, if you cannot boot into ubuntu, showing black screen with these errors, try disable TPM from BIOS.
