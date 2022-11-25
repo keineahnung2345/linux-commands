@@ -16,7 +16,7 @@ fatal: unable to access 'https://github.com/<other-user-name\>/\<repo-name>/': T
 
 [Support for password authentication was removed. Please use a personal access token instead [duplicate]](https://stackoverflow.com/questions/68775869/support-for-password-authentication-was-removed-please-use-a-personal-access-to)
 
-
+When asked for password, key in the access token generated on Github(not password!).
 
 ## Create an alias
 [Shortcuts for git commands](https://stackoverflow.com/questions/14753603/shortcuts-for-git-commands)
