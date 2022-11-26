@@ -1486,6 +1486,14 @@ printf '<line1>\n<line2>' > <filename>
 If using `echo`, `\n` itself rather than a newline will be written to the file.
 
 ## grep
+### grep, only show file names
+
+[How can I use grep to show just filenames on Linux? [closed]](https://stackoverflow.com/questions/6637882/how-can-i-use-grep-to-show-just-filenames-on-linux)
+
+```sh
+grep -l 
+```
+
 ### search for a word, show line number
 ```sh
 grep -n ".*<word>.*" <filename>
