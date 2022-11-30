@@ -1840,6 +1840,10 @@ This replace the Windows `^r` with `;`.
 ```sh
 dos2unix <filename> #support the wildcard sign *
 ```
+Or in vim:
+```sh
+:%s/^M/\r/g
+```
 
 ## cut, remove first N characters
 [What is a unix command for deleting the first N characters of a line?](https://stackoverflow.com/questions/971879/what-is-a-unix-command-for-deleting-the-first-n-characters-of-a-line)
