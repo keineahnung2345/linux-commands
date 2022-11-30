@@ -754,6 +754,12 @@ $git diff --ignore-space-change
 $git diff --ignore-all-space
 ```
 
+## Compare, show special chars
+[how to use git diff show some invisible characters differences?](https://stackoverflow.com/questions/58037142/how-to-use-git-diff-show-some-invisible-characters-differences)
+```sh
+git diff | cat -A
+```
+
 ## Compare, char by char
 [How can I visualize per-character differences in a unified diff file?](https://stackoverflow.com/questions/3231759/how-can-i-visualize-per-character-differences-in-a-unified-diff-file)
 ```sh
