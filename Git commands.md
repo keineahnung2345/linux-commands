@@ -892,8 +892,10 @@ git config --global user.email johndoe@example.com
 [How to amend several commits in Git to change author](https://stackoverflow.com/questions/4981126/how-to-amend-several-commits-in-git-to-change-author/31669789#31669789)
 
 ```sh
-git rebase -i HEAD~4 -x "git commit --amend --author 'John Doe <johndoe@example.com>' --no-edit"
+git -c "user.name=John Doe" -c "user.email=johndoe@example.com" rebase -i HEAD~4 -x "git commit --amend --author 'John Doe <johndoe@example.com>' --no-edit"
 ```
+
+Note the `-c "user.name=John Doe" -c "user.email=johndoe@example.com"` to temporarily set committer info. [Override configured user for a single git commit](https://stackoverflow.com/questions/19840921/override-configured-user-for-a-single-git-commit)
 
 If there is following error:
 ```
