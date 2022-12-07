@@ -2351,6 +2351,12 @@ cp `ls /source/directory` /target/directory
 rm `ls /dirname/filename`
 ```
 
+## copy: force copy to overwrite without confirmation
+[How to force cp to overwrite without confirmation](https://stackoverflow.com/questions/8488253/how-to-force-cp-to-overwrite-without-confirmation)
+```sh
+yes | cp -rf xxx yyy
+```
+
 ## copy : Argument list too long
 [Argument list too long when copying files](https://askubuntu.com/questions/217764/argument-list-too-long-when-copying-files)
 
