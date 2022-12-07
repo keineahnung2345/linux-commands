@@ -2597,6 +2597,12 @@ nautilus <folder_name>
 xdg-open <filename>
 ```
 
+## restart gnome
+[How to restart GNOME Shell from command line?](https://askubuntu.com/questions/100226/how-to-restart-gnome-shell-from-command-line)
+```sh
+killall -SIGQUIT gnome-shell
+```
+
 ## find default video player's name
 [Ubuntu (GNOME) default video player name](https://askubuntu.com/questions/1098203/ubuntu-gnome-default-video-player-name)
 
