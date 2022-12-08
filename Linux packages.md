@@ -568,6 +568,15 @@ sudo make install
 apt install -y libtool
 ```
 
+### kde
+[How to Install KDE Plasma in Linux Desktop](https://www.tecmint.com/install-kde-plasma-5-in-linux/)
+
+```sh
+sudo apt install kde-plasma-desktop
+```
+
+And select `sddm`.
+
 ### Qt5
 Download Qt installer from [Qt Downloads](http://download.qt-project.org/official_releases/qt/), and then:
 
