@@ -577,6 +577,14 @@ sudo apt install kde-plasma-desktop
 
 And select `sddm`.
 
+### fcitx5 input method
+[Ubuntu繁體中文輸入法？改用Fcitx5來輸入中文吧！](https://ivonblog.com/posts/ubuntu-fcitx5/)
+```sh
+sudo apt install fcitx5*
+im-config
+```
+select fcitx5 and then restart.
+
 ### Qt5
 Download Qt installer from [Qt Downloads](http://download.qt-project.org/official_releases/qt/), and then:
 
