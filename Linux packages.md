@@ -937,9 +937,9 @@ git clone https://github.com/fcitx/fcitx5-table-extra.git
 cd fcitx5-table-extra/
 mkdir build
 cd build/
-cmake .. -DCMAKE_INSTALL_PREFIX=/usr/bin
-cmake --build .
-cmake --install .
+cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=/usr/lib ..
+make
+sudo make install
 ```
 
 When `cmake --build .`, the following errors may happen:
@@ -956,11 +956,11 @@ Edit `tables/CMakeFiles/table_data.dir/build.make`, replace `LibIME::tabledict` 
 And there may be following error:
 ```
 terminate called after throwing an instance of 'std::invalid_argument'
-  what():  invalid rule entry                                                  
-Aborted (core dumped)                                                          
+  what():  invalid rule entry
+Aborted (core dumped)
 make[2]: *** [tables/CMakeFiles/table_data.dir/build.make:156：tables/zhengma-large.main.dict] 錯誤 134
 make[1]: *** [CMakeFiles/Makefile2:733：tables/CMakeFiles/table_data.dir/all] 錯誤 2
-make: *** [Makefile:130：all] 錯誤 2  
+make: *** [Makefile:130：all] 錯誤 2
 ```
 
 Since I don't use zhengma, so just ddit `tables/CMakeFiles/table_data.dir/build.make` comment out the related line:
