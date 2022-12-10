@@ -568,29 +568,6 @@ sudo make install
 apt install -y libtool
 ```
 
-### kde
-[How to Install KDE Plasma in Linux Desktop](https://www.tecmint.com/install-kde-plasma-5-in-linux/)
-
-```sh
-sudo apt install kde-plasma-desktop
-```
-
-And select `sddm`.
-
-### kde screenshot
-[How to take a screenshot in KDE Plasma Ubuntu?](https://askubuntu.com/questions/1278515/how-to-take-a-screenshot-in-kde-plasma-ubuntu)
-```sh
-sudo apt install kde-spectacle
-```
-
-### fcitx5 input method
-[Ubuntu繁體中文輸入法？改用Fcitx5來輸入中文吧！](https://ivonblog.com/posts/ubuntu-fcitx5/)
-```sh
-sudo apt install fcitx5*
-im-config
-```
-select fcitx5 and then restart.
-
 ### Qt5
 Download Qt installer from [Qt Downloads](http://download.qt-project.org/official_releases/qt/), and then:
 
@@ -908,6 +885,31 @@ protoc --cpp_out=`pwd` <your_file>.proto
 It will generate `<your_file>.pb.cc` and `<your_file>.pb.h`.
 
 For more: check the [developer guide](https://developers.google.com/protocol-buffers/docs/proto#specifying-field-rules).
+
+## kde ubuntu
+
+### kde
+[How to Install KDE Plasma in Linux Desktop](https://www.tecmint.com/install-kde-plasma-5-in-linux/)
+
+```sh
+sudo apt install kde-plasma-desktop
+```
+
+And select `sddm`.
+
+### kde screenshot
+[How to take a screenshot in KDE Plasma Ubuntu?](https://askubuntu.com/questions/1278515/how-to-take-a-screenshot-in-kde-plasma-ubuntu)
+```sh
+sudo apt install kde-spectacle
+```
+
+### fcitx5 input method
+[Ubuntu繁體中文輸入法？改用Fcitx5來輸入中文吧！](https://ivonblog.com/posts/ubuntu-fcitx5/)
+```sh
+sudo apt install fcitx5*
+im-config
+```
+select fcitx5 and then restart.
 
 ## CentOS
 ### facter
