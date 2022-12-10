@@ -963,10 +963,30 @@ make[1]: *** [CMakeFiles/Makefile2:733：tables/CMakeFiles/table_data.dir/all] �
 make: *** [Makefile:130：all] 錯誤 2
 ```
 
-Since I don't use zhengma, so just ddit `tables/CMakeFiles/table_data.dir/build.make` comment out the related line:
+Since I don't use zhengma, so just edit `tables/CMakeFiles/table_data.dir/build.make` comment out line 156:
 
 ```sh
 cd /xxx/fcitx5-table-extra/build/tables && libime_tabledict /xxx/fcitx5-table-extra/tables/zhengma-large.txt /xxx/fcitx5-table-extra/build/tables/zhengma-large.main.dict
+```
+
+After comment this line, when `sudo make install`, another error may occur:
+
+```
+CMake Error at tables/cmake_install.cmake:86 (file):
+  file INSTALL cannot find
+  "/home/ubt/Documents/installation/fcitx5-table-extra/build/tables/zhengma-large.main.dict":
+  No such file or directory.
+Call Stack (most recent call first):
+  cmake_install.cmake:47 (include)
+
+
+make: *** [Makefile:86：install] 錯誤 1
+```
+
+Edit `tables/cmake_install.cmake` and comment out line 105:
+
+```
+"/xxx/fcitx5-table-extra/build/tables/zhengma-large.main.dict"
 ```
 
 ## CentOS
