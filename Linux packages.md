@@ -577,6 +577,12 @@ sudo apt install kde-plasma-desktop
 
 And select `sddm`.
 
+### kde screenshot
+[How to take a screenshot in KDE Plasma Ubuntu?](https://askubuntu.com/questions/1278515/how-to-take-a-screenshot-in-kde-plasma-ubuntu)
+```sh
+sudo apt install kde-spectacle
+```
+
 ### fcitx5 input method
 [Ubuntu繁體中文輸入法？改用Fcitx5來輸入中文吧！](https://ivonblog.com/posts/ubuntu-fcitx5/)
 ```sh
