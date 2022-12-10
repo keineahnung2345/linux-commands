@@ -911,6 +911,64 @@ im-config
 ```
 select fcitx5 and then restart.
 
+### cmake ECM
+[What is the ECM used in building fcitx?](https://askubuntu.com/questions/976970/what-is-the-ecm-used-in-building-fcitx)
+```sh
+sudo apt install extra-cmake-modules
+```
+
+### 倉頡繁體輸入法
+According to [Fcitx5: Any Traditional Chinese input users know why Cangjie is simplified-only now?](https://www.reddit.com/r/debian/comments/ucz2qd/fcitx5_any_traditional_chinese_input_users_know/), one needs to install it manually:
+
+[fcitx5-table-extra](https://github.com/fcitx/fcitx5-table-extra)
+
+[如何編譯「fcitx5-table-extra」並且簡易打包成「Debian Package」](https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=363744#forumpost363744)
+
+Prerequisite:
+```sh
+sudo apt install libime-bin # libime_tabledict
+sudo apt install extra-cmake-modules # CMakeLists.txt: ECMConfig.cmake, ecm-config.cmake
+sudo apt install libimetable-dev libimecore-dev
+sudo apt install libfcitx5utils-dev libfcitx5core-dev libfcitx5config-dev fcitx5-chinese-addons
+```
+
+```sh
+git clone https://github.com/fcitx/fcitx5-table-extra.git
+cd fcitx5-table-extra/
+mkdir build
+cd build/
+cmake .. -DCMAKE_INSTALL_PREFIX=/usr/bin
+cmake --build .
+cmake --install .
+```
+
+When `cmake --build .`, the following errors may happen:
+
+```
+/bin/sh: 1: LibIME::tabledict: not found
+make[2]: *** [tables/CMakeFiles/table_data.dir/build.make:92：tables/cangjie3.main.dict] 錯誤 127
+make[1]: *** [CMakeFiles/Makefile2:733：tables/CMakeFiles/table_data.dir/all] 錯誤 2
+make: *** [Makefile:130：all] 錯誤 2
+```
+
+Edit `tables/CMakeFiles/table_data.dir/build.make`, replace `LibIME::tabledict` with `libime_tabledict` and then retry.
+
+And there may be following error:
+```
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  invalid rule entry                                                  
+Aborted (core dumped)                                                          
+make[2]: *** [tables/CMakeFiles/table_data.dir/build.make:156：tables/zhengma-large.main.dict] 錯誤 134
+make[1]: *** [CMakeFiles/Makefile2:733：tables/CMakeFiles/table_data.dir/all] 錯誤 2
+make: *** [Makefile:130：all] 錯誤 2  
+```
+
+Since I don't use zhengma, so just ddit `tables/CMakeFiles/table_data.dir/build.make` comment out the related line:
+
+```sh
+cd /xxx/fcitx5-table-extra/build/tables && libime_tabledict /xxx/fcitx5-table-extra/tables/zhengma-large.txt /xxx/fcitx5-table-extra/build/tables/zhengma-large.main.dict
+```
+
 ## CentOS
 ### facter
 ```sh
