@@ -2655,3 +2655,17 @@ On Windows-Ubuntu dual boot, if you cannot boot into ubuntu, showing black scree
 sudo dpkg-reconfigure gdm3
 sudo service gdm3 restart
 ```
+
+# ubuntu kde
+
+## solve tags.so high cpu usage
+
+[[SOLVED] Baloo using 30% of CPU and Kded5 10% python 11% total 61% at idle](https://www.pclinuxos.com/forum/index.php?topic=150293.0)
+
+```sh
+balooctl status
+balooctl disable
+rm -rf ~/.local/share/baloo
+```
+
+Also: System Settings -> Search -> File Search -> Uncheck Enable File Search
