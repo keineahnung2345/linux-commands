@@ -968,6 +968,13 @@ and clean the field `proxy`, like:
         proxy =
 ```
 
+## sync tags from upstream
+[How do I sync tags to a forked github repo?](https://stackoverflow.com/questions/70678073/how-do-i-sync-tags-to-a-forked-github-repo)
+```sh
+git fetch --tags upstream
+git push --tags
+```
+  
 ## upload large file(> 100MB)
 [Git Large File Storage](https://git-lfs.github.com/)
 
