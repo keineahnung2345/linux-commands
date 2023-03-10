@@ -549,8 +549,10 @@ $git remote show origin
 
 ## add origin
 ```sh
-$git remote add origin "//xxx/yyy/zzz.git"
+$git remote add <remote-name> "//xxx/yyy/zzz.git"
 ```
+
+One can use this method to pull a branch from a forked repository.
 
 ## set origin(change remote url)
 [How to change the URI (URL) for a remote Git repository?](https://stackoverflow.com/questions/2432764/how-to-change-the-uri-url-for-a-remote-git-repository)
