@@ -120,9 +120,11 @@ if you have multiple dockerfiles in a directory, you need to specify your docker
 `docker pull <image-name:tag>`
 
 ### Push your image to dockerhub
-`docker push <image-name:tag>`
-
-Before this, one needs to `docker login`.
+```sh
+docker login
+docker tag <image-name:tag> <your-docker-hub-id>/<image-name:tag>
+docker push <your-docker-hub-id>/<image-name:tag>
+```
 
 ### Load a docker image from xxx.tar.gz
 `docker load -i xxx.tar.gz`
