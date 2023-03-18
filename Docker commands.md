@@ -167,6 +167,12 @@ docker run --name <container-name> -td -p <host-port>:<container-port> \
 -e <environment-variable-name>=<environment-variable-value> --restart always <image-name>
 ```
 
+### Add new mount to existing but stopped container
+[How can I add a volume to an existing Docker container?](https://stackoverflow.com/a/53516263/10651567)
+Edit `/var/lib/docker/containers/99d...1fb/config.v2.json`, 
+add a new volume into `"MountPoints":{}`.
+And then `service docker restart`.
+
 ### Check container restart policy
 [Is it possible to show the restart policy of a running Docker container?](https://stackoverflow.com/questions/43108227/is-it-possible-to-show-the-restart-policy-of-a-running-docker-container)
 ```sh
