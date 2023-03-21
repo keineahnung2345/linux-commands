@@ -238,6 +238,7 @@ apt-get install -y cmake-curses-gui
 ```sh
 apt-get install -y build-essential
 ```
+
 Use `gcc -v`, `g++ --version` and `make -v` to check their versions.
 
 This solves:
@@ -245,6 +246,16 @@ This solves:
 ```
 No CMAKE_CXX_COMPILER could be found.
 ```
+
+[install gcc-9 on Ubuntu 18.04?](https://askubuntu.com/questions/1140183/install-gcc-9-on-ubuntu-18-04)
+
+Or using:
+
+```sh
+apt install  gcc-9  g++-9
+```
+
+to install gcc and g++ of specific version.
 
 ### dlocate
 ```sh
