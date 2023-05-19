@@ -562,6 +562,13 @@ sudo ldconfig
 Note: `png++-0.2.9` requires `libpng12.so.0`, but the following command will install libpng16.
 ~~sudo apt-get install libpng-dev~~
 
+Or according to [How to correctly install libpng12-0 on the Ubuntu 19.10?](https://askubuntu.com/questions/1194386/how-to-correctly-install-libpng12-0-on-the-ubuntu-19-10)
+```sh
+sudo add-apt-repository ppa:linuxuprising/libpng12
+sudo apt update
+sudo apt install libpng12-0
+```
+
 ### png++
 [PNG++ Installation on Ubuntu 16.04](https://gist.github.com/satriahrh/32647b296540a686ea3cd083908195ff)
 
