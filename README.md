@@ -847,6 +847,12 @@ or
 apt-get --purge autoremove <package-name>
 ```
 
+## upgrade a package
+[How to upgrade a single package using apt-get?](https://askubuntu.com/questions/44122/how-to-upgrade-a-single-package-using-apt-get)
+```sh
+apt-get install --only-upgrade <package-name>
+```
+
 ## download .deb and not install
 ```sh
 apt-get install --download-only <package-name>
