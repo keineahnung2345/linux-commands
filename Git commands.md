@@ -779,6 +779,19 @@ To compare two branches on Github website, go to:
 
 `https://github.com/<user_name>/<repo_name>/compare/<branch1>...<branch2>`
 
+## Compare two branches, file name only
+
+[Showing which files have changed between two revisions](https://stackoverflow.com/questions/822811/showing-which-files-have-changed-between-two-revisions)
+
+Compare against <branch-name>:
+```sh
+git diff --name-status <branch-name>
+```
+Or comparing two branches:
+```sh
+git diff --name-status <branch-name1>..<branch-name2>
+```
+
 ## Compare current state and last commit
 [See diff between current state and last commit](https://stackoverflow.com/questions/17244471/see-diff-between-current-state-and-last-commit)
 ```sh
