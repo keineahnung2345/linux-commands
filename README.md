@@ -1321,6 +1321,13 @@ find . -name "<filename>" -exec mv {} "<dst_path>" \;
 ```sh
 find . -name "<filename>" -exec cp {} "<dst_path>"  \;
 ```
+
+### find and delete
+
+```sh
+find . -name "<filename>" -exec rm {} \;
+```
+
 ### find and remove extension
 [find exec and strip extension from filenames](https://stackoverflow.com/questions/46834093/find-exec-and-strip-extension-from-filenames)
 ```sh
