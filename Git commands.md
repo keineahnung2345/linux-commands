@@ -105,6 +105,17 @@ Or:
 git clone --single-branch --branch <branch-name> <remote-repo>
 ```
 
+## Reset a repo(Discard all commits)
+
+[Git: How to reset a remote Git repository to remove all commits?](https://stackoverflow.com/questions/2006172/git-how-to-reset-a-remote-git-repository-to-remove-all-commits)
+
+```sh
+rm -rf .git
+git init
+git remote add origin <url>
+git push -f origin master
+```
+
 ## Synchronize(Reset) local repo with remote one
 [git: sync local repo with remote one](https://stackoverflow.com/questions/6373277/git-sync-local-repo-with-remote-one)
 
