@@ -2123,6 +2123,11 @@ unrar e <xxx.rar>
 
 To disable the prompt, add `-o+` option for automatic overriding.
 
+List files in rar:
+```sh
+rar l <xxx.rar>
+```
+
 ## go to the previous directory
 ```sh
 cd -
