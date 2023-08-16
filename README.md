@@ -2448,6 +2448,16 @@ do
 done
 ```
 
+[how to rename multiple files by replacing string in file name? this string contains a "#"](https://unix.stackexchange.com/questions/175135/how-to-rename-multiple-files-by-replacing-string-in-file-name-this-string-conta)
+
+This replace `*abc*recon.pcd` to `*def*recon.pcd`:
+```sh
+find . -type f -name '*recon.pcd' | while read FILE ; do
+    newfile="$(echo ${FILE} |sed -e 's/abc/def/')" ;
+    mv "${FILE}" "${newfile}" ;
+done
+```
+
 ## combine files by column, and set the column width
 [A better paste command](https://unix.stackexchange.com/questions/98945/a-better-paste-command)
 
