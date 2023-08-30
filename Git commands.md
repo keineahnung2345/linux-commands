@@ -1098,6 +1098,14 @@ git add .
 git commit
 ```
 
+When adding submodule, if there's following error:
+
+```
+'xxx' already exists in the index
+```
+
+According to [Issue with adding common code as git submodule: "already exists in the index"](https://stackoverflow.com/questions/12898278/issue-with-adding-common-code-as-git-submodule-already-exists-in-the-index), just type `git rm xxx`.
+
 ### clone with submodule
 
 [How to "git clone" including submodules?](https://stackoverflow.com/questions/3796927/how-to-git-clone-including-submodules)
