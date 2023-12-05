@@ -1923,6 +1923,11 @@ cut -d '<delimiter>' -f <fields> <filename>
 <other-command> | tac
 ```
 
+## reverse a file
+```sh
+tac <filename> > <output_filename>
+```
+
 ## use curl to test REST API
 [使用curl指令測試REST服務](http://blog.kent-chiu.com/2013/08/14/testing-rest-with-curl-command.html)
 ```sh
