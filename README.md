@@ -1829,6 +1829,21 @@ sed -bi '/View.*\(.*\);/d' <filename>
 `-b` for binary mode, which prevents from changing windows line ending to that of linux.
 `-i` for inplace.
 
+### sed, search for lines with certain pattern
+[sed](https://www.hy-star.com.tw/tech/linux/sed/sed.html)
+
+Print such lines:
+
+```sh
+sed -n '/ <pattern>/p' "<infile>"
+```
+
+Write such lines into another file:
+
+```sh
+sed -n '/ <pattern>/w <outfile>' "<infile>"
+```
+
 ## translate or delete characters - squeeze multiple \<char> into one
 ```sh
 tr -s '<char>'
