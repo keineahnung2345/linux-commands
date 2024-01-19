@@ -2697,7 +2697,24 @@ evince xxx.pdf
 sudo apt install -y peek
 peek
 ```
-  
+
+## run cron job
+```sh
+crontab -e
+```
+
+Add something like:
+```
+0 3 * * * clamscan -r / > $(date "+%Y-%m-%d-%H-%M-%S".txt)
+```
+
+[How to run a cron job using the sudo command](https://askubuntu.com/questions/173924/how-to-run-a-cron-job-using-the-sudo-command)
+
+Run with sudo:
+```sh
+sudo crontab -e
+```
+
 ## Ubuntu cannot boot: `platform MSFT0101:00 failed to claim resource 1`, `acpi MSFT0101:00: platform device creation failed: -16`
 
 [Failed to claim resource 1 boot error](https://askubuntu.com/questions/844399/failed-to-claim-resource-1-boot-error)
