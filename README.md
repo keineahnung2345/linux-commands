@@ -407,6 +407,12 @@ sudo locale-gen zh_TW.UTF-8
 date
 ```
 
+Write into log file named by date:
+
+```sh
+echo "abc" > $(date "+%Y-%m-%d-%H-%M-%S"log.txt)
+```
+
 ## get time in seconds since epoch
 [Get current time in seconds since the Epoch on Linux, Bash](https://stackoverflow.com/questions/1092631/get-current-time-in-seconds-since-the-epoch-on-linux-bash)
 ```sh
