@@ -42,6 +42,14 @@ sudo -s # ~/.bashrc is respected
 sudo -i # ~/.bashrc is ignored
 ```
 
+## change password
+
+```sh
+passwd
+```
+
+Then key in original password and then key in new password twice.
+
 ## sudo, given password
 [sudo 自動帶入 密碼](https://cuteparrot.pixnet.net/blog/post/199347198)
 ```sh
