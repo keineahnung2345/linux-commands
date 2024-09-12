@@ -143,9 +143,12 @@ git clean -n -f
 Note: `git fetch` will pull the branch that only exist in remtoe to local
 
 ## Git fetch
-To fetch a remote branch:
+[How to 'git pull' without switching branches (git checkout)?](https://stackoverflow.com/questions/18857570/how-to-git-pull-without-switching-branches-git-checkout)
+
+To fetch a remote branch(to pull a remote branch without checkout):
 ```sh
 git fetch <remote_branch_name>
+git fetch <remote> <src_branch>:<dest_branch>
 ```
 
 To fetch all remote branches:
