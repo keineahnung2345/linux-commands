@@ -1204,3 +1204,21 @@ git checkout master
 ```sh
 git config core.protectNTFS false
 ```
+
+## Make git diff works on UTF-16 file
+
+[Diff .strings files in Git](https://blog.xk72.com/post/31456986659/diff-strings-files-in-git)
+
+[Can I make git recognize a UTF-16 file as text?](https://stackoverflow.com/questions/777949/can-i-make-git-recognize-a-utf-16-file-as-text)
+
+在`.gitattributes`中：
+
+```
+*.<file_extension> diff=utf16 eof=crlf
+```
+
+在`.git/config`中加入：
+```
+[diff "utf16"]
+        textconv = "iconv -f UTF-16LE -t UTF-8"
+```
