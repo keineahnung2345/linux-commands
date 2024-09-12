@@ -417,6 +417,15 @@ $git push origin <branch-name>
 
 If got `Changes not staged for commit` even after using `git add`, one can try change to the specific folder and then use `git add` again.
 
+## Add part of file
+
+[Commit only part of a file's changes in Git](https://stackoverflow.com/questions/1085162/commit-only-part-of-a-files-changes-in-git)
+
+```sh
+git add --patch <filename>
+git add -p <filename>
+```
+
 ## git commit, specify author and email
 [How can I change the author name / email of a commit?](https://www.git-tower.com/learn/git/faq/change-author-name-email/)
 ```sh
