@@ -439,6 +439,15 @@ To modify the commit message of last commit:
 $ git commit --amend -m "New commit message."
 ```
 
+## modify commit content
+
+[【Git】使用 git commit 修改提交（commit）的資訊或是內容](https://forgetfulengineer.github.io/Other/Git/Using-git-commit-to-Modify-Commit-Data-or-Content/)
+
+```sh
+$ git add xxx
+$ git commit --amend --no-edit
+```
+
 ## Track items but not add
 [How to track but not stage and how to unstage but not untrack?](https://stackoverflow.com/questions/15653066/how-to-track-but-not-stage-and-how-to-unstage-but-not-untrack)
 ```sh
