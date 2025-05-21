@@ -439,13 +439,20 @@ To modify the commit message of last commit:
 $ git commit --amend -m "New commit message."
 ```
 
-## modify commit content
+## modify commit content(add file)
 
 [【Git】使用 git commit 修改提交（commit）的資訊或是內容](https://forgetfulengineer.github.io/Other/Git/Using-git-commit-to-Modify-Commit-Data-or-Content/)
 
 ```sh
 $ git add xxx
 $ git commit --amend --no-edit
+```
+
+## modify commit content(remove file)
+
+```sh
+$ git reset HEAD~
+# git add and then git commit one more time
 ```
 
 ## Track items but not add
