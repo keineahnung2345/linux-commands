@@ -1703,6 +1703,20 @@ The following split a file to 90% and 10%.
 split -l $[ $(wc -l <filename>|cut -d" " -f1) * 90 / 100 ] <filename>
 ```
 
+## split a large file equally to smaller ones
+
+[What is the fastest and most reliable way to split a 50GB binary file into chunks of 5GB or less, and then reassemble it later?](https://superuser.com/questions/160364/what-is-the-fastest-and-most-reliable-way-to-split-a-50gb-binary-file-into-chunk)
+
+```sh
+split --bytes=49M inputfile
+```
+
+This will generate xaa, xab, xac, ..., to merge them:
+
+```sh
+cat x* > outfile
+```
+
 ## find unique elements from other command's output
 ```sh
 <other-command>| sort | uniq
