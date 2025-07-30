@@ -2068,6 +2068,12 @@ zip -FF <name>.zip -O <name>.fixed.zip
 unzip <xxx.zip> -d </target/directory/to/unzip>
 ```
 
+## view the contents of a zip file
+[View list of files in ZIP archive on Linux](https://superuser.com/questions/216617/view-list-of-files-in-zip-archive-on-linux)
+```sh
+unzip -l <xxx.zip>
+```
+
 ## pack to a tar file
 ```sh
 tar cf </packed/file/name>.tar </folder/name>
